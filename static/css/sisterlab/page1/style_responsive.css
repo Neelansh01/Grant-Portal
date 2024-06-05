@@ -1,0 +1,396 @@
+/*--------------------------------------------------------------
+# Home Banner Section
+--------------------------------------------------------------*/
+
+@media (max-width: 575px) {
+    .home_banner h2 {
+      font-size: 30px;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Home Hot Jobs Section
+  --------------------------------------------------------------*/
+  
+  
+  
+  /* Home Testimonials Section ------------------------------*/
+  
+  @media (max-width: 767px) {
+  
+    .home_testimonials .testimonials-carousel,
+    .home_testimonials .testimonials-slider {
+      overflow: hidden;
+    }
+  
+    .home_testimonials .testimonial-item {
+      margin: 15px;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Home Jobs Section
+  --------------------------------------------------------------*/
+  
+  
+  /*--------------------------------------------------------------
+  # WhyUs Page Section
+  --------------------------------------------------------------*/
+  
+  @media (max-width: 640px) {
+    .whyus .features-item+.features-item {
+      margin-top: 40px;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Plans PAGE Section
+  --------------------------------------------------------------*/
+  
+  
+  @media (max-width: 992px) {
+    .pricing .box {
+        max-width: 60%;
+        margin: 0 auto 30px auto;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .pricing .box {
+        max-width: 80%;
+        margin: 0 auto 30px auto;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .pricing .box {
+        max-width: 100%;
+        margin: 0 auto 30px auto;
+    }
+  }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Browse PAGE Section
+  --------------------------------------------------------------*/
+  
+  @media (max-width: 420px) {
+    .browse-page .grants-outer-top{
+      border-left: 1px solid #ddd;
+      border-right: 1px solid #ddd;
+      border-top: 1px solid #ddd;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      padding:20px 10px 0px 10px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    .browse-page .grants-search .btn{
+      width:50px;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Blog Stylings
+  --------------------------------------------------------------*/
+  /*--------------------------------------------------------------
+  # Blog Home Posts List
+  --------------------------------------------------------------*/
+  
+  
+  /*--------------------------------------------------------------
+  # Blog Details Page
+  --------------------------------------------------------------*/
+  
+  
+  /*--------------------------------------------------------------
+  # Blog Sidebar
+  --------------------------------------------------------------*/
+  
+  
+  /*--------------------------------------------------------------
+  # Blog Comments
+  --------------------------------------------------------------*/
+  
+  
+  /*--------------------------------------------------------------
+  # Blog Home Pagination
+  --------------------------------------------------------------*/
+  
+  
+  /*--- Faq Categories Start -----*/
+  
+  
+  /*--- End Faq Start -----*/
+  
+  
+  
+  /*--------------------------------------------------------------
+    # profiles
+  --------------------------------------------------------------*/
+  
+  /*
+  @media (max-width: 768px) {
+  
+    .profiles .profile-item p {
+      padding: 0px;
+      height:90px;
+      overflow: hidden;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .profiles .profile-item .profile-img {
+      width: 80px;
+      border-radius: 50%;
+      margin: -50px 0 0 5px;
+      border: 3px solid #fff;
+    }
+    .profiles .profile-item h3 {
+      font-size: 16px;
+      font-weight: bold;
+      color: #111;
+      position: relative;
+      z-index: 2; 
+      margin: -40px 0 0 95px;
+    }
+    .profiles .profile-item h4 {
+        font-size: 13px;
+        color: #999;
+        position: relative;
+        z-index: 2; 
+        margin: 0 0 0 185px;
+    }
+  
+  }
+  */
+  
+  /*--------------------------------------------------------------
+  # Profile Sections
+  --------------------------------------------------------------*/
+  
+  /*
+  
+  @media (max-width: 575px) {
+    .profile-organization-outer .btn-group-vertical{
+      right:5px;
+      background-color:#fff;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .profile-organization .profile-organization-img {
+      float: none;
+      margin: auto;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .profile-organization p {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .profile-organization h3, .profile-organization h4, .profile-organization p {
+      margin-left: 0;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .profile-chart p {
+      width: 80%;
+    }
+  }
+  
+  @media (max-width: 767px) {
+  
+    .slider-outer{
+      padding:0px 15px; 
+      border-left: none;
+      margin-top:30px;
+    }
+  
+    .profile-organization-outer {
+      margin-bottom:15px;
+      padding: 0px 5px 15px 5px ;
+      margin-left:-10px;
+      margin-right:-5px;
+    }
+    .profile-organization-outer .profile-organization {
+      margin-top:0px;
+      margin-bottom:15px;
+    }
+  
+    .profile-organization .profile-organization-img-div{
+      float: left;
+      width: 80px;
+      height: 80px;
+      border: 1px solid #ddd;
+    }
+    .profile-organization .profile-organization-img {
+      width: 80px;
+      padding:3px;
+    }
+    .profile-organization h3 {
+      font-size: 16px;
+      margin: 0px 0 5px 100px!important;
+    }
+    .profile-organization h4 {
+      font-size: 14px;
+      margin: 15px 0 15px 100px!important;
+    }
+    .profile-organization p {
+      font-size: 13px;
+      font-style: italic;
+      margin: 5px 0 10px 0px!important;
+    }
+  
+  }
+  
+  @media (max-width: 767px) {
+    .profile-organization-outer .profile-organization-2 .profile-organization-img {
+      float: none;
+      margin: auto;
+    }
+  }
+  @media (min-width: 992px) {
+    .profile-organization-outer .profile-organization-2 p {
+      width: 80%;
+    }
+  }
+  @media (max-width: 767px) {
+    .profile-organization-outer .profile-organization-2 h3,
+    .profile-organization-outer .profile-organization-2 h4,
+    .profile-organization-outer .profile-organization-2 p {
+      margin-left: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .profile-organization-outer .profile-organization-3 .profile-organization-img {
+      float: none;
+      margin: auto;
+    }
+  }
+  @media (min-width: 992px) {
+    .profile-organization-outer .profile-organization-3 p {
+      width: 80%;
+    }
+  }
+  @media (max-width: 767px) {
+    .profile-organization-outer .profile-organization-3 h3,
+    .profile-organization-outer .profile-organization-3 h4,
+    .profile-organization-outer .profile-organization-3 p {
+      margin-left: 0;
+    }
+  } 
+  
+  */
+  
+  
+  @media (min-width: 1200px) {
+  }
+  @media (max-width: 1199px) {
+  }
+  
+  
+  @media (min-width: 992px) {
+  
+  }
+  @media (min-width: 767px) {
+  
+  }
+  @media (max-width: 768px) {
+  
+    .profile-credentials .profile-organization-outer .credentials-table-header,
+    .profile-credentials .profile-organization-outer .table-row-action-desktop{
+      display:none;
+    }
+    .profile-credentials .profile-organization-outer .table-row-header{
+      display:block;
+      font-size:18px;
+      padding-top:15px
+    }
+    .profile-credentials .profile-organization-outer .table-row-action-mobile{
+      display:block;
+    }
+  
+  }
+  
+  
+  @media (max-width: 640px) {
+  
+  }
+  
+  
+  @media (min-width: 575px) {
+    .profile-organization .profile-organization-img-div{
+      float: left;
+    }
+    .profile-organization .profile-organization-info-div {
+      float: left;
+      width: calc(100% - 100px);
+    }
+  }
+  
+  @media (max-width: 574px) {
+  
+    .colLarge::-webkit-scrollbar{
+      height: 15px;
+    }
+  
+    .profile-organization .profile-organization-info-div {
+      width: 100%;
+    }
+  
+    .profile-organization-outer .prev-arrow{
+      padding-left:35px;
+    }
+    .profile-organization-outer .next-arrow{
+      padding-right:35px;
+    }
+  
+    .profile-organization-outer .skills-slider-title{
+      height:50px;
+      padding-top:7px;
+      font-size:16px;
+      font-weight:600;
+    }
+  
+  
+    .profiles .profile-item h3 {
+        position: absolute;
+        margin-left:0px;
+    }
+  
+    .profile-organization .profile-organization-info-div {
+      /* float: left; */
+      padding-top:15px;
+      padding-left:0px;
+      padding-right:15px;
+    }
+  
+    .profiles .profile-dp-info{
+      padding-top:50px;
+  
+    }
+    
+    
+  }
+  
+  @media (max-width: 420px) {
+  
+  }
+  
+  
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+    # Dashboard
+  --------------------------------------------------------------*/

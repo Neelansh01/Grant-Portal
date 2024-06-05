@@ -1,0 +1,2305 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subjects</title>
+    <meta name="_token" content="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O">
+
+    <!-- Favicons -->
+    <link href="/static/images/favicon_grantize.png" rel="icon">
+    <link href="/static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="https://techiefolk.com/sisterlab/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">SisterLab</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        
+                
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link nav-icon" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+                You have 1 new notifications
+                <!-- <a href=""><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a> -->
+            </li>
+                        <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+                <div>
+                <p></p>
+                <p>0000-00-00 00:00:00</p>
+                </div>
+            </li>
+                        <li class="dropdown-footer">
+                <a href="https://techiefolk.com/sisterlab/public/admin/notifications/grantize">Grantize Notifications </a>
+                <a href="https://techiefolk.com/sisterlab/public/admin/notifications/recruitphd">RecruitPhd Notifications</a>
+            </li>
+            </ul>
+                    </li>
+        <!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+                        </a>
+                    </li>
+        <!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+            <a href="#" class="nav-link nav-profile d-flex align-items-center pe-0" data-bs-toggle="dropdown">
+             
+                
+            
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+                <h6>Admin</h6>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="https://techiefolk.com/sisterlab/public/admin/dashboard" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-person"></i>
+                <span>My Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="https://techiefolk.com/sisterlab/public/admin/logout" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+                </a>
+            </li>
+
+            </ul>
+        </li>
+        <!-- End Profile Nav -->
+        
+        </ul>
+    </nav>
+
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
+    <li class="nav-heading">My Account</li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#dashboard-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="dashboard-nav" class="nav-content collapse " data-bs-parent="#dashboard-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/dashboard" class="" >
+            <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/staff" class="" >
+            <span>Staff</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/staff_permissions" class="" >
+            <span>Staff permissions</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+    <!-- End Dashboard Nav -->
+    <li class="nav-item">
+      <a class="nav-link " data-bs-target="#master-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Master Data</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="master-nav" class="nav-content collapse show" data-bs-parent="#master-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/activities" class="" >
+            <span>Activities</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/activity_code" class="" >
+            <span>Activity Code</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/applicant_type" class="" >
+            <span>Applicant Type</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/awards" class="" >
+            <span>Awards</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/cfda" class="" >
+            <span>Cfda</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/committees" class="" >
+            <span>Committees</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/conferences" class="" >
+            <span>Conferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/degree" class="" >
+            <span>Degree</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/departments" class="" >
+            <span>Departments</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" class="" >
+            <span>Grants Type</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/hobbies" class="">
+            <span>Hobbies</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/jobs_benifits" class="" >
+            <span>Jobs Benifits</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/journals" class="" >
+            <span>Journals</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a href="admin/journalsquarter" class="" >
+            <span>Journals Quarter</span>
+            </a>
+        </li> -->
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/keywords" class="">
+            <span>Keywords</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/languages" class="">
+            <span>Languages</span>
+            </a>
+        </li> 
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/organizations" class="" >
+            <span>Organizations</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/skill_gained" class="">
+            <span>Skill Gained</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/subjects" class="">
+            <span>Subjects</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/weightageparameters" class="" >
+            <span>Weightage Formula</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/weightageparameters_jobs" class="" >
+            <span>Weightage Formula (Jobs)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/skillset" class="">
+            <span>Skillset</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/countries" class="" >
+            <span>Locations</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#grantize-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Grantize</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="grantize-nav" class="nav-content collapse " data-bs-parent="#grantize-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/grants" class="">
+            <span>Grants</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/sponsors" class="">
+            <span>Sponsors</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/researchers" class="">
+            <span>Researchers</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/sponsor_plan" class="">
+            <span>Plans (Sponsor)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/researcher_plan" class="">
+            <span>Plans (Researcher)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/notifications/grantize" class="">
+            <span>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/banners/grantize" class="" >
+            <span>Banners</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/testimonials/grantize" class="" >
+            <span>Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/video_testimonials/grantize" class="" >
+            <span>Video Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/whyus/grantize" class="" >
+            <span>Why Grantize</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/blogs/grantize" class="">
+            <span>Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/faqs/grantize" class="">
+            <span>Faqs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/pages/grantize" class="" >
+            <span>Pages</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#recruitphd-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>RecruitPhd</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="recruitphd-nav" class="nav-content collapse  " data-bs-parent="#recruitphd-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobs" class="">
+            <span>Jobs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobs/application" class="">
+            <span>Jobs Application</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/recruiters" class="">
+            <span>Recruiters</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobseekers" class="">
+            <span>Jobseekers</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/recruiter_plan" class="">
+            <span>Plans (Recruiter)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobseeker_plan" class="">
+            <span>Plans (Jobseeker)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/notifications/recruitphd" class="">
+            <span>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/banners/recruitphd" class="" >
+            <span>Banners</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/testimonials/recruitphd" class="" >
+            <span>Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/video_testimonials/recruitphd" class="" >
+            <span>Video Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/whyus/recruitphd" class="" >
+            <span>Why RecruitPhd</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/blogs/recruitphd" class="">
+            <span>Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/faqs/recruitphd" class="">
+            <span>Faqs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/pages/recruitphd" class="" >
+            <span>Pages</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+<!-- End Sidebar-->
+<main id="main" class="main"> 
+
+    
+
+<div class="pagetitle">
+  <h1>
+      Subjects <span style="font-size:14px;">( used throughout the system )</span>
+
+      <a href="https://techiefolk.com/sisterlab/public/admin/subjectsupergroup" target="_blank" class="btn btn-sm btn-link">Subjects Supergroup</a> 
+      <a href="https://techiefolk.com/sisterlab/public/admin/subjectsarea" target="_blank" class="btn btn-sm btn-link">Subjects Area</a>
+      <button type="button" class="btn btn-sm btn-outline-primary float-end" id="add-new-static">Add New</button> 
+      <input type="submit" name="submit" value="Export" form="download" class="me-2 btn btn-sm btn-outline-success float-end">
+  </h1>
+</div>
+<section class="section">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-body">
+
+          <form action="https://techiefolk.com/sisterlab/public/admin/subjects" method="post" id="export">
+						<input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">            <div class="row mb-1">
+              <div class="col-4 pe-0">
+                <div class="input-group">
+                  <select class="form-select form-select-sm" id="filter_category" name="filter_category" >
+                      <option value="">Select Category</option>
+                                        </select>
+                </div> 
+              </div>
+              <div class="col-4 ps-0 pe-0">
+                <div class="input-group">
+                  <select class="form-select form-select-sm" id="filter_category" name="filter_category" >
+                      <option value="">Select Category</option>
+                                        </select>
+                </div> 
+              </div>
+              <div class="col-2 ps-0 pe-0">
+                <div class="input-group">
+                  <select class="form-select form-select-sm" id="filter_createdby" name="filter_createdby" >
+                      <option value="">Created by</option>
+                                            <option value="admin"                         >admin</option>
+                                            <option value="sponsor"                         >sponsor</option>
+                                            <option value="researcher"                         >researcher</option>
+                                            <option value="recruiter"                         >recruiter</option>
+                                            <option value="jobseeker"                         >jobseeker</option>
+                                        </select>
+                </div> 
+              </div>
+              <div class="col-2 ps-0">
+                <div class="input-group">
+                  <select class="form-select form-select-sm" id="filter_status" name="filter_status" >
+                      <option value="">Status..</option>
+                      <option value="1" >Active</option>
+                      <option value="0" >Deactive</option>
+                  </select>
+                </div> 
+              </div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-12">
+                <div class="input-group">
+                  <input type="text" id="filter_name" name="filter_name" value="" class="form-control form-control-sm" placeholder="Search Keywords">
+                  <div class="input-group-append">
+                    <input type="number" id="filter_weightage" name="filter_weightage" value="" class="form-control form-control-sm" placeholder="Weightage" >
+                  </div> 
+                  <div class="input-group-append">
+                    <button type="submit" name="filter_search" value="filter_search" class="btn btn-primary btn-sm"><i class="bi bi-search"></i> Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <table class="table table-striped">
+              <thead>
+                  <tr>                              
+                      <th class="sno">SNo</th>  
+                      <th>SG</th>  
+                      <th>Area</th>                          
+                      <th>Subject Name</th>
+
+                      <th scope="col" class="weightage">Wt.</th>
+<th class="col">Cr-by</th>
+<th scope="col" class="status">Status</th>
+<th scope="col" class="action">Action</th> 
+                  </tr>
+              </thead>
+              <tbody>   
+                
+                                <tr>                              
+                  <td>2314</td>
+                  <td>dummy_super_group</td>
+                  <td>dummy_subject_area</td>
+                  <td>aaaaa</td>
+
+                  <td>
+    
+        <span id="2314" table="subjects" name="weightage" class="editable">1</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusActive(2314)" class="btn btn-sm btn-outline-danger" title="Status">Inactive</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(2314)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(2314)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>1736</td>
+                  <td>humanities</td>
+                  <td>psychology</td>
+                  <td>abnormal psychology</td>
+
+                  <td>
+    
+        <span id="1736" table="subjects" name="weightage" class="editable">257</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(1736)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(1736)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(1736)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>1813</td>
+                  <td>library science</td>
+                  <td>libraries</td>
+                  <td>academic and research libraries</td>
+
+                  <td>
+    
+        <span id="1813" table="subjects" name="weightage" class="editable">111</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(1813)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(1813)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(1813)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>2081</td>
+                  <td>physical sciences</td>
+                  <td>physics</td>
+                  <td>accelerator physics</td>
+
+                  <td>
+    
+        <span id="2081" table="subjects" name="weightage" class="editable">433</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(2081)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(2081)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(2081)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>910</td>
+                  <td>business, management, and marketing</td>
+                  <td>accounting and related services</td>
+                  <td>accounting</td>
+
+                  <td>
+    
+        <span id="910" table="subjects" name="weightage" class="editable">153</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(910)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(910)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(910)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>911</td>
+                  <td>business, management, and marketing</td>
+                  <td>accounting and related services</td>
+                  <td>accounting and business/management</td>
+
+                  <td>
+    
+        <span id="911" table="subjects" name="weightage" class="editable">752</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(911)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(911)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(911)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>912</td>
+                  <td>business, management, and marketing</td>
+                  <td>accounting and related services</td>
+                  <td>accounting and finance</td>
+
+                  <td>
+    
+        <span id="912" table="subjects" name="weightage" class="editable">763</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(912)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(912)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(912)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>913</td>
+                  <td>business, management, and marketing</td>
+                  <td>accounting and related services</td>
+                  <td>accounting technology/technician and bookkeeping</td>
+
+                  <td>
+    
+        <span id="913" table="subjects" name="weightage" class="editable">426</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(913)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(913)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(913)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>1497</td>
+                  <td>environmental sciences</td>
+                  <td>environmental pollution</td>
+                  <td>acid precipitation</td>
+
+                  <td>
+    
+        <span id="1497" table="subjects" name="weightage" class="editable">142</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(1497)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(1497)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(1497)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                                <tr>                              
+                  <td>2226</td>
+                  <td>science and technology</td>
+                  <td>instruments</td>
+                  <td>acoustic measurements and instruments</td>
+
+                  <td>
+    
+        <span id="2226" table="subjects" name="weightage" class="editable">783</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(2226)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                  <td class="action">
+  <a href="javascript:editItem(2226)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(2226)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                </tr>    
+                    
+                
+                 
+              </tbody>
+          </table>
+                      <nav class="d-flex justify-items-center justify-content-between">
+        <div class="d-flex justify-content-between flex-fill d-sm-none">
+            <ul class="pagination">
+                
+                                    <li class="page-item disabled" aria-disabled="true">
+                        <span class="page-link">&laquo; Previous</span>
+                    </li>
+                
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=2" rel="next">Next &raquo;</a>
+                    </li>
+                            </ul>
+        </div>
+
+        <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+            <div>
+                <p class="small text-muted">
+                    Showing
+                    <span class="fw-semibold">1</span>
+                    to
+                    <span class="fw-semibold">10</span>
+                    of
+                    <span class="fw-semibold">2318</span>
+                    results
+                </p>
+            </div>
+
+            <div>
+                <ul class="pagination">
+                    
+                                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                            <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                        </li>
+                    
+                    
+                                            
+                        
+                        
+                                                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=2">2</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=3">3</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=4">4</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=5">5</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=6">6</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=7">7</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=8">8</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=9">9</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=10">10</a></li>
+                                                                                                                                
+                                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                        
+                        
+                                                                    
+                        
+                        
+                                                                                                                        <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=231">231</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=232">232</a></li>
+                                                                                                        
+                    
+                                            <li class="page-item">
+                            <a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/subjects?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+
+           
+              
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<div id="addStaticModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <form action="" method="post" enctype="multipart/form-data" id="static_Add">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add New Subject</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Subject Area</label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <select name="subject_area" class="form-control select2" required>
+                        <option value="">Select</option>
+                                                <option value="1">dummy_subject_area</option>
+                                                <option value="2">agricultural and domestic animal</option>
+                                                <option value="3">agricultural and food products processing</option>
+                                                <option value="4">agricultural business and management</option>
+                                                <option value="5">agricultural chemistry</option>
+                                                <option value="6">agricultural engineering</option>
+                                                <option value="7">agricultural mechanization</option>
+                                                <option value="8">agricultural policy</option>
+                                                <option value="9">agricultural production operations</option>
+                                                <option value="10">agricultural public services</option>
+                                                <option value="11">agronomy</option>
+                                                <option value="12">animal sciences</option>
+                                                <option value="13">applied horticulture and horticultural business services</option>
+                                                <option value="14">aquaculture</option>
+                                                <option value="15">food science and technology</option>
+                                                <option value="16">international agriculture</option>
+                                                <option value="17">area studies</option>
+                                                <option value="18">ethnic studies</option>
+                                                <option value="19">gender studies</option>
+                                                <option value="20">age groups</option>
+                                                <option value="21">demography</option>
+                                                <option value="22">population control</option>
+                                                <option value="23">accounting and related services</option>
+                                                <option value="24">business administration, management and operations</option>
+                                                <option value="25">business ethics</option>
+                                                <option value="26">business history</option>
+                                                <option value="27">business operations support and assistant services</option>
+                                                <option value="28">business or industry</option>
+                                                <option value="29">business/commerce</option>
+                                                <option value="30">business/managerial economics</option>
+                                                <option value="31">commerce</option>
+                                                <option value="32">construction management</option>
+                                                <option value="33">decision science</option>
+                                                <option value="34">remote business</option>
+                                                <option value="35">entrepreneurial and small business operations</option>
+                                                <option value="36">finance and financial management services</option>
+                                                <option value="37">general sales, merchandising and related marketing operations</option>
+                                                <option value="38">hospitality administration and management</option>
+                                                <option value="39">human resources management and services</option>
+                                                <option value="40">insurance</option>
+                                                <option value="41">international business</option>
+                                                <option value="42">labor studies</option>
+                                                <option value="43">management</option>
+                                                <option value="44">management information systems and services</option>
+                                                <option value="45">management sciences and quantitative methods</option>
+                                                <option value="46">marketing</option>
+                                                <option value="47">organizational theory and behavior</option>
+                                                <option value="48">real estate</option>
+                                                <option value="49">specialized sales, merchandising and marketing operations</option>
+                                                <option value="50">taxation</option>
+                                                <option value="51">communication and journalism</option>
+                                                <option value="52">telecommunications management</option>
+                                                <option value="53">communication and media studies</option>
+                                                <option value="54">communication skills</option>
+                                                <option value="55">interpersonal communication</option>
+                                                <option value="56">journalism</option>
+                                                <option value="57">mass communication</option>
+                                                <option value="58">mass media</option>
+                                                <option value="59">public relations and applied communication</option>
+                                                <option value="60">publishing</option>
+                                                <option value="61">radio, television, and digital communication</option>
+                                                <option value="62">sociology of communication</option>
+                                                <option value="63">computer and information sciences</option>
+                                                <option value="64">computer applications</option>
+                                                <option value="65">computer hardware</option>
+                                                <option value="66">computer methods</option>
+                                                <option value="67">computer networks</option>
+                                                <option value="68">computer programming</option>
+                                                <option value="69">computer science</option>
+                                                <option value="70">computer security</option>
+                                                <option value="71">computer software and media applications</option>
+                                                <option value="72">computer systems</option>
+                                                <option value="73">computer systems analysis</option>
+                                                <option value="74">computer systems networking and telecommunications</option>
+                                                <option value="75">computer technology</option>
+                                                <option value="76">computer/information technology administration and management</option>
+                                                <option value="77">data entry/microcomputer applications</option>
+                                                <option value="78">data processing</option>
+                                                <option value="79">information management</option>
+                                                <option value="80">information science/studies</option>
+                                                <option value="81">information systems</option>
+                                                <option value="82">information technology</option>
+                                                <option value="83">information theory</option>
+                                                <option value="84">earth sciences</option>
+                                                <option value="85">atmospheric sciences</option>
+                                                <option value="86">earth observation</option>
+                                                <option value="87">geochronology</option>
+                                                <option value="88">geology</option>
+                                                <option value="89">geomorphology</option>
+                                                <option value="90">geophysics</option>
+                                                <option value="91">geotechnology</option>
+                                                <option value="92">hydrology</option>
+                                                <option value="93">oceanography</option>
+                                                <option value="94">paleontology</option>
+                                                <option value="95">physical geography</option>
+                                                <option value="96">soil science</option>
+                                                <option value="97">bilingual and  multilingual education</option>
+                                                <option value="98">comparative education</option>
+                                                <option value="99">curriculum and instruction</option>
+                                                <option value="100">curriculum materials</option>
+                                                <option value="101">dropouts</option>
+                                                <option value="102">education</option>
+                                                <option value="103">education philosophy</option>
+                                                <option value="104">education planning</option>
+                                                <option value="105">education policy</option>
+                                                <option value="106">educational psychology</option>
+                                                <option value="107">education systems and institutions</option>
+                                                <option value="108">education technology</option>
+                                                <option value="109">education trends</option>
+                                                <option value="110">educational administration</option>
+                                                <option value="111">educational administration and supervision</option>
+                                                <option value="112">educational assessment, evaluation, and research</option>
+                                                <option value="113">educational curriculum studies</option>
+                                                <option value="114">educational finance</option>
+                                                <option value="115">educational philosophy</option>
+                                                <option value="116">educational planning</option>
+                                                <option value="117">educational media design</option>
+                                                <option value="118">international and comparative education</option>
+                                                <option value="119">social and philosophical foundations of education</option>
+                                                <option value="120">special education and teaching</option>
+                                                <option value="121">student counseling and personnel services</option>
+                                                <option value="122">teacher education and professional development, specific subject areas</option>
+                                                <option value="123">teaching methods</option>
+                                                <option value="124">energy</option>
+                                                <option value="125">alternative energy</option>
+                                                <option value="126">bioenergy</option>
+                                                <option value="127">electrical energy</option>
+                                                <option value="128">energy consumption</option>
+                                                <option value="129">energy development</option>
+                                                <option value="130">energy economics</option>
+                                                <option value="131">energy management</option>
+                                                <option value="132">energy policy</option>
+                                                <option value="133">energy technology</option>
+                                                <option value="134">fuel technology</option>
+                                                <option value="135">geothermal energy</option>
+                                                <option value="136">nuclear energy</option>
+                                                <option value="137">renewable energy resources</option>
+                                                <option value="138">solar energy</option>
+                                                <option value="139">steam power</option>
+                                                <option value="140">sustainable energy future</option>
+                                                <option value="141">water power</option>
+                                                <option value="142">wind power</option>
+                                                <option value="143">biochemical engineering</option>
+                                                <option value="144">bioengineering</option>
+                                                <option value="145">biological/biosystems engineering</option>
+                                                <option value="146">ceramic sciences and engineering</option>
+                                                <option value="147">chemical engineering</option>
+                                                <option value="148">civil engineering</option>
+                                                <option value="149">computer engineering</option>
+                                                <option value="150">electric engineering</option>
+                                                <option value="151">electrical, electronics and communications engineering</option>
+                                                <option value="152">electromechanical engineering</option>
+                                                <option value="153">electronics</option>
+                                                <option value="154">engineering</option>
+                                                <option value="155">engineering chemistry</option>
+                                                <option value="156">engineering design</option>
+                                                <option value="157">engineering management</option>
+                                                <option value="158">engineering mechanics</option>
+                                                <option value="159">engineering physics</option>
+                                                <option value="160">engineering science</option>
+                                                <option value="161">environmental/environmental health engineering</option>
+                                                <option value="162">forest engineering</option>
+                                                <option value="163">geological/geophysical engineering</option>
+                                                <option value="164">heat engineering</option>
+                                                <option value="165">hydraulic engineering</option>
+                                                <option value="166">industrial engineering</option>
+                                                <option value="167">manufacturing engineering</option>
+                                                <option value="168">materials engineering</option>
+                                                <option value="169">materials sciences</option>
+                                                <option value="170">mechanical engineering</option>
+                                                <option value="171">metallurgical engineering</option>
+                                                <option value="172">mining and mineral engineering</option>
+                                                <option value="173">mining engineering</option>
+                                                <option value="174">naval architecture and marine engineering</option>
+                                                <option value="175">nuclear engineering</option>
+                                                <option value="176">ocean engineering</option>
+                                                <option value="177">optical engineering</option>
+                                                <option value="178">paper science and engineering</option>
+                                                <option value="179">polymer/plastics engineering</option>
+                                                <option value="180">surveying engineering</option>
+                                                <option value="181">systems engineering</option>
+                                                <option value="182">textile sciences and engineering</option>
+                                                <option value="183">vacuum science</option>
+                                                <option value="184">language and litrature</option>
+                                                <option value="185">african languages</option>
+                                                <option value="186">afro-asiatic languages</option>
+                                                <option value="187">american indian languages</option>
+                                                <option value="188">artificial languages</option>
+                                                <option value="189">austronesian and oceanic languages</option>
+                                                <option value="190">indo-european languages</option>
+                                                <option value="191">oriental languages</option>
+                                                <option value="192">linguistics</option>
+                                                <option value="193">environmental sciences</option>
+                                                <option value="194">ecology</option>
+                                                <option value="195">environmental engineering</option>
+                                                <option value="196">environmental health</option>
+                                                <option value="197">environmental management</option>
+                                                <option value="198">environmental planning</option>
+                                                <option value="199">environmental pollution</option>
+                                                <option value="200">environmental quality</option>
+                                                <option value="201">global environmental change</option>
+                                                <option value="202">natural resource</option>
+                                                <option value="203">advanced/graduate dentistry and oral sciences</option>
+                                                <option value="204">alternative and complementary medicine and medical systems</option>
+                                                <option value="205">bioethics/medical ethics</option>
+                                                <option value="206">biomedicine</option>
+                                                <option value="207">chromotherapy</option>
+                                                <option value="208">clinical medicine</option>
+                                                <option value="209">communication disorders sciences and services</option>
+                                                <option value="210">diseases and disorders</option>
+                                                <option value="211">energy and biologically based therapies</option>
+                                                <option value="212">epidemiology</option>
+                                                <option value="213">health</option>
+                                                <option value="214">health care</option>
+                                                <option value="215">history of medicine.</option>
+                                                <option value="216">medical illustration and informatics</option>
+                                                <option value="217">medicine</option>
+                                                <option value="218">optometry</option>
+                                                <option value="219">practical nursing, vocational nursing and nursing assistants</option>
+                                                <option value="220">registered nursing, nursing administration, nursing research and clinical nursing</option>
+                                                <option value="221">rehabilitation and therapeutic professions</option>
+                                                <option value="222">somatic bodywork and related therapeutic services</option>
+                                                <option value="223">veterinary biomedical and clinical sciences</option>
+                                                <option value="224">veterinary medical science</option>
+                                                <option value="225">humanities</option>
+                                                <option value="226">history</option>
+                                                <option value="227">philosophy</option>
+                                                <option value="228">psychology</option>
+                                                <option value="229">religious studies</option>
+                                                <option value="230">civilization</option>
+                                                <option value="231">legal professions and studies</option>
+                                                <option value="232">business law</option>
+                                                <option value="233">constitutional law</option>
+                                                <option value="234">criminal law</option>
+                                                <option value="235">cultural rights</option>
+                                                <option value="236">environmental law</option>
+                                                <option value="237">human rights</option>
+                                                <option value="238">intellectual freedom</option>
+                                                <option value="239">international law</option>
+                                                <option value="240">jurisprudence</option>
+                                                <option value="241">law</option>
+                                                <option value="242">legal history</option>
+                                                <option value="243">legal research and advanced professional studies</option>
+                                                <option value="244">legal support services</option>
+                                                <option value="245">philosophy of law</option>
+                                                <option value="246">public utilities law</option>
+                                                <option value="247">library science</option>
+                                                <option value="248">social security and welfare law</option>
+                                                <option value="249">archives</option>
+                                                <option value="250">bibliographies</option>
+                                                <option value="251">book arts</option>
+                                                <option value="252">printing and publishing history</option>
+                                                <option value="253">libraries</option>
+                                                <option value="254">library administration</option>
+                                                <option value="255">library and archives assisting</option>
+                                                <option value="256">library automation</option>
+                                                <option value="257">library information networks</option>
+                                                <option value="258">library science and administration</option>
+                                                <option value="259">library services</option>
+                                                <option value="260">life sciences</option>
+                                                <option value="261">biological models</option>
+                                                <option value="262">biology</option>
+                                                <option value="263">developmental biology</option>
+                                                <option value="264">gravitational biology</option>
+                                                <option value="265">histology</option>
+                                                <option value="266">metabolic biology</option>
+                                                <option value="267">microbiology</option>
+                                                <option value="268">molecular biology</option>
+                                                <option value="269">parasitology</option>
+                                                <option value="270">pathobiology</option>
+                                                <option value="271">photobiology</option>
+                                                <option value="272">radiation biology</option>
+                                                <option value="273">reproductive biology</option>
+                                                <option value="274">sociobiology</option>
+                                                <option value="275">structural biology</option>
+                                                <option value="276">systemic biology</option>
+                                                <option value="277">tropical biology</option>
+                                                <option value="278">biometrics</option>
+                                                <option value="279">biomathematics, bioinformatics, and computational biology</option>
+                                                <option value="280">biochemistry</option>
+                                                <option value="281">biotechnology</option>
+                                                <option value="282">botany/plant biology</option>
+                                                <option value="283">carbohydrates</option>
+                                                <option value="284">cell/cellular biology and anatomical sciences</option>
+                                                <option value="285">enzymes</option>
+                                                <option value="286">evolution, systematics, and population biology</option>
+                                                <option value="287">genetics</option>
+                                                <option value="288">human anatomy</option>
+                                                <option value="289">lipids</option>
+                                                <option value="290">microbiological sciences and immunology</option>
+                                                <option value="291">molecular medicine</option>
+                                                <option value="292">natural history</option>
+                                                <option value="293">neurobiology and neurosciences</option>
+                                                <option value="294">neurosciences</option>
+                                                <option value="295">proteins</option>
+                                                <option value="296">pharmacology and toxicology</option>
+                                                <option value="297">pharmacology</option>
+                                                <option value="298">preventive medicine</option>
+                                                <option value="299">psychiatry</option>
+                                                <option value="300">surgery</option>
+                                                <option value="301">systems of medicine</option>
+                                                <option value="302">veterinary medicine</option>
+                                                <option value="303">physiology</option>
+                                                <option value="304">physiology, pathology and related sciences</option>
+                                                <option value="305">taxonomy</option>
+                                                <option value="306">zoology/animal biology</option>
+                                                <option value="307">applied mathematics</option>
+                                                <option value="308">mathematics</option>
+                                                <option value="309">mathematical analysis</option>
+                                                <option value="310">mathematic logic</option>
+                                                <option value="311">algebra</option>
+                                                <option value="312">combinatorics</option>
+                                                <option value="313">discrete mathematics</option>
+                                                <option value="314">equations</option>
+                                                <option value="315">geometry</option>
+                                                <option value="316">mathematical foundations</option>
+                                                <option value="317">mathematical optimization</option>
+                                                <option value="318">mathematical simulation and models</option>
+                                                <option value="319">number theory</option>
+                                                <option value="320">statistics</option>
+                                                <option value="321">set theory</option>
+                                                <option value="322">topology</option>
+                                                <option value="323">military sciences</option>
+                                                <option value="324">combat engineering</option>
+                                                <option value="325">military command, control and communication</option>
+                                                <option value="326">military history</option>
+                                                <option value="327">military intelligence</option>
+                                                <option value="328">military logistics</option>
+                                                <option value="329">military medicine</option>
+                                                <option value="330">military navigation and guidance</option>
+                                                <option value="331">military personnel and training</option>
+                                                <option value="332">military strategy and tactics</option>
+                                                <option value="333">warfare</option>
+                                                <option value="334">weapons</option>
+                                                <option value="335">museology</option>
+                                                <option value="336">museum administration</option>
+                                                <option value="337">museum operations</option>
+                                                <option value="338">museum public affairs</option>
+                                                <option value="339">physical sciences</option>
+                                                <option value="340">acoustics</option>
+                                                <option value="341">astronomy and astrophysics</option>
+                                                <option value="342">atmospheric sciences and meteorology</option>
+                                                <option value="343">chemistry</option>
+                                                <option value="344">crystallography</option>
+                                                <option value="345">electricity</option>
+                                                <option value="346">exact sciences</option>
+                                                <option value="347">magnetism</option>
+                                                <option value="348">mechanics</option>
+                                                <option value="349">optics</option>
+                                                <option value="350">physics</option>
+                                                <option value="351">biophysics</option>
+                                                <option value="352">radiation</option>
+                                                <option value="353">thermodynamics</option>
+                                                <option value="354">applied science</option>
+                                                <option value="355">chaos</option>
+                                                <option value="356">laboratory or test facilities</option>
+                                                <option value="357">philosophy of science</option>
+                                                <option value="358">science ethics, values and policy</option>
+                                                <option value="359">sociology of science</option>
+                                                <option value="360">anthropology</option>
+                                                <option value="361">history of science</option>
+                                                <option value="362">criminology</option>
+                                                <option value="363">correctional institutions and procedures</option>
+                                                <option value="364">cultural studies</option>
+                                                <option value="365">economics</option>
+                                                <option value="366">geography</option>
+                                                <option value="367">gerontology</option>
+                                                <option value="368">history of social sciences</option>
+                                                <option value="369">leadership</option>
+                                                <option value="370">political science</option>
+                                                <option value="371">regional science</option>
+                                                <option value="372">social welfare</option>
+                                                <option value="373">sociology</option>
+                                                <option value="374">survey methods</option>
+                                                <option value="375">space sciences</option>
+                                                <option value="376">aerospace engineering</option>
+                                                <option value="377">astronomy</option>
+                                                <option value="378">cosmology</option>
+                                                <option value="379">extraterrestrial life</option>
+                                                <option value="380">interstellar space</option>
+                                                <option value="381">solar system</option>
+                                                <option value="382">space life sciences</option>
+                                                <option value="383">space missions</option>
+                                                <option value="384">space physics</option>
+                                                <option value="385">science and technology</option>
+                                                <option value="386">advanced technology</option>
+                                                <option value="387">electronic equipment and devices</option>
+                                                <option value="388">history of technology</option>
+                                                <option value="389">imaging technology</option>
+                                                <option value="390">instruments</option>
+                                                <option value="391">measurement science</option>
+                                                <option value="392">solid state technology</option>
+                                                <option value="393">surveillance technology</option>
+                                                <option value="394">technology management</option>
+                                                <option value="395">technology policy</option>
+                                                <option value="396">technology transfer</option>
+                                                <option value="397">air transportation</option>
+                                                <option value="398">ground transportation</option>
+                                                <option value="399">marine transportation</option>
+                                                <option value="400">urbanism</option>
+                                                <option value="401">urban studies</option>
+                                                <option value="402">parks and recreation management</option>
+                                                <option value="403">parks, recreation and leisure facilities management</option>
+                                                <option value="404">parks, recreation and leisure studies</option>
+                                                <option value="405">recreation and sport</option>
+                                                <option value="406">therapeutic recreation</option>
+                                                <option value="407">tourism and travel</option>
+                                                <option value="408">aesthetics</option>
+                                                <option value="409">art conservation</option>
+                                                <option value="410">art history</option>
+                                                <option value="411">arts administration</option>
+                                                <option value="412">design ats</option>
+                                                <option value="413">fine arts</option>
+                                                <option value="414">graphic design</option>
+                                                <option value="415">industrial design</option>
+                                                <option value="416">music</option>
+                                                <option value="417">performing arts</option>
+                                              </select>
+                  </div> 
+              </div>
+          </div>
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Name <span class="required">*</span></label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <input type="text" name="name" id="addName" class="form-control" required>
+                  </div> 
+              </div>
+          </div>     
+          
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Status</label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <select name="status" class="form-control">                        
+                        <option value="1">Active</option>
+                        <option value="0">Deactive</option>
+                      </select>
+                  </div> 
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" name="savethis">
+          <button type="submit" class="btn btn-success">Add</button>
+          <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="editStaticModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <form action="" method="post" enctype="multipart/form-data" id="static_Edit">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit The Subject</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Super Group</label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <select name="subject_area" id="editSuper_group" class="form-control" required>
+                        <option value="">Select</option>
+                                                <option value="1">dummy_subject_area</option>
+                                                <option value="2">agricultural and domestic animal</option>
+                                                <option value="3">agricultural and food products processing</option>
+                                                <option value="4">agricultural business and management</option>
+                                                <option value="5">agricultural chemistry</option>
+                                                <option value="6">agricultural engineering</option>
+                                                <option value="7">agricultural mechanization</option>
+                                                <option value="8">agricultural policy</option>
+                                                <option value="9">agricultural production operations</option>
+                                                <option value="10">agricultural public services</option>
+                                                <option value="11">agronomy</option>
+                                                <option value="12">animal sciences</option>
+                                                <option value="13">applied horticulture and horticultural business services</option>
+                                                <option value="14">aquaculture</option>
+                                                <option value="15">food science and technology</option>
+                                                <option value="16">international agriculture</option>
+                                                <option value="17">area studies</option>
+                                                <option value="18">ethnic studies</option>
+                                                <option value="19">gender studies</option>
+                                                <option value="20">age groups</option>
+                                                <option value="21">demography</option>
+                                                <option value="22">population control</option>
+                                                <option value="23">accounting and related services</option>
+                                                <option value="24">business administration, management and operations</option>
+                                                <option value="25">business ethics</option>
+                                                <option value="26">business history</option>
+                                                <option value="27">business operations support and assistant services</option>
+                                                <option value="28">business or industry</option>
+                                                <option value="29">business/commerce</option>
+                                                <option value="30">business/managerial economics</option>
+                                                <option value="31">commerce</option>
+                                                <option value="32">construction management</option>
+                                                <option value="33">decision science</option>
+                                                <option value="34">remote business</option>
+                                                <option value="35">entrepreneurial and small business operations</option>
+                                                <option value="36">finance and financial management services</option>
+                                                <option value="37">general sales, merchandising and related marketing operations</option>
+                                                <option value="38">hospitality administration and management</option>
+                                                <option value="39">human resources management and services</option>
+                                                <option value="40">insurance</option>
+                                                <option value="41">international business</option>
+                                                <option value="42">labor studies</option>
+                                                <option value="43">management</option>
+                                                <option value="44">management information systems and services</option>
+                                                <option value="45">management sciences and quantitative methods</option>
+                                                <option value="46">marketing</option>
+                                                <option value="47">organizational theory and behavior</option>
+                                                <option value="48">real estate</option>
+                                                <option value="49">specialized sales, merchandising and marketing operations</option>
+                                                <option value="50">taxation</option>
+                                                <option value="51">communication and journalism</option>
+                                                <option value="52">telecommunications management</option>
+                                                <option value="53">communication and media studies</option>
+                                                <option value="54">communication skills</option>
+                                                <option value="55">interpersonal communication</option>
+                                                <option value="56">journalism</option>
+                                                <option value="57">mass communication</option>
+                                                <option value="58">mass media</option>
+                                                <option value="59">public relations and applied communication</option>
+                                                <option value="60">publishing</option>
+                                                <option value="61">radio, television, and digital communication</option>
+                                                <option value="62">sociology of communication</option>
+                                                <option value="63">computer and information sciences</option>
+                                                <option value="64">computer applications</option>
+                                                <option value="65">computer hardware</option>
+                                                <option value="66">computer methods</option>
+                                                <option value="67">computer networks</option>
+                                                <option value="68">computer programming</option>
+                                                <option value="69">computer science</option>
+                                                <option value="70">computer security</option>
+                                                <option value="71">computer software and media applications</option>
+                                                <option value="72">computer systems</option>
+                                                <option value="73">computer systems analysis</option>
+                                                <option value="74">computer systems networking and telecommunications</option>
+                                                <option value="75">computer technology</option>
+                                                <option value="76">computer/information technology administration and management</option>
+                                                <option value="77">data entry/microcomputer applications</option>
+                                                <option value="78">data processing</option>
+                                                <option value="79">information management</option>
+                                                <option value="80">information science/studies</option>
+                                                <option value="81">information systems</option>
+                                                <option value="82">information technology</option>
+                                                <option value="83">information theory</option>
+                                                <option value="84">earth sciences</option>
+                                                <option value="85">atmospheric sciences</option>
+                                                <option value="86">earth observation</option>
+                                                <option value="87">geochronology</option>
+                                                <option value="88">geology</option>
+                                                <option value="89">geomorphology</option>
+                                                <option value="90">geophysics</option>
+                                                <option value="91">geotechnology</option>
+                                                <option value="92">hydrology</option>
+                                                <option value="93">oceanography</option>
+                                                <option value="94">paleontology</option>
+                                                <option value="95">physical geography</option>
+                                                <option value="96">soil science</option>
+                                                <option value="97">bilingual and  multilingual education</option>
+                                                <option value="98">comparative education</option>
+                                                <option value="99">curriculum and instruction</option>
+                                                <option value="100">curriculum materials</option>
+                                                <option value="101">dropouts</option>
+                                                <option value="102">education</option>
+                                                <option value="103">education philosophy</option>
+                                                <option value="104">education planning</option>
+                                                <option value="105">education policy</option>
+                                                <option value="106">educational psychology</option>
+                                                <option value="107">education systems and institutions</option>
+                                                <option value="108">education technology</option>
+                                                <option value="109">education trends</option>
+                                                <option value="110">educational administration</option>
+                                                <option value="111">educational administration and supervision</option>
+                                                <option value="112">educational assessment, evaluation, and research</option>
+                                                <option value="113">educational curriculum studies</option>
+                                                <option value="114">educational finance</option>
+                                                <option value="115">educational philosophy</option>
+                                                <option value="116">educational planning</option>
+                                                <option value="117">educational media design</option>
+                                                <option value="118">international and comparative education</option>
+                                                <option value="119">social and philosophical foundations of education</option>
+                                                <option value="120">special education and teaching</option>
+                                                <option value="121">student counseling and personnel services</option>
+                                                <option value="122">teacher education and professional development, specific subject areas</option>
+                                                <option value="123">teaching methods</option>
+                                                <option value="124">energy</option>
+                                                <option value="125">alternative energy</option>
+                                                <option value="126">bioenergy</option>
+                                                <option value="127">electrical energy</option>
+                                                <option value="128">energy consumption</option>
+                                                <option value="129">energy development</option>
+                                                <option value="130">energy economics</option>
+                                                <option value="131">energy management</option>
+                                                <option value="132">energy policy</option>
+                                                <option value="133">energy technology</option>
+                                                <option value="134">fuel technology</option>
+                                                <option value="135">geothermal energy</option>
+                                                <option value="136">nuclear energy</option>
+                                                <option value="137">renewable energy resources</option>
+                                                <option value="138">solar energy</option>
+                                                <option value="139">steam power</option>
+                                                <option value="140">sustainable energy future</option>
+                                                <option value="141">water power</option>
+                                                <option value="142">wind power</option>
+                                                <option value="143">biochemical engineering</option>
+                                                <option value="144">bioengineering</option>
+                                                <option value="145">biological/biosystems engineering</option>
+                                                <option value="146">ceramic sciences and engineering</option>
+                                                <option value="147">chemical engineering</option>
+                                                <option value="148">civil engineering</option>
+                                                <option value="149">computer engineering</option>
+                                                <option value="150">electric engineering</option>
+                                                <option value="151">electrical, electronics and communications engineering</option>
+                                                <option value="152">electromechanical engineering</option>
+                                                <option value="153">electronics</option>
+                                                <option value="154">engineering</option>
+                                                <option value="155">engineering chemistry</option>
+                                                <option value="156">engineering design</option>
+                                                <option value="157">engineering management</option>
+                                                <option value="158">engineering mechanics</option>
+                                                <option value="159">engineering physics</option>
+                                                <option value="160">engineering science</option>
+                                                <option value="161">environmental/environmental health engineering</option>
+                                                <option value="162">forest engineering</option>
+                                                <option value="163">geological/geophysical engineering</option>
+                                                <option value="164">heat engineering</option>
+                                                <option value="165">hydraulic engineering</option>
+                                                <option value="166">industrial engineering</option>
+                                                <option value="167">manufacturing engineering</option>
+                                                <option value="168">materials engineering</option>
+                                                <option value="169">materials sciences</option>
+                                                <option value="170">mechanical engineering</option>
+                                                <option value="171">metallurgical engineering</option>
+                                                <option value="172">mining and mineral engineering</option>
+                                                <option value="173">mining engineering</option>
+                                                <option value="174">naval architecture and marine engineering</option>
+                                                <option value="175">nuclear engineering</option>
+                                                <option value="176">ocean engineering</option>
+                                                <option value="177">optical engineering</option>
+                                                <option value="178">paper science and engineering</option>
+                                                <option value="179">polymer/plastics engineering</option>
+                                                <option value="180">surveying engineering</option>
+                                                <option value="181">systems engineering</option>
+                                                <option value="182">textile sciences and engineering</option>
+                                                <option value="183">vacuum science</option>
+                                                <option value="184">language and litrature</option>
+                                                <option value="185">african languages</option>
+                                                <option value="186">afro-asiatic languages</option>
+                                                <option value="187">american indian languages</option>
+                                                <option value="188">artificial languages</option>
+                                                <option value="189">austronesian and oceanic languages</option>
+                                                <option value="190">indo-european languages</option>
+                                                <option value="191">oriental languages</option>
+                                                <option value="192">linguistics</option>
+                                                <option value="193">environmental sciences</option>
+                                                <option value="194">ecology</option>
+                                                <option value="195">environmental engineering</option>
+                                                <option value="196">environmental health</option>
+                                                <option value="197">environmental management</option>
+                                                <option value="198">environmental planning</option>
+                                                <option value="199">environmental pollution</option>
+                                                <option value="200">environmental quality</option>
+                                                <option value="201">global environmental change</option>
+                                                <option value="202">natural resource</option>
+                                                <option value="203">advanced/graduate dentistry and oral sciences</option>
+                                                <option value="204">alternative and complementary medicine and medical systems</option>
+                                                <option value="205">bioethics/medical ethics</option>
+                                                <option value="206">biomedicine</option>
+                                                <option value="207">chromotherapy</option>
+                                                <option value="208">clinical medicine</option>
+                                                <option value="209">communication disorders sciences and services</option>
+                                                <option value="210">diseases and disorders</option>
+                                                <option value="211">energy and biologically based therapies</option>
+                                                <option value="212">epidemiology</option>
+                                                <option value="213">health</option>
+                                                <option value="214">health care</option>
+                                                <option value="215">history of medicine.</option>
+                                                <option value="216">medical illustration and informatics</option>
+                                                <option value="217">medicine</option>
+                                                <option value="218">optometry</option>
+                                                <option value="219">practical nursing, vocational nursing and nursing assistants</option>
+                                                <option value="220">registered nursing, nursing administration, nursing research and clinical nursing</option>
+                                                <option value="221">rehabilitation and therapeutic professions</option>
+                                                <option value="222">somatic bodywork and related therapeutic services</option>
+                                                <option value="223">veterinary biomedical and clinical sciences</option>
+                                                <option value="224">veterinary medical science</option>
+                                                <option value="225">humanities</option>
+                                                <option value="226">history</option>
+                                                <option value="227">philosophy</option>
+                                                <option value="228">psychology</option>
+                                                <option value="229">religious studies</option>
+                                                <option value="230">civilization</option>
+                                                <option value="231">legal professions and studies</option>
+                                                <option value="232">business law</option>
+                                                <option value="233">constitutional law</option>
+                                                <option value="234">criminal law</option>
+                                                <option value="235">cultural rights</option>
+                                                <option value="236">environmental law</option>
+                                                <option value="237">human rights</option>
+                                                <option value="238">intellectual freedom</option>
+                                                <option value="239">international law</option>
+                                                <option value="240">jurisprudence</option>
+                                                <option value="241">law</option>
+                                                <option value="242">legal history</option>
+                                                <option value="243">legal research and advanced professional studies</option>
+                                                <option value="244">legal support services</option>
+                                                <option value="245">philosophy of law</option>
+                                                <option value="246">public utilities law</option>
+                                                <option value="247">library science</option>
+                                                <option value="248">social security and welfare law</option>
+                                                <option value="249">archives</option>
+                                                <option value="250">bibliographies</option>
+                                                <option value="251">book arts</option>
+                                                <option value="252">printing and publishing history</option>
+                                                <option value="253">libraries</option>
+                                                <option value="254">library administration</option>
+                                                <option value="255">library and archives assisting</option>
+                                                <option value="256">library automation</option>
+                                                <option value="257">library information networks</option>
+                                                <option value="258">library science and administration</option>
+                                                <option value="259">library services</option>
+                                                <option value="260">life sciences</option>
+                                                <option value="261">biological models</option>
+                                                <option value="262">biology</option>
+                                                <option value="263">developmental biology</option>
+                                                <option value="264">gravitational biology</option>
+                                                <option value="265">histology</option>
+                                                <option value="266">metabolic biology</option>
+                                                <option value="267">microbiology</option>
+                                                <option value="268">molecular biology</option>
+                                                <option value="269">parasitology</option>
+                                                <option value="270">pathobiology</option>
+                                                <option value="271">photobiology</option>
+                                                <option value="272">radiation biology</option>
+                                                <option value="273">reproductive biology</option>
+                                                <option value="274">sociobiology</option>
+                                                <option value="275">structural biology</option>
+                                                <option value="276">systemic biology</option>
+                                                <option value="277">tropical biology</option>
+                                                <option value="278">biometrics</option>
+                                                <option value="279">biomathematics, bioinformatics, and computational biology</option>
+                                                <option value="280">biochemistry</option>
+                                                <option value="281">biotechnology</option>
+                                                <option value="282">botany/plant biology</option>
+                                                <option value="283">carbohydrates</option>
+                                                <option value="284">cell/cellular biology and anatomical sciences</option>
+                                                <option value="285">enzymes</option>
+                                                <option value="286">evolution, systematics, and population biology</option>
+                                                <option value="287">genetics</option>
+                                                <option value="288">human anatomy</option>
+                                                <option value="289">lipids</option>
+                                                <option value="290">microbiological sciences and immunology</option>
+                                                <option value="291">molecular medicine</option>
+                                                <option value="292">natural history</option>
+                                                <option value="293">neurobiology and neurosciences</option>
+                                                <option value="294">neurosciences</option>
+                                                <option value="295">proteins</option>
+                                                <option value="296">pharmacology and toxicology</option>
+                                                <option value="297">pharmacology</option>
+                                                <option value="298">preventive medicine</option>
+                                                <option value="299">psychiatry</option>
+                                                <option value="300">surgery</option>
+                                                <option value="301">systems of medicine</option>
+                                                <option value="302">veterinary medicine</option>
+                                                <option value="303">physiology</option>
+                                                <option value="304">physiology, pathology and related sciences</option>
+                                                <option value="305">taxonomy</option>
+                                                <option value="306">zoology/animal biology</option>
+                                                <option value="307">applied mathematics</option>
+                                                <option value="308">mathematics</option>
+                                                <option value="309">mathematical analysis</option>
+                                                <option value="310">mathematic logic</option>
+                                                <option value="311">algebra</option>
+                                                <option value="312">combinatorics</option>
+                                                <option value="313">discrete mathematics</option>
+                                                <option value="314">equations</option>
+                                                <option value="315">geometry</option>
+                                                <option value="316">mathematical foundations</option>
+                                                <option value="317">mathematical optimization</option>
+                                                <option value="318">mathematical simulation and models</option>
+                                                <option value="319">number theory</option>
+                                                <option value="320">statistics</option>
+                                                <option value="321">set theory</option>
+                                                <option value="322">topology</option>
+                                                <option value="323">military sciences</option>
+                                                <option value="324">combat engineering</option>
+                                                <option value="325">military command, control and communication</option>
+                                                <option value="326">military history</option>
+                                                <option value="327">military intelligence</option>
+                                                <option value="328">military logistics</option>
+                                                <option value="329">military medicine</option>
+                                                <option value="330">military navigation and guidance</option>
+                                                <option value="331">military personnel and training</option>
+                                                <option value="332">military strategy and tactics</option>
+                                                <option value="333">warfare</option>
+                                                <option value="334">weapons</option>
+                                                <option value="335">museology</option>
+                                                <option value="336">museum administration</option>
+                                                <option value="337">museum operations</option>
+                                                <option value="338">museum public affairs</option>
+                                                <option value="339">physical sciences</option>
+                                                <option value="340">acoustics</option>
+                                                <option value="341">astronomy and astrophysics</option>
+                                                <option value="342">atmospheric sciences and meteorology</option>
+                                                <option value="343">chemistry</option>
+                                                <option value="344">crystallography</option>
+                                                <option value="345">electricity</option>
+                                                <option value="346">exact sciences</option>
+                                                <option value="347">magnetism</option>
+                                                <option value="348">mechanics</option>
+                                                <option value="349">optics</option>
+                                                <option value="350">physics</option>
+                                                <option value="351">biophysics</option>
+                                                <option value="352">radiation</option>
+                                                <option value="353">thermodynamics</option>
+                                                <option value="354">applied science</option>
+                                                <option value="355">chaos</option>
+                                                <option value="356">laboratory or test facilities</option>
+                                                <option value="357">philosophy of science</option>
+                                                <option value="358">science ethics, values and policy</option>
+                                                <option value="359">sociology of science</option>
+                                                <option value="360">anthropology</option>
+                                                <option value="361">history of science</option>
+                                                <option value="362">criminology</option>
+                                                <option value="363">correctional institutions and procedures</option>
+                                                <option value="364">cultural studies</option>
+                                                <option value="365">economics</option>
+                                                <option value="366">geography</option>
+                                                <option value="367">gerontology</option>
+                                                <option value="368">history of social sciences</option>
+                                                <option value="369">leadership</option>
+                                                <option value="370">political science</option>
+                                                <option value="371">regional science</option>
+                                                <option value="372">social welfare</option>
+                                                <option value="373">sociology</option>
+                                                <option value="374">survey methods</option>
+                                                <option value="375">space sciences</option>
+                                                <option value="376">aerospace engineering</option>
+                                                <option value="377">astronomy</option>
+                                                <option value="378">cosmology</option>
+                                                <option value="379">extraterrestrial life</option>
+                                                <option value="380">interstellar space</option>
+                                                <option value="381">solar system</option>
+                                                <option value="382">space life sciences</option>
+                                                <option value="383">space missions</option>
+                                                <option value="384">space physics</option>
+                                                <option value="385">science and technology</option>
+                                                <option value="386">advanced technology</option>
+                                                <option value="387">electronic equipment and devices</option>
+                                                <option value="388">history of technology</option>
+                                                <option value="389">imaging technology</option>
+                                                <option value="390">instruments</option>
+                                                <option value="391">measurement science</option>
+                                                <option value="392">solid state technology</option>
+                                                <option value="393">surveillance technology</option>
+                                                <option value="394">technology management</option>
+                                                <option value="395">technology policy</option>
+                                                <option value="396">technology transfer</option>
+                                                <option value="397">air transportation</option>
+                                                <option value="398">ground transportation</option>
+                                                <option value="399">marine transportation</option>
+                                                <option value="400">urbanism</option>
+                                                <option value="401">urban studies</option>
+                                                <option value="402">parks and recreation management</option>
+                                                <option value="403">parks, recreation and leisure facilities management</option>
+                                                <option value="404">parks, recreation and leisure studies</option>
+                                                <option value="405">recreation and sport</option>
+                                                <option value="406">therapeutic recreation</option>
+                                                <option value="407">tourism and travel</option>
+                                                <option value="408">aesthetics</option>
+                                                <option value="409">art conservation</option>
+                                                <option value="410">art history</option>
+                                                <option value="411">arts administration</option>
+                                                <option value="412">design ats</option>
+                                                <option value="413">fine arts</option>
+                                                <option value="414">graphic design</option>
+                                                <option value="415">industrial design</option>
+                                                <option value="416">music</option>
+                                                <option value="417">performing arts</option>
+                                              </select>
+                  </div> 
+              </div>
+          </div>
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Name <span class="required">*</span></label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <input type="text" name="name" class="form-control" required id="editName">
+                  </div> 
+              </div>
+          </div>          
+          
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Status</label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <select name="status" id="editApproved" class="form-control">
+                        <option value="1">Active</option>
+                        <option value="0">Deactive</option>
+                      </select>
+                  </div> 
+              </div>
+          </div>
+
+          <div class="form-group mb-3">  
+            <div class="row">
+                <div class="col-sm-3">
+                    <label class="pull-right">Weightage</label>
+                </div>
+                <div class="col-sm-9">     
+                    <input type="number" name="weightage" min="1" max="1000" class="form-control" id="editWeightage" placeholder="Weightage">
+                </div>
+            </div>
+          </div> 
+            <input type="hidden" name="weightage" value='1' class="form-control" id="editWeightage" placeholder="Weightage">
+
+
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" name="id" id="editId">
+          <input type="hidden" name="updatethis"> 
+          <button type="submit" class="btn btn-success">Update</button>
+          <button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="modal fade bs-modal-sm" id="status-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm" style="margin:200px auto;">
+    <div class="modal-content" >
+    <div class="modal-header" style="border:none;">
+        <!-- <button type="button" class="close btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+        <span aria-hidden="true">&times;</span></button>   -->           
+    </div>
+
+    <form action="" method="post" enctype="multipart/form-data" id="statusForm">
+        <div class="modal-body text-center">
+            <h3 class="modal-title">
+                <strong id="status-message">You want to Active this ?</strong>
+            </h3>
+            <input type="hidden" name="id" id="status-id" required>
+            <input type="hidden" name="status" id="status-value" required>
+        </div>
+        <div class="modal-footer" style="border:none;">              
+            <div class="col-xs-6 col-lg-offset-3">
+                <button type="submit" name="submit_status" class="btn btn-success pull-left">Yes</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+            </div>
+        </div>
+    </form> 
+    
+    </div>        
+    </div>      
+</div>
+<!-- <div class="modal fade bs-modal-lg" id="assign-item">
+  <div class="modal-dialog modal-lg" style="">
+      <div class="modal-content" >
+          <div class="modal-header" style="border:none;">    
+            <h4 class="modal-title">Assign This</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form action="master/assign_entity" method="post">
+          <div class="modal-body profile-modal-body" style="">
+
+            <div class="row">
+              <div class="col-12">
+                <div class="mb-3">
+                  <label for="subjects_active" class="form-label">Subjects</label>
+                  <input type="hidden" name="id" id="assign-item-id" required>
+                  <input type="text" id="assign-item-name"  class="form-control" readonly  style="width:100%;">
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="mb-3">
+                  <div class="input-group">
+                    <select name="id_new" class="form-select subjects_active" required style="width:100%;">
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <input type="hidden" name="table" value="subjects" required>
+            <input type="hidden" name="redirect" value="master/subjectslist" required>
+          </div>
+          <div class="modal-footer" style="border:none;">              
+              <div class="col-12 text-center" >
+                  <button type="submit" class="btn btn-danger pull-left">Yes</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">No</button>
+              </div>
+          </div>
+
+          </form> 
+      </div>       
+  </div>      
+</div> -->
+
+</main>
+<!-- End #main -->
+<!-- ======= Start Footer ======= -->
+<footer id="footer_sidebar" class="footer_sidebar">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+    </div>
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Switch Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 text-center">
+                <label for="" class="form-label">
+
+                                      <h4>You are login with Sponsor account .</h4> 
+                    if you want to login with Applicant account click this
+                    <br><br>
+                    <a href="" class="btn btn-outline-primary">Login with Applicant account</a>
+                                      <h4>You are login with Applicant account . </h4>
+                    if you want to login with Sponsor account click this
+                    <br><br>
+                    <a href="" class="btn btn-outline-primary">Login with Sponsor account</a>
+                  
+                </label>
+            </div>
+          </div> 
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade bs-modal-sm" id="exceedLimitModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-sm" style="margin:200px auto;">
+	<div class="modal-content" >
+		<div class="modal-header" style="border:none;">         
+		</div>
+		<div class="modal-body text-center">
+			<h3 class="modal-title">
+				<strong id="exceedLimit">You are Exceed limit</strong>
+			</h3>
+			<br>
+		</div>
+		<div class="modal-footer" style="border:none;">              
+			<div class="col-12">
+				<button type="button" class="btn btn-success float-end" data-bs-dismiss="modal"> Ok </button>
+			</div>
+		</div>
+	</div>        
+	</div>      
+</div>
+ 
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<script type="text/javascript">
+
+    //$(document).ready(function(){
+    function formatResult(item) {
+          if (!item.id) {
+              return item.text; 
+          }
+          //console.log(item);
+          var dp = item.dp;
+          var dp_src = '/static/images/dp_default.png';
+          if(item.dp!=null){
+              dp_src = '/static/images/dp/'+ item.dp;
+          }
+          var full_name = item.first_name;
+          var organization_name = item.organization.name;
+          var location = '';
+          if(item.city != null){
+              location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+          }else if(item.state != null){
+              location = item.state.name +' '+ item.country.name;
+          }else if(item.country != null){
+              location = item.country.name;
+          }else{
+              location = '';
+          }
+  
+          var $item = $('<div class="formatResultUser">'+
+              '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+              '<div class="textdiv">'+
+                  '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                  '<span class="organization">' + organization_name + '</span>'+
+              '</div>'+
+          '</div>');
+  
+          return $item;
+    }
+    function formatSelection(item) {
+        if (!item.id) {
+            return item.text; 
+        }
+        if (item.selected) {
+            var dp = item.element.getAttribute('data-dp');
+            var dp_src = '/static/images/dp_default.png';
+            if(dp!=''){
+                dp_src = '/static/images/dp/'+ dp;
+            }
+            var full_name = item.element.getAttribute('data-name');
+            var location = item.element.getAttribute('data-country_name');
+            var organization_name = item.element.getAttribute('data-organization_name');  
+        }
+        else{
+            var dp = item.dp;
+            var dp_src = '/static/images/dp_default.png';
+            if(item.dp!=null){
+                dp_src = '/static/images/dp/'+ item.dp;
+            }
+            var full_name = item.first_name;
+            var organization_name = item.organization.name;
+            var location = '';
+            if(item.city != null){
+                location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+            }else if(item.state != null){
+                location = item.state.name +' '+ item.country.name;
+            }else if(item.country != null){
+                location = item.country.name;
+            }else{
+                location = '';
+            }
+        }
+
+        var $item = $('<div class="formatResultUser">'+
+                '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+                '<div class="textdiv">'+
+                    '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                    '<span class="organization">' + organization_name + '</span>'+
+                '</div>'+
+            '</div>');
+
+        return $item;
+    }
+    //});
+  
+</script>
+
+
+<script type="text/javascript">
+
+  $('#filter_status').select2({theme: 'bootstrap-5', placeholder: 'Select Status',});
+  $('#filter_createdby').select2({theme: 'bootstrap-5', placeholder: 'Select createdby',});
+  $('#filter_category').select2({theme: 'bootstrap-5',placeholder: 'Select Category',});
+  
+
+  $('#add-new-static').on('click', function(){
+      $('#addStaticModal').modal('show');
+  })
+  $('#static_Add').validate({
+      rules: {
+          name: {                    
+              required: true,
+              remote:{
+                  url: 'master/check_if_exists',
+                data: {table: function() { return "subjects"; },
+                        field: function() { return "name"; }, 
+                        value: function() { return $('#addName').val(); } },
+                type: "post",
+              }
+          },
+      },
+      messages: {
+          name: {                    
+              required: 'Please enter name',
+              remote: 'This name already exists'
+          }                                
+      },
+      highlight: function(element) {
+          $(element).closest('.form-group').addClass('error');
+      },
+      success: function(element) {
+          $(element).closest(".form-group").removeClass("error");
+      }
+  });
+  $('#static_Edit').validate({
+      rules: {
+          name: {                    
+              required: true,
+              remote:{
+                url: 'master/check_if_exists',
+                data: {table: function() { return "subjects"; },
+                        field: function() { return "name"; }, 
+                        value: function() { return $('#editName').val(); },
+                        id: function() { return $('#editId').val(); }},
+                type: "post",
+              }
+          },
+      },
+      messages: {
+          name: {                    
+              required: 'Please enter name',
+              remote: 'This name already exists'
+          }                                
+      },
+      highlight: function(element) {
+          $(element).closest('.form-group').addClass('error');
+      },
+      success: function(element) {
+          $(element).closest(".form-group").removeClass("error");
+      }
+  });
+
+  function editItem(id){
+    //alert(id); die();
+    $('#editId').val(id);
+    $.ajax({
+        type: "POST",
+        url: "master/fetch_subject",
+        data: {id: id},
+        cache: false,
+        success: function(result)
+        {                                 
+            result = JSON.parse(result); 
+            //alert(result); die();                       
+            $('#editSuper_group').val(result[0].subject_area);
+            $('#editName').val(result[0].name);
+            //$('#editCode').val(result[0].sjr_code);
+            $('#editWeightage').val(result[0].weightage);
+            $('#editApproved').val(result[0].status).trigger('change');            
+            $('#editStaticModal').modal('show');
+        }
+    });
+  }
+
+  function statusDeactive(id){
+		$('#status-id').val(id);
+    $('#status-value').val(0);
+    $('#status-message').text('You want to Deactive this ?');
+		$('#status-modal').modal('show');
+	}
+  function statusActive(id){
+		$('#status-id').val(id);
+    $('#status-value').val(1);
+    $('#status-message').text('You want to Active this ?');
+		$('#status-modal').modal('show');
+	}
+
+</script>
+<script type="text/javascript">
+
+  $('.subjects').select2({
+		placeholder: 'Search Subjects',
+		theme: 'bootstrap-5',
+		tags: true,
+		tokenSeparators: [","],
+		createTag: function (tag) {
+			return {
+				id: tag.term,
+				text: tag.term,
+				// add indicator:
+				isNew : true
+			};
+		},
+
+		ajax: {
+			type: "POST",
+			url:"centralized/search_dropdown_for_user",
+			delay: 250,
+			dataType: 'json',
+			data: function (params) {
+				return {
+					search: params.term, // search term
+					table: 'subjects',
+					field: 'name',
+					//page: params.page
+				};
+			},
+			processResults: function (data, params) {
+				//params.page = params.page || 1;
+				return {
+					//results: data.items,
+					//pagination: {more: (params.page * 30) < data.total_count}
+					results: $.map(data, function (item){
+						return {
+							id: item.id,
+							text: item.name,
+						}
+					})
+				};
+			},
+			cache: true
+		}
+	});
+
+
+  $('#filter_super_group').select2({
+      placeholder: 'Search Subject Supergroup',
+      theme: 'bootstrap-5',
+      ajax: {
+        type: "POST",
+        url:"centralized/search_dropdown_for_staff",
+        delay: 250,
+        dataType: 'json',
+        data: function (params) {
+          return {
+            search: params.term, // search term
+            table: 'subject_supergroup',
+            field: 'name',
+            //page: params.page
+          };
+        },
+        processResults: function (data, params) {
+          //params.page = params.page || 1;
+          return {
+            //results: data.items,
+            //pagination: {more: (params.page * 30) < data.total_count}
+            results: $.map(data, function (item){
+              return {
+                id: item.id,
+                text: item.name,
+              }
+            })
+          };
+        },
+        cache: true
+      }
+	});
+  $('#filter_subjectarea').select2({
+      placeholder: 'Search Subjects area',
+      theme: 'bootstrap-5',
+      ajax: {
+        type: "POST",
+        url:"centralized/search_dropdown_for_staff",
+        delay: 250,
+        dataType: 'json',
+        data: function (params) {
+          var super_group = $('#filter_super_group').val();
+          return {
+            search: params.term, // search term
+            table: 'subject_areas',
+            field: 'name',
+            field_category: 'super_group',
+            field_category_value: super_group,
+            //page: params.page
+          };
+        },
+        processResults: function (data, params) {
+          //params.page = params.page || 1;
+          return {
+            //results: data.items,
+            //pagination: {more: (params.page * 30) < data.total_count}
+            results: $.map(data, function (item){
+              return {
+                id: item.id,
+                text: item.name,
+              }
+            })
+          };
+        },
+        cache: true
+      }
+	});
+  $('#filter_subject').select2({
+      placeholder: 'Search Subjects',
+      theme: 'bootstrap-5',
+      ajax: {
+        type: "POST",
+        url:"centralized/search_dropdown_for_staff",
+        delay: 250,
+        dataType: 'json',
+        data: function (params) {
+          var subject_area = $('#filter_subjectarea').val();
+          return {
+            search: params.term, // search term
+            table: 'subjects',
+            field: 'name',
+            field_category: 'subject_area',
+            field_category_value: subject_area,
+            //page: params.page
+          };
+        },
+        processResults: function (data, params) {
+          //params.page = params.page || 1;
+          return {
+            //results: data.items,
+            //pagination: {more: (params.page * 30) < data.total_count}
+            results: $.map(data, function (item){
+              return {
+                id: item.id,
+                text: item.name,
+              }
+            })
+          };
+        },
+        cache: true
+      }
+	});
+
+  
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Terms and Conditions</title>
+    <meta name="_token" content="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style_responsive.css') }}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/grantize/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main_frontend_olny.css') }}">
+<!-- Select2 -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between"> 
+    
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="{{ url_for('grantize') }}" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">Grantize</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="https://techiefolk.com/grantize/public/whyus" class="nav-item desktop me-3 ">Why Grantize</a></li>
+        <li><a href="https://techiefolk.com/grantize/public/plans" class="nav-item desktop me-3 ">Plans</a></li>
+        
+        <li>
+            <a href="https://techiefolk.com/grantize/public/sponsor/grants" class="nav-item desktop me-3 ">Grants List</a>
+        </li>
+        
+        <li class="nav-item dropdown2 desktop me-3">
+            <a href="#"><span>Grants</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                <li><button type="button" data-value="all" 			class="grants_status_logout btn btn-sm">All</button></li>
+                <li><button type="button" data-value="open" 		class="grants_status_logout btn btn-sm">Open</button></li>
+                <li><button type="button" data-value="continuous"  	class="grants_status_logout btn btn-sm">Continuous</button></li>
+                <li><button type="button" data-value="commingsoon"  class="grants_status_logout btn btn-sm">Comming Soon</button></li>
+                <li><button type="button" data-value="recentlyclosed" class="grants_status_logout btn btn-sm">Recently Closed</button></li>
+                <li><button type="button" data-value="archived" 	class="grants_status_logout btn btn-sm">Archived</button></li>
+            </ul>
+                    </li>
+        
+        <li><a href="https://techiefolk.com/grantize/public/sponsors" class="nav-item desktop me-3 ">Sponsors</a></li>
+        <li><a href="https://techiefolk.com/grantize/public/blogs" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="https://techiefolk.com/grantize/public/faqs" class="nav-item desktop me-3 ">Help</a></li>
+    
+
+            
+            
+        </ul>
+    </nav>
+
+        <a href="https://techiefolk.com/grantize/public/login" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+
+
+<!-- End Sidebar-->
+<main id="main" class="main">
+
+
+
+<!-- ======= Breadcrumbs ======= -->
+<!-- <div class="breadcrumbs">
+    <div class="page-header d-flex align-items-center" style="background-image: url('assets/img/page-header.jpg');">
+        <div class="container position-relative">
+            <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+                <h2>Pricing</h2>
+                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="container">
+            <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Pricing</li>
+            </ol>
+        </div>
+    </nav>
+</div> -->
+<!-- End Breadcrumbs -->
+<div class="container" style="min-height:50vh;">
+    <div class="page-header">
+        <br>
+        <h1 class="page-title">Terms of Service</h1>
+    </div>
+    <div class="page-content">
+        <p>Sister Lab LLC (hereafter &quot;Sister Lab,&quot; &quot;Service Provider,&quot; &quot;us,&quot; or &quot;our&quot;) welcomes you to Grantize.com (after this &quot;Service&quot; or &quot;Grantize&quot;). By using Grantize.com (the &quot;Website&quot;), you signify your Agreement to abide by these Terms of Use (referred to as &quot;Agreement&quot;). We urge you to carefully review these Terms of Use before registering or subscribing to Grantize (the &quot;Service&quot;). Your use of the Website and Service indicates your acceptance of this Agreement and the Grantize Privacy Policy (http://www.Grantize.com/privacy). Please be aware that Sister Lab reserves the right to modify this<br />
+Agreement at its discretion, with such changes becoming effective upon publication on the Website.Your continued use of the Service post any such updates acknowledges your acknowledgment of these modifications. This Agreement is a legally binding contract between you and Sister Lab LLC, applicable when you place an order or become a member on Grantize.com. This Agreement grants you a non- exclusive, non-transferable, and revocable license to access and utilize our online Services.</p>
+
+<p><strong>Service description.</strong>&nbsp;Grantize offers an extensive searchable database of government (federal and state) and non-government (corporate, foundation, and university)-sponsored research grants, fellowships, awards, prizes, internships, and other funding opportunities. It allows you to filter grants of interest based on different criteria. If available, we also provide the sponsor&#39;s details and URL (third-party websites). While their services may benefit you, they are independent enterprises over which we have no influence or endorsement. You acknowledge that you will visit them and use their services at your own risk. You also accept that free registration and paid subscriptions contain our service notifications, administrative messages, and survey invitations. Unless otherwise noted, this Agreement applies to any new features that enhance the Service, including providing new features and properties.</p>
+
+<p><strong>Property rights</strong>.&nbsp;Sister Lab holds all Website and Service property rights. Without written permission, you may not edit, duplicate, publish, transmit, distribute, display, or sell proprietary information. Without the owner&#39;s written consent, you cannot post, distribute, or reproduce copyrighted content,<br />
+trademarks, or other proprietary information.</p>
+
+<p><strong>Sign in.</strong>&nbsp;To subscribe, you must submit your legal name, email address, and other requested<br />
+information. Shared logins are strictly prohibited. Keep your Account and Password secure. Sister Lab<br />
+won&#39;t be liable if you don&#39;t follow this security rule.</p>
+
+<p><strong>No Compensation for Submitted Ideas:</strong>&nbsp;Except for terms outlined within the Online Services, we do not<br />
+offer payment or any form of compensation in exchange for the feedback, suggestions, or ideas<br />
+(&quot;Comments&quot;) you provide. Should you anticipate remuneration or other benefits, kindly refrain from<br />
+posting or sharing your Comments. You hereby agree that any Comments or suggestions you share<br />
+become our sole property, with no expectation of confidentiality attached. Moreover, we shall not be<br />
+held responsible for using or disclosing any Comments.</p>
+
+<p><strong>Grant of License:</strong>&nbsp;By sharing Comments, you grant us an irrevocable, royalty-free, unrestricted, non-<br />
+exclusive, worldwide license to utilize, modify, copy, sublicense, transmit, publicly perform, or display<br />
+these Comments for any purpose, commercial or otherwise, without entitling you to compensation.</p>
+
+<p><strong>Distinct Legal Relationship:</strong>&nbsp;It&#39;s essential to recognize that you and Sister Lab are not affiliated as<br />
+partners, franchisees, or agents within the context of this Agreement. Neither party possesses the<br />
+authority to represent, establish contracts on behalf of, or legally bind the other. This Agreement<br />
+establishes the exclusive relationship between you and Sister Lab.</p>
+
+<p><strong>Age Restrictions:</strong>&nbsp;We do not collect personal information from individuals under the age of 18. If you are<br />
+a parent or legal guardian and suspect that a child under 18 has provided personal information on this<br />
+site, please get in touch with us promptly at support@Grantize.com. Grantize enforces an age<br />
+requirement of 18 years for users. Membership to the Service is nullified in locations where it is<br />
+prohibited. By utilizing the Website, you affirm that you possess the requisite rights, permissions, and<br />
+capability to enter into this Agreement and adhere to its stipulations.</p>
+
+<p><strong>Unauthorized Usage:</strong>&nbsp;This Website is designed solely for human utilization. The creation of accounts by<br />
+automated &quot;bots&quot; is strictly prohibited. You are not permitted to manipulate, modify, or compromise<br />
+the integrity of the Service or any other website in an attempt to create an affiliation with Sister Lab.<br />
+Reverse engineering or reuse of public source code is prohibited. Any activities involving javascript,<br />
+Sister Lab&#39;s proprietary code, worms, viruses, or disruptive programming are strictly forbidden. You<br />
+commit to refraining from altering or using modified software, including for purposes of unauthorized<br />
+access to the Service. Your access to the Service must exclusively occur through the designated Sister<br />
+Lab interface. It is further agreed that the Service shall not be used for permanent storage or backup<br />
+purposes.</p>
+
+<p><strong>Enforcement Measures</strong>:&nbsp;In the event that Sister Lab determines, at its sole discretion, that you are in<br />
+breach of these Terms, we reserve the right to implement technological measures aimed at inhibiting or<br />
+restricting your access to or use of the Services. Additionally, Sister Lab maintains the prerogative to<br />
+curtail or limit Registrants and Members from specific IP addresses from accessing the Website as<br />
+necessary to ensure the integrity of the Service.</p>
+
+<p><strong>Subscriptions and Pricing:</strong>&nbsp;The process of registering on this Website is complimentary. Upon<br />
+registration, users, referred to as &quot;Registrants,&quot; are granted access to select Service features and<br />
+offerings. However, in order to access supplementary features and tools, payment for our Service is<br />
+required. The current subscription plans and associated costs are detailed on<br />
+www.Grantize.com/plans_and_pricing, which shall be collectively referred to as &quot;Subscription Policies.&quot;<br />
+The Subscription Fee, inclusive of any applicable taxes, is denominated and processed in US dollars.</p>
+
+<p><strong>Modification of Features and Functionality:</strong>&nbsp;Sister Lab holds the authority to enhance and revise Service<br />
+features and functionality as deemed necessary. It is essential to note that unless explicitly specified<br />
+otherwise, this Agreement categorizes all paying subscribers as &quot;Members,&quot; irrespective of renewal<br />
+terms or pricing tiers.</p>
+
+<p><strong>Billing and Charges</strong>:&nbsp;By utilizing our Service, you commit to remit to Sister Lab the specified subscription<br />
+fee (&quot;Subscription Fee&quot;) delineated on www.Grantize.com/subscription_plans_and_pricing for the<br />
+duration of your Subscription (&quot;Subscription Period&quot;). Subscriptions at Grantize are available on either a<br />
+monthly or annual basis.</p>
+
+<p><strong>Secure Payment Process:</strong>&nbsp;Sister Lab employs a secure online SSL-protected payment gateway to handle<br />
+billing for the Service. Your billing details are not retained on our servers; they are securely stored by our&nbsp;trusted payment processing partner. You grant authorization to Sister Lab to debit your credit card<br />
+(referred to as your &quot;Payment Method&quot;) for any usage of the Service, whether by you or anyone,<br />
+including authorized representatives, utilizing your Account. Even after receipt of payment, Sister Lab<br />
+retains the right to rectify any inaccuracies in billing.</p>
+
+<p><strong>Invoicing and Account Balances:</strong>&nbsp;In cases where Sister Lab does not receive payment from your<br />
+Payment Method and you do not update or delete your Account, you authorize Sister Lab to persist in<br />
+issuing invoices and agree to settle all outstanding Account balances upon demand. Maintaining up-to-<br />
+date billing account information is imperative.</p>
+
+<p><strong>Payment Method Update and Security</strong>:&nbsp;If your Payment Method is invalidated (due to factors such as<br />
+loss or theft) or if you become aware of any potential security breach, such as unauthorized access to<br />
+your username or password, it is crucial to notify Sister Lab at support@grantize.com promptly.</p>
+
+<p><strong>Free Trial and Billing</strong>:&nbsp;If you fail to cancel before the end of your free trial, Sister Lab will initiate billing<br />
+for monthly subscription fees aligned with your specific Subscription Period using your designated<br />
+Payment Method. No explicit notification will be furnished by Sister Lab upon the conclusion of your<br />
+free trial or paid Subscription. To prevent incurring charges on your Payment Method, it is necessary to<br />
+cancel by midnight Central Standard Time (CST) on the final day of your free trial.</p>
+
+<p><strong>Auto-Renewal of Subscription:</strong>&nbsp;The availability of the Service is contingent on your active &quot;Subscription<br />
+Period.&quot; Should you not opt to cancel, your Subscription will automatically renew. To avoid being billed,<br />
+you must cancel your Subscription before the renewal. Sister Lab may not issue auto-renewal<br />
+notifications. For individuals with a monthly subscription, the Subscription Fee for the ensuing month<br />
+will be charged unless canceled before the commencement of the upcoming Subscription Period. The<br />
+initial Subscription Fee will be invoiced either at the initiation of your Subscription or upon the<br />
+conclusion of your free trial, depending on which event transpires earlier. Subsequent invoicing will<br />
+occur each month, coinciding with the commencement date of your Subscription. You consent to settle<br />
+all recurring charges before initiating a cancellation.</p>
+
+<p><strong>Account Cancellation:&nbsp;</strong>You can cancel or downgrade your Account through the Billing and Subscription<br />
+page. Please be aware that you are responsible for initiating an Account cancellation. Upon logging in,<br />
+your Account can be terminated by selecting the &quot;Billing and Subscription&quot; link on your My Account<br />
+page (www.Grantize.com/user). It&#39;s important to note that sending an email to the site&#39;s support team is<br />
+not valid for Account deactivation. To finalize the cancellation, click &quot;Update My Account.&quot; Should you<br />
+cancel your Subscription before the end of the ongoing Subscription Period, Sister Lab will promptly<br />
+cease your access to the Service and stop billing you for subsequent Subscription Periods. Any charges<br />
+incurred before Sister Lab finalizes the Account closure will remain your responsibility.</p>
+
+<p><strong>Changes to the Service:</strong>&nbsp;Sister Lab reserves the right to alter or discontinue the Service, or any of its<br />
+components, without prior notice. By utilizing the Service, you acknowledge that Sister Lab is absolved<br />
+of any liability towards you or any other party arising from modifications, suspensions, or<br />
+discontinuations of the Service.</p>
+
+<p>Non-Resale and Usage Restrictions: Except where explicitly granted by Grantize, you pledge not to<br />
+engage in any of the following activities: reproducing, duplicating, copying, selling, trading, reselling,modifying, creating derivative works, or exploiting for commercial purposes any part of the Service, its<br />
+usage, or access, including its computer code (hereafter referred to as &quot;Software&quot;).</p>
+
+<p><strong>Your Indemnification:</strong> You consent to indemnify and hold Sister Lab, its subsidiaries, affiliates, officers,<br />
+agents, partners, and employees harmless from any claims, losses, liabilities, or demands, which<br />
+encompass reasonable attorneys&#39; fees, presented by a third party due to or stemming from your<br />
+violation of this Agreement or arising from a breach of this Agreement, your warranties, or your<br />
+negligent or deliberate actions, or from the suitability of the matters concerned. This indemnification<br />
+commitment persists beyond the termination or conclusion of this Agreement.</p>
+    </div>
+</div>
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="{{ url_for('grantize') }}" class="logo d-flex align-items-center mb-4">
+          <span>Grantize</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="{{ url_for('grantize') }}">Home</a></li>
+          <li><a href="{{ url_for('grantizewhyus') }}">Why us</a></li>
+          <li><a href="{{ url_for('termsnconditions') }}">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/grantize/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="{{ url_for('grantize') }}">Home</a></li>
+          <li><a href="{{ url_for('grantizewhyus') }}">Why us</a></li>
+          <li><a href="{{ url_for('termsnconditions') }}">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/grantize/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<form action="{{ url_for('grantizebrowsegrants') }}" id="filterFormLogin" method="post">
+    <input type="hidden" name="_token" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">    <input type="hidden" id="grants_status_login" name="grants_status">
+</form>
+
+<form action="https://techiefolk.com/grantize/public/grants" id="filterFormLogout" method="post">
+    <input type="hidden" name="_token" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">    <input type="hidden" id="grants_status_logout" name="grants_status">
+</form>
+<script type="text/javascript">
+
+    //Advance Filter
+    $(document).ready(function(){  
+        $(".grants_status_logout").click(function(){  
+            var grants_status = $(this).attr('data-value'); 
+            $('#grants_status_logout').val(grants_status);
+            $("#filterFormLogout").submit();
+        });
+    });
+    $(document).ready(function(){  
+        $(".grants_status_login").click(function(){  
+            var grants_status = $(this).attr('data-value'); 
+            $('#grants_status_login').val(grants_status);
+            $("#filterFormLogin").submit();
+        });
+    });
+
+</script>
+
+
+</body>
+</html>

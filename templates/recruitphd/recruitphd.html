@@ -1,0 +1,820 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="_token" content="Ucdb9XbHjlvP0oNLjYz9iViPtJx0r2C5DtOD0MNa">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+ 
+<!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">RecruitPhD</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+  
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="{{ url_for('recphdwhyus') }}" class="nav-item desktop me-3 ">Why RecruitPHD</a></li>
+        <li><a href="{{ url_for('recphdplans') }}" class="nav-item desktop me-3 ">Plans</a></li>
+        <li>
+                    <a href="{{ url_for('recphdjobs') }}" class="nav-item desktop me-3 ">Jobs List</a>
+                      <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs List</a> -->
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs List</a> -->
+                  </li>
+        <li>
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs</a> -->
+                            <a href="{{ url_for('recphdjobs') }}" class="nav-item desktop me-3 ">Jobs</a>
+                          <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs</a> -->
+                    </li>
+        <!-- <li>
+            <a href="{//{URL::to('/sponsor/login')}}" class="nav-item desktop me-3 ">Grants List</a>
+            <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Grants List </a>
+        </li> -->
+        <li><a href="{{ url_for('recphdblogs') }}" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="{{ url_for('recphdhelp') }}" class="nav-item desktop me-3 ">Help</a></li>
+    
+  
+          
+      </ul>
+    </nav>
+  
+        <a href="{{ url_for('loginrecphdoptions') }}" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+      
+    </div>
+</header>
+<!-- End Header -->
+<main id="main" class="main">
+
+
+
+
+<!-- ======= Home Banner Section ======= -->
+<section id="home_banner" class="home_banner d-flex align-items-center" style="background-image: url('/static/images/hero-bg.png')">
+  <div class="container">
+    <div class="row gy-4 d-flex justify-content-between">
+      <div class="col-lg-7 order-lg-1 d-flex flex-column justify-content-center welcome-box">
+
+        <h2 data-aos="fade-up">Welcome to <span>RecruitPhD</span></h2>
+        <p data-aos="fade-up" data-aos-delay="100">The Largest and <span>Only platform</span> Solely Dedicated to Recruiting <br>Candidates with Doctoral degrees. <span>Join with Pride.</span></p>
+
+        <form action="https://techiefolk.com/recruitphd/public/jobs" method="post" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+          <input type="hidden" name="_token" value="Ucdb9XbHjlvP0oNLjYz9iViPtJx0r2C5DtOD0MNa" autocomplete="off">          <input type="text" id="filter_title" name="title" class="form-control" placeholder="Search Jobs">
+          <button type="submit" name="submit_title" id="submit_title" class="btn btn-search"><i class="bi bi-search"></i></button>
+        </form>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="7" data-duration="8000">0</span>
+              <p>Total active jobs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="2" data-duration="8000">0</span>
+              <p>Jobs in USA</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="5" data-duration="8000">0</span>
+              <p>Postdoc jobs</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="5" data-duration="8000">0</span>
+              <p>Scientist job</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-lg-4 order-1 order-lg-2 slider-box" data-aos="zoom-out">
+
+         
+        <div class="banners-slider" id="banners-slider">
+           
+          <div class="">
+            <img src="/static/images/930logodefault.png" class="img-fluid" alt="img">
+          </div>
+           
+          <div class="">
+            <img src="/static/images/411logounderpreperation.png" class="img-fluid" alt="img">
+          </div>
+                  </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======= End Home Banner Section ======= -->
+<!-- ======= Home Hot Jobs Section ======= -->
+<section id="hotjobs" class="hotjobs section-bg">
+  <div class="container" data-aos="fade-up">
+    <div class="section-header">
+      <!-- <span>Hot Jobs</span> -->
+      <h2>Hot Jobs</h2>
+    </div>
+
+    <div class="row gy-4">
+      <div class="col-lg-12 col-md-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="hotjobs-slider">
+
+            <div class="" style="">
+              <div class="card">
+                <h3><a href="https://techiefolk.com/recruitphd/public/jobs" class="stretched-link">Jobs in USA</a></h3>
+                <p>Asperiores provident dolor incidunt molestiae dolor ipsam ducimus</p>
+              </div>
+            </div>
+            <div class="" style="">
+              <div class="card">
+                <h3><a href="https://techiefolk.com/recruitphd/public/jobs" class="stretched-link">Postdoc jobs</a></h3>
+                <p>Asperiores provident dolor incidunt molestiae dolor ipsam ducimus</p>
+              </div>
+            </div>
+            <div class="" style="">
+              <div class="card">
+                <h3><a href="https://techiefolk.com/recruitphd/public/jobs" class="stretched-link">Scientist job</a></h3>
+                <p>Asperiores provident dolor incidunt molestiae dolor ipsam ducimus</p>
+              </div>
+            </div>
+            <div class="" style="">
+              <div class="card">
+                <h3><a href="https://techiefolk.com/recruitphd/public/jobs" class="stretched-link">Jobs in Academia</a></h3>
+                <p>Asperiores provident dolor incidunt molestiae dolor ipsam ducimus</p>
+              </div>
+            </div>
+            <div class="" style="">
+              <div class="card">
+                <!-- <div class="card-img">
+                  <img src="assets/img/storage-service.jpg" alt="" class="img-fluid">
+                </div> -->
+                <h3><a href="https://techiefolk.com/recruitphd/public/jobs" class="stretched-link">Jobs in Industry</a></h3>
+                <p>Asperiores provident dolor incidunt molestiae dolor ipsam ducimus</p>
+              </div>
+            </div>
+
+          </div>
+      </div>
+      <!-- End Card Item -->
+    </div>
+  </div>
+</section>
+<!-- End hotjobs Section -->
+<!-- ======= Services Section ======= -->
+ 
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Academic Jobs</h2>
+        <!-- <p>Magnam dolores commodi suscipit.</p> -->
+      </div>
+  
+      <div class="row">
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/1">universiteti politeknik i tiranë.s</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/1">Job title 1</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br><p>Job Description (include responsibilities of the role)</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/1" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/2">universiteti politeknik i tiranë.s</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/2"> What is Lorem Ipsum</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Assistant or Office Manager                    <br><p>vbnmvbnmbnv</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/2" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/3">universiteti politeknik i tiranë.s</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/3">Where can I get some</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br><p>cvbxcvb</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/3" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/4">universiteti politeknik i tiranë.s</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/4">Where does it come from</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br><p>vbcncvbn</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/4" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/6">american museum of natural history</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/6">Postdoc</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Hiring Manager                    <br>                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/6" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/7">universiteti politeknik i tiranë.s</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/7">adf</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br>                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/7" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/8">universiteti politeknik i tiranë.s</a></h4>
+                  <p><a href="https://techiefolk.com/recruitphd/public/jobs/detail/8">test organizational title</a></p>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Recruiter or Talent Acquisition                    <br><p>test job description&nbsp;</p>                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/8" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  
+    <div class="container">
+      <div class="section-title">
+        <h2>Industry Jobs</h2>
+        <!-- <p>Magnam dolores commodi suscipit.</p> -->
+      </div>
+  
+      <div class="row">
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/1">universiteti politeknik i tiranë.s</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br><p>Job Description (include responsibilities of the role)</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/1" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/2">universiteti politeknik i tiranë.s</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Assistant or Office Manager                    <br><p>vbnmvbnmbnv</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/2" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/3">universiteti politeknik i tiranë.s</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br><p>cvbxcvb</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/3" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/4">universiteti politeknik i tiranë.s</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br><p>vbcncvbn</p>
+                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/4" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/6">american museum of natural history</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Hiring Manager                    <br>                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/6" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/7">universiteti politeknik i tiranë.s</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Human Resources Generalist                    <br>                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/7" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+                  <div class="col-lg-4 col-md-6 d-flex align-items-stretch mb-4">
+            <div class="item-box">
+              <div class="row">
+                <div class="col-lg-4">
+                                      <img style="width:100%;" src="/static/images/logos/1.png" class="img-fluid" alt="">
+                                  </div>
+                <div class="col-lg-8">
+                  <h4><a href="https://techiefolk.com/recruitphd/public/jobs/detail/8">universiteti politeknik i tiranë.s</a></h4>
+                </div>
+                <div class="col-lg-12">
+                  <p>Role : Recruiter or Talent Acquisition                    <br><p>test job description&nbsp;</p>                  </p>
+                </div>
+                <div class="col-lg-12" style="">
+                  <a href="https://techiefolk.com/recruitphd/public/jobs/detail/8" class="apply-btn"> Apply</a>
+                </div>
+              </div>
+            </div>
+          </div>
+              </div>
+    </div>
+  </section>
+    <!-- End Services Section -->
+<!-- Home Testimonials Section -->
+ 
+<section id="home_testimonials" class="home_testimonials section-bg">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+        <h3>Testimonials</h3>
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+
+        <div class="swiper">
+          <div class="swiper-wrapper" id="testimonials-slider">
+
+             
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="d-flex">
+                  <img src="/static/images/user1.jpg" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Saul Goodman</h3>
+                    <h4>Ceo & Founder</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+             
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="d-flex">
+                  <img src="/static/images/user2.jpg" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Sara Wilsson</h3>
+                    <h4>Designer</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>
+            
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Testimonials Section -->
+
+
+
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center mb-4">
+          <span>RecruitPhD</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<!-- Jquery ( Production ) -->
+<!-- <script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/development-jquery-3.7.1.min.js')}}"></script>
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<script type="text/javascript">
+
+  //$(document).on('ready', function() {
+      $("#banners-slider").slick({
+          autoplay:true,
+          autoplaySpeed:2000,
+          fade: true,
+          infinite: true,
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+          ],
+      });
+
+      $(".hotjobs-slider").slick({
+          lazyLoad: 'ondemand',
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          responsive: [
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 3,
+                  infinite: true,
+                  dots: true
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 600,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 2
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+          ],
+          dots:true,
+      });
+
+      $("#testimonials-slider").slick({
+          lazyLoad: 'ondemand',
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots:true,
+      });
+  //});
+
+  $(".counter").each(function () {
+      var $this = $(this),
+      countTo = $this.attr("data-countto");
+      countDuration = parseInt($this.attr("data-duration"));
+
+      $({ counter: $this.text() }).animate(
+          {
+            counter: countTo
+          },
+          {
+            duration: countDuration,
+            easing: "linear",
+            step: function () {
+              $this.text(Math.floor(this.counter));
+            },
+            complete: function () {
+              $this.text(this.counter);
+            }
+          }
+      );
+  });
+
+</script>
+
+
+</body>
+</html>

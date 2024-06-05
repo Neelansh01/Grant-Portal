@@ -1,0 +1,235 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background: #fff;
+    color: #444444;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Main
+  --------------------------------------------------------------*/
+  
+  @media (min-width: 1200px) {
+  
+    #main,
+    #footer_sidebar {
+      margin-left: 0px;
+    }
+  } 
+  
+  
+  /*--------------------------------------------------------------
+  # Sidebar
+  --------------------------------------------------------------*/
+  
+  @media (min-width: 1200px) {
+  
+    .toggle-sidebar-btn {
+        display:none;
+    }
+    
+    /* .sidebar .bi-list{
+      cursor: pointer;
+    }
+    .sidebar {
+      display:block;
+    }
+    .toggle-sidebar-btn-mobile{
+      display:none;
+    }
+    .toggle-sidebar .toggle-sidebar-btn {
+      left: -10px;
+    } */
+  
+  }
+  
+  @media (max-width: 1199px) {
+    .sidebar {
+      left: -300px; 
+      /* left: 0px;
+      display:none; */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+  
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer_sidebar {
+      margin-left: 0;
+    }
+  
+    .toggle-sidebar .sidebar {
+      /* left: -300px; */
+      left: 0px;
+    }
+    .sidebar { 
+        left: 0px;
+        display:none; 
+    }
+  } 
+  
+  
+  
+  
+  /*
+  @media (max-width: 1199px) {
+    .sidebar {
+      left: -300px;
+      left: 0px;
+    }
+    .sidebar { display:none; left: 0px;}
+  }
+  
+  @media (min-width: 1200px) {
+  
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer_sidebar {
+      margin-left: 0;
+    }
+  
+    .toggle-sidebar .sidebar {
+      left: -300px;
+      left: 0px;
+    }
+  
+    .sidebar { display:none; left: 0px;}
+    
+  } */
+  
+  
+  /*--------------------------------------------------------------
+  # Sections & Section Header
+  --------------------------------------------------------------*/
+  /* 
+  .section-bg {
+    background-color: #f6f9fe;
+    background-color: #f8f9fa;
+  }
+  
+  section {
+    padding: 80px 0;
+    overflow: hidden;
+  }
+  
+  .section-header {
+    text-align: center;
+    padding: 30px 0; 
+    position: relative;
+  }
+  
+  .section-header h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    color: #001973;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  .section-header h2:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--color-primary);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+  
+  .section-header span {
+    position: absolute;
+    top: 46px;
+    color: rgba(14, 29, 52, 0.06);
+    left: 0;
+    right: 0;
+    z-index: 1;
+    font-weight: 700;
+    font-size: 56px;
+    text-transform: uppercase;
+    line-height: 0;
+  }
+  
+  .section-header p {
+    margin-bottom: 0;
+    position: relative;
+    z-index: 2;
+  }
+  
+  @media (max-width: 640px) {
+    .section-header h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  
+    .section-header span {
+      font-size: 38px;
+    }
+  } 
+  
+  */
+  
+  
+  
+    /*--------------------------------------------------------------
+    # Sections General
+    --------------------------------------------------------------*/
+    section {
+      padding: 60px 0;
+      overflow: hidden;
+    }
+  
+    .section-bg {
+      /* background-color: #f1f7fd; */
+      background-color: #f8f9fa;
+    }
+    .section-bg-white {
+      background-color: #fff;
+    }
+  
+    .section-title {
+      /* text-align: center; */
+      padding-bottom: 30px;
+    }
+    .section-title h2 {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      position: relative;
+      color: #2c4964;
+    }
+    .section-title h2::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 1px;
+      background: #ddd;
+      bottom: 1px;
+      /* left: calc(50% - 60px); */
+    }
+    .section-title h2::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #1977cc;
+      bottom: 0;
+      /* left: calc(50% - 20px); */
+    }
+    .section-title p {
+      margin-bottom: 0;
+    }

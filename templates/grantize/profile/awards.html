@@ -1,0 +1,4179 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Details</title>
+    <meta name="_token" content="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style_responsive.css') }}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/grantize/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main_backend_olny.css') }}">
+<!-- Select2 -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main_backend_olny.css') }}">
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/croppie.css') }}">
+<script src="{{url_for('static', filename='js/grantize/page1/croppie.js')}}"></script>
+
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="http://localhost/grantize/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">Grantize</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        <li><a href="http://localhost/grantize/public/whyus" class="nav-item desktop me-3 ">Why Grantize</a></li>
+        <li><a href="http://localhost/grantize/public/plans" class="nav-item desktop me-3 ">Plans</a></li>
+        <li>
+          <a href="http://localhost/grantize/public/sponsor/grants" class="nav-item desktop me-3 ">Grants List</a>
+        </li>
+        <li class="nav-item dropdown2 desktop me-3">
+            <a href="#"><span>Grants</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><button type="button" data-value="all" 			class="grants_status_login btn btn-sm">All</button></li>
+              <li><button type="button" data-value="open" 		class="grants_status_login btn btn-sm">Open</button></li>
+              <li><button type="button" data-value="continuous"  	class="grants_status_login btn btn-sm">Continuous</button></li>
+              <li><button type="button" data-value="commingsoon"  class="grants_status_login btn btn-sm">Comming Soon</button></li>
+              <li><button type="button" data-value="recentlyclosed" class="grants_status_login btn btn-sm">Recently Closed</button></li>
+              <li><button type="button" data-value="archived" 	class="grants_status_login btn btn-sm">Archived</button></li>
+          </ul>
+        </li>
+        <li><a href="http://localhost/grantize/public/sponsors" class="nav-item desktop me-3 ">Sponsors</a></li>
+        <li><a href="http://localhost/grantize/public/blogs" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="http://localhost/grantize/public/faqs" class="nav-item desktop me-3 ">Help</a></li>
+    
+                                
+            <li class="nav-item dropdown">
+            <a href="#" class="nav-link nav-icon" data-bs-toggle="dropdown">
+                <i class="bi bi-bell"></i>
+                            </a>
+                        </li>
+            <!-- End Notification Nav -->
+            <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                <i class="bi bi-chat-left-text"></i>
+                            </a>
+                        </li>
+            <!-- End Messages Nav -->
+
+            <li class="nav-item dropdown pe-3">
+            <a href="#" class="nav-link nav-profile d-flex align-items-center pe-0" data-bs-toggle="dropdown">
+                                
+                
+                <span class="d-none d-md-block dropdown-toggle ps-2">{{session['loginnname']}}</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                <li class="dropdown-header">
+                <h6>{{session['loginnname']}}</h6>
+                </li>
+                <li>
+                <hr class="dropdown-divider">
+                </li>
+                <li>
+                <a href="{{ url_for('logingrantizeresdash') }}" class="dropdown-item d-flex align-items-center">
+                    <i class="bi bi-person"></i>
+                    <span>My Dashboard</span>
+                </a>
+                </li>
+                <li>
+                <hr class="dropdown-divider">
+                </li>
+                <li>
+                <a href="{{ url_for('grantizeprofile') }}" class="dropdown-item d-flex align-items-center">
+                    <i class="bi bi-person"></i>
+                    <span>My Profile</span>
+                </a>
+                </li>
+                <li>
+                <hr class="dropdown-divider">
+                </li>
+                <li>
+                <a href="#" class="dropdown-item d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#qualificationModal">
+                    <i class="bi bi-gear"></i>
+                    <span>Highest Qualification</span>
+                </a>
+                </li>
+                <li>
+                <hr class="dropdown-divider">
+                </li>
+                <li>
+                <a href="#" class="dropdown-item d-flex align-items-center" data-bs-toggle="modal" data-bs-target="#preferenceModal">
+                    <i class="bi bi-gear"></i>
+                    <span>Preference</span>
+                </a>
+                </li>
+                <li>
+                <hr class="dropdown-divider">
+                </li>
+                <li>
+                <a href="{{ url_for('grantizelogout') }}" class="dropdown-item d-flex align-items-center">
+                    <i class="bi bi-box-arrow-right"></i>
+                    <span>Sign Out</span>
+                </a>
+                </li>
+    
+            </ul>
+            </li>
+            <!-- End Profile Nav -->
+        
+        </ul>
+    </nav>
+
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
+    <li class="nav-item mobile">
+      <a href="http://localhost/grantize/public" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Home</span>
+      </a>
+    </li>
+    <li class="nav-item mobile">
+      <a href="http://localhost/grantize/public/whyus" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Why Grantize</span>
+      </a>
+    </li>
+    <li class="nav-item mobile">
+      <a href="http://localhost/grantize/public/plans" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Plans</span>
+      </a>
+    </li>
+
+
+
+    <li class="nav-heading">My Account</li>
+    <li class="nav-item">
+      <a  href="{{ url_for('grantizeprofile') }}" class="nav-link ">
+        <i class="bi bi-grid"></i>
+        <span>Profile</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{{ url_for('grantizerefreq') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Reference Request</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{{ url_for('logingrantizeresdash') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Dashboard</span>
+      </a>
+    </li>
+
+        
+
+    <li class="nav-item">
+      <a  href="{{ url_for('grantizebrowsegrants') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Browse Grants</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a  href="{{ url_for('grantizesearchquery') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Search Query</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a  href="{{ url_for('grantizefavquery') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Favorite Grants</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a  href="{{ url_for('grantizesavedquery') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Saved Grants</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a  href="{{ url_for('grantizesharedbyme') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Shared by Me</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a href="{{ url_for('grantizesharedwithme') }}" class="nav-link collapsed">
+        <i class="bi bi-grid"></i>
+        <span>Shared with Me</span>
+      </a>
+    </li>
+
+  </ul>
+</aside>
+<!-- End Sidebar-->
+<main id="main" class="main">
+
+    
+
+	<div class="pagetitle">
+	<div class="row">
+		<div class="col-12 col-lg-12">
+					</div>
+
+		<div class="col-12 col-sm-4 col-md-3 order-lg-2 ps-0 pe-0">
+												<button type="button" id="page-section-reorder" class="btn btn-lg btn-tool float-end" title="Reorder"><i class="bi bi-filter-right"></i></button>
+					<button type="button" class="btn btn-lg float-end" data-bs-toggle="modal" data-bs-target="#addModal" title="Add"><i class="bi bi-plus-lg"></i></button>
+					<a href="{{ url_for('grantizeprofile') }}" class="btn btn-lg float-start float-sm-end" title="Back"><i class="bi bi-arrow-left"></i></a>
+									</div>
+		<div class="col-12 col-sm-8 col-md-9 order-lg-1">
+			<h1>Honors and Awards</h1>
+		</div>
+	</div>
+</div> 
+<!-- ======= Profile Section Page ======= -->
+<section class="section profile">
+	<div class="row">
+	<div class="col-xl-12">
+
+		{% for document in documents %}
+		<div class="card mb-1">
+			<div class="card-body profile-organization-outer" id="profile-{{ document.id }}">
+				<div class="row profile-section-info-limited-{{ document.id }}">
+					<div class="col-12 col-lg-12">
+						<div class="btn-group-vertical btn-group-sm float-end" role="group" aria-label="">
+							<button type="button" class="btn btn-outline-dark info-toggle" data-key="{{ document.id }}" title="Expand"><i class="bi bi-fullscreen"></i></button>
+							<a href="javascript:permissionModal(9,'This Entry')" class="btn btn-outline-dark float-end" title="Permission"><i class="bi bi-unlock-fill"></i></a>
+							<button type="button" class="btn btn-outline-dark float-end" data-bs-toggle="modal" data-bs-target="#editModal12"
+									data-doc-id="{{ document.id }}"
+									data-awards="{{ document.awards }}"
+									data-type="{{ document.type }}"
+									data-vdate="{{ document.vdate }}"
+									data-organization="{{ document.organization }}"
+									data-department="{{ document.department }}"
+									data-description="{{ document.description }}"
+									title="Edit">
+								<i class="bi bi-pencil-square"></i>
+							</button>
+							<a class="btn btn-outline-dark float-end" href="javascript:deleteModal({{ document.id }})" title="Delete"><i class="bi bi-trash"></i></a>
+						</div>
+					</div>
+					<div class="col-12 col-lg-12">
+						<div class="profile-organization">
+							<div class="profile-organization-img-div">
+								<img src="http://localhost/sisterlab/public/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+							</div>
+							<div class="profile-organization-info-div">
+								<h3>{{ document.awards }}</h3>
+								<h4><b></b>, <span>{{ document.organization }}, {{ document.department }}</span></h4>
+								<p>{{ document.type }}: [{{ document.vdate }}]</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row profile-section-info-full-{{ document.id }}" style="display: none;">
+					<div class="col-12 col-lg-12">
+						<div class="col-12 col-lg-12">
+							<div class="btn-group-vertical btn-group-sm float-end" role="group" aria-label="">
+								<button type="button" class="btn btn-outline-dark info-toggle" data-key="{{ document.id }}" title="Expand"><i class="bi bi-fullscreen"></i></button>
+								<a href="javascript:permissionModal(9,'This Entry')" class="btn btn-outline-dark float-end" title="Permission"><i class="bi bi-unlock-fill"></i></a>
+								<button type="button" class="btn btn-outline-dark float-end" data-bs-toggle="modal" data-bs-target="#editModal12"
+										data-doc-id="{{ document.id }}"
+										data-awards="{{ document.awards }}"
+										data-type="{{ document.type }}"
+										data-vdate="{{ document.vdate }}"
+										data-organization="{{ document.organization }}"
+										data-department="{{ document.department }}"
+										data-description="{{ document.description }}"
+										title="Edit">
+									<i class="bi bi-pencil-square"></i>
+								</button>
+								<a class="btn btn-outline-dark float-end" href="javascript:deleteModal({{ document.id }})" title="Delete"><i class="bi bi-trash"></i></a>
+							</div>
+						</div>
+						<div class="col-12 col-lg-12">
+							<div class="profile-organization">
+								<div class="profile-organization-img-div">
+									<img src="http://localhost/sisterlab/public/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+								</div>
+								<div class="profile-organization-info-div">
+									<h3>{{ document.awards }}</h3>
+									<h4><b></b>, <span>{{ document.organization }}, {{ document.department }}</span></h4>
+									<p>{{ document.type }}: [{{ document.vdate }}]</p>
+									<pre>
+										</pre>
+									<p><h4>Description: </h4>{{ document.description }}:</p>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endfor %}
+</section>
+<!-- End Profile Section Page --> 
+
+</main>
+<!-- End #main -->
+<!-- ======= Start Footer ======= -->
+<footer id="footer_sidebar" class="footer_sidebar">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+    </div>
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Switch Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 text-center">
+                <label for="" class="form-label">
+
+                                      <h4>You are login with Sponsor account .</h4> 
+                    if you want to login with Applicant account click this
+                    <br><br>
+                    <a href="<?//= base_url().'relogin';?>" class="btn btn-outline-primary">Login with Applicant account</a>
+                                      <h4>You are login with Applicant account . </h4>
+                    if you want to login with Sponsor account click this
+                    <br><br>
+                    <a href="<?//= base_url().'relogin';?>" class="btn btn-outline-primary">Login with Sponsor account</a>
+                  
+                </label>
+            </div>
+          </div> 
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade bs-modal-sm" id="exceedLimitModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-sm" style="margin:200px auto;">
+	<div class="modal-content" >
+		<div class="modal-header" style="border:none;">         
+		</div>
+		<div class="modal-body text-center">
+			<h3 class="modal-title">
+				<strong id="exceedLimit">You are Exceed limit</strong>
+			</h3>
+			<br>
+		</div>
+		<div class="modal-footer" style="border:none;">              
+			<div class="col-12">
+				<button type="button" class="btn btn-success float-end" data-bs-dismiss="modal"> Ok </button>
+			</div>
+		</div>
+	</div>        
+	</div>      
+</div>
+ 
+
+	<!-- Add Modal -->
+	<div class="modal fade" id="addModal">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+		<div class="modal-content">
+
+		<div class="modal-header">
+			<h5 class="modal-title">Add Honors and Awards <strong class="exceedLimit"></strong></h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">	
+			<form action="{{ url_for('grantizeprofileawards') }}" method="post" enctype="multipart/form-data" id="addForm">
+				<input type="hidden" name="createawards" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">				
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="mb-3">
+							<label for="awards" class="form-label">Honors and Awards</label>
+							<!-- <select name="awards" id="awards" class="form-select" style="width:100%">
+							</select> -->
+							<input type="text" name="awards" value="" class="form-select">
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="mb-3">
+							<label for="organisation" class="form-label">Type</label>
+							<div class="input-group">
+								<select name="type" id="award_type" class="form-control" style="width:100%;">
+									<option value="">Select</option>
+																		<option value="State/Regional">State/Regional</option>
+																		<option value="National">National</option>
+																		<option value="International">International</option>
+																	</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2">
+						<div class="mb-3">
+							<label for="date" class="form-label">Date</label>
+							<div class="input-group date" id="date">
+								<input type="text" name="vdate" class="form-control" readonly>
+								<div class="input-group-append">
+									<span class="input-group-text"><i class="bi bi-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-7"> 
+	<div class="mb-3">
+		<label for="organization" class="form-label">Organization</label>
+		<div class="input-group">
+
+						<!-- <select name="organization" id="organization" class="form-select">
+			</select> -->
+			<input type="text" name="organization" value="" class="form-select">
+			
+			<a class="btn btn-outline-secondary" href="javascript:organizationModal()" title="Add Organization"><i class="bi bi-plus-lg"></i></a>
+		</div>
+	</div>
+</div>					<div class="col-lg-5"> 
+	<div class="mb-3">
+		<label for="department" class="form-label">Department</label>
+		<div class="input-group">
+
+						<!-- <select name="department" id="department" class="form-select">
+			</select> -->
+			<input type="text" name="department" value="" class="form-select">	
+		</div>  
+	</div>
+</div> 				</div>
+				<div class="row">
+					<div class="col-12 mb-4">
+						<div class="mb-4">
+							<label for="main_responsibilities" class="form-label">Description</label>
+							<div class="my_div">
+								<div class="input-group">                        
+									<textarea name="description" onkeyup="abstract_keyword(this);" rows="2" cols="100" class="form-control"></textarea>
+								</div>
+							</div>
+							<div id="meta-add-field">
+							</div>  
+							<div class="input-group input-group-sm">
+	<span class="input-group-text">Keywords</span>
+    	<!-- <select name="keyword_description" id="keyword_description_ck" class="form-select" multiple="multiple">
+	</select>	 -->
+	<input type="text" name="keyword_description" value="" class="form-select">	
+	</div> 
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</form> 
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<input type="hidden" name="table_name" value="user_honors_and_awards" form="addForm" >
+			<input type="hidden" name="redirect" value="my_honors_and_awards" form="addForm" >
+			<input type="submit" name="submit" value="Save changes" form="addForm" class="btn btn-primary">
+		</div> 
+
+		</div>
+	    </div>
+	</div>  
+	<!-- Edit Modal -->
+		<div class="modal fade" id="editModal12">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+		<div class="modal-content">
+
+		<div class="modal-header">
+			<h5 class="modal-title">Edit Honors and Awards</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form action="{{ url_for('grantizeprofileawards') }}" method="post" enctype="multipart/form-data" id="editForm12">
+				<input type="hidden" name="editsection" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">    
+				<input type="hidden" name="award_id" id="edit-modal-document-id" value="">         
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="mb-3">
+							<label for="awards" class="form-label">Honors and Awards</label>
+							<input type="text" name="awards" id="edit-modal-awards" class="form-select" style="width:100%">
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="mb-3">
+							<label for="type" class="form-label">Type</label>
+							<select name="type" id="edit-modal-type" class="form-control" style="width:100%;">
+								<option value="">Select</option>
+								<option value="State/Regional">State/Regional</option>
+								<option value="National">National</option>
+								<option value="International">International</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2">
+						<div class="mb-3">
+							<label for="date" class="form-label">Date</label>
+							<div class="input-group date" id="date12">
+								<input type="text" name="vdate" id="edit-modal-vdate" class="form-control" readonly>
+								<div class="input-group-append">
+									<span class="input-group-text"><i class="bi bi-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-7"> 
+						<div class="mb-3">
+							<label for="organization" class="form-label">Organization</label>
+							<input type="text" name="organization" id="edit-modal-organization" class="form-select">
+							<a class="btn btn-outline-secondary" href="javascript:organizationModal()" title="Add Organization"><i class="bi bi-plus-lg"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-5"> 
+						<div class="mb-3">
+							<label for="department" class="form-label">Department</label>
+							<input type="text" name="department" id="edit-modal-department" class="form-select">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="mb-3">
+							<label for="description">Description</label>
+							<textarea name="description" id="edit-modal-description" rows="4" cols="100" class="form-control"></textarea>
+							<div class="input-group input-group-sm">
+								<span class="input-group-text">Keywords</span>
+								<input type="text" name="keyword_description" id="edit-modal-keyword-description" class="form-select">
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<input type="hidden" name="id" value="12" form="editForm12" >
+			<input type="hidden" name="table_name" value="user_honors_and_awards" form="editForm12" >
+			<input type="hidden" name="redirect" value="my_honors_and_awards" form="editForm12" >
+			<input type="submit" name="submit" value="Save changes" form="editForm12" class="btn btn-primary">
+		</div>
+			   
+		</div>
+	    </div>
+	</div>
+		<div class="modal fade" id="editModal42">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+		<div class="modal-content">
+
+		<div class="modal-header">
+			<h5 class="modal-title">Edit Honors and Awards</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form action="http://localhost/grantize/public/researcher/profile/store_profile_info" method="post" enctype="multipart/form-data" id="editForm42">
+				<input type="hidden" name="_token" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">				
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="mb-3">
+							<label for="awards" class="form-label">Honors and Awards</label>
+							<select name="awards" id="awards42" class="form-select" style="width:100%">
+							<option value="3021" selected="selected"></option>
+							</select>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="mb-3">
+							<label for="organisation" class="form-label">Type</label>
+							<div class="input-group">
+								<select name="type" id="award_type42" class="form-control" style="width:100%;">
+									<option value="">Select</option>
+																		<option value="State/Regional"
+																		>State/Regional</option>
+																		<option value="National"
+																		>National</option>
+																		<option value="International"
+									selected									>International</option>
+																	</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2">
+						<div class="mb-3">
+							<label for="date" class="form-label">Date</label>
+							<div class="input-group date" id="date42">
+								<input type="text" name="date" value="" class="form-control" readonly>
+								<div class="input-group-append">
+									<span class="input-group-text"><i class="bi bi-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-7"> 
+	<div class="mb-3">
+		<label for="organization" class="form-label">Organization</label>
+		<div class="input-group">
+
+						<select name="organization" id="organization42"  class="form-select">
+								<option value="13671" selected="selected"></option>
+							</select>
+			
+			<a class="btn btn-outline-secondary" href="javascript:organizationModal()" title="Add Organization"><i class="bi bi-plus-lg"></i></a>
+		</div>
+	</div>
+</div>					<div class="col-lg-5"> 
+	<div class="mb-3">
+		<label for="department" class="form-label">Department</label>
+		<div class="input-group">
+
+						<select name="department" id="department42" class="form-select">
+							</select>
+						
+		</div>  
+	</div>
+</div> 				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="mb-3">
+							<label for="degree">Description</label>
+							<textarea name="description" id="description_ck42" rows="4" cols="100" class="form-control"></textarea>
+							<div class="input-group input-group-sm">
+	<span class="input-group-text">Keywords</span>
+    	<select name="keyword_description[]" id="keyword_description_ck42" class="form-select" multiple="multiple">
+			</select>	
+	</div> 
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</form> 
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<input type="hidden" name="id" value="42" form="editForm42" >
+			<input type="hidden" name="table_name" value="user_honors_and_awards" form="editForm42" >
+			<input type="hidden" name="redirect" value="my_honors_and_awards" form="editForm42" >
+			<input type="submit" name="submit" value="Save changes" form="editForm42" class="btn btn-primary">
+		</div>
+			   
+		</div>
+	    </div>
+	</div>
+		<div class="modal fade" id="editModal47">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+		<div class="modal-content">
+
+		<div class="modal-header">
+			<h5 class="modal-title">Edit Honors and Awards</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form action="http://localhost/grantize/public/researcher/profile/store_profile_info" method="post" enctype="multipart/form-data" id="editForm47">
+				<input type="hidden" name="_token" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">				
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="mb-3">
+							<label for="awards" class="form-label">Honors and Awards</label>
+							<select name="awards" id="awards47" class="form-select" style="width:100%">
+							<option value="" selected="selected"></option>
+							</select>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="mb-3">
+							<label for="organisation" class="form-label">Type</label>
+							<div class="input-group">
+								<select name="type" id="award_type47" class="form-control" style="width:100%;">
+									<option value="">Select</option>
+																		<option value="State/Regional"
+																		>State/Regional</option>
+																		<option value="National"
+									selected									>National</option>
+																		<option value="International"
+																		>International</option>
+																	</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2">
+						<div class="mb-3">
+							<label for="date" class="form-label">Date</label>
+							<div class="input-group date" id="date47">
+								<input type="text" name="date" value="03-04-2024" class="form-control" readonly>
+								<div class="input-group-append">
+									<span class="input-group-text"><i class="bi bi-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-7"> 
+	<div class="mb-3">
+		<label for="organization" class="form-label">Organization</label>
+		<div class="input-group">
+
+						<select name="organization" id="organization47"  class="form-select">
+								<option value="932" selected="selected"></option>
+							</select>
+			
+			<a class="btn btn-outline-secondary" href="javascript:organizationModal()" title="Add Organization"><i class="bi bi-plus-lg"></i></a>
+		</div>
+	</div>
+</div>					<div class="col-lg-5"> 
+	<div class="mb-3">
+		<label for="department" class="form-label">Department</label>
+		<div class="input-group">
+
+						<select name="department" id="department47" class="form-select">
+							</select>
+						
+		</div>  
+	</div>
+</div> 				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="mb-3">
+							<label for="degree">Description</label>
+							<textarea name="description" id="description_ck47" rows="4" cols="100" class="form-control"><p>dsaf</p></textarea>
+							<div class="input-group input-group-sm">
+	<span class="input-group-text">Keywords</span>
+    	<select name="keyword_description[]" id="keyword_description_ck47" class="form-select" multiple="multiple">
+			</select>	
+	</div> 
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</form> 
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<input type="hidden" name="id" value="47" form="editForm47" >
+			<input type="hidden" name="table_name" value="user_honors_and_awards" form="editForm47" >
+			<input type="hidden" name="redirect" value="my_honors_and_awards" form="editForm47" >
+			<input type="submit" name="submit" value="Save changes" form="editForm47" class="btn btn-primary">
+		</div>
+			   
+		</div>
+	    </div>
+	</div>
+		<div class="modal fade" id="editModal48">
+		<div class="modal-dialog modal-xl modal-dialog-scrollable">
+		<div class="modal-content">
+
+		<div class="modal-header">
+			<h5 class="modal-title">Edit Honors and Awards</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form action="http://localhost/grantize/public/researcher/profile/store_profile_info" method="post" enctype="multipart/form-data" id="editForm48">
+				<input type="hidden" name="_token" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">				
+				<div class="row">
+					<div class="col-12 col-lg-7">
+						<div class="mb-3">
+							<label for="awards" class="form-label">Honors and Awards</label>
+							<select name="awards" id="awards48" class="form-select" style="width:100%">
+							<option value="3027" selected="selected">New award 2</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-6 col-lg-3">
+						<div class="mb-3">
+							<label for="organisation" class="form-label">Type</label>
+							<div class="input-group">
+								<select name="type" id="award_type48" class="form-control" style="width:100%;">
+									<option value="">Select</option>
+																		<option value="State/Regional"
+																		>State/Regional</option>
+																		<option value="National"
+									selected									>National</option>
+																		<option value="International"
+																		>International</option>
+																	</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-6 col-lg-2">
+						<div class="mb-3">
+							<label for="date" class="form-label">Date</label>
+							<div class="input-group date" id="date48">
+								<input type="text" name="date" value="" class="form-control" readonly>
+								<div class="input-group-append">
+									<span class="input-group-text"><i class="bi bi-calendar"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-7"> 
+	<div class="mb-3">
+		<label for="organization" class="form-label">Organization</label>
+		<div class="input-group">
+
+						<select name="organization" id="organization48"  class="form-select">
+								<option value="3950" selected="selected"></option>
+							</select>
+			
+			<a class="btn btn-outline-secondary" href="javascript:organizationModal()" title="Add Organization"><i class="bi bi-plus-lg"></i></a>
+		</div>
+	</div>
+</div>					<div class="col-lg-5"> 
+	<div class="mb-3">
+		<label for="department" class="form-label">Department</label>
+		<div class="input-group">
+
+						<select name="department" id="department48" class="form-select">
+							</select>
+						
+		</div>  
+	</div>
+</div> 				</div>
+
+				<div class="row">
+					<div class="col-12">
+						<div class="mb-3">
+							<label for="degree">Description</label>
+							<textarea name="description" id="description_ck48" rows="4" cols="100" class="form-control"></textarea>
+							<div class="input-group input-group-sm">
+	<span class="input-group-text">Keywords</span>
+    	<select name="keyword_description" id="keyword_description_ck48" class="form-select" multiple="multiple">
+			</select>	
+	</div> 
+
+
+
+
+
+
+						</div>
+					</div>
+				</div>
+			</form> 
+		</div>
+		<div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<input type="hidden" name="id" value="48" form="editForm48" >
+			<input type="hidden" name="table_name" value="user_honors_and_awards" form="editForm48" >
+			<input type="hidden" name="redirect" value="my_honors_and_awards" form="editForm48" >
+			<input type="submit" name="submit" value="Save changes" form="editForm48" class="btn btn-primary">
+		</div>
+			   
+		</div>
+	    </div>
+		<script type="text/javascript">
+			$('#editModal12').on('show.bs.modal', function (event) {
+				var button = $(event.relatedTarget); // Button that triggered the modal
+				var modal = $(this);
+				modal.find('#edit-modal-document-id').val(button.data('doc-id'));
+				modal.find('#edit-modal-awards').val(button.data('awards'));
+				modal.find('#edit-modal-type').val(button.data('type'));
+				modal.find('#edit-modal-vdate').val(button.data('vdate'));
+				modal.find('#edit-modal-organization').val(button.data('organization'));
+				modal.find('#edit-modal-department').val(button.data('department'));
+				modal.find('#edit-modal-description').val(button.data('description'));
+				modal.find('#edit-modal-keyword-description').val(button.data('keyword-description'));
+			});
+		</script>
+	</div>
+	 
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.info-toggle').click(function() {
+            var key = $(this).data('key'); // Get the data-key attribute which should correspond to document.id
+            $('.profile-section-info-limited-' + key).toggle(); // Toggle visibility of the limited info section
+            $('.profile-section-info-full-' + key).toggle(); // Toggle visibility of the full info section
+        });
+    });
+</script>
+
+	
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$('#organization').select2({
+			dropdownParent: $("#addModal"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Organization',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			//allowClear: true
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'organizations',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		});
+		
+		
+		$('#organization12').select2({
+			dropdownParent: $("#editModal12"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Organization',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			//allowClear: true
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'organizations',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		});
+
+		
+		$('#organization42').select2({
+			dropdownParent: $("#editModal42"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Organization',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			//allowClear: true
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'organizations',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		});
+
+		
+		$('#organization47').select2({
+			dropdownParent: $("#editModal47"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Organization',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			//allowClear: true
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'organizations',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		});
+
+		
+		$('#organization48').select2({
+			dropdownParent: $("#editModal48"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Organization',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			//allowClear: true
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'organizations',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		});
+
+			});
+
+</script>	<script type="text/javascript">
+
+	$(document).ready(function(){
+
+		$('#department').select2({
+			dropdownParent: $("#addModal"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Departments',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+
+			if(e.params.data.isNew){
+				//alert(e.params.data.id);
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						//console.log(data);
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+
+						if(limit > count){
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'departments',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									//console.log(data);
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#department').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('.modal').modal('hide');
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#department option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#department').trigger('change')
+						}
+					}
+				});
+			}
+		});
+		
+		
+		
+		$('#department12').select2({
+			dropdownParent: $("#editModal12"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Departments',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'departments',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#department').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('.modal').modal('hide');
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#department option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#department').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+		
+		$('#department42').select2({
+			dropdownParent: $("#editModal42"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Departments',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'departments',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#department').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('.modal').modal('hide');
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#department option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#department').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+		
+		$('#department47').select2({
+			dropdownParent: $("#editModal47"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Departments',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'departments',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#department').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('.modal').modal('hide');
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#department option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#department').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+		
+		$('#department48').select2({
+			dropdownParent: $("#editModal48"),
+			theme: 'bootstrap-5',
+			placeholder: 'Search Departments',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'departments',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'departments',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#department').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('.modal').modal('hide');
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#department option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#department').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+		
+	});
+
+</script>	<script type="text/javascript">
+
+	$(document).ready(function(){
+		
+		var editor = CKEDITOR.replace('description_ck');
+		CKEDITOR.instances["description_ck"].on("change", function(e) {
+			var description = e.editor.getData();
+			var $select = $('#keyword_description_ck');
+
+			$.ajax({
+				type:"POST",
+				url:"http://localhost/grantize/public/description_keywords",
+				data: {
+					_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+					description: description
+				},
+				success:function(data){
+					data = JSON.parse(data);
+					$select.find('option').remove();
+					$select.append('<option value="">Select..</option>');
+					$.each(data, function(i, item) {
+						$select.append('<option value="' + item.id + '" selected="selected" >' + item.name + '</option>');
+					})
+				}
+			});
+		});
+
+		$('#keyword_description_ck').select2({
+			dropdownParent: $("#addModal"),
+			placeholder: 'Keywords',
+			theme: 'bootstrap-5',
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'keywords',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			if(e.params.data.isNew){
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/new_creation_by_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'keywords', 
+						field: 'name',
+						field_value: e.params.data.id,
+						field_category: 'category',
+						field_category_value: '1',  
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var last_id = data[0]; //alert('ajax '+ last_id);
+						$('#keyword_description_ck').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+					}
+				});
+			}
+		});
+
+
+		
+		var editor = CKEDITOR.replace('description_ck12');
+		CKEDITOR.instances["description_ck12"].on("change", function(e) {
+			var description_ck12 = e.editor.getData(); 
+			var $select = $('#keyword_description_ck12');
+
+			$.ajax({
+				type:"POST",
+				url:"http://localhost/grantize/public/description_keywords",
+				data: {
+					_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+					description: description_ck12				},
+				success:function(data){
+					data = JSON.parse(data);
+					$select.find('option').remove();
+					$select.append('<option value="">Select..</option>');
+					$.each(data, function(i, item) {
+						$select.append('<option value="' + item.id + '" selected="selected" >' + item.name + '</option>');
+					})
+				}
+			});
+		});
+
+		$('#keyword_description_ck12').select2({
+			dropdownParent: $("#editModal12"),
+			placeholder: 'Keywords',
+			theme: 'bootstrap-5',
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'keywords',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			if(e.params.data.isNew){
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/new_creation_by_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'keywords', 
+						field: 'name',
+						field_value: e.params.data.id,
+						field_category: 'category',
+						field_category_value: '1',  
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var last_id = data[0]; //alert('ajax '+ last_id);
+						$('#keyword_description_ck12').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+					}
+				});
+
+			}
+		});
+
+		
+		var editor = CKEDITOR.replace('description_ck42');
+		CKEDITOR.instances["description_ck42"].on("change", function(e) {
+			var description_ck42 = e.editor.getData(); 
+			var $select = $('#keyword_description_ck42');
+
+			$.ajax({
+				type:"POST",
+				url:"http://localhost/grantize/public/description_keywords",
+				data: {
+					_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+					description: description_ck42				},
+				success:function(data){
+					data = JSON.parse(data);
+					$select.find('option').remove();
+					$select.append('<option value="">Select..</option>');
+					$.each(data, function(i, item) {
+						$select.append('<option value="' + item.id + '" selected="selected" >' + item.name + '</option>');
+					})
+				}
+			});
+		});
+
+		$('#keyword_description_ck42').select2({
+			dropdownParent: $("#editModal42"),
+			placeholder: 'Keywords',
+			theme: 'bootstrap-5',
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'keywords',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			if(e.params.data.isNew){
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/new_creation_by_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'keywords', 
+						field: 'name',
+						field_value: e.params.data.id,
+						field_category: 'category',
+						field_category_value: '1',  
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var last_id = data[0]; //alert('ajax '+ last_id);
+						$('#keyword_description_ck42').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+					}
+				});
+
+			}
+		});
+
+		
+		var editor = CKEDITOR.replace('description_ck47');
+		CKEDITOR.instances["description_ck47"].on("change", function(e) {
+			var description_ck47 = e.editor.getData(); 
+			var $select = $('#keyword_description_ck47');
+
+			$.ajax({
+				type:"POST",
+				url:"http://localhost/grantize/public/description_keywords",
+				data: {
+					_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+					description: description_ck47				},
+				success:function(data){
+					data = JSON.parse(data);
+					$select.find('option').remove();
+					$select.append('<option value="">Select..</option>');
+					$.each(data, function(i, item) {
+						$select.append('<option value="' + item.id + '" selected="selected" >' + item.name + '</option>');
+					})
+				}
+			});
+		});
+
+		$('#keyword_description_ck47').select2({
+			dropdownParent: $("#editModal47"),
+			placeholder: 'Keywords',
+			theme: 'bootstrap-5',
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'keywords',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			if(e.params.data.isNew){
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/new_creation_by_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'keywords', 
+						field: 'name',
+						field_value: e.params.data.id,
+						field_category: 'category',
+						field_category_value: '1',  
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var last_id = data[0]; //alert('ajax '+ last_id);
+						$('#keyword_description_ck47').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+					}
+				});
+
+			}
+		});
+
+		
+		var editor = CKEDITOR.replace('description_ck48');
+		CKEDITOR.instances["description_ck48"].on("change", function(e) {
+			var description_ck48 = e.editor.getData(); 
+			var $select = $('#keyword_description_ck48');
+
+			$.ajax({
+				type:"POST",
+				url:"http://localhost/grantize/public/description_keywords",
+				data: {
+					_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+					description: description_ck48				},
+				success:function(data){
+					data = JSON.parse(data);
+					$select.find('option').remove();
+					$select.append('<option value="">Select..</option>');
+					$.each(data, function(i, item) {
+						$select.append('<option value="' + item.id + '" selected="selected" >' + item.name + '</option>');
+					})
+				}
+			});
+		});
+
+		$('#keyword_description_ck48').select2({
+			dropdownParent: $("#editModal48"),
+			placeholder: 'Keywords',
+			theme: 'bootstrap-5',
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'keywords',
+						field: 'name',
+					};
+				},
+				processResults: function (data, params) {
+					return {
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			if(e.params.data.isNew){
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/new_creation_by_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'keywords', 
+						field: 'name',
+						field_value: e.params.data.id,
+						field_category: 'category',
+						field_category_value: '1',  
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var last_id = data[0]; //alert('ajax '+ last_id);
+						$('#keyword_description_ck48').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+					}
+				});
+
+			}
+		});
+
+		
+	});
+
+</script>
+	
+	<!-- Delete Modal -->
+<div class="modal fade" id="delete-modal">
+	<div class="modal-dialog modal-sm" style="margin:200px auto;">
+	<div class="modal-content" >
+
+	<div class="modal-header" style="border:none;">
+		<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>            
+	</div>
+	<div class="modal-body">
+		<form action="{{ url_for('grantizeprofileawards') }}" method="post" enctype="multipart/form-data" id="addForm">
+			<input type="hidden" name="delete" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">
+			<h3 class="modal-title text-center">
+				<strong>Are you sure you want to Delete this ?</strong>
+			</h3>
+			<br>
+	
+			<input type="hidden" name="id" id="delete-modal-id" required>
+			<input type="hidden" name="table_name" value="user_honors_and_awards" required>
+			<input type="hidden" name="redirect" value="my_honors_and_awards" required>
+			<div class="row">             
+				<div class="col-6">
+					<button type="submit" name="submit" class="btn w-100 btn-success">Yes</button>
+				</div>
+				<div class="col-6">	
+					<button type="button" class="btn w-100 btn-danger" data-bs-dismiss="modal">No</button>
+				</div>
+			</div>
+		</form> 
+	</div>
+	<div class="modal-footer" style="border:none;height:1px;"> 
+	</div>
+	
+	</div>        
+	</div>      
+</div>
+<script type="text/javascript">
+	//$(document).ready(function(){
+		function deleteModal(id){
+			$('#delete-modal-id').val(id);
+			$(".modal").removeClass("fade").modal("hide");
+			$("#delete-modal").modal("show").addClass("fade");
+		}
+	//});
+</script>	<!-- Permission Modal -->
+<div class="modal fade" id="permissionModal" tabindex="-1" aria-labelledby="permissionModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="permissionModalLabel">Permission Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p id="modal-entry-name"></p>
+                <form action="http://localhost/grantize/public/researcher/profile/permission_profile_info" method="post" enctype="multipart/form-data" id="permissionForm48">	
+					<input type="hidden" name="_token" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">				<div class="row"> 
+						<div class="col-lg-12 col-12"> 
+							<div id="permission48-successmsg-msg-div">
+							</div>
+						</div>
+					</div> 
+					
+					<div class="row">
+						<div class="col-8 mt-2 mb-3">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="public48" name="public" value="0"  >
+								<label class="form-check-label" for="public48"><b>Show only for me</b></label>
+							</div>
+							<div id="except_persons-select-48">
+								<label class="">( Except Persons )</label>
+								<div class="input-group">
+									<select name="except_persons[]" id="except_persons48" class="form-select" multiple="multiple" style="width:100%;" >
+																		</select>
+								</div>
+							</div>
+						</div>
+						<div class="col-4 mt-2 mb-3">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="designation48" name="designation" value="0"  >
+								<label class="form-check-label" for="designation48">
+									<b>Hide from Designation</b>
+								</label>
+							</div>
+							<div class="input-group" id="designations-select-48">
+								<select name="designations[]" id="designations48" class="form-select" multiple="multiple" style="width:100%;" >
+																		<option value="1" 
+																			>Sponsors</option>
+																		<option value="2" 
+																			>Researchers</option>
+																</select>
+							</div>
+						</div>
+	
+						<div class="col-12 mt-2 mb-3">
+							<div class="form-check">
+								<input class="form-check-input" type="checkbox" id="person48" name="person" value="0"  >
+								<label class="form-check-label" for="person48">
+									<b>Hide from Individuals</b>
+								</label>
+							</div>
+							<div class="input-group" id="persons-select-48">
+								<select name="persons[]" id="persons48" class="form-select" multiple="multiple" style="width:100%;" >
+																</select>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		<div class="modal-footer">
+			<input type="hidden" name="id" id="permission-id48" form="permissionForm48" required>
+			<input type="hidden" name="table_name" value="user_honors_and_awards" form="permissionForm48" required>
+			<input type="hidden" name="redirect" value="my_honors_and_awards" form="permissionForm48" required>
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			<button type="submit" name="submit_permission" value="submit_permission" id="submit-permission-48" data-bs-dismiss="modal" class="btn btn-primary">Save changes</button>
+		</div>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+function permissionModal(id, entryName) {
+    // Log parameters to ensure they are passed correctly
+    console.log("ID:", id, "Entry Name:", entryName);
+
+    // Set any dynamic content in the modal, if needed
+    document.getElementById('modal-entry-name').innerText = entryName;
+
+    // Use Bootstrap's modal methods to show the modal
+    $('#permissionModal').modal('show');
+}
+
+	$(document).ready(function(){
+
+		
+			$("#except_persons-select-12").hide();
+			$("#persons-select-12").hide();
+			$("#designations-select-12").hide();
+
+			if( $("#public12").is(":checked") ){
+				$("#public12").val(1);
+				$("#except_persons-select-12").show();
+			}
+			if( $("#person12").is(":checked") ){
+				$("#person12").val(1);
+				$("#persons-select-12").show();
+			}
+			if( $("#designation12").is(":checked") ){
+				$("#designation12").val(1);
+				$("#designations-select-12").show();
+			}
+
+			$("#public12").click(function(){
+				if( $("#public12").is(":checked") ){
+					$("#public12").val(1);
+					$("#except_persons-select-12").show();
+				}else{
+					$("#public12").val(0);
+					$("#except_persons-select-12").hide();
+				}
+			});
+			$("#person12").click(function(){
+				if( $("#person12").is(":checked") ){
+					$("#person12").val(1);
+					$("#persons-select-12").show();
+				}else{
+					$("#person12").val(0);
+					$("#persons-select-12").hide();
+				}
+			});
+			$("#designation12").click(function(){
+				if( $("#designation12").is(":checked") ){
+					$("#designation12").val(1);
+					$("#designations-select-12").show();
+				}else{
+					$("#designation12").val(0);
+					$("#designations-select-12").hide();
+				}
+			});
+			
+			$("#except_persons12").select2({
+				dropdownParent: $("#permissionModal12"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				closeOnSelect: true,
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+						return {
+							search: params.term, // search term
+							"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+							table: 'users',
+							field: 'first_name',
+						};
+					},
+					processResults: function (data, params) {
+						return {
+							//results: data.items,
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#persons12").select2({
+				dropdownParent: $("#permissionModal12"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'users',
+						field: 'first_name',
+					};
+					},
+					processResults: function (data, params) {
+						return {
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#designations12").select2({
+				dropdownParent: $("#permissionModal12"),
+				theme: 'bootstrap-5',
+			}); 
+
+		
+			$("#except_persons-select-42").hide();
+			$("#persons-select-42").hide();
+			$("#designations-select-42").hide();
+
+			if( $("#public42").is(":checked") ){
+				$("#public42").val(1);
+				$("#except_persons-select-42").show();
+			}
+			if( $("#person42").is(":checked") ){
+				$("#person42").val(1);
+				$("#persons-select-42").show();
+			}
+			if( $("#designation42").is(":checked") ){
+				$("#designation42").val(1);
+				$("#designations-select-42").show();
+			}
+
+			$("#public42").click(function(){
+				if( $("#public42").is(":checked") ){
+					$("#public42").val(1);
+					$("#except_persons-select-42").show();
+				}else{
+					$("#public42").val(0);
+					$("#except_persons-select-42").hide();
+				}
+			});
+			$("#person42").click(function(){
+				if( $("#person42").is(":checked") ){
+					$("#person42").val(1);
+					$("#persons-select-42").show();
+				}else{
+					$("#person42").val(0);
+					$("#persons-select-42").hide();
+				}
+			});
+			$("#designation42").click(function(){
+				if( $("#designation42").is(":checked") ){
+					$("#designation42").val(1);
+					$("#designations-select-42").show();
+				}else{
+					$("#designation42").val(0);
+					$("#designations-select-42").hide();
+				}
+			});
+			
+			$("#except_persons42").select2({
+				dropdownParent: $("#permissionModal42"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				closeOnSelect: true,
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+						return {
+							search: params.term, // search term
+							"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+							table: 'users',
+							field: 'first_name',
+						};
+					},
+					processResults: function (data, params) {
+						return {
+							//results: data.items,
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#persons42").select2({
+				dropdownParent: $("#permissionModal42"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'users',
+						field: 'first_name',
+					};
+					},
+					processResults: function (data, params) {
+						return {
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#designations42").select2({
+				dropdownParent: $("#permissionModal42"),
+				theme: 'bootstrap-5',
+			}); 
+
+		
+			$("#except_persons-select-47").hide();
+			$("#persons-select-47").hide();
+			$("#designations-select-47").hide();
+
+			if( $("#public47").is(":checked") ){
+				$("#public47").val(1);
+				$("#except_persons-select-47").show();
+			}
+			if( $("#person47").is(":checked") ){
+				$("#person47").val(1);
+				$("#persons-select-47").show();
+			}
+			if( $("#designation47").is(":checked") ){
+				$("#designation47").val(1);
+				$("#designations-select-47").show();
+			}
+
+			$("#public47").click(function(){
+				if( $("#public47").is(":checked") ){
+					$("#public47").val(1);
+					$("#except_persons-select-47").show();
+				}else{
+					$("#public47").val(0);
+					$("#except_persons-select-47").hide();
+				}
+			});
+			$("#person47").click(function(){
+				if( $("#person47").is(":checked") ){
+					$("#person47").val(1);
+					$("#persons-select-47").show();
+				}else{
+					$("#person47").val(0);
+					$("#persons-select-47").hide();
+				}
+			});
+			$("#designation47").click(function(){
+				if( $("#designation47").is(":checked") ){
+					$("#designation47").val(1);
+					$("#designations-select-47").show();
+				}else{
+					$("#designation47").val(0);
+					$("#designations-select-47").hide();
+				}
+			});
+			
+			$("#except_persons47").select2({
+				dropdownParent: $("#permissionModal47"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				closeOnSelect: true,
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+						return {
+							search: params.term, // search term
+							"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+							table: 'users',
+							field: 'first_name',
+						};
+					},
+					processResults: function (data, params) {
+						return {
+							//results: data.items,
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#persons47").select2({
+				dropdownParent: $("#permissionModal47"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'users',
+						field: 'first_name',
+					};
+					},
+					processResults: function (data, params) {
+						return {
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#designations47").select2({
+				dropdownParent: $("#permissionModal47"),
+				theme: 'bootstrap-5',
+			}); 
+
+		
+			$("#except_persons-select-48").hide();
+			$("#persons-select-48").hide();
+			$("#designations-select-48").hide();
+
+			if( $("#public48").is(":checked") ){
+				$("#public48").val(1);
+				$("#except_persons-select-48").show();
+			}
+			if( $("#person48").is(":checked") ){
+				$("#person48").val(1);
+				$("#persons-select-48").show();
+			}
+			if( $("#designation48").is(":checked") ){
+				$("#designation48").val(1);
+				$("#designations-select-48").show();
+			}
+
+			$("#public48").click(function(){
+				if( $("#public48").is(":checked") ){
+					$("#public48").val(1);
+					$("#except_persons-select-48").show();
+				}else{
+					$("#public48").val(0);
+					$("#except_persons-select-48").hide();
+				}
+			});
+			$("#person48").click(function(){
+				if( $("#person48").is(":checked") ){
+					$("#person48").val(1);
+					$("#persons-select-48").show();
+				}else{
+					$("#person48").val(0);
+					$("#persons-select-48").hide();
+				}
+			});
+			$("#designation48").click(function(){
+				if( $("#designation48").is(":checked") ){
+					$("#designation48").val(1);
+					$("#designations-select-48").show();
+				}else{
+					$("#designation48").val(0);
+					$("#designations-select-48").hide();
+				}
+			});
+			
+			$("#except_persons48").select2({
+				dropdownParent: $("#permissionModal48"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				closeOnSelect: true,
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+						return {
+							search: params.term, // search term
+							"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+							table: 'users',
+							field: 'first_name',
+						};
+					},
+					processResults: function (data, params) {
+						return {
+							//results: data.items,
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#persons48").select2({
+				dropdownParent: $("#permissionModal48"),
+				theme: 'bootstrap-5',
+				placeholder: 'Search Users',
+				minimumInputLength: 3,
+
+				ajax: {
+					url:"http://localhost/grantize/public/search_dropdown_global",
+					type: "POST",
+					delay: 250,
+					dataType: 'json',
+					data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'users',
+						field: 'first_name',
+					};
+					},
+					processResults: function (data, params) {
+						return {
+							results: data
+						};
+					},
+					cache: true
+				},
+
+				escapeMarkup: function(m) {
+					return m;
+				},
+				closeOnSelect: true,
+				templateResult: formatResult,
+				templateSelection: formatSelection
+
+			}); 
+			$("#designations48").select2({
+				dropdownParent: $("#permissionModal48"),
+				theme: 'bootstrap-5',
+			}); 
+
+		
+	});
+
+</script>
+
+
+
+	<!-- Organization Modal -->
+<div class="modal fade" id="organizationModal">
+    <div class="modal-dialog modal-xl modal-dialog-scrollable">
+	<div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Create <span id="org-lable">Organization<span></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form action="http://localhost/grantize/public/new_organization_create" method="post" enctype="multipart/form-data" id="organizationForm">
+                <input type="hidden" name="_token" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">                <div class="row"> 
+                    <div class="col-lg-12 col-12"> 
+                        <div id="organization-successmsg-msg-div">
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="row"> 
+                    <div class="col-lg-8 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="form-label">Name</label>   
+                            <input type="text" name="name" id="organization_name" class="form-control">
+                            <input type="hidden" name="functioning_area" value='0' id="organization_functioning_area" class="form-control">
+                        </div>
+                    </div>  
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="form-label">Organization Type</label>  
+                            <div class="input-group">   
+                                <select name="type" id="organization_type" class="form-select" style="width:100%">
+                                    <option value="">Select Type</option>
+                                                                        <option value="1">university</option>
+                                                                        <option value="2">institution</option>
+                                                                        <option value="3">company</option>
+                                                                        <option value="4">society</option>
+                                                                        <option value="5">government (administrative)</option>
+                                                                        <option value="6">other</option>
+                                                                    </select>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="row">            
+                    <div class="col-lg-8 col-12">
+                        <div class="form-group validation mb-3">
+                            <label class="">Synonyms</label>   
+                            <input type="text" name="synonyms" id="organization_synonyms" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="">Official Email</label>   
+                            <input type="email" name="office_email" id="organization_office_email" class="form-control" >
+                        </div>
+                    </div> 
+                </div>
+                <div class="row">  
+                    <div class="col-lg-8 col-12">
+                        <div class="form-group validation mb-3"> 
+                            <label class="">Website URL</label>   
+                            <input type="text" name="url" id="organization_url" class="form-control" >
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3"> 
+                            <label class="">Contact Number</label>   
+                            <input type="text" name="contact_number" id="organization_contact_number" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">            
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="">Address Line One</label>   
+                            <input type="text" name="address_line_one" id="organization_address_line_one" class="form-control" ></input>
+                        </div> 
+                    </div> 
+                    <div class="col-lg-4 col-12">  
+                        <div class="form-group validation mb-3">
+                            <label class="">Address Line Two</label>   
+                            <input type="text" name="address_line_two" id="organization_address_line_two" class="form-control" ></input>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="">Zip Code</label>   
+                            <input type="number" name="post_code" id="organization_post_code" class="form-control" ></input>
+                        </div>
+                    </div> 
+        
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="">Country</label> 
+                            <div class="input-group">   
+                                <select name="country" id="organization_country" class="form-select" style="width:100%">
+									<option value="">Select</option>
+																		<option value="1">Afghanistan</option>
+																		<option value="2">Aland Islands</option>
+																		<option value="3">Albania</option>
+																		<option value="4">Algeria</option>
+																		<option value="5">American Samoa</option>
+																		<option value="6">Andorra</option>
+																		<option value="7">Angola</option>
+																		<option value="8">Anguilla</option>
+																		<option value="9">Antarctica</option>
+																		<option value="10">Antigua and Barbuda</option>
+																		<option value="11">Argentina</option>
+																		<option value="12">Armenia</option>
+																		<option value="13">Aruba</option>
+																		<option value="14">Australia</option>
+																		<option value="15">Austria</option>
+																		<option value="16">Azerbaijan</option>
+																		<option value="17">The Bahamas</option>
+																		<option value="18">Bahrain</option>
+																		<option value="19">Bangladesh</option>
+																		<option value="20">Barbados</option>
+																		<option value="21">Belarus</option>
+																		<option value="22">Belgium</option>
+																		<option value="23">Belize</option>
+																		<option value="24">Benin</option>
+																		<option value="25">Bermuda</option>
+																		<option value="26">Bhutan</option>
+																		<option value="27">Bolivia</option>
+																		<option value="28">Bosnia and Herzegovina</option>
+																		<option value="29">Botswana</option>
+																		<option value="30">Bouvet Island</option>
+																		<option value="31">Brazil</option>
+																		<option value="32">British Indian Ocean Territory</option>
+																		<option value="33">Brunei</option>
+																		<option value="34">Bulgaria</option>
+																		<option value="35">Burkina Faso</option>
+																		<option value="36">Burundi</option>
+																		<option value="37">Cambodia</option>
+																		<option value="38">Cameroon</option>
+																		<option value="39">Canada</option>
+																		<option value="40">Cape Verde</option>
+																		<option value="41">Cayman Islands</option>
+																		<option value="42">Central African Republic</option>
+																		<option value="43">Chad</option>
+																		<option value="44">Chile</option>
+																		<option value="45">China</option>
+																		<option value="46">Christmas Island</option>
+																		<option value="47">Cocos (keeling) Islands</option>
+																		<option value="48">Colombia</option>
+																		<option value="49">Comoros</option>
+																		<option value="50">Congo</option>
+																		<option value="51">Democratic Republic Of The Congo</option>
+																		<option value="52">Cook Islands</option>
+																		<option value="53">Costa Rica</option>
+																		<option value="54">Cote D'ivoire (ivory Coast)</option>
+																		<option value="55">Croatia</option>
+																		<option value="56">Cuba</option>
+																		<option value="57">Cyprus</option>
+																		<option value="58">Czech Republic</option>
+																		<option value="59">Denmark</option>
+																		<option value="60">Djibouti</option>
+																		<option value="61">Dominica</option>
+																		<option value="62">Dominican Republic</option>
+																		<option value="63">East Timor</option>
+																		<option value="64">Ecuador</option>
+																		<option value="65">Egypt</option>
+																		<option value="66">El Salvador</option>
+																		<option value="67">Equatorial Guinea</option>
+																		<option value="68">Eritrea</option>
+																		<option value="69">Estonia</option>
+																		<option value="70">Ethiopia</option>
+																		<option value="71">Falkland Islands</option>
+																		<option value="72">Faroe Islands</option>
+																		<option value="73">Fiji Islands</option>
+																		<option value="74">Finland</option>
+																		<option value="75">France</option>
+																		<option value="76">French Guiana</option>
+																		<option value="77">French Polynesia</option>
+																		<option value="78">French Southern Territories</option>
+																		<option value="79">Gabon</option>
+																		<option value="80">Gambia The</option>
+																		<option value="81">Georgia</option>
+																		<option value="82">Germany</option>
+																		<option value="83">Ghana</option>
+																		<option value="84">Gibraltar</option>
+																		<option value="85">Greece</option>
+																		<option value="86">Greenland</option>
+																		<option value="87">Grenada</option>
+																		<option value="88">Guadeloupe</option>
+																		<option value="89">Guam</option>
+																		<option value="90">Guatemala</option>
+																		<option value="91">Guernsey and Alderney</option>
+																		<option value="92">Guinea</option>
+																		<option value="93">Guinea-bissau</option>
+																		<option value="94">Guyana</option>
+																		<option value="95">Haiti</option>
+																		<option value="96">Heard Island and Mcdonald Islands</option>
+																		<option value="97">Honduras</option>
+																		<option value="98">Hong Kong S.a.r.</option>
+																		<option value="99">Hungary</option>
+																		<option value="100">Iceland</option>
+																		<option value="101">India</option>
+																		<option value="102">Indonesia</option>
+																		<option value="103">Iran</option>
+																		<option value="104">Iraq</option>
+																		<option value="105">Ireland</option>
+																		<option value="106">Israel</option>
+																		<option value="107">Italy</option>
+																		<option value="108">Jamaica</option>
+																		<option value="109">Japan</option>
+																		<option value="110">Jersey</option>
+																		<option value="111">Jordan</option>
+																		<option value="112">Kazakhstan</option>
+																		<option value="113">Kenya</option>
+																		<option value="114">Kiribati</option>
+																		<option value="115">North Korea</option>
+																		<option value="116">South Korea</option>
+																		<option value="117">Kuwait</option>
+																		<option value="118">Kyrgyzstan</option>
+																		<option value="119">Laos</option>
+																		<option value="120">Latvia</option>
+																		<option value="121">Lebanon</option>
+																		<option value="122">Lesotho</option>
+																		<option value="123">Liberia</option>
+																		<option value="124">Libya</option>
+																		<option value="125">Liechtenstein</option>
+																		<option value="126">Lithuania</option>
+																		<option value="127">Luxembourg</option>
+																		<option value="128">Macau S.a.r.</option>
+																		<option value="129">Macedonia</option>
+																		<option value="130">Madagascar</option>
+																		<option value="131">Malawi</option>
+																		<option value="132">Malaysia</option>
+																		<option value="133">Maldives</option>
+																		<option value="134">Mali</option>
+																		<option value="135">Malta</option>
+																		<option value="136">Man (isle Of)</option>
+																		<option value="137">Marshall Islands</option>
+																		<option value="138">Martinique</option>
+																		<option value="139">Mauritania</option>
+																		<option value="140">Mauritius</option>
+																		<option value="141">Mayotte</option>
+																		<option value="142">Mexico</option>
+																		<option value="143">Micronesia</option>
+																		<option value="144">Moldova</option>
+																		<option value="145">Monaco</option>
+																		<option value="146">Mongolia</option>
+																		<option value="147">Montenegro</option>
+																		<option value="148">Montserrat</option>
+																		<option value="149">Morocco</option>
+																		<option value="150">Mozambique</option>
+																		<option value="151">Myanmar</option>
+																		<option value="152">Namibia</option>
+																		<option value="153">Nauru</option>
+																		<option value="154">Nepal</option>
+																		<option value="155">Bonaire, Sint Eustatius and Saba</option>
+																		<option value="156">Netherlands</option>
+																		<option value="157">New Caledonia</option>
+																		<option value="158">New Zealand</option>
+																		<option value="159">Nicaragua</option>
+																		<option value="160">Niger</option>
+																		<option value="161">Nigeria</option>
+																		<option value="162">Niue</option>
+																		<option value="163">Norfolk Island</option>
+																		<option value="164">Northern Mariana Islands</option>
+																		<option value="165">Norway</option>
+																		<option value="166">Oman</option>
+																		<option value="167">Pakistan</option>
+																		<option value="168">Palau</option>
+																		<option value="169">Palestinian Territory Occupied</option>
+																		<option value="170">Panama</option>
+																		<option value="171">Papua New Guinea</option>
+																		<option value="172">Paraguay</option>
+																		<option value="173">Peru</option>
+																		<option value="174">Philippines</option>
+																		<option value="175">Pitcairn Island</option>
+																		<option value="176">Poland</option>
+																		<option value="177">Portugal</option>
+																		<option value="178">Puerto Rico</option>
+																		<option value="179">Qatar</option>
+																		<option value="180">Reunion</option>
+																		<option value="181">Romania</option>
+																		<option value="182">Russia</option>
+																		<option value="183">Rwanda</option>
+																		<option value="184">Saint Helena</option>
+																		<option value="185">Saint Kitts and Nevis</option>
+																		<option value="186">Saint Lucia</option>
+																		<option value="187">Saint Pierre and Miquelon</option>
+																		<option value="188">Saint Vincent and The Grenadines</option>
+																		<option value="189">Saint-barthelemy</option>
+																		<option value="190">Saint-martin (french Part)</option>
+																		<option value="191">Samoa</option>
+																		<option value="192">San Marino</option>
+																		<option value="193">Sao Tome and Principe</option>
+																		<option value="194">Saudi Arabia</option>
+																		<option value="195">Senegal</option>
+																		<option value="196">Serbia</option>
+																		<option value="197">Seychelles</option>
+																		<option value="198">Sierra Leone</option>
+																		<option value="199">Singapore</option>
+																		<option value="200">Slovakia</option>
+																		<option value="201">Slovenia</option>
+																		<option value="202">Solomon Islands</option>
+																		<option value="203">Somalia</option>
+																		<option value="204">South Africa</option>
+																		<option value="205">South Georgia</option>
+																		<option value="206">South Sudan</option>
+																		<option value="207">Spain</option>
+																		<option value="208">Sri Lanka</option>
+																		<option value="209">Sudan</option>
+																		<option value="210">Suriname</option>
+																		<option value="211">Svalbard and Jan Mayen Islands</option>
+																		<option value="212">Swaziland</option>
+																		<option value="213">Sweden</option>
+																		<option value="214">Switzerland</option>
+																		<option value="215">Syria</option>
+																		<option value="216">Taiwan</option>
+																		<option value="217">Tajikistan</option>
+																		<option value="218">Tanzania</option>
+																		<option value="219">Thailand</option>
+																		<option value="220">Togo</option>
+																		<option value="221">Tokelau</option>
+																		<option value="222">Tonga</option>
+																		<option value="223">Trinidad and Tobago</option>
+																		<option value="224">Tunisia</option>
+																		<option value="225">Turkey</option>
+																		<option value="226">Turkmenistan</option>
+																		<option value="227">Turks and Caicos Islands</option>
+																		<option value="228">Tuvalu</option>
+																		<option value="229">Uganda</option>
+																		<option value="230">Ukraine</option>
+																		<option value="231">United Arab Emirates</option>
+																		<option value="232">United Kingdom</option>
+																		<option value="233">United States</option>
+																		<option value="234">United States Minor Outlying Islands</option>
+																		<option value="235">Uruguay</option>
+																		<option value="236">Uzbekistan</option>
+																		<option value="237">Vanuatu</option>
+																		<option value="238">Vatican City State (holy See)</option>
+																		<option value="239">Venezuela</option>
+																		<option value="240">Vietnam</option>
+																		<option value="241">Virgin Islands (british)</option>
+																		<option value="242">Virgin Islands (us)</option>
+																		<option value="243">Wallis and Futuna Islands</option>
+																		<option value="244">Western Sahara</option>
+																		<option value="245">Yemen</option>
+																		<option value="246">Zambia</option>
+																		<option value="247">Zimbabwe</option>
+																		<option value="248">Kosovo</option>
+																		<option value="249">Curaçao</option>
+																		<option value="250">Sint Maarten (dutch Part)</option>
+																	</select>
+                            </div>
+                        </div>     
+                    </div>            
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="">State</label>    
+                            <div class="input-group">
+                                <select name="state" id="organization_state" class="form-select" style="width:100%">
+                                    <option value="">Select State</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-lg-4 col-12"> 
+                        <div class="form-group validation mb-3">
+                            <label class="">City</label> 
+                            <div class="input-group">   
+                                <select name="city" id="organization_city" class="form-select" style="width:100%">
+                                    <option value="">Select City</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>                  
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" id="submit-organization" class="btn btn-primary">Save changes</button> -->
+            <input type="hidden" form="organizationForm" name="redirect" value="my_honors_and_awards" form="addForm" >
+            <button type="submit" form="organizationForm" class="btn btn-primary">Save changes</button>
+        </div>
+    </div>
+	</div>
+</div>
+<!-- Organization Modal -->
+<script type="text/javascript">
+
+    function organizationModal(funct_area_id = 0){
+        //alert(funct_area_id);
+        if(funct_area_id!='0'){
+            if(funct_area_id=='11'){
+                $('#organization_functioning_area').val(11);
+                $('#org-lable').text('Publisher');
+            }else if(funct_area_id=='12'){
+                $('#organization_functioning_area').val(12);
+                $('#org-lable').text('Sponsor');
+            }else{
+                $('#organization_functioning_area').val(0);
+                $('#org-lable').text('Organization');
+            }
+        }else{
+            $('#organization_functioning_area').val(0);
+            $('#org-lable').text('Organization');
+        }
+
+
+        $.ajax({
+            type: "POST",
+			url: "http://localhost/grantize/public/creation_limit_for_user",
+            dataType: 'json',
+            data: { 
+                _token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+                table: 'organizations',
+                field: 'name' 
+            },
+            success:function(data){
+                //console.log(data);
+                //data = JSON.parse(data);
+                var count = data[0]; //alert(count);
+                var limit = data[1]; //alert(limit);
+                var message = data[2]; //alert(message);
+                
+                if(limit < count){
+                    $(".modal").removeClass("fade").modal("hide");
+                    $('#exceedLimit').text(message);
+                    $('#exceedLimitModal').modal('show');
+                }else{
+                    $(".modal").removeClass("fade").modal("hide");
+                    $("#organizationModal").modal("show").addClass("fade");
+                } 
+            }
+        });
+    }
+
+    $('#organizationForm').validate({
+        rules: {                
+            name:{
+                required: true,  
+                remote:{
+                    url: "http://localhost/grantize/public/check_if_exists",
+                    type: "post",
+                    data: {
+                        _token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+                        table: function() { return "organizations"; },
+                        field: function() { return "name"; }, 
+                        value: function() { return $('#organization_name').val(); },
+                    },
+                }     
+            },
+            type:{
+                required: true,       
+            }, 
+            url:{
+                url: true,       
+            }, 
+            country:{
+                required: true,       
+            },
+            state:{
+                required: true,       
+            },
+        },
+        messages: {      
+        },            
+        errorPlacement: function(error, element) {
+            if(element.parent('.input-group').length) {
+                error.insertAfter(element.parent());
+            } else {
+                error.insertAfter(element);
+            }
+        },
+    }); 
+    /* $('#submit-organization').on('click', function(){
+        if($('#organizationForm').valid()){ 
+            var name            = $('#organization_name').val();//alert(name);
+            var type            = $('#organization_type').val();//alert(type);
+            var functioning_area= $('#organization_functioning_area').val();//alert(type);
+            var synonyms        = $('#organization_synonyms').val();//alert(synonyms);
+			var office_email    = $('#organization_office_email').val();//alert(office_email);
+            var url             = $('#organization_url').val();//alert(url);
+            var contact_number  = $('#organization_contact_number').val();//alert(contact_number);
+            var address_line_one= $('#organization_address_line_one').val();//alert(address_line_one);
+			var address_line_two= $('#organization_address_line_two').val();//alert(address_line_two);
+            var post_code       = $('#organization_post_code').val();//alert(post_code);
+            var country         = $('#organization_country').val();//alert(country);
+            var state           = $('#organization_state').val();//alert(state);
+			var city            = $('#organization_city').val();//alert(city);
+
+            $.ajax({
+                type: "POST",
+                url:"http://localhost/grantize/public/new_organization_create",
+                data: {
+                    _token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+                    name: name, 
+                    type: type, 
+                    functioning_area: functioning_area, 
+                    synonyms: synonyms,
+                    office_email: office_email, 
+                    url: url, 
+                    contact_number: contact_number, 
+                    address_line_one: address_line_one,
+                    address_line_two: address_line_two, 
+                    post_code: post_code, 
+                    country: country,
+                    state: state, 
+                    city: city
+                },
+                cache: false,
+                success: function(successmsg)
+                {
+                    console.log(successmsg);
+
+                    $('#organization-successmsg-msg-div').html('');
+                    if(successmsg!='Error'){
+                        var response = $('<div class="alert alert-success alert-dismissible">'
+                            +'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times;</a>'
+                            +'<strong>Success! Organization has been saved successfully! it will be available to be used once approved by the Admin.</strong>'
+                            +'</div>');
+                        $('#organization-successmsg-msg-div').append(response);
+                    }
+                }
+            });
+        }
+    }); */
+
+
+    $('#organization_type').select2({
+		dropdownParent: $("#organizationModal"),
+        theme: 'bootstrap-5',
+		placeholder: 'Select Type',
+	});
+    $('#organization_country').select2({
+        dropdownParent: $("#organizationModal"),
+		theme: 'bootstrap-5',
+		aplaceholder: 'Select Country',
+        closeOnSelect: true,
+	}).on("select2:select", function(e) {
+
+        var id = $('#organization_country').val();
+        var $select = $('#organization_state');
+        $.ajax({
+            type:"POST",
+            url:"http://localhost/grantize/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+            success:function(data){
+                data = JSON.parse(data);
+                $select.find('option').remove();
+                $select.append('<option value="">Select State</option>');
+                $.each(data, function(i, item) {
+                    $select.append('<option value="' + item.id + '">' + item.name + '</option>');
+                })
+            }
+        });
+    }).on("select2:unselect", function(e) {
+
+        var $select = $('#organization_state');
+        $select.find('option').remove();
+        $select.append('<option value="">Select State</option>');
+
+        var $select2 = $('#organization_city');
+        $select2.find('option').remove();
+        $select2.append('<option value="">Select City</option>');
+    }); 
+
+    $('#organization_state').select2({
+		theme: 'bootstrap-5',
+		dropdownParent: $("#organizationModal"),
+		placeholder: 'Select State',
+		closeOnSelect: true,
+	}).on("select2:select", function(e) {
+
+        var id = $('#organization_state').val();
+    	var $select = $('#organization_city');
+		$.ajax({
+			type:"POST",
+            url:"http://localhost/grantize/public/get_children",	 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select City</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+    }).on("select2:unselect", function(e) {
+
+        var $select = $('#organization_city');
+        $select.find('option').remove();
+        $select.append('<option value="">Select City</option>');
+    }); 
+
+    $('#organization_city').select2({
+		theme: 'bootstrap-5',
+		dropdownParent: $("#organizationModal"),
+		placeholder: 'Select City',
+		closeOnSelect: true,
+	});
+
+</script>
+<script type="text/javascript">	
+	
+	$("#date").datepicker({ 
+		format: 'mm-dd-yyyy',
+		selectedHighlight: true,
+		autoclose: true,
+		excluded: [':disabled']
+	});
+
+	
+		$('#award_type12').select2({ dropdownParent: $("#editModal12"), theme: 'bootstrap-5' });
+		$("#date12").datepicker({ 
+			format: 'mm-dd-yyyy',
+			selectedHighlight: true,
+			autoclose: true,
+			excluded: [':disabled']
+		});
+		
+	
+		$('#award_type42').select2({ dropdownParent: $("#editModal42"), theme: 'bootstrap-5' });
+		$("#date42").datepicker({ 
+			format: 'mm-dd-yyyy',
+			selectedHighlight: true,
+			autoclose: true,
+			excluded: [':disabled']
+		});
+		
+	
+		$('#award_type47').select2({ dropdownParent: $("#editModal47"), theme: 'bootstrap-5' });
+		$("#date47").datepicker({ 
+			format: 'mm-dd-yyyy',
+			selectedHighlight: true,
+			autoclose: true,
+			excluded: [':disabled']
+		});
+		
+	
+		$('#award_type48').select2({ dropdownParent: $("#editModal48"), theme: 'bootstrap-5' });
+		$("#date48").datepicker({ 
+			format: 'mm-dd-yyyy',
+			selectedHighlight: true,
+			autoclose: true,
+			excluded: [':disabled']
+		});
+		
+	 
+
+</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<style>
+
+	.section-movable {
+		cursor: move;
+		border: 1px solid #0a0d13;
+	}
+
+</style>
+<script type="text/javascript">
+
+	/* Profile Page Sections Reorder */
+	$('#page-section-reorder').click(function(){
+		$(".page-section-inner").toggleClass("section-movable");
+		$(".page-section-outer").sortable({	
+			update: function( event, ui ) {
+				page_section_order();
+			}
+		});  
+	});
+	function page_section_order() {	
+		var item_order = new Array();
+		$('.page-section-outer .page-section-inner').each(function() {
+			item_order.push($(this).attr("id"));
+		});
+		//var order_string = 'order='+item_order;
+		//alert(item_order);
+		$.ajax({
+			type: "POST",
+			url:"http://localhost/grantize/public/researcher/profile/reorder_profile_info",
+			data: {
+				_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+				section_order: item_order
+			},
+			cache: false,
+			success:function(data){
+				//console.log(data);
+			}
+		});  
+	} 
+
+</script>
+
+
+
+<form action="{{ url_for('grantizebrowsegrants') }}" id="filterFormLogin" method="post">
+  <input type="hidden" name="_token" value="0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT" autocomplete="off">  <input type="hidden" id="grants_status_login" name="grants_status">
+</form>
+<script type="text/javascript">
+
+  //Advance Filter
+  $(document).ready(function(){  
+      $(".grants_status_login").click(function(){  
+          var grants_status = $(this).attr('data-value'); 
+          $('#grants_status_login').val(grants_status);
+          $("#filterFormLogin").submit();
+      });
+  });
+
+</script>
+<script type="text/javascript">
+
+  //$(document).ready(function(){
+  function formatResult(item) {
+      if (!item.id) {
+          return item.text; 
+      }
+      //console.log(item);
+      var dp = item.dp;
+      var dp_src = 'http://localhost/sisterlab/public/assets/users/dp_default.png';
+      if(item.dp!=null){
+          dp_src = 'http://localhost/sisterlab/public/assets/users/dp/'+ item.dp;
+      }
+      var full_name = item.first_name;
+      var organization_name = item.organization.name;
+      var location = '';
+      if(item.city != null){
+          location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+      }else if(item.state != null){
+          location = item.state.name +' '+ item.country.name;
+      }else if(item.country != null){
+          location = item.country.name;
+      }else{
+          location = '';
+      }
+
+      var $item = $('<div class="formatResultUser">'+
+          '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+          '<div class="textdiv">'+
+              '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+              '<span class="organization">' + organization_name + '</span>'+
+          '</div>'+
+      '</div>');
+
+      return $item;
+  }
+  function formatSelection(item) {
+      if (!item.id) {
+          return item.text; 
+      }
+      if (item.selected) {
+          var dp = item.element.getAttribute('data-dp');
+          var dp_src = 'http://localhost/sisterlab/public/assets/users/dp_default.png';
+          if(dp!=''){
+              dp_src = 'http://localhost/sisterlab/public/assets/users/dp/'+ dp;
+          }
+          var full_name = item.element.getAttribute('data-name');
+          var location = item.element.getAttribute('data-country_name');
+          var organization_name = item.element.getAttribute('data-organization_name');  
+      }
+      else{
+          var dp = item.dp;
+          var dp_src = 'http://localhost/sisterlab/public/assets/users/dp_default.png';
+          if(item.dp!=null){
+              dp_src = 'http://localhost/sisterlab/public/assets/users/dp/'+ item.dp;
+          }
+          var full_name = item.first_name;
+          var organization_name = item.organization.name;
+          var location = '';
+          if(item.city != null){
+              location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+          }else if(item.state != null){
+              location = item.state.name +' '+ item.country.name;
+          }else if(item.country != null){
+              location = item.country.name;
+          }else{
+              location = '';
+          }
+      }
+
+      var $item = $('<div class="formatResultUser">'+
+              '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+              '<div class="textdiv">'+
+                  '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                  '<span class="organization">' + organization_name + '</span>'+
+              '</div>'+
+          '</div>');
+
+      return $item;
+  }
+  //});
+
+</script>
+
+
+<script type="text/javascript">
+
+	$('#awards').select2({
+		theme: 'bootstrap-5',
+		dropdownParent: $("#addModal"),
+		placeholder: 'Search Awards',
+		closeOnSelect: true,
+        minimumInputLength: 3,
+		tags: true,
+		tokenSeparators: [","],
+		createTag: function (tag) {
+			return {
+				id: tag.term,
+				text: tag.term,
+				// add indicator:
+				isNew : true
+			};
+		},
+
+		ajax: {
+			type: "POST",
+			url:"http://localhost/grantize/public/search_dropdown_global",
+			delay: 250,
+			dataType: 'json',
+			data: function (params) {
+				return {
+					search: params.term, // search term
+					"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+					table: 'global_info',
+					sub_table: 'awards',
+					field: 'name',
+					//page: params.page
+				};
+			},
+			processResults: function (data, params) {
+				//params.page = params.page || 1;
+				return {
+					//results: data.items,
+					//pagination: {more: (params.page * 30) < data.total_count}
+					results: $.map(data, function (item){
+						return {
+							id: item.id,
+							text: item.name,
+						}
+					})
+				};
+			},
+			cache: true
+		}
+	}).on("select2:select", function(e) {
+		//alert('id -> ' + e.params.data.id)
+		if(e.params.data.isNew){
+			//alert(e.params.data.id)
+			$.ajax({
+				type:"POST",
+				url:"http://localhost/grantize/public/creation_limit_for_user",
+				data: {
+					_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+					table: 'global_info',
+					sub_table: 'awards',
+					field: 'name',
+					//field_category: '',
+					//field_category_value: 0,
+				},
+				success:function(data){
+					data = JSON.parse(data);
+					var count = data[0]; //alert(count);
+					var limit = data[1]; //alert(limit);
+					var message = data[2];
+					if(limit > count){
+						//$('#conferenceModal').modal('show');
+						$.ajax({
+							type:"POST",
+							url:"http://localhost/grantize/public/new_creation_by_user",
+							data: {
+								_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+								table: 'global_info',
+								sub_table: 'awards',
+								field: 'name',
+								field_value: e.params.data.id 
+							},
+							success:function(data){
+								data = JSON.parse(data);
+								var last_id = data[0]; //alert('ajax '+ last_id);
+								$('#awards').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+							}
+						})
+					}else{
+						$('#exceedLimit').text(message);
+						$('#exceedLimitModal').modal('show');
+						var new_option = $('#awards option[value="'+ e.params.data.id +'"]')
+						new_option.prop('selected', false)
+						$('#awards').trigger('change')
+					}
+				}
+			});
+		}
+	});
+
+	
+		$('#awards12').select2({
+			theme: 'bootstrap-5',
+			dropdownParent: $("#editForm12"),
+			placeholder: 'Search Awards',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//page: params.page
+					};
+				},
+				processResults: function (data, params) {
+					//params.page = params.page || 1;
+					return {
+						//results: data.items,
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			//alert('text -> ' + e.params.data.text)
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+							//$('#conferenceModal').modal('show');
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'awards',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#awards12').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#awards12 option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#awards12').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+	
+		$('#awards42').select2({
+			theme: 'bootstrap-5',
+			dropdownParent: $("#editForm42"),
+			placeholder: 'Search Awards',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//page: params.page
+					};
+				},
+				processResults: function (data, params) {
+					//params.page = params.page || 1;
+					return {
+						//results: data.items,
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			//alert('text -> ' + e.params.data.text)
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+							//$('#conferenceModal').modal('show');
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'awards',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#awards42').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#awards42 option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#awards42').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+	
+		$('#awards47').select2({
+			theme: 'bootstrap-5',
+			dropdownParent: $("#editForm47"),
+			placeholder: 'Search Awards',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//page: params.page
+					};
+				},
+				processResults: function (data, params) {
+					//params.page = params.page || 1;
+					return {
+						//results: data.items,
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			//alert('text -> ' + e.params.data.text)
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+							//$('#conferenceModal').modal('show');
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'awards',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#awards47').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#awards47 option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#awards47').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+	
+		$('#awards48').select2({
+			theme: 'bootstrap-5',
+			dropdownParent: $("#editForm48"),
+			placeholder: 'Search Awards',
+			closeOnSelect: true,
+			minimumInputLength: 3,
+			tags: true,
+			tokenSeparators: [","],
+			createTag: function (tag) {
+				return {
+					id: tag.term,
+					text: tag.term,
+					// add indicator:
+					isNew : true
+				};
+			},
+
+			ajax: {
+				type: "POST",
+				url:"http://localhost/grantize/public/search_dropdown_global",
+				delay: 250,
+				dataType: 'json',
+				data: function (params) {
+					return {
+						search: params.term, // search term
+						"_token": "0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT",
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//page: params.page
+					};
+				},
+				processResults: function (data, params) {
+					//params.page = params.page || 1;
+					return {
+						//results: data.items,
+						results: $.map(data, function (item){
+							return {
+								id: item.id,
+								text: item.name,
+							}
+						})
+					};
+				},
+				cache: true
+			}
+		}).on("select2:select", function(e) {
+			//alert('id -> ' + e.params.data.id)
+			//alert('text -> ' + e.params.data.text)
+			if(e.params.data.isNew){
+				//alert(e.params.data.id)
+				$.ajax({
+					type:"POST",
+					url:"http://localhost/grantize/public/creation_limit_for_user",
+					data: {
+						_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+						table: 'global_info',
+						sub_table: 'awards',
+						field: 'name',
+						//field_category: '',
+						//field_category_value: 0,
+					},
+					success:function(data){
+						data = JSON.parse(data);
+						var count = data[0]; //alert(count);
+						var limit = data[1]; //alert(limit);
+						var message = data[2];
+						if(limit > count){
+							//$('#conferenceModal').modal('show');
+							$.ajax({
+								type:"POST",
+								url:"http://localhost/grantize/public/new_creation_by_user",
+								data: {
+									_token: '0QLLWGDpQKt4igjK6vIXRqmvOh5OYcIOZQnIxQbT',
+									table: 'global_info',
+									sub_table: 'awards',
+									field: 'name',
+									field_value: e.params.data.id 
+								},
+								success:function(data){
+									data = JSON.parse(data);
+									var last_id = data[0]; //alert('ajax '+ last_id);
+									$('#awards48').find('[value="'+e.params.data.id+'"]').replaceWith('<option selected value="' + last_id + '">' + e.params.data.id + '</option>');
+								}
+							})
+						}else{
+							$('#exceedLimit').text(message);
+							$('#exceedLimitModal').modal('show');
+							var new_option = $('#awards48 option[value="'+ e.params.data.id +'"]')
+							new_option.prop('selected', false)
+							$('#awards48').trigger('change')
+						}
+					}
+				});
+			}
+		});
+
+	 
+
+
+	$('#award_type').select2({ dropdownParent: $("#addModal"), theme: 'bootstrap-5' });
+	$(document ).ready(function() {
+		$('#addForm').validate({
+			rules: {                         
+				awards:{
+					required: true,       
+				},
+				organization:{
+					required: true,       
+				},
+			},
+			messages: {                
+				honors_and_awards:{
+					required: 'Awards cannot be blank'       
+				}, 
+				organization:{
+					required: 'Select Organization'       
+				},           
+			},            
+			errorPlacement: function(error, element) {
+				error.insertAfter(element);                
+			},
+			highlight: function(element) {
+				$(element).closest('.form-group').addClass('error');
+			},
+			success: function(element) {
+				$(element).closest(".form-group").removeClass("error");
+			}
+		}); 
+	});
+
+	
+		$('#award_type12').select2({ dropdownParent: $("#editModal12"), theme: 'bootstrap-5' });
+		$(document ).ready(function() {
+			$('#editForm12').validate({
+				rules: {                         
+					awards:{
+						required: false,       
+					},
+					organization:{
+						required: false,       
+					},
+				},
+				messages: {                    
+				},            
+				errorPlacement: function(error, element) {
+					error.insertAfter(element);                
+				},
+				highlight: function(element) {
+					$(element).closest('.form-group').addClass('error');
+				},
+				success: function(element) {
+					$(element).closest(".form-group").removeClass("error");
+				}
+			}); 
+		});
+
+	
+		$('#award_type42').select2({ dropdownParent: $("#editModal42"), theme: 'bootstrap-5' });
+		$(document ).ready(function() {
+			$('#editForm42').validate({
+				rules: {                         
+					awards:{
+						required: false,       
+					},
+					organization:{
+						required: false,       
+					},
+				},
+				messages: {                    
+				},            
+				errorPlacement: function(error, element) {
+					error.insertAfter(element);                
+				},
+				highlight: function(element) {
+					$(element).closest('.form-group').addClass('error');
+				},
+				success: function(element) {
+					$(element).closest(".form-group").removeClass("error");
+				}
+			}); 
+		});
+
+	
+		$('#award_type47').select2({ dropdownParent: $("#editModal47"), theme: 'bootstrap-5' });
+		$(document ).ready(function() {
+			$('#editForm47').validate({
+				rules: {                         
+					awards:{
+						required: false,       
+					},
+					organization:{
+						required: false,       
+					},
+				},
+				messages: {                    
+				},            
+				errorPlacement: function(error, element) {
+					error.insertAfter(element);                
+				},
+				highlight: function(element) {
+					$(element).closest('.form-group').addClass('error');
+				},
+				success: function(element) {
+					$(element).closest(".form-group").removeClass("error");
+				}
+			}); 
+		});
+
+	
+		$('#award_type48').select2({ dropdownParent: $("#editModal48"), theme: 'bootstrap-5' });
+		$(document ).ready(function() {
+			$('#editForm48').validate({
+				rules: {                         
+					awards:{
+						required: false,       
+					},
+					organization:{
+						required: false,       
+					},
+				},
+				messages: {                    
+				},            
+				errorPlacement: function(error, element) {
+					error.insertAfter(element);                
+				},
+				highlight: function(element) {
+					$(element).closest('.form-group').addClass('error');
+				},
+				success: function(element) {
+					$(element).closest(".form-group").removeClass("error");
+				}
+			}); 
+		});
+
+	 
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,1231 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobs Application</title>
+    <meta name="_token" content="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O">
+
+    <!-- Favicons -->
+    <link href="/static/images/favicon_grantize.png" rel="icon">
+    <link href="/static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="https://techiefolk.com/sisterlab/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">SisterLab</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        
+                
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link nav-icon" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+                You have 1 new notifications
+                <!-- <a href=""><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a> -->
+            </li>
+                        <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+                <div>
+                <p></p>
+                <p>0000-00-00 00:00:00</p>
+                </div>
+            </li>
+                        <li class="dropdown-footer">
+                <a href="https://techiefolk.com/sisterlab/public/admin/notifications/grantize">Grantize Notifications </a>
+                <a href="https://techiefolk.com/sisterlab/public/admin/notifications/recruitphd">RecruitPhd Notifications</a>
+            </li>
+            </ul>
+                    </li>
+        <!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+                        </a>
+                    </li>
+        <!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+            <a href="#" class="nav-link nav-profile d-flex align-items-center pe-0" data-bs-toggle="dropdown">
+             
+                
+            
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+                <h6>Admin</h6>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="https://techiefolk.com/sisterlab/public/admin/dashboard" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-person"></i>
+                <span>My Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="https://techiefolk.com/sisterlab/public/admin/logout" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+                </a>
+            </li>
+
+            </ul>
+        </li>
+        <!-- End Profile Nav -->
+        
+        </ul>
+    </nav>
+
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
+    <li class="nav-heading">My Account</li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#dashboard-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="dashboard-nav" class="nav-content collapse " data-bs-parent="#dashboard-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/dashboard" class="" >
+            <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/staff" class="" >
+            <span>Staff</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/staff_permissions" class="" >
+            <span>Staff permissions</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+    <!-- End Dashboard Nav -->
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#master-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Master Data</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="master-nav" class="nav-content collapse " data-bs-parent="#master-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/activities" class="" >
+            <span>Activities</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/activity_code" class="" >
+            <span>Activity Code</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/applicant_type" class="" >
+            <span>Applicant Type</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/awards" class="" >
+            <span>Awards</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/cfda" class="" >
+            <span>Cfda</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/committees" class="" >
+            <span>Committees</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/conferences" class="" >
+            <span>Conferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/degree" class="" >
+            <span>Degree</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/departments" class="" >
+            <span>Departments</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" class="" >
+            <span>Grants Type</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/hobbies" class="">
+            <span>Hobbies</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/jobs_benifits" class="" >
+            <span>Jobs Benifits</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/journals" class="" >
+            <span>Journals</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a href="admin/journalsquarter" class="" >
+            <span>Journals Quarter</span>
+            </a>
+        </li> -->
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/keywords" class="">
+            <span>Keywords</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/languages" class="">
+            <span>Languages</span>
+            </a>
+        </li> 
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/organizations" class="" >
+            <span>Organizations</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/skill_gained" class="">
+            <span>Skill Gained</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/subjects" class="">
+            <span>Subjects</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/weightageparameters" class="" >
+            <span>Weightage Formula</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/weightageparameters_jobs" class="" >
+            <span>Weightage Formula (Jobs)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/skillset" class="">
+            <span>Skillset</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/countries" class="" >
+            <span>Locations</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#grantize-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Grantize</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="grantize-nav" class="nav-content collapse " data-bs-parent="#grantize-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/grants" class="">
+            <span>Grants</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/sponsors" class="">
+            <span>Sponsors</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/researchers" class="">
+            <span>Researchers</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/sponsor_plan" class="">
+            <span>Plans (Sponsor)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/researcher_plan" class="">
+            <span>Plans (Researcher)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/notifications/grantize" class="">
+            <span>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/banners/grantize" class="" >
+            <span>Banners</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/testimonials/grantize" class="" >
+            <span>Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/video_testimonials/grantize" class="" >
+            <span>Video Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/whyus/grantize" class="" >
+            <span>Why Grantize</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/blogs/grantize" class="">
+            <span>Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/faqs/grantize" class="">
+            <span>Faqs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/pages/grantize" class="" >
+            <span>Pages</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link " data-bs-target="#recruitphd-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>RecruitPhd</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="recruitphd-nav" class="nav-content collapse show " data-bs-parent="#recruitphd-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobs" class="">
+            <span>Jobs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobs/application" class="">
+            <span>Jobs Application</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/recruiters" class="">
+            <span>Recruiters</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobseekers" class="">
+            <span>Jobseekers</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/recruiter_plan" class="">
+            <span>Plans (Recruiter)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobseeker_plan" class="">
+            <span>Plans (Jobseeker)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/notifications/recruitphd" class="">
+            <span>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/banners/recruitphd" class="" >
+            <span>Banners</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/testimonials/recruitphd" class="" >
+            <span>Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/video_testimonials/recruitphd" class="" >
+            <span>Video Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/whyus/recruitphd" class="" >
+            <span>Why RecruitPhd</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/blogs/recruitphd" class="">
+            <span>Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/faqs/recruitphd" class="">
+            <span>Faqs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/pages/recruitphd" class="" >
+            <span>Pages</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+<!-- End Sidebar-->
+<main id="main" class="main"> 
+
+    
+
+<div class="pagetitle">
+    <div class="row">
+      <div class="col-12 col-lg-12">
+        <!--           <div class="alert alert-success alert-dismissible fade show" role="alert">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+         -->
+        <!--           <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+          </div>
+         -->
+      </div>
+      <div class="col-12 col-sm-4 col-md-3 order-lg-2 ps-0 pe-0">
+
+        </div>
+        <div class="col-12 col-sm-8 col-md-9 order-lg-1">
+            <h1>Jobs</h1>
+        </div>
+
+    </div>
+    <h1></h1>
+</div>
+<!-- ======= Browse Page Start ======= -->
+<section class="section">
+
+    <div class="row">
+        <div class="col-12 col-xl-12">
+            <div class="card browse-filter-card">
+	<div class="card-body">
+
+		<div class="filter-top">
+			<div class="row">
+				<div class="col-12 col-lg-12">
+					<h3>
+						Jobs Application						<!-- <button type="button" id="flip" class="btn btn-sm btn-light float-end">
+							<i class="bi bi-funnel"></i>
+							Advanced Search
+						</button>-->
+					</h3>
+				</div>
+				<div class="col-12 col-lg-12">
+					<div id="panel">
+						<form action="https://techiefolk.com/sisterlab/public/admin/jobs" id="addForm" method="post">
+							<input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">							<div id="old-filter">
+							</div>
+					
+							<div class="row">
+								<div class="col-12">
+									<label for="fieldkey" class="form-label"><b>Add terms to the query box</b></label>
+								</div>
+								<div class="col-3">
+									<div class="form-group">
+										<select id="fieldkey" name="fieldkey" class="form-select fieldkey" style="width:100%;">
+											<option value="">Choose Field</option> 
+																						<option value="title">Title</option>
+																						<option value="opening_date">Opening Date</option>
+																						<option value="closing_date">Closing Date</option>
+																						<option value="job_type">Job type</option>
+																						<option value="job_locations">Job Locations</option>
+																						<option value="visibility_locations">Visibility Locations</option>
+																						<option value="aplication_via">Aplication via</option>
+																						<option value="number_of_openings">Number of openings</option>
+																						<option value="required_travel_max">Required travel max</option>
+																						<option value="required_travel_min">Required travel min</option>
+																						<option value="pay_maximum_amount">Pay maximum amount</option>
+																						<option value="pay_starting_amount">Pay starting amount</option>
+																						<option value="pay_fixed">Pay fixed</option>
+																						<option value="hiring_in">Hiring in</option>
+																						<option value="rate">Rate</option>
+																						<option value="recruitment_period">Recruitment period</option>
+																						<option value="qualification_prefered">Qualification prefered</option>
+																						<option value="qualification_required">Qualification required</option>
+																						<option value="workplace_type">Workplace type</option>
+																						<option value="supplement_pay">Supplement pay</option>
+																						<option value="job_schedule">Job schedule</option>
+																						<option value="user_role">User role</option>
+																						<option value="keywords">Keywords</option>
+																						<option value="subjects">Subjects</option>
+																						<option value="language">Language</option>
+																						<option value="soft_skills">Soft Skills</option>
+																						<option value="softwares">Softwares</option>
+																						<option value="instruments">Instruments</option>
+																						<option value="techniques">Techniques</option>
+																						<option value="jobs_benifits">Jobs Benifits</option>
+																						<option value="departments">Departments</option>
+																						<option value="organization">Organization</option>
+																					</select>
+										<span id="fieldkey-error" class="error"></span>
+									</div>
+								</div>
+								<div class="col-7 pr-0 pl-0">
+									<div id="page-content">
+										<div class="form-group">
+											<input type="text" maxlength="50" id="fieldvalue" name="fieldvalue" onkeyup="keyupFunction()" class="fieldvalue form-control" placeholder="Enter a search term">
+											<span id="fieldvalue-error" class="error"></span>
+
+											<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldText2">
+											<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldText3">
+										</div>
+									</div>
+								</div>
+								<div class="col-2">
+									<div class="form-group">
+										<select id="fieldoprator" name="fieldoprator" class="form-select" style="width:100%;">
+											<option value="">Operator</option>
+																						<option value="OR">OR</option>
+																						<option value="AND">AND</option>
+																						<option value="NOT">NOT</option>
+																					</select>
+
+										<span id="fieldvalue-error" class="error"></span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-12 mt-4">
+									<label for="fieldkey" class="form-label"><b>Query box</b></label>
+									<textarea hidden="hidden" id="query_oprator" name="query_oprator"></textarea>
+									<textarea id="query_front" name="query_front" rows="3" cols="100" readonly class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-10 mt-2">
+									<input type="text" id="title" name="title" onkeyup="titleKeyup()" class="form-control" placeholder="Query Title">
+									<span id="title-error" class="error"></span>
+								</div>
+								<div class="col-2 mt-2">
+									<input type="hidden" id="submit_data" name="submit_data" >
+									<button type="button" id="submit_search" name="submit_search" class="form-control btn btn-primary btn-submit"> <i class="fa fa-search"></i> Apply </button>
+								</div>
+							</div>	
+						</form>
+					</div>
+
+					<form action="https://techiefolk.com/sisterlab/public/admin/jobs" method="post">
+						<input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">						<input type="hidden" id="search_query" name="search_query" value="" class="form-control" >
+						
+						<div class="col-lg-12 browse-search">
+							<div class="input-group">
+								<input type="text" id="filter_title" name="title" class="form-control" placeholder="Search Jobs">
+								<div class="input-group-append">
+									<button type="submit" name="submit_title" id="submit_title" class="btn btn-secondary">
+										<i class="bi bi-search"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="filter-mid">
+			<div class="row">
+				<div class="col-lg-12 mt-2">
+					<button type="button" id="all" data-value="all" class="btn btn-sm btn-line ">All</button>
+					<!-- <button type="button" id="open" data-value="open" class="btn btn-sm btn-line btn-light ">Open</button>
+					<button type="button" id="continuous" data-value="continuous" class="btn btn-sm btn-line ">Continuous</button>
+					<button type="button" id="comming_soon" data-value="comming_soon" class="btn btn-sm btn-line ">Comming Soon</button>
+					<button type="button" id="recently_closed" data-value="recently_closed" class="btn btn-sm btn-line ">Recently Closed</button>
+					<button type="button" id="archived" data-value="archived" class="btn btn-sm btn-line ">Archived</button> -->
+				</div>
+			</div>
+		</div>
+		<!-- <div class="filter-bottom">
+			<div class="row">
+				<div class="col-lg-12">
+					<button type="button" id="all" class="btn me-1 btn-sm btn-primary">All</button>
+					<button type="button" id="name" class="btn me-1 btn-sm btn-light">Name</button>
+					<button type="button" id="amount" class="btn me-1 btn-sm btn-light">Amount</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</div>
+</div> 
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-xl-12 mt-2">
+
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/1"><h3>Job title 1</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : 111</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 101</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : 2023-06-01</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : 2023-11-30</h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : 789</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/2"><h3> What is Lorem Ipsum</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : 1234</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 101</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : 2023-06-28</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : 2023-11-30</h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/3"><h3>Where can I get some</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : job-23</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 101</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : 2023-07-01</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : 2023-11-25</h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : 808</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/4"><h3>Where does it come from</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : 12345</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 101</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : 2023-07-01</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : 2023-11-24</h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : 808</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/5"><h3>The standard Lorem Ipsum passage, used since the 1500s</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : 123456</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 101</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : 2023-07-01</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : 2023-11-29</h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : 808,785</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/6"><h3>Postdoc</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : 654fy7</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 233</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : 2023-08-14</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : 2023-11-27</h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/7"><h3>Adf</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : adf</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 101</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+            <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                <div class="card-body profile-organization-outer">
+                    <div class="profile-organization">
+                        <div class="profile-organization-img-div">
+                             
+                                <img src="/assets/organizations/logo_default.png" class="profile-organization-img" alt="">
+                                                    </div>
+    
+                        <div class="profile-organization-info-div">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="float-start" style="width:calc(100% - 60px);">
+                                        <a class="" href="https://techiefolk.com/sisterlab/public/recruiter/jobs/application/detail/8"><h3>Test organizational title</h3></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Job ID</b> : 787878</h4>
+                                </div>
+                                <div class="col-12 col-lg-12 mb-1">
+                                    <h4><b>Salary</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Countries</b> : 233</h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Opening Date</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-4 mb-1">
+                                    <h4><b>Closing Date</b> : </h4>
+                                </div>
+                                <div class="col-12 col-lg-12">
+                                    <h4><b>benefits</b> : insurance</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-12">
+                                <p></p>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                </div>
+
+            
+        </div>
+        <div class="col-12 col-xl-12 mt-2">
+
+            
+
+        </div>
+    </div>
+
+
+</section>
+<!-- End Browse Page -->
+
+</main>
+<!-- End #main -->
+<!-- ======= Start Footer ======= -->
+<footer id="footer_sidebar" class="footer_sidebar">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+    </div>
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Switch Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 text-center">
+                <label for="" class="form-label">
+
+                                      <h4>You are login with Sponsor account .</h4> 
+                    if you want to login with Applicant account click this
+                    <br><br>
+                    <a href="" class="btn btn-outline-primary">Login with Applicant account</a>
+                                      <h4>You are login with Applicant account . </h4>
+                    if you want to login with Sponsor account click this
+                    <br><br>
+                    <a href="" class="btn btn-outline-primary">Login with Sponsor account</a>
+                  
+                </label>
+            </div>
+          </div> 
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade bs-modal-sm" id="exceedLimitModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-sm" style="margin:200px auto;">
+	<div class="modal-content" >
+		<div class="modal-header" style="border:none;">         
+		</div>
+		<div class="modal-body text-center">
+			<h3 class="modal-title">
+				<strong id="exceedLimit">You are Exceed limit</strong>
+			</h3>
+			<br>
+		</div>
+		<div class="modal-footer" style="border:none;">              
+			<div class="col-12">
+				<button type="button" class="btn btn-success float-end" data-bs-dismiss="modal"> Ok </button>
+			</div>
+		</div>
+	</div>        
+	</div>      
+</div>
+ 
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<script type="text/javascript">
+
+    //$(document).ready(function(){
+    function formatResult(item) {
+          if (!item.id) {
+              return item.text; 
+          }
+          //console.log(item);
+          var dp = item.dp;
+          var dp_src = '/static/images/dp_default.png';
+          if(item.dp!=null){
+              dp_src = '/static/images/dp/'+ item.dp;
+          }
+          var full_name = item.first_name;
+          var organization_name = item.organization.name;
+          var location = '';
+          if(item.city != null){
+              location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+          }else if(item.state != null){
+              location = item.state.name +' '+ item.country.name;
+          }else if(item.country != null){
+              location = item.country.name;
+          }else{
+              location = '';
+          }
+  
+          var $item = $('<div class="formatResultUser">'+
+              '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+              '<div class="textdiv">'+
+                  '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                  '<span class="organization">' + organization_name + '</span>'+
+              '</div>'+
+          '</div>');
+  
+          return $item;
+    }
+    function formatSelection(item) {
+        if (!item.id) {
+            return item.text; 
+        }
+        if (item.selected) {
+            var dp = item.element.getAttribute('data-dp');
+            var dp_src = '/static/images/dp_default.png';
+            if(dp!=''){
+                dp_src = '/static/images/dp/'+ dp;
+            }
+            var full_name = item.element.getAttribute('data-name');
+            var location = item.element.getAttribute('data-country_name');
+            var organization_name = item.element.getAttribute('data-organization_name');  
+        }
+        else{
+            var dp = item.dp;
+            var dp_src = '/static/images/dp_default.png';
+            if(item.dp!=null){
+                dp_src = '/static/images/dp/'+ item.dp;
+            }
+            var full_name = item.first_name;
+            var organization_name = item.organization.name;
+            var location = '';
+            if(item.city != null){
+                location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+            }else if(item.state != null){
+                location = item.state.name +' '+ item.country.name;
+            }else if(item.country != null){
+                location = item.country.name;
+            }else{
+                location = '';
+            }
+        }
+
+        var $item = $('<div class="formatResultUser">'+
+                '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+                '<div class="textdiv">'+
+                    '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                    '<span class="organization">' + organization_name + '</span>'+
+                '</div>'+
+            '</div>');
+
+        return $item;
+    }
+    //});
+  
+</script>
+
+
+</body>
+</html>

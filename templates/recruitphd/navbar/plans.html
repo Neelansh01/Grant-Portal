@@ -1,0 +1,315 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plans</title>
+    <meta name="_token" content="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+ 
+<!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">RecruitPhD</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+  
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="https://techiefolk.com/recruitphd/public/whyus" class="nav-item desktop me-3 ">Why RecruitPHD</a></li>
+        <li><a href="https://techiefolk.com/recruitphd/public/plans" class="nav-item desktop me-3 active">Plans</a></li>
+        <li>
+                    <a href="https://techiefolk.com/recruitphd/public/login" class="nav-item desktop me-3 ">Jobs List</a>
+                      <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs List</a> -->
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs List</a> -->
+                  </li>
+        <li>
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs</a> -->
+                            <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs</a>
+                          <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs</a> -->
+                    </li>
+        <!-- <li>
+            <a href="{//{URL::to('/sponsor/login')}}" class="nav-item desktop me-3 ">Grants List</a>
+            <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Grants List </a>
+        </li> -->
+        <li><a href="https://techiefolk.com/recruitphd/public/blogs" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="https://techiefolk.com/recruitphd/public/faqs" class="nav-item desktop me-3 ">Help</a></li>
+    
+  
+          
+      </ul>
+    </nav>
+  
+        <a href="https://techiefolk.com/recruitphd/public/login" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+      
+    </div>
+</header>
+<!-- End Header -->
+<main id="main" class="main">
+
+
+
+<!-- ======= Pricing Section ======= -->
+<section id="pricing" class="pricing">
+    <div class="container" data-aos="fade-up">
+
+
+            <div class="section-header" style="padding-top:0px;">
+                <!-- <span>Plans</span>
+                <h2>Plans</h2>-->
+                <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="applicant-tab" data-bs-toggle="tab" data-bs-target="#applicant" type="button" role="tab" aria-controls="applicant" aria-selected="true">
+                            <b>Jobseeker Plans</b>
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="other-tab" data-bs-toggle="tab" data-bs-target="#other" type="button" role="tab" aria-controls="other" aria-selected="false">
+                            <b>Recruiter Plans</b>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="applicant" role="tabpanel" aria-labelledby="applicant-tab">
+                    <div class="row gy-4">
+                         
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-item  ">
+                                <h3>Jobseeker Free Plan</h3>
+                                <h4><sup>$</sup>0<span> / month</span></h4>
+                                <ul>
+                                                                                                            <li><i class="bi bi-check"></i> Available1</li>
+                                                                        <li><i class="bi bi-check"></i> Available2</li>
+                                                                        <li class="na"><i class="bi bi-x"></i> <span>Not Available1</span></li>
+                                                                        <li class="na"><i class="bi bi-x"></i> <span>Not Available2</span></li>
+                                     
+                                </ul>
+                                <a href="login" class="buy-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                         
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-item  featured">
+                                <h3>Jobseeker Premium Plan</h3>
+                                <h4><sup>$</sup>50<span> / month</span></h4>
+                                <ul>
+                                                                                                            <li><i class="bi bi-check"></i> Available</li>
+                                                                        <li><i class="bi bi-check"></i> Available</li>
+                                                                        <li class="na"><i class="bi bi-x"></i> <span>Not Available</span></li>
+                                     
+                                </ul>
+                                <a href="login" class="buy-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                         
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-item  ">
+                                <h3>Jobseeker Business Plan</h3>
+                                <h4><sup>$</sup>100<span> / month</span></h4>
+                                <ul>
+                                                                                                            <li><i class="bi bi-check"></i> Available</li>
+                                                                        <li><i class="bi bi-check"></i> Available</li>
+                                                                        <li class="na"><i class="bi bi-x"></i> <span>Not Available</span></li>
+                                     
+                                </ul>
+                                <a href="login" class="buy-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                         
+                        <!-- End Pricing Item -->
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                    <div class="row gy-4">
+                         
+                        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="pricing-item  ">
+                                <h3>Recruiter Free Plan</h3>
+                                <h4><sup>$</sup>0<span> / month</span></h4>
+                                <ul>
+                                                                                                            <li><i class="bi bi-check"></i> Available</li>
+                                                                        <li><i class="bi bi-check"></i> Available2</li>
+                                                                        <li class="na"><i class="bi bi-x"></i> <span>Not Available</span></li>
+                                                                        <li class="na"><i class="bi bi-x"></i> <span>Not Available2</span></li>
+                                     
+                                </ul>
+                                <a href="login" class="buy-btn">Choose Plan</a>
+                            </div>
+                        </div>
+                         
+                        <!-- End Pricing Item -->
+                    </div>
+                </div>
+            </div>
+
+    </div>
+</section>
+<!-- End Pricing Section -->
+
+
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center mb-4">
+          <span>RecruitPhD</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<!-- Jquery ( Production ) -->
+<!-- <script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/development-jquery-3.7.1.min.js')}}"></script>
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<script type="text/javascript">
+</script>
+
+
+</body>
+</html>

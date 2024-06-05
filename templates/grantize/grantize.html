@@ -1,0 +1,912 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <meta name="_token" content="sXgYM1KoTs5siAHKOaWHtxxN7v5I772mpr7Ak015">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style_responsive.css') }}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/grantize/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main_frontend_olny.css') }}">
+<!-- Select2 -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between"> 
+    
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="{{ url_for('grantize') }}" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">Grantize</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="{{ url_for('grantizewhyus') }}" class="nav-item desktop me-3 ">Why Grantize</a></li>
+        <li><a href="{{ url_for('grantizeplans') }}" class="nav-item desktop me-3 ">Plans</a></li>
+        
+        <li>
+            <a href="{{ url_for('grantizegrants') }}" class="nav-item desktop me-3 ">Grants List</a>
+        </li>
+        
+        <li class="nav-item dropdown2 desktop me-3">
+            <a href="#"><span>Grants</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                <li><button type="button" data-value="all" 			class="grants_status_logout btn btn-sm">All</button></li>
+                <li><button type="button" data-value="open" 		class="grants_status_logout btn btn-sm">Open</button></li>
+                <li><button type="button" data-value="continuous"  	class="grants_status_logout btn btn-sm">Continuous</button></li>
+                <li><button type="button" data-value="commingsoon"  class="grants_status_logout btn btn-sm">Comming Soon</button></li>
+                <li><button type="button" data-value="recentlyclosed" class="grants_status_logout btn btn-sm">Recently Closed</button></li>
+                <li><button type="button" data-value="archived" 	class="grants_status_logout btn btn-sm">Archived</button></li>
+            </ul>
+                    </li>
+        
+        <li><a href="{{ url_for('grantizesponsors') }}" class="nav-item desktop me-3 ">Sponsors</a></li>
+        <li><a href="{{ url_for('grantizeblogs') }}" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="{{ url_for('grantizehelp') }}" class="nav-item desktop me-3 ">Help</a></li>
+    
+
+            
+            
+        </ul>
+    </nav>
+
+        <a href="{{ url_for('logingrantizeoptions') }}" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+
+
+<!-- End Sidebar-->
+<main id="main" class="main">
+
+
+
+
+<!-- ======= Home Banner Section ======= -->
+<section id="home_banner" class="home_banner d-flex align-items-center" style="background-image: url('/static/images/hero-bg.png')">
+  <div class="container">
+    <div class="row gy-4 d-flex justify-content-between">
+      <div class="col-lg-7 order-lg-1 d-flex flex-column justify-content-center welcome-box">
+
+        <h2 data-aos="fade-up">Welcome to <span>Grantize</span></h2>
+        <p data-aos="fade-up" data-aos-delay="100">The Largest and <span>Only platform</span> Solely Dedicated to Recruiting <br>Candidates with Doctoral degrees. <span>Join with Pride.</span></p>
+
+        <form action="{{ url_for('grantize') }}" method="post" id="filterForm" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+          <input type="hidden" name="searchgrant" value="sXgYM1KoTs5siAHKOaWHtxxN7v5I772mpr7Ak015" autocomplete="off">          <input type="hidden" form="filterForm" id="grants_status" name="grants_status" value="all" >
+          <input type="text" id="title" name="tquery" class="form-control" placeholder="Search Grants">
+          <button type="submit" name="submit_status" id="submit_status" class="btn btn-search"><i class="bi bi-search"></i></button>
+        </form>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="1000" data-duration="8000">0</span>
+              <p>Total active Grants</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="124" data-duration="8000">0</span>
+              <p>Grants in USA</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="875" data-duration="8000">0</span>
+              <p> Grants</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span class="counter" data-countto="875" data-duration="8000">0</span>
+              <p> Grants</p>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-lg-4 order-1 order-lg-2 slider-box" data-aos="zoom-out">
+
+         
+        <div class="banners-slider" id="banners-slider">
+           
+          <div class="slider-box-inner"  style="background-image: url('/static/images/779830herobg.jpg')" >
+
+                            <h3 data-aos="fade-up">Grantize </h3>
+                            <h4 data-aos="fade-up">Banners </h4>
+                            <p data-aos="fade-up" data-aos-delay="100">Grantize Banners Paragraph</p>
+              
+          </div>
+           
+          <div class="slider-box-inner"  style="background-image: url('/static/images/264376697734statsbg.jpg')" >
+
+                            <h3 data-aos="fade-up">Title</h3>
+                            <h4 data-aos="fade-up">SubTitle</h4>
+                            <p data-aos="fade-up" data-aos-delay="100">Paragraph</p>
+              
+          </div>
+        </div> 
+        
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======= End Home Banner Section ======= -->
+<!-- ======= Home Grants Section ======= -->
+ 
+<section id="services" class="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Grants</h2>
+      <!-- <p>Magnam dolores commodi suscipit.</p> -->
+    </div>
+    {% for document in documents %}
+    <div class="row">
+      {% for grant in document %}
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch mb-4">
+        <div class="item-box">
+          <div class="row item-box-row">
+            <div class="col-3 col-lg-3 col1">
+              <img style="width:100%;" src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+            </div>
+            <div class="col-9 col-lg-9">
+              <h4><a href="{{grant['grant_source_url']}}">{{ grant['title'] }}</a></h4>
+            </div>
+            <div class="col-12 col-lg-12">
+              <p>Deadline : {{ grant['expiration_date'] }}</p>
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-12 col-lg-12">
+              <a href="{{ grant['grant_source_url'] }}" class="apply-btn"> Apply</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</section>
+<!-- End Home Grants Section -->
+<!-- End Home Grants Section -->
+<!-- ======= Home Sponsor Section ======= -->
+ 
+<section id="sponsor" class="sponsor section-bg">
+  <div class="container">
+    <div class="section-title">
+      <h2>Sponsors</h2>
+      <!-- <p>Magnam dolores commodi suscipit.</p> -->
+    </div>
+    <!-- <div class="container" style=""> -->
+    <div id="background">
+      <div id="sponsors">
+  
+         
+        <figure class="pic1">
+          <a href="https://techiefolk.com/grantize/public/sponsors/1">
+                          <img src="/static/images/1.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic2">
+          <a href="https://techiefolk.com/grantize/public/sponsors/2">
+                          <img src="/static/images/2.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic3">
+          <a href="https://techiefolk.com/grantize/public/sponsors/27">
+                          <img src="/static/images/28.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic4">
+          <a href="https://techiefolk.com/grantize/public/sponsors/28">
+                          <img src="/static/images/29.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic5">
+          <a href="https://techiefolk.com/grantize/public/sponsors/31">
+                          <img src="/static/images/33.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic6">
+          <a href="https://techiefolk.com/grantize/public/sponsors/32">
+                          <img src="/static/images/34.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic7">
+          <a href="https://techiefolk.com/grantize/public/sponsors/33">
+                          <img src="/static/images/35.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic8">
+          <a href="https://techiefolk.com/grantize/public/sponsors/34">
+                          <img src="/static/images/36.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic9">
+          <a href="https://techiefolk.com/grantize/public/sponsors/37">
+                          <img src="/static/images/40.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic10">
+          <a href="https://techiefolk.com/grantize/public/sponsors/38">
+                          <img src="/static/images/41.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic11">
+          <a href="https://techiefolk.com/grantize/public/sponsors/40">
+                          <img src="/static/images/43.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic12">
+          <a href="https://techiefolk.com/grantize/public/sponsors/42">
+                          <img src="/static/images/45.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic13">
+          <a href="https://techiefolk.com/grantize/public/sponsors/43">
+                          <img src="/static/images/46.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic14">
+          <a href="https://techiefolk.com/grantize/public/sponsors/44">
+                          <img src="/static/images/47.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic15">
+          <a href="https://techiefolk.com/grantize/public/sponsors/52">
+                          <img src="/static/images/55.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic16">
+          <a href="https://techiefolk.com/grantize/public/sponsors/53">
+                          <img src="/static/images/56.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic17">
+          <a href="https://techiefolk.com/grantize/public/sponsors/55">
+                          <img src="/static/images/58.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic18">
+          <a href="https://techiefolk.com/grantize/public/sponsors/56">
+                          <img src="/static/images/59.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic19">
+          <a href="https://techiefolk.com/grantize/public/sponsors/59">
+                          <img src="/static/images/62.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic20">
+          <a href="https://techiefolk.com/grantize/public/sponsors/61">
+                          <img src="/static/images/64.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic21">
+          <a href="https://techiefolk.com/grantize/public/sponsors/62">
+                          <img src="/static/images/65.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic22">
+          <a href="https://techiefolk.com/grantize/public/sponsors/63">
+                          <img src="/static/images/66.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic23">
+          <a href="https://techiefolk.com/grantize/public/sponsors/64">
+                          <img src="/static/images/67.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic24">
+          <a href="https://techiefolk.com/grantize/public/sponsors/65">
+                          <img src="/static/images/68.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic25">
+          <a href="https://techiefolk.com/grantize/public/sponsors/66">
+                          <img src="/static/images/69.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic26">
+          <a href="https://techiefolk.com/grantize/public/sponsors/68">
+                          <img src="/static/images/71.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic27">
+          <a href="https://techiefolk.com/grantize/public/sponsors/70">
+                          <img src="/static/images/73.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic28">
+          <a href="https://techiefolk.com/grantize/public/sponsors/71">
+                          <img src="/static/images/74.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic29">
+          <a href="https://techiefolk.com/grantize/public/sponsors/72">
+                          <img src="/static/images/75.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic30">
+          <a href="https://techiefolk.com/grantize/public/sponsors/73">
+                          <img src="/static/images/76.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic31">
+          <a href="https://techiefolk.com/grantize/public/sponsors/75">
+                          <img src="/static/images/78.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic32">
+          <a href="https://techiefolk.com/grantize/public/sponsors/76">
+                          <img src="/static/images/79.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic33">
+          <a href="https://techiefolk.com/grantize/public/sponsors/77">
+                          <img src="/static/images/80.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic34">
+          <a href="https://techiefolk.com/grantize/public/sponsors/78">
+                          <img src="/static/images/81.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic35">
+          <a href="https://techiefolk.com/grantize/public/sponsors/80">
+                          <img src="/static/images/83.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic36">
+          <a href="https://techiefolk.com/grantize/public/sponsors/81">
+                          <img src="/static/images/85.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic37">
+          <a href="https://techiefolk.com/grantize/public/sponsors/82">
+                          <img src="/static/images/86.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic38">
+          <a href="https://techiefolk.com/grantize/public/sponsors/83">
+                          <img src="/static/images/87.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic39">
+          <a href="https://techiefolk.com/grantize/public/sponsors/84">
+                          <img src="/static/images/88.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic40">
+          <a href="https://techiefolk.com/grantize/public/sponsors/85">
+                          <img src="/static/images/92.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic41">
+          <a href="https://techiefolk.com/grantize/public/sponsors/86">
+                          <img src="/static/images/96.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic42">
+          <a href="https://techiefolk.com/grantize/public/sponsors/87">
+                          <img src="/static/images/97.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic43">
+          <a href="https://techiefolk.com/grantize/public/sponsors/88">
+                          <img src="/static/images/99.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic44">
+          <a href="https://techiefolk.com/grantize/public/sponsors/89">
+                          <img src="/static/images/100.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic45">
+          <a href="https://techiefolk.com/grantize/public/sponsors/90">
+                          <img src="/static/images/101.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic46">
+          <a href="https://techiefolk.com/grantize/public/sponsors/91">
+                          <img src="/static/images/102.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic47">
+          <a href="https://techiefolk.com/grantize/public/sponsors/92">
+                          <img src="/static/images/103.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic48">
+          <a href="https://techiefolk.com/grantize/public/sponsors/93">
+                          <img src="/static/images/104.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic49">
+          <a href="https://techiefolk.com/grantize/public/sponsors/94">
+                          <img src="/static/images/106.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic50">
+          <a href="https://techiefolk.com/grantize/public/sponsors/95">
+                          <img src="/static/images/109.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+         
+        <figure class="pic51">
+          <a href="https://techiefolk.com/grantize/public/sponsors/96">
+                          <img src="/static/images/110.png" class="img-fluid" alt="">
+                      </a>
+          <!-- <figcaption>Sponsor Name</figcaption> -->
+        </figure>
+          
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Home Sponsor Section -->
+<!-- ======= Home Videos Section ======= -->
+<!-- End Home Videos Section -->
+<!-- Home Testimonials Section -->
+ 
+<section id="home_testimonials" class="home_testimonials">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 info" data-aos="fade-up" data-aos-delay="100">
+        <h3>Testimonials</h3>
+        <p>
+          Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </p>
+      </div>
+  
+      <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+  
+        <div class="swiper">
+          <div class="swiper-wrapper" id="testimonials-slider">
+  
+             
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="d-flex">
+                  <img src="/static/images/553team12.jpg" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>Pankaj cvnvbcn</h3>
+                    <h4>developer nvcnvbc</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>vbcncvbnvbcnvbcnvb cvnvbcnvbc</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>  
+             
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="d-flex">
+                  <img src="/static/images/908team12.jpg" class="testimonial-img flex-shrink-0" alt="">
+                  <div>
+                    <h3>bncvn</h3>
+                    <h4>nvbnvbc</h4>
+                    <div class="stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>cvbnvbcncv</span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+              </div>
+            </div>  
+              
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Home Testimonials Section -->
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="{{ url_for('grantize') }}" class="logo d-flex align-items-center mb-4">
+          <span>Grantize</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="{{ url_for('grantize') }}">Home</a></li>
+          <li><a href="{{ url_for('grantizewhyus') }}">Why us</a></li>
+          <li><a href="{{ url_for('termsnconditions') }}">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/grantize/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="{{ url_for('grantize') }}">Home</a></li>
+          <li><a href="{{ url_for('grantizewhyus') }}">Why us</a></li>
+          <li><a href="{{ url_for('termsnconditions') }}">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/grantize/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<form action="{{ url_for('grantizebrowsegrants') }}" id="filterFormLogin" method="post">
+    <input type="hidden" name="_token" value="sXgYM1KoTs5siAHKOaWHtxxN7v5I772mpr7Ak015" autocomplete="off">    <input type="hidden" id="grants_status_login" name="grants_status">
+</form>
+
+<form action="https://techiefolk.com/grantize/public/grants" id="filterFormLogout" method="post">
+    <input type="hidden" name="_token" value="sXgYM1KoTs5siAHKOaWHtxxN7v5I772mpr7Ak015" autocomplete="off">    <input type="hidden" id="grants_status_logout" name="grants_status">
+</form>
+<script type="text/javascript">
+
+    //Advance Filter
+    $(document).ready(function(){  
+        $(".grants_status_logout").click(function(){  
+            var grants_status = $(this).attr('data-value'); 
+            $('#grants_status_logout').val(grants_status);
+            $("#filterFormLogout").submit();
+        });
+    });
+    $(document).ready(function(){  
+        $(".grants_status_login").click(function(){  
+            var grants_status = $(this).attr('data-value'); 
+            $('#grants_status_login').val(grants_status);
+            $("#filterFormLogin").submit();
+        });
+    });
+
+</script>
+
+  <!-- Slick slider -->
+  <!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+
+
+  <script type="text/javascript">
+
+    //$(document).on('ready', function() {
+
+        $("#banners-slider").slick({
+            autoplay:true,
+            autoplaySpeed:2000,
+            infinite: true,
+            fade: true, 
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                  breakpoint: 1024,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                },
+                {
+                  breakpoint: 600,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 2
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                  }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ],
+        });
+        
+        $("#testimonials-slider").slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots:true,
+        }); 
+
+        /* $("#video-slider").slick({
+            lazyLoad: 'ondemand',
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            //arrows: true,
+            //prevArrow: '<button class="slide-arrow prev-arrow"><i class="bi bi-caret-right"></i></button>',
+            //nextArrow: '<button class="slide-arrow next-arrow"><i class="bi bi-caret-left"></i></button>',
+        }); */
+
+    //});
+
+    $(".counter").each(function () {
+        var $this = $(this),
+        countTo = $this.attr("data-countto");
+        countDuration = parseInt($this.attr("data-duration"));
+
+        $({ counter: $this.text() }).animate(
+            {
+              counter: countTo
+            },
+            {
+              duration: countDuration,
+              easing: "linear",
+              step: function () {
+                $this.text(Math.floor(this.counter));
+              },
+              complete: function () {
+                $this.text(this.counter);
+              }
+            }
+        );
+    });
+
+  </script>
+
+
+</body>
+</html>

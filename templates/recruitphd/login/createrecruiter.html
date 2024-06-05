@@ -1,0 +1,2075 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup</title>
+    <meta name="_token" content="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+ 
+<!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">RecruitPhD</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+  
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="https://techiefolk.com/recruitphd/public/whyus" class="nav-item desktop me-3 ">Why RecruitPHD</a></li>
+        <li><a href="https://techiefolk.com/recruitphd/public/plans" class="nav-item desktop me-3 ">Plans</a></li>
+        <li>
+                    <a href="https://techiefolk.com/recruitphd/public/login" class="nav-item desktop me-3 ">Jobs List</a>
+                      <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs List</a> -->
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs List</a> -->
+                  </li>
+        <li>
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs</a> -->
+                            <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs</a>
+                          <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs</a> -->
+                    </li>
+        <!-- <li>
+            <a href="{//{URL::to('/sponsor/login')}}" class="nav-item desktop me-3 ">Grants List</a>
+            <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Grants List </a>
+        </li> -->
+        <li><a href="https://techiefolk.com/recruitphd/public/blogs" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="https://techiefolk.com/recruitphd/public/faqs" class="nav-item desktop me-3 ">Help</a></li>
+    
+  
+          
+      </ul>
+    </nav>
+  
+        <a href="https://techiefolk.com/recruitphd/public/login" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+      
+    </div>
+</header>
+<!-- End Header -->
+<main id="main" class="main">
+
+
+
+
+<!-- ======= Signup Section ======= -->
+<section id="signup-page" class="signup-page section-bg">
+<div class="container">
+	<div id="signup-type-div2" style="display:block;">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 text-center">
+				<h3 class="user-type-div-title">Signup as </h3>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-3" id="personal">
+				<div class="user-type-div-outer">
+					<div class="user-type-div user-type2" data-nametype2="Organizational">
+						<img src="/static/images/vendor.png" alt="" class="img-fluid">
+						<p>Personal</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3" id="manager" style="border-left:2px solid #ddd;">
+				<div class="user-type-div-outer">
+					<div class="user-type-div user-type2" data-nametype2="Personal">
+						<img src="/static/images/vendor.png" alt="" class="img-fluid">
+						<p>Manager</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="signup-div-personal">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 details">
+				<h3 class="user-type-div-title">Signup as Personal</h3>
+
+				<form action="https://techiefolk.com/recruitphd/public/recruiter/signup_ajax_recruiter" method="POST" id="signupPersonal">
+					<input type="hidden" name="_token" value="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj" autocomplete="off">					<div class="form-body">
+						<div class="form-group">
+							<div id="login-response-div">
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Personal Info:</h5>
+
+							<div class="row">
+								<div class="col-lg-2 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="name_prefix" id="signup_name_prefix">
+																						<option value="Mr.">Mr.</option>
+																						<option value="Mrs.">Mrs.</option>
+																						<option value="Miss">Miss</option>
+																						<option value="Ms.">Ms.</option>
+																						<option value="Dr.">Dr.</option>
+																						<option value="Prof.">Prof.</option>
+																					</select>
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="fname" id="signup_fname" placeholder="First Name" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="lname" id="signup_lname" placeholder="Last Name" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="form-group signupform-div">
+								<select class="form-select" name="qualification" id="signup_qualification">
+									<option value="">Select Highest Qualification</option>
+																		<option value="1">Secondary</option>
+																		<option value="2">Higher Secondary</option>
+																		<option value="3">Graduate</option>
+																		<option value="4">Post Graduate</option>
+																		<option value="5">Doctorate</option>
+																		<option value="6">Post Doctorate</option>
+																	</select>
+							</div>
+
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Account info</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<input type="email" name="email_personal" id="signup_email_personal" placeholder="Email" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="mobile" id="signup_mobile" placeholder="Mobile" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="uname" id="signup_uname" placeholder="Username" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password" id="signup_password" placeholder="Password" class="form-control" />
+							</div>
+							<div class="form-group signupform-div">
+								<input type="password" name="password_repeat" id="password_repeat" placeholder="Confirm Password" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Location:</h5>
+
+							<div class="row">
+								<div class="col-lg-5 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_one" id="signup_address_line_one" placeholder="address line one" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_two" id="signup_address_line_two" placeholder="address line two" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-2 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="post_code" id="signup_post_code" placeholder="post code" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="country" id="signup_country" style="width:100%;">
+											<option value="">Select Country</option>
+																						<option value="1">afghanistan</option>
+																						<option value="2">aland islands</option>
+																						<option value="3">albania</option>
+																						<option value="4">algeria</option>
+																						<option value="5">american samoa</option>
+																						<option value="6">andorra</option>
+																						<option value="7">angola</option>
+																						<option value="8">anguilla</option>
+																						<option value="9">antarctica</option>
+																						<option value="10">antigua and barbuda</option>
+																						<option value="11">argentina</option>
+																						<option value="12">armenia</option>
+																						<option value="13">aruba</option>
+																						<option value="14">australia</option>
+																						<option value="15">austria</option>
+																						<option value="16">azerbaijan</option>
+																						<option value="17">the bahamas</option>
+																						<option value="18">bahrain</option>
+																						<option value="19">bangladesh</option>
+																						<option value="20">barbados</option>
+																						<option value="21">belarus</option>
+																						<option value="22">belgium</option>
+																						<option value="23">belize</option>
+																						<option value="24">benin</option>
+																						<option value="25">bermuda</option>
+																						<option value="26">bhutan</option>
+																						<option value="27">bolivia</option>
+																						<option value="28">bosnia and herzegovina</option>
+																						<option value="29">botswana</option>
+																						<option value="30">bouvet island</option>
+																						<option value="31">brazil</option>
+																						<option value="32">british indian ocean territory</option>
+																						<option value="33">brunei</option>
+																						<option value="34">bulgaria</option>
+																						<option value="35">burkina faso</option>
+																						<option value="36">burundi</option>
+																						<option value="37">cambodia</option>
+																						<option value="38">cameroon</option>
+																						<option value="39">canada</option>
+																						<option value="40">cape verde</option>
+																						<option value="41">cayman islands</option>
+																						<option value="42">central african republic</option>
+																						<option value="43">chad</option>
+																						<option value="44">chile</option>
+																						<option value="45">china</option>
+																						<option value="46">christmas island</option>
+																						<option value="47">cocos (keeling) islands</option>
+																						<option value="48">colombia</option>
+																						<option value="49">comoros</option>
+																						<option value="50">congo</option>
+																						<option value="51">democratic republic of the congo</option>
+																						<option value="52">cook islands</option>
+																						<option value="53">costa rica</option>
+																						<option value="54">cote d'ivoire (ivory coast)</option>
+																						<option value="55">croatia</option>
+																						<option value="56">cuba</option>
+																						<option value="57">cyprus</option>
+																						<option value="58">czech republic</option>
+																						<option value="59">denmark</option>
+																						<option value="60">djibouti</option>
+																						<option value="61">dominica</option>
+																						<option value="62">dominican republic</option>
+																						<option value="63">east timor</option>
+																						<option value="64">ecuador</option>
+																						<option value="65">egypt</option>
+																						<option value="66">el salvador</option>
+																						<option value="67">equatorial guinea</option>
+																						<option value="68">eritrea</option>
+																						<option value="69">estonia</option>
+																						<option value="70">ethiopia</option>
+																						<option value="71">falkland islands</option>
+																						<option value="72">faroe islands</option>
+																						<option value="73">fiji islands</option>
+																						<option value="74">finland</option>
+																						<option value="75">france</option>
+																						<option value="76">french guiana</option>
+																						<option value="77">french polynesia</option>
+																						<option value="78">french southern territories</option>
+																						<option value="79">gabon</option>
+																						<option value="80">gambia the</option>
+																						<option value="81">georgia</option>
+																						<option value="82">germany</option>
+																						<option value="83">ghana</option>
+																						<option value="84">gibraltar</option>
+																						<option value="85">greece</option>
+																						<option value="86">greenland</option>
+																						<option value="87">grenada</option>
+																						<option value="88">guadeloupe</option>
+																						<option value="89">guam</option>
+																						<option value="90">guatemala</option>
+																						<option value="91">guernsey and alderney</option>
+																						<option value="92">guinea</option>
+																						<option value="93">guinea-bissau</option>
+																						<option value="94">guyana</option>
+																						<option value="95">haiti</option>
+																						<option value="96">heard island and mcdonald islands</option>
+																						<option value="97">honduras</option>
+																						<option value="98">hong kong s.a.r.</option>
+																						<option value="99">hungary</option>
+																						<option value="100">iceland</option>
+																						<option value="101">india</option>
+																						<option value="102">indonesia</option>
+																						<option value="103">iran</option>
+																						<option value="104">iraq</option>
+																						<option value="105">ireland</option>
+																						<option value="106">israel</option>
+																						<option value="107">italy</option>
+																						<option value="108">jamaica</option>
+																						<option value="109">japan</option>
+																						<option value="110">jersey</option>
+																						<option value="111">jordan</option>
+																						<option value="112">kazakhstan</option>
+																						<option value="113">kenya</option>
+																						<option value="114">kiribati</option>
+																						<option value="115">north korea</option>
+																						<option value="116">south korea</option>
+																						<option value="117">kuwait</option>
+																						<option value="118">kyrgyzstan</option>
+																						<option value="119">laos</option>
+																						<option value="120">latvia</option>
+																						<option value="121">lebanon</option>
+																						<option value="122">lesotho</option>
+																						<option value="123">liberia</option>
+																						<option value="124">libya</option>
+																						<option value="125">liechtenstein</option>
+																						<option value="126">lithuania</option>
+																						<option value="127">luxembourg</option>
+																						<option value="128">macau s.a.r.</option>
+																						<option value="129">macedonia</option>
+																						<option value="130">madagascar</option>
+																						<option value="131">malawi</option>
+																						<option value="132">malaysia</option>
+																						<option value="133">maldives</option>
+																						<option value="134">mali</option>
+																						<option value="135">malta</option>
+																						<option value="136">man (isle of)</option>
+																						<option value="137">marshall islands</option>
+																						<option value="138">martinique</option>
+																						<option value="139">mauritania</option>
+																						<option value="140">mauritius</option>
+																						<option value="141">mayotte</option>
+																						<option value="142">mexico</option>
+																						<option value="143">micronesia</option>
+																						<option value="144">moldova</option>
+																						<option value="145">monaco</option>
+																						<option value="146">mongolia</option>
+																						<option value="147">montenegro</option>
+																						<option value="148">montserrat</option>
+																						<option value="149">morocco</option>
+																						<option value="150">mozambique</option>
+																						<option value="151">myanmar</option>
+																						<option value="152">namibia</option>
+																						<option value="153">nauru</option>
+																						<option value="154">nepal</option>
+																						<option value="155">bonaire, sint eustatius and saba</option>
+																						<option value="156">netherlands</option>
+																						<option value="157">new caledonia</option>
+																						<option value="158">new zealand</option>
+																						<option value="159">nicaragua</option>
+																						<option value="160">niger</option>
+																						<option value="161">nigeria</option>
+																						<option value="162">niue</option>
+																						<option value="163">norfolk island</option>
+																						<option value="164">northern mariana islands</option>
+																						<option value="165">norway</option>
+																						<option value="166">oman</option>
+																						<option value="167">pakistan</option>
+																						<option value="168">palau</option>
+																						<option value="169">palestinian territory occupied</option>
+																						<option value="170">panama</option>
+																						<option value="171">papua new guinea</option>
+																						<option value="172">paraguay</option>
+																						<option value="173">peru</option>
+																						<option value="174">philippines</option>
+																						<option value="175">pitcairn island</option>
+																						<option value="176">poland</option>
+																						<option value="177">portugal</option>
+																						<option value="178">puerto rico</option>
+																						<option value="179">qatar</option>
+																						<option value="180">reunion</option>
+																						<option value="181">romania</option>
+																						<option value="182">russia</option>
+																						<option value="183">rwanda</option>
+																						<option value="184">saint helena</option>
+																						<option value="185">saint kitts and nevis</option>
+																						<option value="186">saint lucia</option>
+																						<option value="187">saint pierre and miquelon</option>
+																						<option value="188">saint vincent and the grenadines</option>
+																						<option value="189">saint-barthelemy</option>
+																						<option value="190">saint-martin (french part)</option>
+																						<option value="191">samoa</option>
+																						<option value="192">san marino</option>
+																						<option value="193">sao tome and principe</option>
+																						<option value="194">saudi arabia</option>
+																						<option value="195">senegal</option>
+																						<option value="196">serbia</option>
+																						<option value="197">seychelles</option>
+																						<option value="198">sierra leone</option>
+																						<option value="199">singapore</option>
+																						<option value="200">slovakia</option>
+																						<option value="201">slovenia</option>
+																						<option value="202">solomon islands</option>
+																						<option value="203">somalia</option>
+																						<option value="204">south africa</option>
+																						<option value="205">south georgia</option>
+																						<option value="206">south sudan</option>
+																						<option value="207">spain</option>
+																						<option value="208">sri lanka</option>
+																						<option value="209">sudan</option>
+																						<option value="210">suriname</option>
+																						<option value="211">svalbard and jan mayen islands</option>
+																						<option value="212">swaziland</option>
+																						<option value="213">sweden</option>
+																						<option value="214">switzerland</option>
+																						<option value="215">syria</option>
+																						<option value="216">taiwan</option>
+																						<option value="217">tajikistan</option>
+																						<option value="218">tanzania</option>
+																						<option value="219">thailand</option>
+																						<option value="220">togo</option>
+																						<option value="221">tokelau</option>
+																						<option value="222">tonga</option>
+																						<option value="223">trinidad and tobago</option>
+																						<option value="224">tunisia</option>
+																						<option value="225">turkey</option>
+																						<option value="226">turkmenistan</option>
+																						<option value="227">turks and caicos islands</option>
+																						<option value="228">tuvalu</option>
+																						<option value="229">uganda</option>
+																						<option value="230">ukraine</option>
+																						<option value="231">united arab emirates</option>
+																						<option value="232">united kingdom</option>
+																						<option value="233">united states</option>
+																						<option value="234">united states minor outlying islands</option>
+																						<option value="235">uruguay</option>
+																						<option value="236">uzbekistan</option>
+																						<option value="237">vanuatu</option>
+																						<option value="238">vatican city state (holy see)</option>
+																						<option value="239">venezuela</option>
+																						<option value="240">vietnam</option>
+																						<option value="241">virgin islands (british)</option>
+																						<option value="242">virgin islands (us)</option>
+																						<option value="243">wallis and futuna islands</option>
+																						<option value="244">western sahara</option>
+																						<option value="245">yemen</option>
+																						<option value="246">zambia</option>
+																						<option value="247">zimbabwe</option>
+																						<option value="248">kosovo</option>
+																						<option value="249">curaçao</option>
+																						<option value="250">sint maarten (dutch part)</option>
+																					</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="state" id="signup_state" style="width:100%;">
+											<option value="">Select State</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="city" id="signup_city" style="width:100%;">
+											<option value="">Select City</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="form-group">
+							<input type="hidden" name="role" value="1">
+							<button type="submit" name="signup" id="signup-personal-submit" class="signupmodal-submit submit-button btn btn-primary w-100 mb-4">SIGN UP</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<div id="signup-div-manager">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 details">
+				<h3 class="user-type-div-title">Signup as Manager</h3>
+
+				<form action="https://techiefolk.com/recruitphd/public/recruiter/signup_ajax_recruiter" method="POST" id="signupManager">
+					<input type="hidden" name="_token" value="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj" autocomplete="off">					<div class="form-body">
+						<div class="form-group">
+							<div id="login-response-div2">
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Personal Info:</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<select class="form-select" name="organization" id="signup_organization2">
+								</select>
+							</div>
+							<div class="input-group">
+								<input onkeyup="keyupFunction2()" type="text" name="email_prefix" id="email_prefix2" class="form-control" placeholder="Email Prefix" style="width:55%;">
+								<span class="input-group-text">@</span>
+								<input type="text" name="email_domain" id="email_domain2" class="form-control" placeholder="" readonly />
+							</div>
+							<input style="margin-top:-38px;z-index:-1" readonly type="email" name="email_institutional" id="signup_email_institutional2" placeholder="Institutional Email" class="form-control" />
+
+							<div class="form-group signupform-div mb-3 mt-3">
+								<input type="text" name="fname" id="signup_fname2" placeholder="First Name" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="lname" id="signup_lname2" placeholder="Last Name" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Account info</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<input type="email" name="email_personal" id="signup_email_personal2" placeholder="Email" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="mobile" id="signup_mobile2" placeholder="Mobile" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="uname" id="signup_uname2" placeholder="Username" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password" id="signup_password2" placeholder="Password" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password_repeat" id="password_repeat2" placeholder="Confirm Password" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Location:</h5>
+
+							<div class="row">
+								<div class="col-lg-5 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_one" id="signup_address_line_one2" placeholder="address line one" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_two" id="signup_address_line_two2" placeholder="address line two" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-2 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="post_code" id="signup_post_code2" placeholder="post code" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="country" id="signup_country2">
+											<option value="">Select Country</option>
+																						<option value="1">afghanistan</option>
+																						<option value="2">aland islands</option>
+																						<option value="3">albania</option>
+																						<option value="4">algeria</option>
+																						<option value="5">american samoa</option>
+																						<option value="6">andorra</option>
+																						<option value="7">angola</option>
+																						<option value="8">anguilla</option>
+																						<option value="9">antarctica</option>
+																						<option value="10">antigua and barbuda</option>
+																						<option value="11">argentina</option>
+																						<option value="12">armenia</option>
+																						<option value="13">aruba</option>
+																						<option value="14">australia</option>
+																						<option value="15">austria</option>
+																						<option value="16">azerbaijan</option>
+																						<option value="17">the bahamas</option>
+																						<option value="18">bahrain</option>
+																						<option value="19">bangladesh</option>
+																						<option value="20">barbados</option>
+																						<option value="21">belarus</option>
+																						<option value="22">belgium</option>
+																						<option value="23">belize</option>
+																						<option value="24">benin</option>
+																						<option value="25">bermuda</option>
+																						<option value="26">bhutan</option>
+																						<option value="27">bolivia</option>
+																						<option value="28">bosnia and herzegovina</option>
+																						<option value="29">botswana</option>
+																						<option value="30">bouvet island</option>
+																						<option value="31">brazil</option>
+																						<option value="32">british indian ocean territory</option>
+																						<option value="33">brunei</option>
+																						<option value="34">bulgaria</option>
+																						<option value="35">burkina faso</option>
+																						<option value="36">burundi</option>
+																						<option value="37">cambodia</option>
+																						<option value="38">cameroon</option>
+																						<option value="39">canada</option>
+																						<option value="40">cape verde</option>
+																						<option value="41">cayman islands</option>
+																						<option value="42">central african republic</option>
+																						<option value="43">chad</option>
+																						<option value="44">chile</option>
+																						<option value="45">china</option>
+																						<option value="46">christmas island</option>
+																						<option value="47">cocos (keeling) islands</option>
+																						<option value="48">colombia</option>
+																						<option value="49">comoros</option>
+																						<option value="50">congo</option>
+																						<option value="51">democratic republic of the congo</option>
+																						<option value="52">cook islands</option>
+																						<option value="53">costa rica</option>
+																						<option value="54">cote d'ivoire (ivory coast)</option>
+																						<option value="55">croatia</option>
+																						<option value="56">cuba</option>
+																						<option value="57">cyprus</option>
+																						<option value="58">czech republic</option>
+																						<option value="59">denmark</option>
+																						<option value="60">djibouti</option>
+																						<option value="61">dominica</option>
+																						<option value="62">dominican republic</option>
+																						<option value="63">east timor</option>
+																						<option value="64">ecuador</option>
+																						<option value="65">egypt</option>
+																						<option value="66">el salvador</option>
+																						<option value="67">equatorial guinea</option>
+																						<option value="68">eritrea</option>
+																						<option value="69">estonia</option>
+																						<option value="70">ethiopia</option>
+																						<option value="71">falkland islands</option>
+																						<option value="72">faroe islands</option>
+																						<option value="73">fiji islands</option>
+																						<option value="74">finland</option>
+																						<option value="75">france</option>
+																						<option value="76">french guiana</option>
+																						<option value="77">french polynesia</option>
+																						<option value="78">french southern territories</option>
+																						<option value="79">gabon</option>
+																						<option value="80">gambia the</option>
+																						<option value="81">georgia</option>
+																						<option value="82">germany</option>
+																						<option value="83">ghana</option>
+																						<option value="84">gibraltar</option>
+																						<option value="85">greece</option>
+																						<option value="86">greenland</option>
+																						<option value="87">grenada</option>
+																						<option value="88">guadeloupe</option>
+																						<option value="89">guam</option>
+																						<option value="90">guatemala</option>
+																						<option value="91">guernsey and alderney</option>
+																						<option value="92">guinea</option>
+																						<option value="93">guinea-bissau</option>
+																						<option value="94">guyana</option>
+																						<option value="95">haiti</option>
+																						<option value="96">heard island and mcdonald islands</option>
+																						<option value="97">honduras</option>
+																						<option value="98">hong kong s.a.r.</option>
+																						<option value="99">hungary</option>
+																						<option value="100">iceland</option>
+																						<option value="101">india</option>
+																						<option value="102">indonesia</option>
+																						<option value="103">iran</option>
+																						<option value="104">iraq</option>
+																						<option value="105">ireland</option>
+																						<option value="106">israel</option>
+																						<option value="107">italy</option>
+																						<option value="108">jamaica</option>
+																						<option value="109">japan</option>
+																						<option value="110">jersey</option>
+																						<option value="111">jordan</option>
+																						<option value="112">kazakhstan</option>
+																						<option value="113">kenya</option>
+																						<option value="114">kiribati</option>
+																						<option value="115">north korea</option>
+																						<option value="116">south korea</option>
+																						<option value="117">kuwait</option>
+																						<option value="118">kyrgyzstan</option>
+																						<option value="119">laos</option>
+																						<option value="120">latvia</option>
+																						<option value="121">lebanon</option>
+																						<option value="122">lesotho</option>
+																						<option value="123">liberia</option>
+																						<option value="124">libya</option>
+																						<option value="125">liechtenstein</option>
+																						<option value="126">lithuania</option>
+																						<option value="127">luxembourg</option>
+																						<option value="128">macau s.a.r.</option>
+																						<option value="129">macedonia</option>
+																						<option value="130">madagascar</option>
+																						<option value="131">malawi</option>
+																						<option value="132">malaysia</option>
+																						<option value="133">maldives</option>
+																						<option value="134">mali</option>
+																						<option value="135">malta</option>
+																						<option value="136">man (isle of)</option>
+																						<option value="137">marshall islands</option>
+																						<option value="138">martinique</option>
+																						<option value="139">mauritania</option>
+																						<option value="140">mauritius</option>
+																						<option value="141">mayotte</option>
+																						<option value="142">mexico</option>
+																						<option value="143">micronesia</option>
+																						<option value="144">moldova</option>
+																						<option value="145">monaco</option>
+																						<option value="146">mongolia</option>
+																						<option value="147">montenegro</option>
+																						<option value="148">montserrat</option>
+																						<option value="149">morocco</option>
+																						<option value="150">mozambique</option>
+																						<option value="151">myanmar</option>
+																						<option value="152">namibia</option>
+																						<option value="153">nauru</option>
+																						<option value="154">nepal</option>
+																						<option value="155">bonaire, sint eustatius and saba</option>
+																						<option value="156">netherlands</option>
+																						<option value="157">new caledonia</option>
+																						<option value="158">new zealand</option>
+																						<option value="159">nicaragua</option>
+																						<option value="160">niger</option>
+																						<option value="161">nigeria</option>
+																						<option value="162">niue</option>
+																						<option value="163">norfolk island</option>
+																						<option value="164">northern mariana islands</option>
+																						<option value="165">norway</option>
+																						<option value="166">oman</option>
+																						<option value="167">pakistan</option>
+																						<option value="168">palau</option>
+																						<option value="169">palestinian territory occupied</option>
+																						<option value="170">panama</option>
+																						<option value="171">papua new guinea</option>
+																						<option value="172">paraguay</option>
+																						<option value="173">peru</option>
+																						<option value="174">philippines</option>
+																						<option value="175">pitcairn island</option>
+																						<option value="176">poland</option>
+																						<option value="177">portugal</option>
+																						<option value="178">puerto rico</option>
+																						<option value="179">qatar</option>
+																						<option value="180">reunion</option>
+																						<option value="181">romania</option>
+																						<option value="182">russia</option>
+																						<option value="183">rwanda</option>
+																						<option value="184">saint helena</option>
+																						<option value="185">saint kitts and nevis</option>
+																						<option value="186">saint lucia</option>
+																						<option value="187">saint pierre and miquelon</option>
+																						<option value="188">saint vincent and the grenadines</option>
+																						<option value="189">saint-barthelemy</option>
+																						<option value="190">saint-martin (french part)</option>
+																						<option value="191">samoa</option>
+																						<option value="192">san marino</option>
+																						<option value="193">sao tome and principe</option>
+																						<option value="194">saudi arabia</option>
+																						<option value="195">senegal</option>
+																						<option value="196">serbia</option>
+																						<option value="197">seychelles</option>
+																						<option value="198">sierra leone</option>
+																						<option value="199">singapore</option>
+																						<option value="200">slovakia</option>
+																						<option value="201">slovenia</option>
+																						<option value="202">solomon islands</option>
+																						<option value="203">somalia</option>
+																						<option value="204">south africa</option>
+																						<option value="205">south georgia</option>
+																						<option value="206">south sudan</option>
+																						<option value="207">spain</option>
+																						<option value="208">sri lanka</option>
+																						<option value="209">sudan</option>
+																						<option value="210">suriname</option>
+																						<option value="211">svalbard and jan mayen islands</option>
+																						<option value="212">swaziland</option>
+																						<option value="213">sweden</option>
+																						<option value="214">switzerland</option>
+																						<option value="215">syria</option>
+																						<option value="216">taiwan</option>
+																						<option value="217">tajikistan</option>
+																						<option value="218">tanzania</option>
+																						<option value="219">thailand</option>
+																						<option value="220">togo</option>
+																						<option value="221">tokelau</option>
+																						<option value="222">tonga</option>
+																						<option value="223">trinidad and tobago</option>
+																						<option value="224">tunisia</option>
+																						<option value="225">turkey</option>
+																						<option value="226">turkmenistan</option>
+																						<option value="227">turks and caicos islands</option>
+																						<option value="228">tuvalu</option>
+																						<option value="229">uganda</option>
+																						<option value="230">ukraine</option>
+																						<option value="231">united arab emirates</option>
+																						<option value="232">united kingdom</option>
+																						<option value="233">united states</option>
+																						<option value="234">united states minor outlying islands</option>
+																						<option value="235">uruguay</option>
+																						<option value="236">uzbekistan</option>
+																						<option value="237">vanuatu</option>
+																						<option value="238">vatican city state (holy see)</option>
+																						<option value="239">venezuela</option>
+																						<option value="240">vietnam</option>
+																						<option value="241">virgin islands (british)</option>
+																						<option value="242">virgin islands (us)</option>
+																						<option value="243">wallis and futuna islands</option>
+																						<option value="244">western sahara</option>
+																						<option value="245">yemen</option>
+																						<option value="246">zambia</option>
+																						<option value="247">zimbabwe</option>
+																						<option value="248">kosovo</option>
+																						<option value="249">curaçao</option>
+																						<option value="250">sint maarten (dutch part)</option>
+																					</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="state" id="signup_state2">
+											<option value="">Select State</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="city" id="signup_city2">
+											<option value="">Select City</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<input type="hidden" name="role" value="2">
+							<button type="submit" name="signup" id="signup-manager-submit" class="signupmodal-submit submit-button btn btn-primary w-100 mb-4">CONTACT</button>
+						</div>
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<div id="signup-div-user">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 details">
+				<h3 class="user-type-div-title">Signup as User</h3>
+
+				<form action="https://techiefolk.com/recruitphd/public/recruiter/signup_ajax_recruiter" method="POST" id="signupUser">
+					<input type="hidden" name="_token" value="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj" autocomplete="off">					<div class="form-body">
+						<div class="form-group">
+							<div id="login-response-div3">
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Personal Info:</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<select class="form-select" name="organization" id="signup_organization3">
+								</select>
+							</div>
+							<div class="input-group">
+								<input onkeyup="keyupFunction3()" type="text" name="email_prefix" id="email_prefix3" class="form-control" placeholder="Email Prefix" style="width:55%;">
+								<span class="input-group-text">@</span>
+								<input type="text" name="email_domain" id="email_domain3" class="form-control" placeholder="" readonly />
+							</div>
+							<input style="margin-top:-38px;z-index:-1" readonly type="email" name="email_institutional" id="signup_email_institutional3" placeholder="Institutional Email" class="form-control" />
+
+							<div class="form-group signupform-div mb-3 mt-3">
+								<input type="text" name="fname" id="signup_fname3" placeholder="First Name" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="lname" id="signup_lname3" placeholder="Last Name" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Account info</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<input type="email" name="email_personal" id="signup_email_personal3" placeholder="Email" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="mobile" id="signup_mobile3" placeholder="Mobile" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="uname" id="signup_uname3" placeholder="Username" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password" id="signup_password3" placeholder="Password" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password_repeat" id="password_repeat3" placeholder="Confirm Password" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Location:</h5>
+
+							<div class="row">
+								<div class="col-lg-5 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_one" id="signup_address_line_one3" placeholder="address line one" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_two" id="signup_address_line_two3" placeholder="address line two" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-2 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="post_code" id="signup_post_code3" placeholder="post code" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="country" id="signup_country3">
+											<option value="">Select Country</option>
+																						<option value="1">afghanistan</option>
+																						<option value="2">aland islands</option>
+																						<option value="3">albania</option>
+																						<option value="4">algeria</option>
+																						<option value="5">american samoa</option>
+																						<option value="6">andorra</option>
+																						<option value="7">angola</option>
+																						<option value="8">anguilla</option>
+																						<option value="9">antarctica</option>
+																						<option value="10">antigua and barbuda</option>
+																						<option value="11">argentina</option>
+																						<option value="12">armenia</option>
+																						<option value="13">aruba</option>
+																						<option value="14">australia</option>
+																						<option value="15">austria</option>
+																						<option value="16">azerbaijan</option>
+																						<option value="17">the bahamas</option>
+																						<option value="18">bahrain</option>
+																						<option value="19">bangladesh</option>
+																						<option value="20">barbados</option>
+																						<option value="21">belarus</option>
+																						<option value="22">belgium</option>
+																						<option value="23">belize</option>
+																						<option value="24">benin</option>
+																						<option value="25">bermuda</option>
+																						<option value="26">bhutan</option>
+																						<option value="27">bolivia</option>
+																						<option value="28">bosnia and herzegovina</option>
+																						<option value="29">botswana</option>
+																						<option value="30">bouvet island</option>
+																						<option value="31">brazil</option>
+																						<option value="32">british indian ocean territory</option>
+																						<option value="33">brunei</option>
+																						<option value="34">bulgaria</option>
+																						<option value="35">burkina faso</option>
+																						<option value="36">burundi</option>
+																						<option value="37">cambodia</option>
+																						<option value="38">cameroon</option>
+																						<option value="39">canada</option>
+																						<option value="40">cape verde</option>
+																						<option value="41">cayman islands</option>
+																						<option value="42">central african republic</option>
+																						<option value="43">chad</option>
+																						<option value="44">chile</option>
+																						<option value="45">china</option>
+																						<option value="46">christmas island</option>
+																						<option value="47">cocos (keeling) islands</option>
+																						<option value="48">colombia</option>
+																						<option value="49">comoros</option>
+																						<option value="50">congo</option>
+																						<option value="51">democratic republic of the congo</option>
+																						<option value="52">cook islands</option>
+																						<option value="53">costa rica</option>
+																						<option value="54">cote d'ivoire (ivory coast)</option>
+																						<option value="55">croatia</option>
+																						<option value="56">cuba</option>
+																						<option value="57">cyprus</option>
+																						<option value="58">czech republic</option>
+																						<option value="59">denmark</option>
+																						<option value="60">djibouti</option>
+																						<option value="61">dominica</option>
+																						<option value="62">dominican republic</option>
+																						<option value="63">east timor</option>
+																						<option value="64">ecuador</option>
+																						<option value="65">egypt</option>
+																						<option value="66">el salvador</option>
+																						<option value="67">equatorial guinea</option>
+																						<option value="68">eritrea</option>
+																						<option value="69">estonia</option>
+																						<option value="70">ethiopia</option>
+																						<option value="71">falkland islands</option>
+																						<option value="72">faroe islands</option>
+																						<option value="73">fiji islands</option>
+																						<option value="74">finland</option>
+																						<option value="75">france</option>
+																						<option value="76">french guiana</option>
+																						<option value="77">french polynesia</option>
+																						<option value="78">french southern territories</option>
+																						<option value="79">gabon</option>
+																						<option value="80">gambia the</option>
+																						<option value="81">georgia</option>
+																						<option value="82">germany</option>
+																						<option value="83">ghana</option>
+																						<option value="84">gibraltar</option>
+																						<option value="85">greece</option>
+																						<option value="86">greenland</option>
+																						<option value="87">grenada</option>
+																						<option value="88">guadeloupe</option>
+																						<option value="89">guam</option>
+																						<option value="90">guatemala</option>
+																						<option value="91">guernsey and alderney</option>
+																						<option value="92">guinea</option>
+																						<option value="93">guinea-bissau</option>
+																						<option value="94">guyana</option>
+																						<option value="95">haiti</option>
+																						<option value="96">heard island and mcdonald islands</option>
+																						<option value="97">honduras</option>
+																						<option value="98">hong kong s.a.r.</option>
+																						<option value="99">hungary</option>
+																						<option value="100">iceland</option>
+																						<option value="101">india</option>
+																						<option value="102">indonesia</option>
+																						<option value="103">iran</option>
+																						<option value="104">iraq</option>
+																						<option value="105">ireland</option>
+																						<option value="106">israel</option>
+																						<option value="107">italy</option>
+																						<option value="108">jamaica</option>
+																						<option value="109">japan</option>
+																						<option value="110">jersey</option>
+																						<option value="111">jordan</option>
+																						<option value="112">kazakhstan</option>
+																						<option value="113">kenya</option>
+																						<option value="114">kiribati</option>
+																						<option value="115">north korea</option>
+																						<option value="116">south korea</option>
+																						<option value="117">kuwait</option>
+																						<option value="118">kyrgyzstan</option>
+																						<option value="119">laos</option>
+																						<option value="120">latvia</option>
+																						<option value="121">lebanon</option>
+																						<option value="122">lesotho</option>
+																						<option value="123">liberia</option>
+																						<option value="124">libya</option>
+																						<option value="125">liechtenstein</option>
+																						<option value="126">lithuania</option>
+																						<option value="127">luxembourg</option>
+																						<option value="128">macau s.a.r.</option>
+																						<option value="129">macedonia</option>
+																						<option value="130">madagascar</option>
+																						<option value="131">malawi</option>
+																						<option value="132">malaysia</option>
+																						<option value="133">maldives</option>
+																						<option value="134">mali</option>
+																						<option value="135">malta</option>
+																						<option value="136">man (isle of)</option>
+																						<option value="137">marshall islands</option>
+																						<option value="138">martinique</option>
+																						<option value="139">mauritania</option>
+																						<option value="140">mauritius</option>
+																						<option value="141">mayotte</option>
+																						<option value="142">mexico</option>
+																						<option value="143">micronesia</option>
+																						<option value="144">moldova</option>
+																						<option value="145">monaco</option>
+																						<option value="146">mongolia</option>
+																						<option value="147">montenegro</option>
+																						<option value="148">montserrat</option>
+																						<option value="149">morocco</option>
+																						<option value="150">mozambique</option>
+																						<option value="151">myanmar</option>
+																						<option value="152">namibia</option>
+																						<option value="153">nauru</option>
+																						<option value="154">nepal</option>
+																						<option value="155">bonaire, sint eustatius and saba</option>
+																						<option value="156">netherlands</option>
+																						<option value="157">new caledonia</option>
+																						<option value="158">new zealand</option>
+																						<option value="159">nicaragua</option>
+																						<option value="160">niger</option>
+																						<option value="161">nigeria</option>
+																						<option value="162">niue</option>
+																						<option value="163">norfolk island</option>
+																						<option value="164">northern mariana islands</option>
+																						<option value="165">norway</option>
+																						<option value="166">oman</option>
+																						<option value="167">pakistan</option>
+																						<option value="168">palau</option>
+																						<option value="169">palestinian territory occupied</option>
+																						<option value="170">panama</option>
+																						<option value="171">papua new guinea</option>
+																						<option value="172">paraguay</option>
+																						<option value="173">peru</option>
+																						<option value="174">philippines</option>
+																						<option value="175">pitcairn island</option>
+																						<option value="176">poland</option>
+																						<option value="177">portugal</option>
+																						<option value="178">puerto rico</option>
+																						<option value="179">qatar</option>
+																						<option value="180">reunion</option>
+																						<option value="181">romania</option>
+																						<option value="182">russia</option>
+																						<option value="183">rwanda</option>
+																						<option value="184">saint helena</option>
+																						<option value="185">saint kitts and nevis</option>
+																						<option value="186">saint lucia</option>
+																						<option value="187">saint pierre and miquelon</option>
+																						<option value="188">saint vincent and the grenadines</option>
+																						<option value="189">saint-barthelemy</option>
+																						<option value="190">saint-martin (french part)</option>
+																						<option value="191">samoa</option>
+																						<option value="192">san marino</option>
+																						<option value="193">sao tome and principe</option>
+																						<option value="194">saudi arabia</option>
+																						<option value="195">senegal</option>
+																						<option value="196">serbia</option>
+																						<option value="197">seychelles</option>
+																						<option value="198">sierra leone</option>
+																						<option value="199">singapore</option>
+																						<option value="200">slovakia</option>
+																						<option value="201">slovenia</option>
+																						<option value="202">solomon islands</option>
+																						<option value="203">somalia</option>
+																						<option value="204">south africa</option>
+																						<option value="205">south georgia</option>
+																						<option value="206">south sudan</option>
+																						<option value="207">spain</option>
+																						<option value="208">sri lanka</option>
+																						<option value="209">sudan</option>
+																						<option value="210">suriname</option>
+																						<option value="211">svalbard and jan mayen islands</option>
+																						<option value="212">swaziland</option>
+																						<option value="213">sweden</option>
+																						<option value="214">switzerland</option>
+																						<option value="215">syria</option>
+																						<option value="216">taiwan</option>
+																						<option value="217">tajikistan</option>
+																						<option value="218">tanzania</option>
+																						<option value="219">thailand</option>
+																						<option value="220">togo</option>
+																						<option value="221">tokelau</option>
+																						<option value="222">tonga</option>
+																						<option value="223">trinidad and tobago</option>
+																						<option value="224">tunisia</option>
+																						<option value="225">turkey</option>
+																						<option value="226">turkmenistan</option>
+																						<option value="227">turks and caicos islands</option>
+																						<option value="228">tuvalu</option>
+																						<option value="229">uganda</option>
+																						<option value="230">ukraine</option>
+																						<option value="231">united arab emirates</option>
+																						<option value="232">united kingdom</option>
+																						<option value="233">united states</option>
+																						<option value="234">united states minor outlying islands</option>
+																						<option value="235">uruguay</option>
+																						<option value="236">uzbekistan</option>
+																						<option value="237">vanuatu</option>
+																						<option value="238">vatican city state (holy see)</option>
+																						<option value="239">venezuela</option>
+																						<option value="240">vietnam</option>
+																						<option value="241">virgin islands (british)</option>
+																						<option value="242">virgin islands (us)</option>
+																						<option value="243">wallis and futuna islands</option>
+																						<option value="244">western sahara</option>
+																						<option value="245">yemen</option>
+																						<option value="246">zambia</option>
+																						<option value="247">zimbabwe</option>
+																						<option value="248">kosovo</option>
+																						<option value="249">curaçao</option>
+																						<option value="250">sint maarten (dutch part)</option>
+																					</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="state" id="signup_state3">
+											<option value="">Select State</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="city" id="signup_city3">
+											<option value="">Select City</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<input type="hidden" name="role" value="3">
+							<button type="submit" name="signup" id="signup-user-submit" class="signupmodal-submit submit-button btn btn-primary w-100 mb-4">CONTACT</button>
+						</div>
+					</div>
+				</form>
+
+				<span class="back back3"><i class="bi bi-arrow-left"></i> Back</span>
+			</div>
+		</div>
+	</div>
+
+</div>
+</section>
+<!-- End Login Section -->
+
+
+
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center mb-4">
+          <span>RecruitPhD</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<<!-- Jquery ( Production ) -->
+<!-- <script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/development-jquery-3.7.1.min.js')}}"></script>
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<script type="text/javascript">
+	//$.ajaxSetup({
+	//	headers: {
+	//		'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+	//	}
+	//});
+	$("#signup-div-personal").show();
+	$("#signup-div-manager").hide();
+	$("#signup-div-user").hide();
+
+	$("#personal").click(function(){
+		$("#signup-div-personal").show();
+		$("#signup-div-manager").hide();
+		$("#signup-div-user").hide();
+	}); 
+	$("#manager").click(function(){
+		$("#signup-div-personal").hide();
+		$("#signup-div-manager").show();
+		$("#signup-div-user").hide();
+	}); 
+	$("#user").click(function(){
+		$("#signup-div-personal").hide();
+		$("#signup-div-manager").hide();
+		$("#signup-div-user").show();
+	}); 
+
+
+
+	$(document).ready(function(){
+
+	    /* Signup as Personal */
+		$('#signupPersonal').submit(function(e){
+			e.preventDefault(); 
+			if($('#signupPersonal').valid()){
+
+				$('#signup-personal-submit').attr('disabled',true); 
+				$('#signup-personal-submit').attr('value','Please wait...'); 
+
+				$.ajax({
+					url: "https://techiefolk.com/recruitphd/public/recruiter/signup_ajax_recruiter",
+					data: $(this).serialize(),
+					type: "post",
+					dataType: 'json',
+					success: function(result)
+					{
+						//console.log(result);
+						$('#login-response-div').html('');
+			            if(result == true){
+			            	/* var response = $('<div class="alert alert-success alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Signup Successfully!</strong> login now.'
+									+'</div>');
+			            	$('#login-response-div').append(response); */
+							//window.location.href = "login";
+							window.location.href = "https://techiefolk.com/recruitphd/public/recruiter/login"
+			            }else{
+			            	var response = $('<div class="alert alert-danger alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Username not Available!</strong>'
+									+'</div>');
+			            	$('#login-response-div').append(response);
+			            }
+
+						$('#signup-personal-submit').attr('disabled',false); 
+						$('#signup-personal-submit').attr('value','Submit'); 
+					}
+				});
+			}
+		});
+        $('#signupPersonal').validate({
+	        rules: {
+	            uname: {
+	                required: true,
+					remote: {
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_username_availability_recruiter",
+						type: "post",
+					},
+	                minlength:6,
+	                maxlength:20,
+	            },
+	            password: {
+	                required: true,
+	                minlength:8,
+	                mypassword: true,
+	            },
+	            password_repeat: {
+	                equalTo: "#signup_password"
+	            },
+				email_personal: {
+	                required: true,
+					email: true,
+					remote: {
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_email_availability_recruiter",
+						type: "post",
+					},
+	            },
+				fname: {
+	                required: true,
+	            },
+				mobile: {
+	                //required: true,
+					digits: true,
+					//phoneUS: true,
+	            },
+				qualification: {
+	                required: true,
+	            },
+				country: {
+	                required: true,
+	            }
+	        },
+	        messages: {
+	            uname:{
+	                required: 'Please Enter Username',
+					remote: 'Username not Available',
+	                minlength: 'Minimum 6 characters required',
+	                maxlength: 'Maximum 20 characters allowed',
+	            },
+	            password: {
+	                required: "Please Enter Password",
+	                minlength:"Minimum 8 digit password required",
+	            },
+	            password_repeat: {
+	                equalTo: "Password not Matched"
+	            },
+				email_personal:{
+	                required: 'Please Enter Email',
+					remote: 'Email Already Exists',
+	            },
+				fname:{
+	                required: 'Please Enter First Name'
+	            },
+				mobile:{
+	                //required: 'Please enter mobile',
+					digits:"Enter Digits Only",
+					//phoneUS:"Enter Valid Number Only",
+	            },
+				qualification:{
+	                required: 'Please Select Highest Qualification'
+	            },
+				country:{
+	                required: 'Please Select Country'
+	            },
+	        },
+			errorPlacement: function(error, element) {
+				if(element.parent('.input-group').length) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			},
+      	});
+
+
+		$('#signupManager').submit(function(e){
+			e.preventDefault(); 
+			if($('#signupManager').valid()){
+
+				$('#signup-manager-submit').attr('disabled',true); 
+				$('#signup-manager-submit').attr('value','Please wait...'); 
+
+				$.ajax({
+					url: "https://techiefolk.com/recruitphd/public/recruiter/signup_ajax_recruiter",
+					data: $(this).serialize(),
+					type: "post",
+					dataType: 'json',
+					success: function(result)
+					{
+						//console.log(result);
+						$('#login-response-div2').html('');
+			            if(result == true){
+			            	var response = $('<div class="alert alert-success alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Signup Successfully!</strong> login now.'
+									+'</div>');
+			            	$('#login-response-div2').append(response);
+							//window.location.href = "login";
+
+			            }else{
+			            	var response = $('<div class="alert alert-danger alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Username not Available!</strong>'
+									+'</div>');
+			            	$('#login-response-div2').append(response);
+			            }
+
+						$('#signup-manager-submit').attr('disabled',false); 
+						$('#signup-manager-submit').attr('value','Submit'); 
+					}
+				});
+			}
+		});
+		$('#signupManager').validate({
+	        rules: {
+	            uname: {
+	                required: true,
+					remote: {
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_username_availability_recruiter",
+						type: "post",
+					},
+	                minlength:6,
+	                maxlength:20,
+	            },
+	            password: {
+	                required: true,
+	                minlength:8,
+	                mypassword: true,
+	            },
+	            password_repeat: {
+	                  equalTo: "#signup_password2"
+	            },
+				organization: {
+	                required: true,
+	            },
+				email_prefix: {
+	                required: true,
+	            },
+				email_domain: {
+	                required: true,
+	            },
+				email_institutional: {
+	                required: true,
+					email: true,
+					remote: {
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_email_availability_recruiter",
+						type: "post",
+					},
+	            },
+				email_personal: {
+	                required: true,
+					email: true,
+					remote:{
+		                url:"https://techiefolk.com/recruitphd/public/recruiter/check_email_availability_recruiter",
+		                type: "post"
+		            },
+	            },
+				fname: {
+	                required: true,
+	            },
+				mobile: {
+	                //required: true,
+					digits: true,
+					//phoneUS: true,
+	            },
+				qualification: {
+	                required: true,
+	            },
+				country: {
+	                required: true,
+	            }
+	        },
+	        messages: {
+	            uname:{
+	                required: 'Please enter Username',
+	                remote: 'Username not available',
+	                minlength: 'Minimum 6 characters required',
+	                maxlength: 'Maximum 20 characters allowed',
+	            },
+	            password: {
+	                required: "Please select password",
+	                minlength:"Minimum 8 digit password required",
+	            },
+	            password_repeat: {
+	                equalTo: "Password not matched"
+	            },
+				organization:{
+	                required: 'Please select Organization'
+	            },
+				email_prefix:{
+	                required: 'Please enter email prefix'
+	            },
+				email_domain:{
+	                required: 'This Organization does not have domain'
+	            },
+				email_institutional:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				email_personal:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				fname:{
+	                required: 'Please enter first name'
+	            },
+				mobile:{
+	                //required: 'Please enter mobile',
+					digits:"Enter digits Only",
+					//phoneUS:"Enter Valid Number Only",
+	            },
+				qualification:{
+	                required: 'Please select qualification'
+	            },
+				country:{
+	                required: 'Please select Country'
+	            },
+	        },
+			errorPlacement: function(error, element) {
+				if(element.parent('.input-group').length) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			},
+      	});
+
+
+		$('#signupUser').submit(function(e){
+			e.preventDefault(); 
+			if($('#signupUser').valid()){
+
+				$('#signup-user-submit').attr('disabled',true); 
+				$('#signup-user-submit').attr('value','Please wait...'); 
+
+				$.ajax({
+					url: "https://techiefolk.com/recruitphd/public/recruiter/signup_ajax_recruiter",
+					data: $(this).serialize(),
+					type: "post",
+					dataType: 'json',
+					success: function(result)
+					{
+						//console.log(result);
+						$('#login-response-div3').html('');
+			            if(result == true){
+			            	/* var response = $('<div class="alert alert-success alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Signup Successfully!</strong> login now.'
+									+'</div>');
+			            	$('#login-response-div3').append(response); */
+							//window.location.href = "login";
+							window.location.href = "https://techiefolk.com/recruitphd/public/recruiter/login"
+
+			            }else{
+			            	var response = $('<div class="alert alert-danger alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Username not Available!</strong>'
+									+'</div>');
+			            	$('#login-response-div3').append(response);
+			            }
+
+						$('#signup-user-submit').attr('disabled',false); 
+						$('#signup-user-submit').attr('value','Submit'); 
+					}
+				});
+
+	    	}
+	    })
+        $('#signupUser').validate({
+	        rules: {
+	            uname: {
+	                required: true,
+	                remote:{
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_username_availability_recruiter",
+		                type: "post"
+		            },
+	                minlength:6,
+	                maxlength:20,
+	            },
+	            password: {
+	                required: true,
+	                minlength:8,
+	                mypassword: true,
+	            },
+	            password_repeat: {
+	                  equalTo: "#signup_password3"
+	            },
+				organization: {
+	                required: true,
+	            },
+				email_prefix: {
+	                required: true,
+	            },
+				email_domain: {
+	                required: true,
+	            },
+				email_institutional: {
+	                required: true,
+					email: true,
+					remote:{
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_email_availability_recruiter",
+						type: "post",
+		            },
+	            },
+				email_personal: {
+	                required: true,
+					email: true,
+					remote:{
+						url:"https://techiefolk.com/recruitphd/public/recruiter/check_email_availability_recruiter",
+						type: "post",
+		            },
+	            },
+				fname: {
+	                required: true,
+	            },
+				mobile: {
+	                //required: true,
+					digits: true,
+					//phoneUS: true,
+	            },
+				qualification: {
+	                required: true,
+	            },
+				country: {
+	                required: true,
+	            }
+	        },
+	        messages: {
+	            uname:{
+	                required: 'Please enter Username',
+	                remote: 'Username not available',
+	                minlength: 'Minimum 6 characters required',
+	                maxlength: 'Maximum 20 characters allowed',
+	            },
+	            password: {
+	                required: "Please select password",
+	                minlength:"Minimum 8 digit password required",
+	            },
+	            password_repeat: {
+	                equalTo: "Password not matched"
+	            },
+				organization:{
+	                required: 'Please select Organization'
+	            },
+				email_prefix:{
+	                required: 'Please enter email prefix'
+	            },
+				email_domain:{
+	                required: 'This Organization does not have domain'
+	            },
+				email_institutional:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				email_personal:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				fname:{
+	                required: 'Please enter first name'
+	            },
+				mobile:{
+	                //required: 'Please enter mobile',
+					digits:"Enter digits Only",
+					//phoneUS:"Enter Valid Number Only",
+	            },
+				qualification:{
+	                required: 'Please select qualification'
+	            },
+				country:{
+	                required: 'Please select Country'
+	            },
+	        },
+			errorPlacement: function(error, element) {
+				if(element.parent('.input-group').length) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			},
+      	});
+
+
+
+		$.validator.addMethod('mypassword', function(value, element) {
+          	return this.optional(element) || (value.match(/[A-Z]/) && value.match(/[0-9]/));
+      	},'Atleast one uppercase and a number required');
+		/* function validatePhone(txtPhone) {
+			var a = document.getElementById(txtPhone).value;
+			var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+			if (filter.test(a)) {
+				return true;
+			}else {
+				return false;
+			}
+		} */
+    });
+
+
+
+	$('#signup_organization2').select2({
+		placeholder: 'Search Organization',
+		theme: 'bootstrap-5',
+		minimumInputLength: 3,
+		ajax: {
+			type: "POST",
+			url:"https://techiefolk.com/recruitphd/public/search_dropdown_global",
+			delay: 250,
+			dataType: 'json',
+			data: function (params) {
+				return {
+					search: params.term, // search term
+					table: 'organizations',
+					field: 'name',
+					//field_category: 'functioning_area',
+					//field_category_value: 12,
+				};
+			},
+			processResults: function (data, params) {
+				//params.page = params.page || 1;
+				return {
+					results: $.map(data, function (item){
+						return {
+							id: item.id,
+							text: item.name,
+						}
+					})
+				};
+			},
+			cache: true
+		}
+	}).on("select2:select", function(e) {
+        //alert(e.params.data.id);
+		if(e.params.data.id != '0'){
+          	var id = e.params.data.id;
+		  	$.ajax({
+				type:"POST",
+				url:"https://techiefolk.com/recruitphd/public/organization_url",
+				data: {id: id},
+				success:function(data){
+					var url = JSON.parse(data);
+					$('#email_domain2').val(url);
+
+					var email_prefix2 = $('#email_prefix2').val(); 
+					var email_institutional2 = email_prefix2+'@'+url;
+					$('#signup_email_institutional2').val(email_institutional2);
+				}
+			});
+        }
+    });
+	function keyupFunction2(){
+        var email_prefix2   = $('#email_prefix2').val(); 
+		var email_domain2   = $('#email_domain2').val(); 
+
+		var email_institutional2 = email_prefix2+'@'+email_domain2;
+		$('#signup_email_institutional2').val(email_institutional2);
+	}
+
+
+	$('#signup_organization3').select2({
+		placeholder: 'Search Organization',
+		theme: 'bootstrap-5',
+		minimumInputLength: 3,
+		ajax: {
+			type: "POST",
+			url:"https://techiefolk.com/recruitphd/public/search_dropdown_global",
+			delay: 250,
+			dataType: 'json',
+			data: function (params) {
+				return {
+					search: params.term, // search term
+					table: 'organizations',
+					field: 'name',
+					//field_category: 'functioning_area',
+					//field_category_value: 12,
+				};
+			},
+			processResults: function (data, params) {
+				return {
+					results: $.map(data, function (item){
+						return {
+							id: item.id,
+							text: item.name,
+						}
+					})
+				};
+			},
+			cache: true
+		}
+	}).on("select2:select", function(e) {
+        //alert(e.params.data.id);
+		if(e.params.data.id != '0'){
+          	var id = e.params.data.id;
+		  	$.ajax({
+				type:"POST",
+				url:"https://techiefolk.com/recruitphd/public/organization_url",
+				data: {id: id},
+				success:function(data){
+					var url = JSON.parse(data);
+					$('#email_domain3').val(url);
+
+					var email_prefix3 = $('#email_prefix3').val(); 
+					var email_institutional3 = email_prefix3+'@'+url;
+					$('#signup_email_institutional3').val(email_institutional3);
+				}
+			});
+        }
+    });
+	function keyupFunction3(){
+        var email_prefix3   = $('#email_prefix3').val(); 
+		var email_domain3   = $('#email_domain3').val(); 
+
+		var email_institutional3 = email_prefix3+'@'+email_domain3;
+		$('#signup_email_institutional3').val(email_institutional3);
+	}
+
+
+	$('#signup_country').on("change", function(){
+		var id = $('#signup_country').val(); //alert(id);
+		var $select = $('#signup_state');  
+		
+        $.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/recruitphd/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+			success:function(data){
+				//alert(data); die();
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+    $('#signup_state').on("change", function(){
+		var id = $('#signup_state').val();
+    	var $select = $('#signup_city');
+
+		$.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/recruitphd/public/get_children",	 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+
+	$('#signup_country2').on("change", function(){
+		var id = $('#signup_country2').val();
+		var $select = $('#signup_state2');  
+		
+        $.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/recruitphd/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+    $('#signup_state2').on("change", function(){
+		var id = $('#signup_state2').val();
+    	var $select = $('#signup_city2');
+		
+		$.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/recruitphd/public/get_children",	 		 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+
+	$('#signup_country3').on("change", function(){
+		var id = $('#signup_country3').val();
+		var $select = $('#signup_state3');  
+		
+        $.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/recruitphd/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+    $('#signup_state3').on("change", function(){
+		var id = $('#signup_state3').val();
+    	var $select = $('#signup_city3');
+
+		$.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/recruitphd/public/get_children",			 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+
+	
+	$('#signup_name_prefix').select2({placeholder: 'Select', theme: 'bootstrap-5'});
+	$('#signup_qualification').select2({placeholder: 'Select Highest Qualification', theme: 'bootstrap-5'});
+	$('#signup_country').select2({placeholder: 'Select Country', theme: 'bootstrap-5'});
+	$('#signup_state').select2({placeholder: 'Select State', theme: 'bootstrap-5'});
+	$('#signup_city').select2({placeholder: 'Select City', theme: 'bootstrap-5'});
+
+	$('#signup_country2').select2({placeholder: 'Select Country', theme: 'bootstrap-5'});
+	$('#signup_state2').select2({placeholder: 'Select State', theme: 'bootstrap-5'});
+	$('#signup_city2').select2({placeholder: 'Select City', theme: 'bootstrap-5'});
+	
+	$('#signup_country3').select2({placeholder: 'Select Country',theme: 'bootstrap-5'});
+	$('#signup_state3').select2({placeholder: 'Select State', theme: 'bootstrap-5'});
+	$('#signup_city3').select2({placeholder: 'Select City', theme: 'bootstrap-5'});
+	
+
+</script>
+
+
+</body>
+</html>

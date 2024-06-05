@@ -1,0 +1,1345 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grants Type</title>
+    <meta name="_token" content="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O">
+
+    <!-- Favicons -->
+    <link href="/static/images/favicon_grantize.png" rel="icon">
+    <link href="/static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/sisterlab/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/sisterlab/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+  <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="https://techiefolk.com/sisterlab/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">SisterLab</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        
+                
+        <li class="nav-item dropdown">
+            <a href="#" class="nav-link nav-icon" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+                        <span class="badge bg-primary badge-number">1</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+                You have 1 new notifications
+                <!-- <a href=""><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a> -->
+            </li>
+                        <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li class="notification-item">
+                <div>
+                <p></p>
+                <p>0000-00-00 00:00:00</p>
+                </div>
+            </li>
+                        <li class="dropdown-footer">
+                <a href="https://techiefolk.com/sisterlab/public/admin/notifications/grantize">Grantize Notifications </a>
+                <a href="https://techiefolk.com/sisterlab/public/admin/notifications/recruitphd">RecruitPhd Notifications</a>
+            </li>
+            </ul>
+                    </li>
+        <!-- End Notification Nav -->
+
+        <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-chat-left-text"></i>
+                        </a>
+                    </li>
+        <!-- End Messages Nav -->
+
+        <li class="nav-item dropdown pe-3">
+            <a href="#" class="nav-link nav-profile d-flex align-items-center pe-0" data-bs-toggle="dropdown">
+             
+                
+            
+            <span class="d-none d-md-block dropdown-toggle ps-2">Admin</span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+                <h6>Admin</h6>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="https://techiefolk.com/sisterlab/public/admin/dashboard" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-person"></i>
+                <span>My Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li>
+                <a href="https://techiefolk.com/sisterlab/public/admin/logout" class="dropdown-item d-flex align-items-center">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+                </a>
+            </li>
+
+            </ul>
+        </li>
+        <!-- End Profile Nav -->
+        
+        </ul>
+    </nav>
+
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+<aside id="sidebar" class="sidebar">
+  <ul class="sidebar-nav" id="sidebar-nav">
+    <li class="nav-heading">My Account</li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#dashboard-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Dashboard</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="dashboard-nav" class="nav-content collapse " data-bs-parent="#dashboard-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/dashboard" class="" >
+            <span>Dashboard</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/staff" class="" >
+            <span>Staff</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/staff_permissions" class="" >
+            <span>Staff permissions</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+    <!-- End Dashboard Nav -->
+    <li class="nav-item">
+      <a class="nav-link " data-bs-target="#master-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Master Data</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="master-nav" class="nav-content collapse show" data-bs-parent="#master-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/activities" class="" >
+            <span>Activities</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/activity_code" class="" >
+            <span>Activity Code</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/applicant_type" class="" >
+            <span>Applicant Type</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/awards" class="" >
+            <span>Awards</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/cfda" class="" >
+            <span>Cfda</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/committees" class="" >
+            <span>Committees</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/conferences" class="" >
+            <span>Conferences</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/degree" class="" >
+            <span>Degree</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/departments" class="" >
+            <span>Departments</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" class="active" >
+            <span>Grants Type</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/hobbies" class="">
+            <span>Hobbies</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/jobs_benifits" class="" >
+            <span>Jobs Benifits</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/journals" class="" >
+            <span>Journals</span>
+            </a>
+        </li>
+        <!-- <li>
+            <a href="admin/journalsquarter" class="" >
+            <span>Journals Quarter</span>
+            </a>
+        </li> -->
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/keywords" class="">
+            <span>Keywords</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/globalinfo/languages" class="">
+            <span>Languages</span>
+            </a>
+        </li> 
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/organizations" class="" >
+            <span>Organizations</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/global_info/skill_gained" class="">
+            <span>Skill Gained</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/subjects" class="">
+            <span>Subjects</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/weightageparameters" class="" >
+            <span>Weightage Formula</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/weightageparameters_jobs" class="" >
+            <span>Weightage Formula (Jobs)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/skillset" class="">
+            <span>Skillset</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/countries" class="" >
+            <span>Locations</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#grantize-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>Grantize</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="grantize-nav" class="nav-content collapse " data-bs-parent="#grantize-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/grants" class="">
+            <span>Grants</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/sponsors" class="">
+            <span>Sponsors</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/researchers" class="">
+            <span>Researchers</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/sponsor_plan" class="">
+            <span>Plans (Sponsor)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/researcher_plan" class="">
+            <span>Plans (Researcher)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/notifications/grantize" class="">
+            <span>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/banners/grantize" class="" >
+            <span>Banners</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/testimonials/grantize" class="" >
+            <span>Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/video_testimonials/grantize" class="" >
+            <span>Video Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/whyus/grantize" class="" >
+            <span>Why Grantize</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/blogs/grantize" class="">
+            <span>Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/faqs/grantize" class="">
+            <span>Faqs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/pages/grantize" class="" >
+            <span>Pages</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link collapsed" data-bs-target="#recruitphd-nav" data-bs-toggle="collapse" href="#">
+        <i class="bi bi-menu-button-wide"></i><span>RecruitPhd</span><i class="bi bi-chevron-down ms-auto"></i>
+      </a>
+      <ul id="recruitphd-nav" class="nav-content collapse  " data-bs-parent="#recruitphd-nav">
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobs" class="">
+            <span>Jobs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobs/application" class="">
+            <span>Jobs Application</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/recruiters" class="">
+            <span>Recruiters</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobseekers" class="">
+            <span>Jobseekers</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/recruiter_plan" class="">
+            <span>Plans (Recruiter)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/jobseeker_plan" class="">
+            <span>Plans (Jobseeker)</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/notifications/recruitphd" class="">
+            <span>Notifications</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/banners/recruitphd" class="" >
+            <span>Banners</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/testimonials/recruitphd" class="" >
+            <span>Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/video_testimonials/recruitphd" class="" >
+            <span>Video Testimonials</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/whyus/recruitphd" class="" >
+            <span>Why RecruitPhd</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/blogs/recruitphd" class="">
+            <span>Blogs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/faqs/recruitphd" class="">
+            <span>Faqs</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://techiefolk.com/sisterlab/public/admin/pages/recruitphd" class="" >
+            <span>Pages</span>
+            </a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</aside>
+<!-- End Sidebar-->
+<main id="main" class="main"> 
+
+    
+
+<div class="pagetitle">
+	<h1>
+	  Grants Type	  
+	  <button type="button" class="btn btn-sm btn-outline-primary float-end" id="add-new-static">Add New</button> 
+	  		
+
+								
+		
+	
+		<input type="submit" name="export" value="export" form="export" class="me-2 btn btn-sm btn-outline-success float-end">
+			</h1>
+</div>
+
+ 
+<!-- Main content -->
+<section class="section">
+  <div class="row">
+    <div class="col-lg-12">
+
+      <div class="card">
+        <div class="card-body" style="min-height:70vh;">
+
+          <form action="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" method="post" id="export">
+						<input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">            <div class="row mb-1">
+              <div class="col-8 pe-0">
+              </div>
+              <div class="col-2 ps-0 pe-0">
+                <div class="input-group">
+                  <select class="form-select form-select-sm" id="filter_createdby" name="filter_createdby" >
+                      <option value="">Created by</option>
+                                            <option value="admin"                         >admin</option>
+                                            <option value="sponsor"                         >sponsor</option>
+                                            <option value="researcher"                         >researcher</option>
+                                            <option value="recruiter"                         >recruiter</option>
+                                            <option value="jobseeker"                         >jobseeker</option>
+                                        </select>
+                </div> 
+              </div>
+              <div class="col-2 ps-0">
+                <div class="input-group">
+                  <select class="form-select form-select-sm" id="filter_status" name="filter_status" >
+                      <option value="">Status..</option>
+                      <option value="1" >Active</option>
+                      <option value="0" >Deactive</option>
+                  </select>
+                </div> 
+              </div>
+            </div>
+            <div class="row mb-1">
+              <div class="col-12">
+                <div class="input-group">
+                  <input type="text" id="filter_name" name="filter_name" value="" class="form-control form-control-sm" placeholder="Search Grants Type">
+                  <div class="input-group-append">
+                    <input type="number" name="filter_weightage" id="filter_weightage" value="" class="form-control form-control-sm" placeholder="Weightage" >
+                  </div>
+                  <div class="input-group-append">
+                    <button type="submit" name="filter_search" value="filter_search" class="btn btn-primary btn-sm"><i class="bi bi-search"></i> Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+          <table class="table table-striped">
+              <thead>
+                  <tr>
+                      <th scope="col" class="sno">Id</th> 
+                      <th scope="col">Name</th> 
+
+                      <th scope="col" class="weightage">Wt.</th>
+<th class="col">Cr-by</th>
+<th scope="col" class="status">Status</th>
+<th scope="col" class="action">Action</th> 
+                  </tr>
+              </thead>
+              <tbody>
+                
+                                    <tr>                              
+                    <td>823</td>
+                    <td>artistic exhibit /collection</td>
+
+                    <td>
+    
+        <span id="823" table="grants_type" name="weightage" class="editable">1000</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(823)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(823)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(823)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>821</td>
+                    <td>collaboration/ cooperative agreement</td>
+
+                    <td>
+    
+        <span id="821" table="grants_type" name="weightage" class="editable">920</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(821)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(821)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(821)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>835</td>
+                    <td>community services program</td>
+
+                    <td>
+    
+        <span id="835" table="grants_type" name="weightage" class="editable">128</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(835)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(835)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(835)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>822</td>
+                    <td>equipment/ facility/ organization</td>
+
+                    <td>
+    
+        <span id="822" table="grants_type" name="weightage" class="editable">108</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(822)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(822)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(822)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>814</td>
+                    <td>felowship / scholarship /dissertation</td>
+
+                    <td>
+    
+        <span id="814" table="grants_type" name="weightage" class="editable">175</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(814)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(814)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(814)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>832</td>
+                    <td>formula grants</td>
+
+                    <td>
+    
+        <span id="832" table="grants_type" name="weightage" class="editable">627</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(832)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(832)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(832)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>828</td>
+                    <td>general clinical research centers program</td>
+
+                    <td>
+    
+        <span id="828" table="grants_type" name="weightage" class="editable">310</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(828)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(828)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(828)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>834</td>
+                    <td>health professions programs</td>
+
+                    <td>
+    
+        <span id="834" table="grants_type" name="weightage" class="editable">446</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(834)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(834)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(834)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>825</td>
+                    <td>institutional training and director program projects</td>
+
+                    <td>
+    
+        <span id="825" table="grants_type" name="weightage" class="editable">31</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(825)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(825)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(825)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                                    <tr>                              
+                    <td>815</td>
+                    <td>internship/work-study</td>
+
+                    <td>
+    
+        <span id="815" table="grants_type" name="weightage" class="editable">8</span>
+    </td>
+<td></td>
+<td class="status">
+    
+        <a href="javascript:statusDeactive(815)" class="btn btn-sm btn-outline-success" title="Status">Active</a>
+    
+</td>                    <td class="action">
+  <a href="javascript:editItem(815)" class="btn btn-info btn-sm"><i class="bi bi-pencil-square"></i></a> 
+  <a href="javascript:deleteItem(815)" class="btn btn-danger btn-sm" title="Delete"><i class="bi bi-trash3"></i></a>
+  <!-- <a href="javascript:assignItem( ,  , ` `)" class="btn btn-sm btn-success" title="Assign"><i class="bi bi-pencil-square"></i></a> -->
+</td>                  </tr>    
+                    
+
+                 
+              </tbody>
+          </table>
+                      <nav class="d-flex justify-items-center justify-content-between">
+        <div class="d-flex justify-content-between flex-fill d-sm-none">
+            <ul class="pagination">
+                
+                                    <li class="page-item disabled" aria-disabled="true">
+                        <span class="page-link">&laquo; Previous</span>
+                    </li>
+                
+                
+                                    <li class="page-item">
+                        <a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type?page=2" rel="next">Next &raquo;</a>
+                    </li>
+                            </ul>
+        </div>
+
+        <div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+            <div>
+                <p class="small text-muted">
+                    Showing
+                    <span class="fw-semibold">1</span>
+                    to
+                    <span class="fw-semibold">10</span>
+                    of
+                    <span class="fw-semibold">26</span>
+                    results
+                </p>
+            </div>
+
+            <div>
+                <ul class="pagination">
+                    
+                                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                            <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                        </li>
+                    
+                    
+                                            
+                        
+                        
+                                                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type?page=2">2</a></li>
+                                                                                                                                <li class="page-item"><a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type?page=3">3</a></li>
+                                                                                                        
+                    
+                                            <li class="page-item">
+                            <a class="page-link" href="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+    </nav>
+
+           
+
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+<!-- /.content -->
+
+
+<!-- Delete Modal -->
+<div class="modal fade bs-modal-sm" id="delete-item" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm" style="width: 30%;margin:200px auto;">
+      <div class="modal-content" >
+          <div class="modal-header" style="border:none;">  
+            <h4 class="modal-title">Are you sure??</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>      
+          </div>
+          <div class="modal-body text-center">
+              <h6>This is a master entry. The deletion can't be undone and can impact the system behaviour. </h6>
+              
+              <form action="https://techiefolk.com/sisterlab/public/admin/delete_entity" method="post" id="delete-form-submit">
+                <input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">                <input type="hidden" name="id" id="delete-item-id" required>
+                <input type="hidden" name="table" value="global_info" required>
+                <input type="hidden" name="sub_table" value="grants_type" required>
+                <input type="hidden" name="redirect" value="globalinfo/grants_type" required>
+              </form> 
+          </div>
+          <div class="modal-footer" style="border:none;">              
+              <div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-6 col-lg-offset-3">
+                  <button type="submit" form="delete-form-submit" class="btn btn-danger pull-left">Yes</button>
+                  <button type="button" class="btn btn-success" data-bs-dismiss="modal">No</button>
+              </div>
+          </div>
+      </div>        
+  </div>      
+</div>
+<script type="text/javascript">
+
+  function deleteItem(id){
+    $('#delete-item-id').val(id);
+    $('#delete-item').modal('show');
+  }
+
+</script>
+
+<div id="addStaticModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <form action="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" method="post" enctype="multipart/form-data" id="static_Add">
+      <input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Add Grants Type</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Name <span class="required">*</span></label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <input type="text" name="name" id="addName" class="form-control" required>
+                  </div> 
+              </div>
+          </div>  
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Status</label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <select name="status" id="addStatus" class="form-control">                        
+                        <option value="1">Active</option>
+                        <option value="0">Deactive</option>
+                      </select>
+                  </div> 
+              </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <input type="hidden" name="table_name" value="grants_type" required>
+          <input type="hidden" name="redirect" value="globalinfo/grants_type" required>
+          <button type="submit" name="savethis" value="savethis" class="btn btn-success">Save</button>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div id="editStaticModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <form action="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" method="post" enctype="multipart/form-data" id="static_Edit">
+      <input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">      
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Grants Type</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Name <span class="required">*</span></label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <input type="text" name="name" class="form-control" required id="editName">
+                  </div> 
+              </div>
+          </div>        
+          <div class="form-group mb-3">
+              <div class="row">
+                  <div class="col-sm-3">
+                      <label class="pull-right">Status</label>
+                  </div>
+                  <div class="col-sm-9">    
+                      <select name="status" id="editStatus" class="form-control">
+                        <option value="1">Active</option>
+                        <option value="0">Deactive</option>
+                      </select>
+                  </div> 
+              </div>
+          </div>
+          <div class="form-group mb-3">  
+            <div class="row">
+                <div class="col-sm-3">
+                    <label class="pull-right">Weightage</label>
+                </div>
+                <div class="col-sm-9">     
+                    <input type="number" name="weightage" id="editWeightage" min="1" max="1000" class="form-control" placeholder="Weightage"></input>
+                </div>
+            </div>
+          </div> 
+        </div>
+        
+        <div class="modal-footer">  
+          <input type="hidden" name="id" id="editId"> 
+          <input type="hidden" name="table_name" value="grants_type" required>
+          <input type="hidden" name="redirect" value="globalinfo/grants_type" required>
+          <button type="submit" name="savethis" value="savethis" class="btn btn-success">Update</button>
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="modal fade bs-modal-sm" id="status-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-sm" style="margin:200px auto;">
+  <div class="modal-content" >
+  <div class="modal-header" style="border:none;">
+      <!-- <button type="button" class="close btn btn-light" data-bs-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span></button>   -->           
+  </div>
+  <form action="https://techiefolk.com/sisterlab/public/admin/globalinfo/grants_type" method="post" enctype="multipart/form-data" id="statusForm">
+    <input type="hidden" name="_token" value="OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O" autocomplete="off">    
+    <div class="modal-body text-center">
+        <h3 class="modal-title">
+            <strong id="status-message">You want to Active this ?</strong>
+        </h3>
+        <input type="hidden" name="id" id="status-id" required>
+        <input type="hidden" name="status" id="status-value" required>
+        <input type="hidden" name="redirect" value="globalinfo/grants_type" required>
+    </div>
+    <div class="modal-footer" style="border:none;">              
+        <div class="col-xs-6 col-lg-offset-3">
+            <button type="submit" name="changestatus" value="changestatus" class="btn btn-success pull-left">Yes</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">No</button>
+        </div>
+    </div>
+  </form> 
+  
+  </div>        
+  </div>      
+</div>
+<!-- <div class="modal fade bs-modal-lg" id="assign-item">
+    <div class="modal-dialog modal-lg" style="">
+        <div class="modal-content" >
+            <div class="modal-header" style="border:none;">    
+              <h4 class="modal-title">Assign This</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="master/assign_entity" method="post">
+		        <div class="modal-body profile-modal-body" style="">
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="keywords" class="form-label">Keywords</label>
+                    <input type="hidden" name="id" id="assign-item-id" required>
+                    <input type="text" id="assign-item-name"  class="form-control" readonly  style="width:100%;">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="mb-3">
+                    <div class="input-group">
+                      <select name="id_new" class="form-select keywords" required style="width:100%;">
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <input type="hidden" name="table" value="keywords" required>
+              <input type="hidden" name="redirect" value="master/keywordslist" required>
+            </div>
+            <div class="modal-footer" style="border:none;">              
+                <div class="col-12 text-center" >
+                    <button type="submit" class="btn btn-danger pull-left">Yes</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">No</button>
+                </div>
+            </div>
+
+            </form> 
+        </div>       
+    </div>      
+</div> -->
+
+</main>
+<!-- End #main -->
+<!-- ======= Start Footer ======= -->
+<footer id="footer_sidebar" class="footer_sidebar">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+    </div>
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<div class="modal fade" id="loginModal">
+	<div class="modal-dialog modal-md">
+		<div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Switch Account</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+        <div class="row">
+          <div class="col-12">
+            <div class="mb-3 text-center">
+                <label for="" class="form-label">
+
+                                      <h4>You are login with Sponsor account .</h4> 
+                    if you want to login with Applicant account click this
+                    <br><br>
+                    <a href="" class="btn btn-outline-primary">Login with Applicant account</a>
+                                      <h4>You are login with Applicant account . </h4>
+                    if you want to login with Sponsor account click this
+                    <br><br>
+                    <a href="" class="btn btn-outline-primary">Login with Sponsor account</a>
+                  
+                </label>
+            </div>
+          </div> 
+        </div>
+      </div>
+		</div>
+	</div>
+</div>
+
+<div class="modal fade bs-modal-sm" id="exceedLimitModal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-sm" style="margin:200px auto;">
+	<div class="modal-content" >
+		<div class="modal-header" style="border:none;">         
+		</div>
+		<div class="modal-body text-center">
+			<h3 class="modal-title">
+				<strong id="exceedLimit">You are Exceed limit</strong>
+			</h3>
+			<br>
+		</div>
+		<div class="modal-footer" style="border:none;">              
+			<div class="col-12">
+				<button type="button" class="btn btn-success float-end" data-bs-dismiss="modal"> Ok </button>
+			</div>
+		</div>
+	</div>        
+	</div>      
+</div>
+ 
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/sisterlab/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/sisterlab/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<script type="text/javascript">
+
+    //$(document).ready(function(){
+    function formatResult(item) {
+          if (!item.id) {
+              return item.text; 
+          }
+          //console.log(item);
+          var dp = item.dp;
+          var dp_src = '/static/images/dp_default.png';
+          if(item.dp!=null){
+              dp_src = '/static/images/dp/'+ item.dp;
+          }
+          var full_name = item.first_name;
+          var organization_name = item.organization.name;
+          var location = '';
+          if(item.city != null){
+              location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+          }else if(item.state != null){
+              location = item.state.name +' '+ item.country.name;
+          }else if(item.country != null){
+              location = item.country.name;
+          }else{
+              location = '';
+          }
+  
+          var $item = $('<div class="formatResultUser">'+
+              '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+              '<div class="textdiv">'+
+                  '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                  '<span class="organization">' + organization_name + '</span>'+
+              '</div>'+
+          '</div>');
+  
+          return $item;
+    }
+    function formatSelection(item) {
+        if (!item.id) {
+            return item.text; 
+        }
+        if (item.selected) {
+            var dp = item.element.getAttribute('data-dp');
+            var dp_src = '/static/images/dp_default.png';
+            if(dp!=''){
+                dp_src = '/static/images/dp/'+ dp;
+            }
+            var full_name = item.element.getAttribute('data-name');
+            var location = item.element.getAttribute('data-country_name');
+            var organization_name = item.element.getAttribute('data-organization_name');  
+        }
+        else{
+            var dp = item.dp;
+            var dp_src = '/static/images/dp_default.png';
+            if(item.dp!=null){
+                dp_src = '/static/images/dp/'+ item.dp;
+            }
+            var full_name = item.first_name;
+            var organization_name = item.organization.name;
+            var location = '';
+            if(item.city != null){
+                location = item.city.name +' '+ item.state.name +' '+ item.country.name;
+            }else if(item.state != null){
+                location = item.state.name +' '+ item.country.name;
+            }else if(item.country != null){
+                location = item.country.name;
+            }else{
+                location = '';
+            }
+        }
+
+        var $item = $('<div class="formatResultUser">'+
+                '<img src="'+ dp_src +'" alt="'+ dp +'"/>'+
+                '<div class="textdiv">'+
+                    '<span class="full_name">' + full_name + ' <span class="location">' + location + '</span></span>'+
+                    '<span class="organization">' + organization_name + '</span>'+
+                '</div>'+
+            '</div>');
+
+        return $item;
+    }
+    //});
+  
+</script>
+
+<script type="text/javascript">
+
+    // Inline editing
+    var oldValue = null;
+    $(document).on('dblclick', '.editable', function(){
+        oldValue = $(this).html(); //alert(oldValue);
+        $(this).removeClass('editable');	// to stop from making repeated request
+        $(this).html('<input type="number" min="1" max="1000" style="width:60px;" class="update" value="'+ oldValue +'" />');
+        $(this).find('.update').focus();
+    });
+
+    var newValue = null;
+    //$(document).on('blur', '.update', function(){
+        var elem    = $(this);
+        newValue 	  = $(this).val();
+
+        var colTable = $(this).parent().attr('table'); 
+        var colId	   = $(this).parent().attr('id');    
+        var colName	 = $(this).parent().attr('name');  
+
+        if(newValue != oldValue){
+        //alert('Test');
+        $.ajax({
+            url:"https://techiefolk.com/sisterlab/public/admin/change_weightage",
+            method : 'post',
+            data : {
+                _token: 'OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O',
+                colTable : colTable,
+                colId    : colId,
+                colName  : colName,
+                newValue : newValue,
+            },
+            success : function(respone){
+                $(elem).parent().addClass('editable');
+                //$(elem).parent().html(newValue);
+                if(newValue == ''){
+                    $(elem).parent().html(oldValue);
+                }else if(newValue < 1){
+                    $(elem).parent().html(1);
+                }else if(newValue > 1000){
+                    $(elem).parent().html(1000);
+                }else{
+                    $(elem).parent().html(newValue);
+                }
+            }
+        });
+        }else{
+        $(elem).parent().addClass('editable');
+        $(this).parent().html(newValue);
+        }
+    //}); 
+
+</script> 
+<script type="text/javascript">
+
+  $('#filter_status').select2({theme: 'bootstrap-5', placeholder: 'Select Status',});
+  $('#filter_createdby').select2({theme: 'bootstrap-5', placeholder: 'Select createdby',});
+  $('#filter_category').select2({theme: 'bootstrap-5',placeholder: 'Select Category',});
+
+
+  $('#add-new-static').on('click', function(){
+      $('#addStaticModal').modal('show');
+  })
+  $('#static_Add').validate({
+      rules: {
+          name: {                    
+              required: true,
+              remote:{
+                url: "https://techiefolk.com/sisterlab/public/check_if_exists",
+                data: {
+                  _token: 'OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O',
+                  table: function() { return "global_info"; },
+                  sub_table: function() { return "grants_type"; },
+                  field: function() { return "name"; }, 
+                  value: function() { return $('#addName').val(); } 
+                },
+                type: "post",
+              }
+          },
+      },
+      messages: {
+          name: {                    
+              required: 'Please enter name',
+              remote: 'This name already exists'
+          }                                
+      },
+      highlight: function(element) {
+          $(element).closest('.form-group').addClass('error');
+      },
+      success: function(element) {
+          $(element).closest(".form-group").removeClass("error");
+      }
+  });
+  $('#static_Edit').validate({
+      rules: {
+          name: {                    
+              required: true,
+              remote:{
+                url: "https://techiefolk.com/sisterlab/public/check_if_exists",
+                data: {
+                  _token: 'OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O',
+                  table: function() { return "global_info"; },
+                  sub_table: function() { return "grants_type"; },
+                  field: function() { return "name"; }, 
+                  value: function() { return $('#editName').val(); },
+                  id: function() { return $('#editId').val(); }
+                },
+                type: "post",
+              }
+          },
+      },
+      messages: {
+          name: {                    
+              required: 'Please enter name',
+              remote: 'This name already exists'
+          }                                
+      },
+      highlight: function(element) {
+          $(element).closest('.form-group').addClass('error');
+      },
+      success: function(element) {
+          $(element).closest(".form-group").removeClass("error");
+      }
+  });
+
+  function editItem(id){
+    $('#editId').val(id); 
+    $.ajax({
+        type:"POST",
+				url:"https://techiefolk.com/sisterlab/public/admin/fetch_tablerow",
+				data: { table: 'global_info', sub_table: 'grants_type', id: id,  _token: 'OKwf93lT6wkiSLx65qIYRn1L3Cmd28K6UCxUBt6O' },
+				success:function(result){                            
+            //console.log(result);
+            result = JSON.parse(result);                     
+            //$('#editCategory').val(result[0].category).trigger('change'); 
+            $('#editName').val(result[0].name);
+            $('#editWeightage').val(result[0].weightage);
+            $('#editStatus').val(result[0].status).trigger('change');           
+            $('#editStaticModal').modal('show'); 
+        }
+      });
+  }
+  function statusDeactive(id){
+		$('#status-id').val(id);
+    $('#status-value').val(0);
+    $('#status-message').text('You want to Deactive this ?');
+		$('#status-modal').modal('show');
+	}
+  function statusActive(id){
+		$('#status-id').val(id);
+    $('#status-value').val(1);
+    $('#status-message').text('You want to Active this ?');
+		$('#status-modal').modal('show');
+	}
+
+
+</script>
+
+
+</body>
+</html>

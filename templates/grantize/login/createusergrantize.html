@@ -1,0 +1,1372 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Signup</title>
+    <meta name="_token" content="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" />
+    -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File
+    <link href="https://techiefolk.com/grantize/public/assets/css/main.css" rel="stylesheet">
+    <link href="https://techiefolk.com/grantize/public/assets/css/style.css" rel="stylesheet">
+    <link href="https://techiefolk.com/grantize/public/assets/css/style_responsive.css" rel="stylesheet">
+    -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main.css') }}">
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style.css') }}">
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/style_responsive.css') }}">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+<!-- Jquery ( Production ) -->
+<!--<script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/development-jquery-3.7.1.min.js')}}"></script>
+<!-- <link href="https://techiefolk.com/grantize/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between"> 
+    
+    <div class="d-flex align-items-center justify-content-between">
+        <a href="{{ url_for('grantize') }}" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">Grantize</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="https://techiefolk.com/grantize/public/whyus" class="nav-item desktop me-3 ">Why Grantize</a></li>
+        <li><a href="https://techiefolk.com/grantize/public/plans" class="nav-item desktop me-3 ">Plans</a></li>
+        
+        <li>
+            <a href="https://techiefolk.com/grantize/public/sponsor/grants" class="nav-item desktop me-3 ">Grants List</a>
+        </li>
+        
+        <li class="nav-item dropdown2 desktop me-3">
+            <a href="#"><span>Grants</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                <li><button type="button" data-value="all" 			class="grants_status_logout btn btn-sm">All</button></li>
+                <li><button type="button" data-value="open" 		class="grants_status_logout btn btn-sm">Open</button></li>
+                <li><button type="button" data-value="continuous"  	class="grants_status_logout btn btn-sm">Continuous</button></li>
+                <li><button type="button" data-value="commingsoon"  class="grants_status_logout btn btn-sm">Comming Soon</button></li>
+                <li><button type="button" data-value="recentlyclosed" class="grants_status_logout btn btn-sm">Recently Closed</button></li>
+                <li><button type="button" data-value="archived" 	class="grants_status_logout btn btn-sm">Archived</button></li>
+            </ul>
+                    </li>
+        
+        <li><a href="https://techiefolk.com/grantize/public/sponsors" class="nav-item desktop me-3 ">Sponsors</a></li>
+        <li><a href="https://techiefolk.com/grantize/public/blogs" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="https://techiefolk.com/grantize/public/faqs" class="nav-item desktop me-3 ">Help</a></li>
+    
+
+            
+            
+        </ul>
+    </nav>
+
+        <a href="https://techiefolk.com/grantize/public/login" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+    
+  </div>
+</header>
+<!-- End Header -->
+<!-- ======= Sidebar ======= -->
+
+
+<!-- End Sidebar-->
+<main id="main" class="main">
+
+
+
+
+<!-- ======= Signup Section ======= -->
+<section id="signup-page" class="signup-page section-bg">
+<div class="container">
+	<div id="signup-type-div2" style="display:block;">
+		<div class="row justify-content-center">
+			<div class="col-lg-6 text-center">
+				<h3 class="user-type-div-title">Signup as </h3>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="col-lg-3" id="personal">
+				<div class="user-type-div-outer">
+					<div class="user-type-div user-type2" data-nametype2="Organizational">
+						<img src="/static/images/vendor.png" alt="" class="img-fluid">
+						<p>Personal</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3" id="manager" style="border-left:2px solid #ddd;">
+				<div class="user-type-div-outer">
+					<div class="user-type-div user-type2" data-nametype2="Personal">
+						<img src="/static/images/vendor.png" alt="" class="img-fluid">
+						<p>Manager</p>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="col-lg-3" id="user" style="border-left:2px solid #ddd;">
+				<div class="user-type-div-outer">
+					<div class="user-type-div user-type2" data-nametype2="Personal">
+						<img src="/static/images/vendor.png" alt="" class="img-fluid">
+						<p>User</p>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</div>
+
+
+	<div id="signup-div-personal">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 details">
+				<h3 class="user-type-div-title">Signup as Personal</h3>
+				<form action="{{ url_for('registerresgrantize') }}" method="POST">
+					<input type="hidden" name="_tokenpersonal" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">					
+					<div class="form-group">
+						<div id="login-response-div">
+						</div>
+					</div>
+					<div class="section-bg-white mb-3" style="padding:15px;">
+						<h5>Personal Info:</h5>
+						<div class="row">
+							<div class="col-lg-2 pe-0">
+								<div class="form-group signupform-div mb-3">
+									<select class="form-select" name="name_prefix" id="signup_name_prefix">
+																					<option value="Mr.">Mr.</option>
+																					<option value="Mrs.">Mrs.</option>
+																					<option value="Miss">Miss</option>
+																					<option value="Ms.">Ms.</option>
+																					<option value="Dr.">Dr.</option>
+																					<option value="Prof.">Prof.</option>
+																				</select>
+								</div>
+							</div>
+							<div class="col-lg-5 ps-0 pe-0">
+								<div class="form-group signupform-div mb-3">
+									<input type="text" name="fname" id="signup_fname" placeholder="First Name" class="form-control" />
+								</div>
+							</div>
+							<div class="col-lg-5 ps-0">
+								<div class="form-group signupform-div mb-3">
+									<input type="text" name="lname" id="signup_lname" placeholder="Last Name" class="form-control" />
+								</div>
+							</div>
+						</div>
+						<div class="form-group signupform-div">
+							<select class="form-select" name="qualification" id="signup_qualification">
+								<option value="">Select Highest Qualification</option>
+																	<option value="Secondary">Secondary</option>
+																	<option value="Higher Secondary">Higher Secondary</option>
+																	<option value="Graduate">Graduate</option>
+																	<option value="Post Graduate">Post Graduate</option>
+																	<option value="Doctorate">Doctorate</option>
+																	<option value="Post Doctorate">Post Doctorate</option>
+																</select>
+						</div>
+					</div>
+
+					<div class="section-bg-white mb-3" style="padding:15px;">
+						<h5>Account info</h5>
+
+						<div class="form-group signupform-div mb-3">
+							<input type="email" name="email_personal" id="signup_email_personal" placeholder="Email" class="form-control" />
+						</div>
+						<div class="form-group signupform-div mb-3">
+							<input type="text" name="mobile" id="signup_mobile" placeholder="Mobile" class="form-control" />
+						</div>
+						<div class="form-group signupform-div mb-3">
+							<input type="text" name="uname" id="signup_uname" placeholder="Username" class="form-control" />
+						</div>
+						<div class="form-group signupform-div mb-3">
+							<input type="password" name="password" id="signup_password" placeholder="Password" class="form-control" />
+						</div>
+						<div class="form-group signupform-div">
+							<input type="password" name="password_repeat" id="password_repeat" placeholder="Confirm Password" class="form-control" />
+						</div>
+					</div>
+
+					<div class="section-bg-white mb-3" style="padding:15px;">
+						<h5>Location:</h5>
+						<div class="row">
+							<div class="col-lg-5 pe-0">
+								<div class="form-group signupform-div mb-3">
+									<input type="text" name="address_line_one" id="signup_address_line_one" placeholder="address line one" class="form-control" />
+								</div>
+							</div>
+							<div class="col-lg-5 ps-0 pe-0">
+								<div class="form-group signupform-div mb-3">
+									<input type="text" name="address_line_two" id="signup_address_line_two" placeholder="address line two" class="form-control" />
+								</div>
+							</div>
+							<div class="col-lg-2 ps-0">
+								<div class="form-group signupform-div mb-3">
+									<input type="text" name="post_code" id="signup_post_code" placeholder="post code" class="form-control" />
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 pe-0">
+								<div class="form-group signupform-div mb-3">
+									<select class="form-select" name="country" id="signup_country" style="width:100%;">
+										<option value="">Select Country</option>
+										{% for countries in globalcountries %}
+										<option value="{{ countries }}">{{ countries }}</option>
+										{% endfor %}
+									</select>
+								</div>
+							</div>
+							<div class="col-lg-4 ps-0 pe-0">
+								<div class="form-group signupform-div mb-3">
+									<input type="text" name="state" class="form-control" placeholder="State"/>
+								</div>
+							</div>
+							<div class="col-lg-4 ps-0">
+								<div class="form-group signupform-div mb-3">
+									<!-- <select class="form-select" name="city" id="signup_city" style="width:100%;">
+										<option value="">Select City</option>
+										{% for cities in globalcities %}
+										<option value="{{ cities }}">{{ cities }}</option>
+										{% endfor %}
+									</select> -->
+									<input type="text" name="city" class="form-control" placeholder="City"/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<input type="submit" id="signup-personal-submit" class="signupmodal-submit submit-button btn btn-primary w-100 mb-4" value="Submit">
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<div id="signup-div-manager">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 details">
+				<h3 class="user-type-div-title">Signup as Manager</h3>
+
+				<form action="{{ url_for('registerresgrantize') }}" method="POST">
+					<input type="hidden" name="_tokenmanager" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">					<div class="form-body">
+						<div class="form-group">
+							<div id="login-response-div2">
+							</div>
+						</div>
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Personal Info:</h5> 
+							<div class="form-group signupform-div mb-3">
+								<input type="text" placeholder="Enter Your Organization" class="form-select" name="organization">
+							</div>
+							<div class="input-group">
+								<input onkeyup="keyupFunction2()" type="text" name="email_prefix" id="email_prefix2" class="form-control" placeholder="Email Prefix" style="width:55%;">
+								<span class="input-group-text">@</span>
+								<input type="text" name="email_domain" id="email_domain2" class="form-control" placeholder="" />
+							</div>
+							<input style="margin-top:-38px;z-index:-1" type="email" name="email_institutional" id="signup_email_institutional2" placeholder="Institutional Email" class="form-control" />
+
+							<div class="form-group signupform-div mb-3 mt-3">
+								<input type="text" name="fname" id="signup_fname2" placeholder="First Name" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="lname" id="signup_lname2" placeholder="Last Name" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Account info</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<input type="email" name="email_personal" id="signup_email_personal2" placeholder="Email" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="mobile" id="signup_mobile2" placeholder="Mobile" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="uname" id="signup_uname2" placeholder="Username" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password" id="signup_password2" placeholder="Password" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password_repeat" id="password_repeat2" placeholder="Confirm Password" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Location:</h5>
+
+							<div class="row">
+								<div class="col-lg-5 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_one" id="signup_address_line_one2" placeholder="address line one" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_two" id="signup_address_line_two2" placeholder="address line two" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-2 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="post_code" id="signup_post_code2" placeholder="post code" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="country" id="signup_country2" style="width:100%;">
+											<option value="">Select Country</option>
+											{% for countries in globalcountries %}
+											<option value="{{ countries }}">{{ countries }}</option>
+											{% endfor %}
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="state" class="form-control" placeholder="State"/>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<!-- <select class="form-select" name="city" id="signup_city2" style="width:100%;">
+											<option value="">Select City</option>
+											{% for cities in globalcities %}
+											<option value="{{ cities }}">{{ cities }}</option>
+											{% endfor %}
+										</select> -->
+										<input type="text" name="city" class="form-control" placeholder="City"/>
+									</div>
+								</div>
+							</div>
+						</div>
+						<input type="submit" id="signup-manager-submit" class="signupmodal-submit submit-button btn btn-primary w-100 mb-4" value="Submit">
+					</div>
+				</form>
+
+			</div>
+		</div>
+	</div>
+	<div id="signup-div-user">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 details">
+				<h3 class="user-type-div-title">Signup as User</h3>
+
+				<form action="{{ url_for('registerresgrantize') }}" method="POST" id="signupUser">
+					<input type="hidden" name="_token" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">					<div class="form-body">
+						<div class="form-group">
+							<div id="login-response-div3">
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Personal Info:</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<select class="form-select" name="organization" id="signup_organization3">
+								</select>
+							</div>
+							<div class="input-group">
+								<input onkeyup="keyupFunction3()" type="text" name="email_prefix" id="email_prefix3" class="form-control" placeholder="Email Prefix" style="width:55%;">
+								<span class="input-group-text">@</span>
+								<input type="text" name="email_domain" id="email_domain3" class="form-control" placeholder="" readonly />
+							</div>
+							<input style="margin-top:-38px;z-index:-1" readonly type="email" name="email_institutional" id="signup_email_institutional3" placeholder="Institutional Email" class="form-control" />
+
+							<div class="form-group signupform-div mb-3 mt-3">
+								<input type="text" name="fname" id="signup_fname3" placeholder="First Name" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="lname" id="signup_lname3" placeholder="Last Name" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Account info</h5>
+
+							<div class="form-group signupform-div mb-3">
+								<input type="email" name="email_personal" id="signup_email_personal3" placeholder="Email" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="mobile" id="signup_mobile3" placeholder="Mobile" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="text" name="uname" id="signup_uname3" placeholder="Username" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password" id="signup_password3" placeholder="Password" class="form-control" />
+							</div>
+							<div class="form-group signupform-div mb-3">
+								<input type="password" name="password_repeat" id="password_repeat3" placeholder="Confirm Password" class="form-control" />
+							</div>
+						</div>
+
+						<div class="section-bg-white mb-3" style="padding:15px;">
+							<h5>Location:</h5>
+
+							<div class="row">
+								<div class="col-lg-5 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_one" id="signup_address_line_one3" placeholder="address line one" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-5 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="address_line_two" id="signup_address_line_two3" placeholder="address line two" class="form-control" />
+									</div>
+								</div>
+								<div class="col-lg-2 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<input type="text" name="post_code" id="signup_post_code3" placeholder="post code" class="form-control" />
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-4 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<select class="form-select" name="country" id="signup_country3" style="width:100%;">
+											<option value="">Select Country</option>
+											{% for countries in globalcountries %}
+											<option value="{{ countries }}">{{ countries }}</option>
+											{% endfor %}
+										</select>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0 pe-0">
+									<div class="form-group signupform-div mb-3">
+										<!-- <select class="form-select" name="state" id="signup_state3">
+											<option value="">Select State</option>
+										</select> -->
+										<input type="text" name="state" class="form-control" placeholder="State"/>
+									</div>
+								</div>
+								<div class="col-lg-4 ps-0">
+									<div class="form-group signupform-div mb-3">
+										<!-- <select class="form-select" name="city" id="signup_city3" style="width:100%;">
+											<option value="">Select City</option>
+											{% for cities in globalcities %}
+											<option value="{{ cities }}">{{ cities }}</option>
+											{% endfor %}
+										</select> -->
+										<input type="text" name="city" class="form-control" placeholder="City"/>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<input type="hidden" name="role" value="3">
+							<button type="submit" name="signup" id="signup-user-submit" class="signupmodal-submit submit-button btn btn-primary w-100 mb-4">CONTACT</button>
+						</div>
+					</div>
+				</form>
+
+				<span class="back back3"><i class="bi bi-arrow-left"></i> Back</span>
+			</div>
+		</div>
+	</div>
+
+</div>
+</section>
+<!-- End Login Section -->
+
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="{{ url_for('grantize') }}" class="logo d-flex align-items-center mb-4">
+          <span>Grantize</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="{{ url_for('grantize') }}">Home</a></li>
+          <li><a href="{{ url_for('grantizewhyus') }}">Why us</a></li>
+          <li><a href="{{ url_for('termsnconditions') }}">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/grantize/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="{{ url_for('grantize') }}">Home</a></li>
+          <li><a href="{{ url_for('grantizewhyus') }}">Why us</a></li>
+          <li><a href="{{ url_for('termsnconditions') }}">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/grantize/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/slick.js')}}"></script>
+
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/grantize/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+ 
+
+
+<form action="{{ url_for('grantizebrowsegrants') }}" id="filterFormLogin" method="post">
+    <input type="hidden" name="_token" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">    <input type="hidden" id="grants_status_login" name="grants_status">
+</form>
+
+<form action="https://techiefolk.com/grantize/public/grants" id="filterFormLogout" method="post">
+    <input type="hidden" name="_token" value="pd1hDJJSLwcU3VaoiwnCiw8IEcn7bj0RiAo1cSzp" autocomplete="off">    <input type="hidden" id="grants_status_logout" name="grants_status">
+</form>
+<script type="text/javascript">
+
+    //Advance Filter
+    $(document).ready(function(){  
+        $(".grants_status_logout").click(function(){  
+            var grants_status = $(this).attr('data-value'); 
+            $('#grants_status_logout').val(grants_status);
+            $("#filterFormLogout").submit();
+        });
+    });
+    $(document).ready(function(){  
+        $(".grants_status_login").click(function(){  
+            var grants_status = $(this).attr('data-value'); 
+            $('#grants_status_login').val(grants_status);
+            $("#filterFormLogin").submit();
+        });
+    });
+
+</script>
+
+
+<script type="text/javascript">
+	//$.ajaxSetup({
+	//	headers: {
+	//		'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+	//	}
+	//});
+	$("#signup-div-personal").show();
+	$("#signup-div-manager").hide();
+	$("#signup-div-user").hide();
+
+	$("#personal").click(function(){
+		$("#signup-div-personal").show();
+		$("#signup-div-manager").hide();
+		$("#signup-div-user").hide();
+	}); 
+	$("#manager").click(function(){
+		$("#signup-div-personal").hide();
+		$("#signup-div-manager").show();
+		$("#signup-div-user").hide();
+	}); 
+	$("#user").click(function(){
+		$("#signup-div-personal").hide();
+		$("#signup-div-manager").hide();
+		$("#signup-div-user").show();
+	}); 
+
+
+
+	$(document).ready(function(){
+
+	    /* Signup as Personal */
+		$('#signupPersonal').submit(function(e){
+			e.preventDefault(); 
+			if($('#signupPersonal').valid()){
+
+				$('#signup-personal-submit').attr('disabled',true); 
+				$('#signup-personal-submit').attr('value','Please wait...'); 
+
+				$.ajax({
+					url: "https://techiefolk.com/grantize/public/researcher/signup_ajax",
+					data: $(this).serialize(),
+					type: "post",
+					dataType: 'json',
+					success: function(result)
+					{
+						//console.log(result);
+						$('#login-response-div').html('');
+			            if(result == true){
+			            	/* var response = $('<div class="alert alert-success alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Signup Successfully!</strong> login now.'
+									+'</div>');
+			            	$('#login-response-div2').append(response); */
+							//window.location.href = "login";
+							window.location.href = "https://techiefolk.com/grantize/public/researcher/login"
+			            }else{
+			            	var response = $('<div class="alert alert-danger alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Username not Available!</strong>'
+									+'</div>');
+			            	$('#login-response-div2').append(response);
+			            }
+
+						$('#signup-personal-submit').attr('disabled',false); 
+						$('#signup-personal-submit').attr('value','Submit'); 
+					}
+				});
+			}
+		});
+        $('#signupPersonal').validate({
+	        rules: {
+	            uname: {
+	                required: true,
+					remote: {
+						url:"https://techiefolk.com/grantize/public/researcher/check_username_availability",
+						type: "post",
+					},
+	                minlength:6,
+	                maxlength:20,
+	            },
+	            password: {
+	                required: true,
+	                minlength:8,
+	                mypassword: true,
+	            },
+	            password_repeat: {
+	                equalTo: "#signup_password"
+	            },
+				email_personal: {
+	                required: true,
+					email: true,
+					remote: {
+						url:"https://techiefolk.com/grantize/public/researcher/check_email_availability",
+						type: "post",
+					},
+	            },
+				fname: {
+	                required: true,
+	            },
+				mobile: {
+	                //required: true,
+					digits: true,
+					//phoneUS: true,
+	            },
+				qualification: {
+	                required: true,
+	            },
+				country: {
+	                required: true,
+	            }
+	        },
+	        messages: {
+	            uname:{
+	                required: 'Please Enter Username',
+					remote: 'Username not Available',
+	                minlength: 'Minimum 6 characters required',
+	                maxlength: 'Maximum 20 characters allowed',
+	            },
+	            password: {
+	                required: "Please Enter Password",
+	                minlength:"Minimum 8 digit password required",
+	            },
+	            password_repeat: {
+	                equalTo: "Password not Matched"
+	            },
+				email_personal:{
+	                required: 'Please Enter Email',
+					remote: 'Email Already Exists',
+	            },
+				fname:{
+	                required: 'Please Enter First Name'
+	            },
+				mobile:{
+	                //required: 'Please enter mobile',
+					digits:"Enter Digits Only",
+					//phoneUS:"Enter Valid Number Only",
+	            },
+				qualification:{
+	                required: 'Please Select Highest Qualification'
+	            },
+				country:{
+	                required: 'Please Select Country'
+	            },
+	        },
+			errorPlacement: function(error, element) {
+				if(element.parent('.input-group').length) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			},
+      	});
+
+
+		$('#signupManager').submit(function(e){
+			e.preventDefault(); 
+			if($('#signupManager').valid()){
+
+				$('#signup-manager-submit').attr('disabled',true); 
+				$('#signup-manager-submit').attr('value','Please wait...'); 
+
+				$.ajax({
+					url: "https://techiefolk.com/grantize/public/researcher/signup_ajax",
+					data: $(this).serialize(),
+					type: "post",
+					dataType: 'json',
+					success: function(result)
+					{
+						//console.log(result);
+						$('#login-response-div2').html('');
+			            if(result == true){
+			            	var response = $('<div class="alert alert-success alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Signup Successfully!</strong> login now.'
+									+'</div>');
+			            	$('#login-response-div2').append(response);
+							//window.location.href = "login";
+
+			            }else{
+			            	var response = $('<div class="alert alert-danger alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Username not Available!</strong>'
+									+'</div>');
+			            	$('#login-response-div2').append(response);
+			            }
+
+						$('#signup-manager-submit').attr('disabled',false); 
+						$('#signup-manager-submit').attr('value','Submit'); 
+					}
+				});
+			}
+		});
+		$('#signupManager').validate({
+	        rules: {
+	            uname: {
+	                required: true,
+					remote: {
+						url:"https://techiefolk.com/grantize/public/researcher/check_username_availability",
+						type: "post",
+					},
+	                minlength:6,
+	                maxlength:20,
+	            },
+	            password: {
+	                required: true,
+	                minlength:8,
+	                mypassword: true,
+	            },
+	            password_repeat: {
+	                  equalTo: "#signup_password2"
+	            },
+				organization: {
+	                required: true,
+	            },
+				email_prefix: {
+	                required: true,
+	            },
+				email_domain: {
+	                required: true,
+	            },
+				email_institutional: {
+	                required: true,
+					email: true,
+					remote: {
+						url:"https://techiefolk.com/grantize/public/researcher/check_email_availability",
+						type: "post",
+					},
+	            },
+				email_personal: {
+	                required: true,
+					email: true,
+					remote:{
+		                url:"https://techiefolk.com/grantize/public/researcher/check_email_availability",
+		                type: "post"
+		            },
+	            },
+				fname: {
+	                required: true,
+	            },
+				mobile: {
+	                //required: true,
+					digits: true,
+					//phoneUS: true,
+	            },
+				qualification: {
+	                required: true,
+	            },
+				country: {
+	                required: true,
+	            }
+	        },
+	        messages: {
+	            uname:{
+	                required: 'Please enter Username',
+	                remote: 'Username not available',
+	                minlength: 'Minimum 6 characters required',
+	                maxlength: 'Maximum 20 characters allowed',
+	            },
+	            password: {
+	                required: "Please select password",
+	                minlength:"Minimum 8 digit password required",
+	            },
+	            password_repeat: {
+	                equalTo: "Password not matched"
+	            },
+				organization:{
+	                required: 'Please select Organization'
+	            },
+				email_prefix:{
+	                required: 'Please enter email prefix'
+	            },
+				email_domain:{
+	                required: 'This Organization does not have domain'
+	            },
+				email_institutional:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				email_personal:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				fname:{
+	                required: 'Please enter first name'
+	            },
+				mobile:{
+	                //required: 'Please enter mobile',
+					digits:"Enter digits Only",
+					//phoneUS:"Enter Valid Number Only",
+	            },
+				qualification:{
+	                required: 'Please select qualification'
+	            },
+				country:{
+	                required: 'Please select Country'
+	            },
+	        },
+			errorPlacement: function(error, element) {
+				if(element.parent('.input-group').length) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			},
+      	});
+
+
+		$('#signupUser').submit(function(e){
+			e.preventDefault(); 
+			if($('#signupUser').valid()){
+
+				$('#signup-user-submit').attr('disabled',true); 
+				$('#signup-user-submit').attr('value','Please wait...'); 
+
+				$.ajax({
+					url: "https://techiefolk.com/grantize/public/researcher/signup_ajax",
+					data: $(this).serialize(),
+					type: "post",
+					dataType: 'json',
+					success: function(result)
+					{
+						//console.log(result);
+						$('#login-response-div3').html('');
+			            if(result == true){
+			            	/* var response = $('<div class="alert alert-success alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Signup Successfully!</strong> login now.'
+									+'</div>');
+			            	$('#login-response-div3').append(response); */
+							//window.location.href = "login";
+							window.location.href = "https://techiefolk.com/grantize/public/researcher/login"
+
+			            }else{
+			            	var response = $('<div class="alert alert-danger alert-dismissible">'
+									+'<a href="#" class="close" data-bs-dismiss="alert" aria-label="close">&times; </a>'
+									+'<strong>Username not Available!</strong>'
+									+'</div>');
+			            	$('#login-response-div3').append(response);
+			            }
+
+						$('#signup-user-submit').attr('disabled',false); 
+						$('#signup-user-submit').attr('value','Submit'); 
+					}
+				});
+
+	    	}
+	    })
+        $('#signupUser').validate({
+	        rules: {
+	            uname: {
+	                required: true,
+	                remote:{
+						url:"https://techiefolk.com/grantize/public/researcher/check_username_availability",
+		                type: "post"
+		            },
+	                minlength:6,
+	                maxlength:20,
+	            },
+	            password: {
+	                required: true,
+	                minlength:8,
+	                mypassword: true,
+	            },
+	            password_repeat: {
+	                  equalTo: "#signup_password3"
+	            },
+				organization: {
+	                required: true,
+	            },
+				email_prefix: {
+	                required: true,
+	            },
+				email_domain: {
+	                required: true,
+	            },
+				email_institutional: {
+	                required: true,
+					email: true,
+					remote:{
+						url:"https://techiefolk.com/grantize/public/researcher/check_email_availability",
+						type: "post",
+		            },
+	            },
+				email_personal: {
+	                required: true,
+					email: true,
+					remote:{
+						url:"https://techiefolk.com/grantize/public/researcher/check_email_availability",
+						type: "post",
+		            },
+	            },
+				fname: {
+	                required: true,
+	            },
+				mobile: {
+	                //required: true,
+					digits: true,
+					//phoneUS: true,
+	            },
+				qualification: {
+	                required: true,
+	            },
+				country: {
+	                required: true,
+	            }
+	        },
+	        messages: {
+	            uname:{
+	                required: 'Please enter Username',
+	                remote: 'Username not available',
+	                minlength: 'Minimum 6 characters required',
+	                maxlength: 'Maximum 20 characters allowed',
+	            },
+	            password: {
+	                required: "Please select password",
+	                minlength:"Minimum 8 digit password required",
+	            },
+	            password_repeat: {
+	                equalTo: "Password not matched"
+	            },
+				organization:{
+	                required: 'Please select Organization'
+	            },
+				email_prefix:{
+	                required: 'Please enter email prefix'
+	            },
+				email_domain:{
+	                required: 'This Organization does not have domain'
+	            },
+				email_institutional:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				email_personal:{
+	                required: 'Please enter Email',
+					remote: 'Email Already Exists',
+	            },
+				fname:{
+	                required: 'Please enter first name'
+	            },
+				mobile:{
+	                //required: 'Please enter mobile',
+					digits:"Enter digits Only",
+					//phoneUS:"Enter Valid Number Only",
+	            },
+				qualification:{
+	                required: 'Please select qualification'
+	            },
+				country:{
+	                required: 'Please select Country'
+	            },
+	        },
+			errorPlacement: function(error, element) {
+				if(element.parent('.input-group').length) {
+					error.insertAfter(element.parent());
+				} else {
+					error.insertAfter(element);
+				}
+			},
+      	});
+
+
+
+		$.validator.addMethod('mypassword', function(value, element) {
+          	return this.optional(element) || (value.match(/[A-Z]/) && value.match(/[0-9]/));
+      	},'Atleast one uppercase and a number required');
+		/* function validatePhone(txtPhone) {
+			var a = document.getElementById(txtPhone).value;
+			var filter = /^((\+[1-9]{1,4}[ \-]*)|(\([0-9]{2,3}\)[ \-]*)|([0-9]{2,4})[ \-]*)*?[0-9]{3,4}?[ \-]*[0-9]{3,4}?$/;
+			if (filter.test(a)) {
+				return true;
+			}else {
+				return false;
+			}
+		} */
+    });
+
+
+
+	$('#signup_organization2').select2({
+		placeholder: 'Search Organization',
+		theme: 'bootstrap-5',
+		minimumInputLength: 3,
+		ajax: {
+			type: "POST",
+			url:"https://techiefolk.com/grantize/public/search_dropdown_global",
+			delay: 250,
+			dataType: 'json',
+			data: function (params) {
+				return {
+					search: params.term, // search term
+					table: 'organizations',
+					field: 'name',
+					//field_category: 'functioning_area',
+					//field_category_value: 12,
+				};
+			},
+			processResults: function (data, params) {
+				//params.page = params.page || 1;
+				return {
+					results: $.map(data, function (item){
+						return {
+							id: item.id,
+							text: item.name,
+						}
+					})
+				};
+			},
+			cache: true
+		}
+	}).on("select2:select", function(e) {
+        //alert(e.params.data.id);
+		if(e.params.data.id != '0'){
+          	var id = e.params.data.id;
+		  	$.ajax({
+				type:"POST",
+				url:"https://techiefolk.com/grantize/public/organization_url",
+				data: {id: id},
+				success:function(data){
+					var url = JSON.parse(data);
+					$('#email_domain2').val(url);
+
+					var email_prefix2 = $('#email_prefix2').val(); 
+					var email_institutional2 = email_prefix2+'@'+url;
+					$('#signup_email_institutional2').val(email_institutional2);
+				}
+			});
+        }
+    });
+	function keyupFunction2(){
+        var email_prefix2   = $('#email_prefix2').val(); 
+		var email_domain2   = $('#email_domain2').val(); 
+
+		var email_institutional2 = email_prefix2+'@'+email_domain2;
+		$('#signup_email_institutional2').val(email_institutional2);
+	}
+
+
+	$('#signup_organization3').select2({
+		placeholder: 'Search Organization',
+		theme: 'bootstrap-5',
+		minimumInputLength: 3,
+		ajax: {
+			type: "POST",
+			url:"https://techiefolk.com/grantize/public/search_dropdown_global",
+			delay: 250,
+			dataType: 'json',
+			data: function (params) {
+				return {
+					search: params.term, // search term
+					table: 'organizations',
+					field: 'name',
+					//field_category: 'functioning_area',
+					//field_category_value: 12,
+				};
+			},
+			processResults: function (data, params) {
+				return {
+					results: $.map(data, function (item){
+						return {
+							id: item.id,
+							text: item.name,
+						}
+					})
+				};
+			},
+			cache: true
+		}
+	}).on("select2:select", function(e) {
+        //alert(e.params.data.id);
+		if(e.params.data.id != '0'){
+          	var id = e.params.data.id;
+		  	$.ajax({
+				type:"POST",
+				url:"https://techiefolk.com/grantize/public/organization_url",
+				data: {id: id},
+				success:function(data){
+					var url = JSON.parse(data);
+					$('#email_domain3').val(url);
+
+					var email_prefix3 = $('#email_prefix3').val(); 
+					var email_institutional3 = email_prefix3+'@'+url;
+					$('#signup_email_institutional3').val(email_institutional3);
+				}
+			});
+        }
+    });
+	function keyupFunction3(){
+        var email_prefix3   = $('#email_prefix3').val(); 
+		var email_domain3   = $('#email_domain3').val(); 
+
+		var email_institutional3 = email_prefix3+'@'+email_domain3;
+		$('#signup_email_institutional3').val(email_institutional3);
+	}
+
+
+	$('#signup_country').on("change", function(){
+		var id = $('#signup_country').val(); //alert(id);
+		var $select = $('#signup_state');  
+		
+        $.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/grantize/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+    $('#signup_state').on("change", function(){
+		var id = $('#signup_state').val();
+    	var $select = $('#signup_city');
+
+		$.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/grantize/public/get_children",	 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+
+	$('#signup_country2').on("change", function(){
+		var id = $('#signup_country2').val();
+		var $select = $('#signup_state2');  
+		
+        $.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/grantize/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+    $('#signup_state2').on("change", function(){
+		var id = $('#signup_state2').val();
+    	var $select = $('#signup_city2');
+		
+		$.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/grantize/public/get_children",	 		 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+
+	$('#signup_country3').on("change", function(){
+		var id = $('#signup_country3').val();
+		var $select = $('#signup_state3');  
+		
+        $.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/grantize/public/get_children",
+			data: {id: id, table: 'states', field: 'country', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+    $('#signup_state3').on("change", function(){
+		var id = $('#signup_state3').val();
+    	var $select = $('#signup_city3');
+
+		$.ajax({
+			type:"POST",
+			url:"https://techiefolk.com/grantize/public/get_children",			 
+       		data: {id: id, table: 'cities', field: 'state', sort: 'name'},
+			success:function(data){
+				data = JSON.parse(data);
+				$select.find('option').remove();
+                $select.append('<option value="">Select..</option>');
+				$.each(data, function(i, item) {
+					$select.append('<option value="' + item.id + '">' + item.name + '</option>');
+				})
+			}
+		});
+	});
+
+	
+	$('#signup_name_prefix').select2({placeholder: 'Select', theme: 'bootstrap-5'});
+	$('#signup_qualification').select2({placeholder: 'Select Highest Qualification', theme: 'bootstrap-5'});
+	$('#signup_country').select2({placeholder: 'Select Country', theme: 'bootstrap-5'});
+	$('#signup_state').select2({placeholder: 'Select State', theme: 'bootstrap-5'});
+	$('#signup_city').select2({placeholder: 'Select City', theme: 'bootstrap-5'});
+
+	$('#signup_country2').select2({placeholder: 'Select Country', theme: 'bootstrap-5'});
+	$('#signup_state2').select2({placeholder: 'Select State', theme: 'bootstrap-5'});
+	$('#signup_city2').select2({placeholder: 'Select City', theme: 'bootstrap-5'});
+	
+	$('#signup_country3').select2({placeholder: 'Select Country',theme: 'bootstrap-5'});
+	$('#signup_state3').select2({placeholder: 'Select State', theme: 'bootstrap-5'});
+	$('#signup_city3').select2({placeholder: 'Select City', theme: 'bootstrap-5'});
+	
+
+</script>
+
+
+</body>
+</html>

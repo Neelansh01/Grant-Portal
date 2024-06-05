@@ -1,0 +1,2054 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jobs</title>
+    <meta name="_token" content="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj">
+
+    <!-- Favicons -->
+    <link href="static/images/favicon_grantize.png" rel="icon">
+    <link href="static/images/apple-touch-icon_grantize.png" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <!-- <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap.min.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-icons/bootstrap-icons.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-icons.css') }}">
+    <!-- Bootstrap datepicker -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/bootstrap-datepicker.min.css') }}">
+    <!-- Bootstrap dataTables -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/dataTables.bootstrap5.min.css') }}">
+    <!-- Select2 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2.min.css') }}">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/select2-bootstrap-5-theme@1.3.0/dist/select2-bootstrap-5-theme.min.css" rel="stylesheet" /> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/grantize/page1/select2-bootstrap-5-theme.min.css') }}">
+    
+    <!-- Slick slider -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick-theme.css" rel="stylesheet" type="text/css" > -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/slick-theme.css') }}">
+    <!-- Template Main CSS File -->
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style.css') }}">
+    <!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/style_responsive.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/style_responsive.css') }}">
+    <!--<link href="assets/css/pages_backend.css" rel="stylesheet"> -->
+
+
+ 
+<!-- <link href="https://techiefolk.com/recruitphd/public/assets/css/main_frontend_olny.css" rel="stylesheet"> -->
+<link rel="stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/recruitphd/page1/main_frontend_olny.css') }}">
+
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+    
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center">
+        <!-- <img class="mobile" src="assets/images/logo.png" alt=""> -->
+        <span class="d-none d-lg-block">RecruitPhD</span>
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn mobile"></i>
+    </div>
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+  
+        <!-- <li><a href="{//{URL::to('/')}}" class="nav-item desktop me-3 {//{ Route::currentRouteName() == 'home' ? 'active' : '' }}">Home</a></li> -->
+        <li><a href="https://techiefolk.com/recruitphd/public/whyus" class="nav-item desktop me-3 ">Why RecruitPHD</a></li>
+        <li><a href="https://techiefolk.com/recruitphd/public/plans" class="nav-item desktop me-3 ">Plans</a></li>
+        <li>
+                    <a href="https://techiefolk.com/recruitphd/public/login" class="nav-item desktop me-3 ">Jobs List</a>
+                      <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs List</a> -->
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs List</a> -->
+                  </li>
+        <li>
+                        <!-- <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Jobs</a> -->
+                            <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 active">Jobs</a>
+                          <!-- <a href="https://techiefolk.com/recruitphd/public/jobs" class="nav-item desktop me-3 ">Jobs</a> -->
+                    </li>
+        <!-- <li>
+            <a href="{//{URL::to('/sponsor/login')}}" class="nav-item desktop me-3 ">Grants List</a>
+            <a href="#" class="nav-item desktop me-3 " data-bs-toggle="modal" data-bs-target="#loginModal">Grants List </a>
+        </li> -->
+        <li><a href="https://techiefolk.com/recruitphd/public/blogs" class="nav-item desktop me-3 ">Blog</a></li>
+        <li><a href="https://techiefolk.com/recruitphd/public/faqs" class="nav-item desktop me-3 ">Help</a></li>
+    
+  
+          
+      </ul>
+    </nav>
+  
+        <a href="https://techiefolk.com/recruitphd/public/login" class="login-btn scrollto"><span class="d-none d-md-inline"></span>Login</a>
+      
+    </div>
+</header>
+<!-- End Header -->
+<main id="main" class="main">
+
+
+
+    <section id="blog" class="blog">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row">
+                <div class="col-12 col-xl-12">
+                    <div class="card browse-filter-card">
+	<div class="card-body">
+
+		<div class="filter-top">
+			<div class="row">
+				<div class="col-12 col-lg-12">
+					<h3>
+						Jobs						<button type="button" id="flip" class="btn btn-sm btn-light float-end">
+							<!-- <i class="bi bi-funnel"></i>-->
+							Advanced Search
+						</button>
+					</h3>
+				</div>
+				<div class="col-12 col-lg-12">
+					<div id="panel">
+						<form action="https://techiefolk.com/recruitphd/public/jobs" id="addForm" method="post">
+							<input type="hidden" name="_token" value="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj" autocomplete="off">							<div id="old-filter">
+							</div>
+					
+							<div class="row">
+								<div class="col-12">
+									<label for="fieldkey" class="form-label"><b>Add terms to the query box</b></label>
+								</div>
+								<div class="col-3">
+									<div class="form-group">
+										<select id="fieldkey" name="fieldkey" class="form-select fieldkey" style="width:100%;">
+											<option value="">Choose Field</option> 
+																						<option value="title">Title</option>
+																						<option value="opening_date">Opening Date</option>
+																						<option value="closing_date">Closing Date</option>
+																						<option value="job_type">Job type</option>
+																						<option value="job_locations">Job Locations</option>
+																						<option value="visibility_locations">Visibility Locations</option>
+																						<option value="aplication_via">Aplication via</option>
+																						<option value="number_of_openings">Number of openings</option>
+																						<option value="required_travel_max">Required travel max</option>
+																						<option value="required_travel_min">Required travel min</option>
+																						<option value="pay_maximum_amount">Pay maximum amount</option>
+																						<option value="pay_starting_amount">Pay starting amount</option>
+																						<option value="pay_fixed">Pay fixed</option>
+																						<option value="hiring_in">Hiring in</option>
+																						<option value="rate">Rate</option>
+																						<option value="recruitment_period">Recruitment period</option>
+																						<option value="qualification_prefered">Qualification prefered</option>
+																						<option value="qualification_required">Qualification required</option>
+																						<option value="workplace_type">Workplace type</option>
+																						<option value="supplement_pay">Supplement pay</option>
+																						<option value="job_schedule">Job schedule</option>
+																						<option value="user_role">User role</option>
+																						<option value="keywords">Keywords</option>
+																						<option value="subjects">Subjects</option>
+																						<option value="language">Language</option>
+																						<option value="soft_skills">Soft Skills</option>
+																						<option value="softwares">Softwares</option>
+																						<option value="instruments">Instruments</option>
+																						<option value="techniques">Techniques</option>
+																						<option value="jobs_benifits">Jobs Benifits</option>
+																						<option value="departments">Departments</option>
+																						<option value="organization">Organization</option>
+																					</select>
+										<span id="fieldkey-error" class="error"></span>
+									</div>
+								</div>
+								<div class="col-7 pr-0 pl-0">
+									<div id="page-content">
+										<div class="form-group">
+											<input type="text" maxlength="50" id="fieldvalue" name="fieldvalue" onkeyup="keyupFunction()" class="fieldvalue form-control" placeholder="Enter a search term">
+											<span id="fieldvalue-error" class="error"></span>
+
+											<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldText2">
+											<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldText3">
+										</div>
+									</div>
+								</div>
+								<div class="col-2">
+									<div class="form-group">
+										<select id="fieldoprator" name="fieldoprator" class="form-select" style="width:100%;">
+											<option value="">Operator</option>
+																						<option value="OR">OR</option>
+																						<option value="AND">AND</option>
+																						<option value="NOT">NOT</option>
+																					</select>
+
+										<span id="fieldvalue-error" class="error"></span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="row">
+								<div class="col-12 mt-4">
+									<label for="fieldkey" class="form-label"><b>Query box</b></label>
+									<textarea hidden="hidden" id="query_oprator" name="query_oprator"></textarea>
+									<textarea id="query_front" name="query_front" rows="3" cols="100" readonly class="form-control"></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-10 mt-2">
+									<input type="text" id="title" name="title" onkeyup="titleKeyup()" class="form-control" placeholder="Query Title">
+									<span id="title-error" class="error"></span>
+								</div>
+								<div class="col-2 mt-2">
+									<input type="hidden" id="submit_data" name="submit_data" >
+									<button type="button" id="submit_search" name="submit_search" class="form-control btn btn-primary btn-submit"> <i class="fa fa-search"></i> Apply </button>
+								</div>
+							</div>	
+						</form>
+					</div>
+
+					<form action="https://techiefolk.com/recruitphd/public/jobs" method="post">
+						<input type="hidden" name="_token" value="pcSbs6nCTP0mmBwAPfDtybTP0kL8c2ryVRpJayAj" autocomplete="off">						<input type="hidden" id="search_query" name="search_query" value="" class="form-control" >
+						
+						<div class="col-lg-12 browse-search">
+							<div class="input-group">
+								<input type="text" id="filter_title" name="title" class="form-control" placeholder="Search Jobs">
+								<div class="input-group-append">
+									<button type="submit" name="submit_title" id="submit_title" class="btn btn-secondary">
+										<i class="bi bi-search"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="filter-mid">
+			<div class="row">
+				<div class="col-lg-12 mt-2">
+					<button type="button" id="all" data-value="all" class="btn btn-sm btn-line ">All</button>
+					<!-- <button type="button" id="open" data-value="open" class="btn btn-sm btn-line btn-light ">Open</button>
+					<button type="button" id="continuous" data-value="continuous" class="btn btn-sm btn-line ">Continuous</button>
+					<button type="button" id="comming_soon" data-value="comming_soon" class="btn btn-sm btn-line ">Comming Soon</button>
+					<button type="button" id="recently_closed" data-value="recently_closed" class="btn btn-sm btn-line ">Recently Closed</button>
+					<button type="button" id="archived" data-value="archived" class="btn btn-sm btn-line ">Archived</button> -->
+				</div>
+			</div>
+		</div>
+		<!-- <div class="filter-bottom">
+			<div class="row">
+				<div class="col-lg-12">
+					<button type="button" id="all" class="btn me-1 btn-sm btn-primary">All</button>
+					<button type="button" id="name" class="btn me-1 btn-sm btn-light">Name</button>
+					<button type="button" id="amount" class="btn me-1 btn-sm btn-light">Amount</button>
+				</div>
+			</div>
+		</div> -->
+		
+	</div>
+</div> 
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 col-xl-12 mt-2">
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/1"><h3>Job title 1</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : 111</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 101</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : 2023-06-01</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : 2023-11-30</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : 789</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/2"><h3> What is Lorem Ipsum</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : 1234</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 101</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : 2023-06-28</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : 2023-11-30</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/3"><h3>Where can I get some</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : job-23</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 101</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : 2023-07-01</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : 2023-11-25</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : 808</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/4"><h3>Where does it come from</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : 12345</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 101</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : 2023-07-01</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : 2023-11-24</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : 808</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/6"><h3>Postdoc</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : 654fy7</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 233</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : 2023-08-14</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : 2023-11-27</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/7"><h3>Adf</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : adf</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 101</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                    
+                    <div class="card section-bg" style="border-radius:0px;border:none;margin-bottom:10px;">
+                        <div class="card-body profile-organization-outer">
+                            <div class="profile-organization">
+                                <div class="profile-organization-img-div">
+                                     
+                                        <img src="/static/images/logo_default.png" class="profile-organization-img" alt="">
+                                                                    </div>
+            
+                                <div class="profile-organization-info-div">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="float-start" style="width:calc(100% - 60px);">
+                                                <a class="" href="https://techiefolk.com/recruitphd/public/jobs/detail/8"><h3>Test organizational title</h3></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Job ID</b> : 787878</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12 mb-1">
+                                            <h4><b>Salary</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Countries</b> : 233</h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Opening Date</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-4 mb-1">
+                                            <h4><b>Closing Date</b> : </h4>
+                                        </div>
+                                        <div class="col-12 col-lg-12">
+                                            <h4><b>benefits</b> : insurance</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-12">
+                                        <p></p>
+                                    </div>
+                                </div>
+            
+                            </div>
+                        </div>
+                        </div>
+      
+                                    </div>
+                <div class="col-12 col-xl-12 mt-2">
+
+                    
+      
+                </div>
+      
+            </div>
+
+        </div>
+    </section>
+    <div class="modal fade bs-modal-sm" id="filter-not-include-modal" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="margin:200px auto;">
+        <div class="modal-content" >
+        <div class="modal-header" style="border:none;width:100%;">
+            <button type="button" class="close btn float-end" id="filter-not-include-modal-close"><i class="bi bi-x-lg"></i></button>	           
+        </div>
+        <div class="modal-body text-center">
+            <h3 class="modal-title" style="margin:0px;padding:0px;">Please Login First ?</h3>
+        </div>
+        <div class="modal-footer" style="border:none;">              
+            <div class="col-xs-6 col-lg-offset-3">
+                <a href="https://techiefolk.com/recruitphd/public/login" type="button" class="btn btn-success pull-left">Login</a>
+            </div>
+        </div>
+        </div>        
+        </div>      
+    </div>
+
+
+
+</main>
+<!-- End #main -->
+<!-- ======= Footer ======= -->
+<footer id="footer" class="footer">
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-3 col-md-12 footer-info">
+        <a href="https://techiefolk.com/recruitphd/public" class="logo d-flex align-items-center mb-4">
+          <span>RecruitPhD</span>
+        </a>
+        <!-- <p>.</p> -->
+        <div class="social-links d-flex mt-4 pt-2">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Useful Links</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-6 footer-links">
+        <h4>Our Services</h4>
+        <ul>
+          <li><a href="https://techiefolk.com/recruitphd/public">Home</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/whyus">Why us</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/termsandconditions">Terms and Conditions</a></li>
+          <li><a href="https://techiefolk.com/recruitphd/public/privacypolicy">Privacy policy</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Contact Us</h4>
+        <p>
+          Street Line<br>
+          United States <br><br>
+          <strong>Phone:</strong> +1 3344 66615 55<br>
+          <strong>Email:</strong> info@grantize.com<br>
+        </p>
+      </div>
+
+    </div>
+  </div>
+  <!-- <div class="container mt-4">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Grantize</span></strong>. All Rights Reserved
+    </div>
+  </div> -->
+</footer>
+<!-- End Footer -->
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+
+<!-- Jquery ( Production ) -->
+<!-- <script src="/assets/thirdparty/jquery/production-jquery-3.7.1.min.js"></script> -->
+<!-- Jquery ( Development ) -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/development-jquery-3.7.1.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/development-jquery-3.7.1.min.js')}}"></script>
+
+<!-- Bootstrap CSS -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/popper.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/popper.min.js')}}"></script>
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap/bootstrap.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap.min.js')}}"></script>
+<!-- Bootstrap datepicker -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/bootstrap-datepicker/bootstrap-datepicker.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/bootstrap-datepicker.min.js')}}"></script>
+<!-- Bootstrap dataTables -->
+<!-- <script src="/assets/thirdparty/jquery-dataTables/jquery.dataTables.min.js"></script>
+<script src="/assets/thirdparty/jquery-dataTables/dataTables.bootstrap5.min.js"></script> -->
+
+
+<!-- ckeditor -->
+<!-- <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script> -->
+<!-- <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/ckeditor.js')}}"></script>
+<!-- Select2 -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js"></script> -->
+<script src="{{url_for('static', filename='js/grantize/page1/select2.full.min.js')}}"></script>
+<!-- Jquery validation -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/jquery/jquery.validate.min.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/jquery.validate.min.js')}}"></script>
+<!-- Slick slider -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/thirdparty/slick/slick.js" type="text/javascript" charset="utf-8"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/slick.js')}}"></script>
+<!-- Template Main JS File -->
+<!-- <script src="https://techiefolk.com/recruitphd/public/assets/js/main.js"></script> -->
+<script src="{{url_for('static', filename='js/recruitphd/page1/main.js')}}"></script>
+<script type="text/javascript">
+
+	$.ajaxSetup({
+		headers: {
+			'X-CSRF-TOKEN': $('meta[name="_token"]').attr('content')
+		}
+	});
+
+</script>
+
+<script type="text/javascript">
+
+    /* $(function () {
+
+        var search_query = $('#search_query').val(); 
+        var table = $('#show-table').DataTable({            
+            paging: true,      
+            "dom": 'Brtip',            
+            "processing": true,
+            "serverSide": true,
+            "ajax": {
+                "url": "grants_view_all",
+                "data": {search_query: search_query}
+            }
+        });
+
+
+        $('#all').on('click', function(){
+          $("#name").removeClass("btn-primary");
+          $("#amount").removeClass("btn-primary");
+          $("#all").addClass("btn-primary");
+          table.order([[ "0", 'asc' ]]).draw();
+        }); 
+        $('#open').on('click', function(){
+            $("#open").addClass("active");
+            $("#continuous").removeClass("active");
+            $("#comming_soon").removeClass("active");
+            $("#recently_closed").removeClass("active");
+            $("#archived").removeClass("active");
+
+            $("#open").addClass("active");
+            $("#continuous").removeClass("active");
+            $("#comming_soon").removeClass("active");
+            $("#recently_closed").removeClass("active");
+            $("#archived").removeClass("active");
+
+            //var value = $(this).val(); 
+            var value = $(this).attr('data-value'); 
+            table.column(5).search(value).draw();
+        }); 
+        $('#continuous').on('click', function(){
+            $("#open").removeClass("active");
+            $("#continuous").addClass("active");
+            $("#comming_soon").removeClass("active");
+            $("#recently_closed").removeClass("active");
+            $("#archived").removeClass("active");
+
+            //var value = $(this).val(); 
+            var value = $(this).attr('data-value');
+            table.column(5).search(value).draw();
+        }); 
+        $('#comming_soon').on('click', function(){
+            $("#open").removeClass("active");
+            $("#continuous").removeClass("active");
+            $("#comming_soon").addClass("active");
+            $("#recently_closed").removeClass("active");
+            $("#archived").removeClass("active");
+
+            //var value = $(this).val(); 
+            var value = $(this).attr('data-value');
+            table.column(5).search(value).draw();
+        }); 
+        $('#recently_closed').on('click', function(){
+            $("#open").removeClass("active");
+            $("#continuous").removeClass("active");
+            $("#comming_soon").removeClass("active");
+            $("#recently_closed").addClass("active");
+            $("#archived").removeClass("active");
+
+            //var value = $(this).val(); 
+            var value = $(this).attr('data-value');
+            table.column(5).search(value).draw();
+        }); 
+        $('#archived').on('click', function(){
+            $("#open").removeClass("active");
+            $("#continuous").removeClass("active");
+            $("#comming_soon").removeClass("active");
+            $("#recently_closed").removeClass("active");
+            $("#archived").addClass("active");
+
+            //var value = $(this).val(); 
+            var value = $(this).attr('data-value');
+            table.column(5).search(value).draw();
+        }); 
+    }); */
+
+    //Advance Filter
+    $(document).ready(function(){  
+
+        $("#flip").click(function(){  
+            $("#panel").slideToggle("slow");  
+        });  
+
+        $('#fieldkey').select2({
+            theme: 'bootstrap-5',
+            placeholder: 'Choose Field',
+        });
+        $('#fieldoprator').select2({
+            theme: 'bootstrap-5',
+            placeholder: 'Operator',
+        });
+
+
+        $('#submit_search_add').on('click', function(){
+
+            var query_oprator = $('#query_oprator').val(); query_oprator.trim();
+            if(query_oprator == ''){
+                
+                var fieldkey = $('#fieldkey').val(); //alert(fieldkey);
+                if(fieldkey == ''){
+                    $('#fieldkey-error').text('');
+                    $("#fieldkey-error").append('This field cannot be blank.'); 
+                }
+                else{
+                    var fieldvalue = $('#fieldvalue').val();
+                    if(fieldvalue =='' || fieldvalue === null){
+                        $('#fieldvalue-error').text('');
+                        $("#fieldvalue-error").append('This field cannot be blank.'); 
+                    }else{
+                        var fieldvalue2 = $('#fieldvalue2').val(); //alert(fieldvalue2);
+                        if(fieldkey == 'applicant_types' && fieldvalue2 ==''){
+                            $('#fieldvalue2-error').text('');
+                            $("#fieldvalue2-error").append('This field cannot be blank.'); 
+                        }
+                        else{
+
+                            var title = $('#title').val(); 
+                            if(title == ''){
+                                $('#title-error').text('');
+                                $("#title-error").append('This field cannot be blank.'); 
+                            }else{
+                                var submit_data = 'add';
+                                $('#submit_data').val(submit_data);
+                                $("#addForm").submit();
+                            }
+                        }
+                    }
+                }
+
+            }else{
+
+                var title = $('#title').val(); 
+                if(title==''){
+                    $('#title-error').text('');
+                    $("#title-error").append('This field cannot be blank.'); 
+
+                }else{
+
+                    var fieldkey = $('#fieldkey').val(); 
+                    if(fieldkey == ''){
+                        var submit_data = 'add';
+                        $('#submit_data').val(submit_data);
+                        $("#addForm").submit();
+                    }else{
+                        var fieldvalue = $('#fieldvalue').val();
+                        if(fieldvalue =='' || fieldvalue === null){
+                            $('#fieldvalue-error').text('');
+                            $("#fieldvalue-error").append('This field cannot be blank.'); 
+                        }else{
+
+                            var fieldvalue2 = $('#fieldvalue2').val(); //alert(fieldvalue2);
+                            if(fieldkey == 'applicant_types' && fieldvalue2 ==''){
+                                $('#fieldvalue2-error').text('');
+                                $("#fieldvalue2-error").append('This field cannot be blank.'); 
+                            }
+                            else{
+                                var submit_data = 'add';
+                                $('#submit_data').val(submit_data);
+                                $("#addForm").submit();
+                            }
+                        }
+                    }
+                    
+                }
+            } 
+        });
+        $('#submit_search').on('click', function(){
+
+            var query_oprator = $('#query_oprator').val(); query_oprator.trim();
+            if(query_oprator == ''){
+                
+                var fieldkey = $('#fieldkey').val(); 
+                if(fieldkey == ''){
+                    $('#fieldkey-error').text('');
+                    $("#fieldkey-error").append('This field cannot be blank.'); 
+                }else{
+
+                    var fieldvalue = $('#fieldvalue').val(); 
+                    if(fieldvalue =='' || fieldvalue === null){
+                        $('#fieldvalue-error').text('');
+                        $("#fieldvalue-error").append('This field cannot be blank.'); 
+                    }else{
+                        var submit_data = 'search';
+                        $('#submit_data').val(submit_data);
+                        $("#addForm").submit();
+                    }
+                }
+            }
+            else{
+
+                var fieldkey = $('#fieldkey').val(); 
+                if(fieldkey == ''){
+                    var submit_data = 'search';
+                    $('#submit_data').val(submit_data);
+                    $("#addForm").submit();
+                }else{
+                    var fieldvalue = $('#fieldvalue').val();
+                    if(fieldvalue =='' || fieldvalue === null){
+                        $('#fieldvalue-error').text('');
+                        $("#fieldvalue-error").append('This field cannot be blank.'); 
+                    }else{
+                        var submit_data = 'search';
+                        $('#submit_data').val(submit_data);
+                        $("#addForm").submit();
+                    }
+                }
+
+            } 
+        });
+
+
+        $('#fieldkey').on('change', function(){ 
+            $('#title-error').text(''); 
+
+            var myplan = ["title"]; //alert(myplan);
+            var fieldkey_key = this.value; //alert(fieldkey_key);
+
+            if(fieldkey_key != ""){
+
+                if(myplan.includes(fieldkey_key)){
+
+                    
+                    $('#fieldkey-error').text('');
+
+                    var fieldkey_value = $('#fieldkey option:selected').text(); fieldkey_value.trim(); 
+
+                    var fieldDate     = ["opening_date","closing_date"];
+                    var fieldDropdownTable3 = ["job_locations","visibility_locations"];
+                    var fieldDropdownTable2 = [];
+
+                    var fieldDropdownTable  = ["organization","departments","jobs_benifits","techniques","instruments","softwares","soft_skills","language","subjects","keywords"];
+                    var fieldDropdown = ["user_role","job_type","job_schedule","aplication_via","supplement_pay","workplace_type","qualification_required","qualification_prefered","recruitment_period","rate","hiring_in"];
+                    var fieldNumber2  = ["pay_fixed","pay_starting_amount","pay_maximum_amount","required_travel_min","required_travel_max"];
+                    var fieldNumber   = ["number_of_openings"];
+
+                    var fieldType = 'fieldText'; // this for fieldText & fieldTextArea
+                    if(fieldDate.includes(fieldkey_key)){ fieldType = 'fieldDate';}
+                    if(fieldDropdownTable3.includes(fieldkey_key)){ fieldType = 'fieldDropdownTable3';}
+                    if(fieldDropdownTable2.includes(fieldkey_key)){ fieldType = 'fieldDropdownTable2';}
+
+                    if(fieldDropdownTable.includes(fieldkey_key)){ fieldType = 'fieldDropdownTable';}
+                    if(fieldDropdown.includes(fieldkey_key)){ fieldType = 'fieldDropdown';}
+                    if(fieldNumber2.includes(fieldkey_key)){ fieldType = 'fieldNumber2';}
+                    if(fieldNumber.includes(fieldkey_key)){ fieldType = 'fieldNumber';}
+
+                    
+                    if(fieldType=='fieldDate'){
+
+                        var htmlDate = $('<div class="form-group">'
+                            +'<div class="row">'
+                                +'<div class="col-6 pr-0">'
+                                    +'<div class="input-group">' 
+                                        +'<input type="hidden" id="fieldvalue" name="fieldvalue" value="">'
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">From</span>'
+                                        +'</div>'
+                                        +'<input type="text" id="fieldvalue2" name="fieldvalue2" class="form-control" readonly >'
+                                        +'<div class="input-group-append">'
+                                            +'<span class="input-group-text"><i class="bi bi-calendar"></i></span>'
+                                        +'</div>'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="col-6 pl-0">'
+                                    +'<div class="input-group">' 
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">To</span>'
+                                        +'</div>'
+                                        +'<input type="text" id="fieldvalue3" name="fieldvalue3" class="form-control" readonly >'
+                                        +'<div class="input-group-append">'
+                                            +'<span class="input-group-text"><i class="bi bi-calendar"></i></span>'
+                                        +'</div>'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="col-12" style="text-align:center;">'
+                                    +'<span id="fieldvalue-error" class="error"></span>'
+                                +'</div>'
+                            +'</div>'
+                        +'</div>');   
+
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlDate); 
+
+
+                        $('#fieldvalue2').on('change', function(){
+                            $('#fieldvalue-error').text('');
+                            var fieldvalue2_value = $('#fieldvalue2').val();  
+                            var fieldvalue3_value = $('#fieldvalue3').val(); 
+
+                            if(fieldvalue3_value!=''){
+                                $('#fieldvalue').val('BETWEEN');
+                                var query_front = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value+' ';
+                            }else{
+                                $('#fieldvalue').val('From');
+                                var query_front = fieldkey_value +' From '+ fieldvalue2_value+' ';
+                            }
+                
+                            var query_oprator = $('#query_oprator').val(); 
+                            if(query_oprator!=''){
+                                var query_front = query_oprator +' '+ query_front;
+                            }
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front); 
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+
+                        $('#fieldvalue3').on('change', function(){
+                            $('#fieldvalue-error').text('');
+                            var fieldvalue2_value = $('#fieldvalue2').val(); 
+                            var fieldvalue3_value = $('#fieldvalue3').val();  
+
+                            if(fieldvalue2_value!=''){
+                                $('#fieldvalue').val('BETWEEN');
+                                var query_front = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value+' ';
+                            }else{
+                                $('#fieldvalue').val('To');
+                                var query_front = fieldkey_value +' To '+ fieldvalue3_value+' ';
+                            }
+                            var query_oprator = $('#query_oprator').val(); 
+                            if(query_oprator!=''){
+                                var query_front = query_oprator +' '+ query_front;
+                            }
+
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front); 
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+
+
+                        $("#fieldvalue2").datepicker({ 
+                                format: 'mm-dd-yyyy',
+                                selectedHighlight: true,
+                                autoclose: true,
+                            }).on('changeDate', function(selected){
+                            startDate = new Date(selected.date.valueOf());
+                            $('#fieldvalue3').datepicker('setStartDate', startDate);
+                        });  
+                        $("#fieldvalue3").datepicker({ 
+                                format: 'mm-dd-yyyy',
+                                //todayHighlight: true,
+                                selectedHighlight: true,
+                                autoclose: true, 
+                            }).on('changeDate', function(selected){
+                            startDate = new Date(selected.date.valueOf());
+                            $('#fieldvalue2').datepicker('setEndDate', startDate);
+                        });
+                    }
+                    else if(fieldType=='fieldDropdownTable3'){  
+                        
+                        var countries = [{"id":1,"name":"Afghanistan"},{"id":2,"name":"Aland Islands"},{"id":3,"name":"Albania"},{"id":4,"name":"Algeria"},{"id":5,"name":"American Samoa"},{"id":6,"name":"Andorra"},{"id":7,"name":"Angola"},{"id":8,"name":"Anguilla"},{"id":9,"name":"Antarctica"},{"id":10,"name":"Antigua and Barbuda"},{"id":11,"name":"Argentina"},{"id":12,"name":"Armenia"},{"id":13,"name":"Aruba"},{"id":14,"name":"Australia"},{"id":15,"name":"Austria"},{"id":16,"name":"Azerbaijan"},{"id":17,"name":"The Bahamas"},{"id":18,"name":"Bahrain"},{"id":19,"name":"Bangladesh"},{"id":20,"name":"Barbados"},{"id":21,"name":"Belarus"},{"id":22,"name":"Belgium"},{"id":23,"name":"Belize"},{"id":24,"name":"Benin"},{"id":25,"name":"Bermuda"},{"id":26,"name":"Bhutan"},{"id":27,"name":"Bolivia"},{"id":28,"name":"Bosnia and Herzegovina"},{"id":29,"name":"Botswana"},{"id":30,"name":"Bouvet Island"},{"id":31,"name":"Brazil"},{"id":32,"name":"British Indian Ocean Territory"},{"id":33,"name":"Brunei"},{"id":34,"name":"Bulgaria"},{"id":35,"name":"Burkina Faso"},{"id":36,"name":"Burundi"},{"id":37,"name":"Cambodia"},{"id":38,"name":"Cameroon"},{"id":39,"name":"Canada"},{"id":40,"name":"Cape Verde"},{"id":41,"name":"Cayman Islands"},{"id":42,"name":"Central African Republic"},{"id":43,"name":"Chad"},{"id":44,"name":"Chile"},{"id":45,"name":"China"},{"id":46,"name":"Christmas Island"},{"id":47,"name":"Cocos (keeling) Islands"},{"id":48,"name":"Colombia"},{"id":49,"name":"Comoros"},{"id":50,"name":"Congo"},{"id":51,"name":"Democratic Republic Of The Congo"},{"id":52,"name":"Cook Islands"},{"id":53,"name":"Costa Rica"},{"id":54,"name":"Cote D'ivoire (ivory Coast)"},{"id":55,"name":"Croatia"},{"id":56,"name":"Cuba"},{"id":57,"name":"Cyprus"},{"id":58,"name":"Czech Republic"},{"id":59,"name":"Denmark"},{"id":60,"name":"Djibouti"},{"id":61,"name":"Dominica"},{"id":62,"name":"Dominican Republic"},{"id":63,"name":"East Timor"},{"id":64,"name":"Ecuador"},{"id":65,"name":"Egypt"},{"id":66,"name":"El Salvador"},{"id":67,"name":"Equatorial Guinea"},{"id":68,"name":"Eritrea"},{"id":69,"name":"Estonia"},{"id":70,"name":"Ethiopia"},{"id":71,"name":"Falkland Islands"},{"id":72,"name":"Faroe Islands"},{"id":73,"name":"Fiji Islands"},{"id":74,"name":"Finland"},{"id":75,"name":"France"},{"id":76,"name":"French Guiana"},{"id":77,"name":"French Polynesia"},{"id":78,"name":"French Southern Territories"},{"id":79,"name":"Gabon"},{"id":80,"name":"Gambia The"},{"id":81,"name":"Georgia"},{"id":82,"name":"Germany"},{"id":83,"name":"Ghana"},{"id":84,"name":"Gibraltar"},{"id":85,"name":"Greece"},{"id":86,"name":"Greenland"},{"id":87,"name":"Grenada"},{"id":88,"name":"Guadeloupe"},{"id":89,"name":"Guam"},{"id":90,"name":"Guatemala"},{"id":91,"name":"Guernsey and Alderney"},{"id":92,"name":"Guinea"},{"id":93,"name":"Guinea-bissau"},{"id":94,"name":"Guyana"},{"id":95,"name":"Haiti"},{"id":96,"name":"Heard Island and Mcdonald Islands"},{"id":97,"name":"Honduras"},{"id":98,"name":"Hong Kong S.a.r."},{"id":99,"name":"Hungary"},{"id":100,"name":"Iceland"},{"id":101,"name":"India"},{"id":102,"name":"Indonesia"},{"id":103,"name":"Iran"},{"id":104,"name":"Iraq"},{"id":105,"name":"Ireland"},{"id":106,"name":"Israel"},{"id":107,"name":"Italy"},{"id":108,"name":"Jamaica"},{"id":109,"name":"Japan"},{"id":110,"name":"Jersey"},{"id":111,"name":"Jordan"},{"id":112,"name":"Kazakhstan"},{"id":113,"name":"Kenya"},{"id":114,"name":"Kiribati"},{"id":115,"name":"North Korea"},{"id":116,"name":"South Korea"},{"id":117,"name":"Kuwait"},{"id":118,"name":"Kyrgyzstan"},{"id":119,"name":"Laos"},{"id":120,"name":"Latvia"},{"id":121,"name":"Lebanon"},{"id":122,"name":"Lesotho"},{"id":123,"name":"Liberia"},{"id":124,"name":"Libya"},{"id":125,"name":"Liechtenstein"},{"id":126,"name":"Lithuania"},{"id":127,"name":"Luxembourg"},{"id":128,"name":"Macau S.a.r."},{"id":129,"name":"Macedonia"},{"id":130,"name":"Madagascar"},{"id":131,"name":"Malawi"},{"id":132,"name":"Malaysia"},{"id":133,"name":"Maldives"},{"id":134,"name":"Mali"},{"id":135,"name":"Malta"},{"id":136,"name":"Man (isle Of)"},{"id":137,"name":"Marshall Islands"},{"id":138,"name":"Martinique"},{"id":139,"name":"Mauritania"},{"id":140,"name":"Mauritius"},{"id":141,"name":"Mayotte"},{"id":142,"name":"Mexico"},{"id":143,"name":"Micronesia"},{"id":144,"name":"Moldova"},{"id":145,"name":"Monaco"},{"id":146,"name":"Mongolia"},{"id":147,"name":"Montenegro"},{"id":148,"name":"Montserrat"},{"id":149,"name":"Morocco"},{"id":150,"name":"Mozambique"},{"id":151,"name":"Myanmar"},{"id":152,"name":"Namibia"},{"id":153,"name":"Nauru"},{"id":154,"name":"Nepal"},{"id":155,"name":"Bonaire, Sint Eustatius and Saba"},{"id":156,"name":"Netherlands"},{"id":157,"name":"New Caledonia"},{"id":158,"name":"New Zealand"},{"id":159,"name":"Nicaragua"},{"id":160,"name":"Niger"},{"id":161,"name":"Nigeria"},{"id":162,"name":"Niue"},{"id":163,"name":"Norfolk Island"},{"id":164,"name":"Northern Mariana Islands"},{"id":165,"name":"Norway"},{"id":166,"name":"Oman"},{"id":167,"name":"Pakistan"},{"id":168,"name":"Palau"},{"id":169,"name":"Palestinian Territory Occupied"},{"id":170,"name":"Panama"},{"id":171,"name":"Papua New Guinea"},{"id":172,"name":"Paraguay"},{"id":173,"name":"Peru"},{"id":174,"name":"Philippines"},{"id":175,"name":"Pitcairn Island"},{"id":176,"name":"Poland"},{"id":177,"name":"Portugal"},{"id":178,"name":"Puerto Rico"},{"id":179,"name":"Qatar"},{"id":180,"name":"Reunion"},{"id":181,"name":"Romania"},{"id":182,"name":"Russia"},{"id":183,"name":"Rwanda"},{"id":184,"name":"Saint Helena"},{"id":185,"name":"Saint Kitts and Nevis"},{"id":186,"name":"Saint Lucia"},{"id":187,"name":"Saint Pierre and Miquelon"},{"id":188,"name":"Saint Vincent and The Grenadines"},{"id":189,"name":"Saint-barthelemy"},{"id":190,"name":"Saint-martin (french Part)"},{"id":191,"name":"Samoa"},{"id":192,"name":"San Marino"},{"id":193,"name":"Sao Tome and Principe"},{"id":194,"name":"Saudi Arabia"},{"id":195,"name":"Senegal"},{"id":196,"name":"Serbia"},{"id":197,"name":"Seychelles"},{"id":198,"name":"Sierra Leone"},{"id":199,"name":"Singapore"},{"id":200,"name":"Slovakia"},{"id":201,"name":"Slovenia"},{"id":202,"name":"Solomon Islands"},{"id":203,"name":"Somalia"},{"id":204,"name":"South Africa"},{"id":205,"name":"South Georgia"},{"id":206,"name":"South Sudan"},{"id":207,"name":"Spain"},{"id":208,"name":"Sri Lanka"},{"id":209,"name":"Sudan"},{"id":210,"name":"Suriname"},{"id":211,"name":"Svalbard and Jan Mayen Islands"},{"id":212,"name":"Swaziland"},{"id":213,"name":"Sweden"},{"id":214,"name":"Switzerland"},{"id":215,"name":"Syria"},{"id":216,"name":"Taiwan"},{"id":217,"name":"Tajikistan"},{"id":218,"name":"Tanzania"},{"id":219,"name":"Thailand"},{"id":220,"name":"Togo"},{"id":221,"name":"Tokelau"},{"id":222,"name":"Tonga"},{"id":223,"name":"Trinidad and Tobago"},{"id":224,"name":"Tunisia"},{"id":225,"name":"Turkey"},{"id":226,"name":"Turkmenistan"},{"id":227,"name":"Turks and Caicos Islands"},{"id":228,"name":"Tuvalu"},{"id":229,"name":"Uganda"},{"id":230,"name":"Ukraine"},{"id":231,"name":"United Arab Emirates"},{"id":232,"name":"United Kingdom"},{"id":233,"name":"United States"},{"id":234,"name":"United States Minor Outlying Islands"},{"id":235,"name":"Uruguay"},{"id":236,"name":"Uzbekistan"},{"id":237,"name":"Vanuatu"},{"id":238,"name":"Vatican City State (holy See)"},{"id":239,"name":"Venezuela"},{"id":240,"name":"Vietnam"},{"id":241,"name":"Virgin Islands (british)"},{"id":242,"name":"Virgin Islands (us)"},{"id":243,"name":"Wallis and Futuna Islands"},{"id":244,"name":"Western Sahara"},{"id":245,"name":"Yemen"},{"id":246,"name":"Zambia"},{"id":247,"name":"Zimbabwe"},{"id":248,"name":"Kosovo"},{"id":249,"name":"Cura\u00e7ao"},{"id":250,"name":"Sint Maarten (dutch Part)"}];
+                        var options = '<option value="">Select Country</option><option value="0">All Countries</option>';
+                        for (i=0; i<countries.length; i++) {
+                            options += '<option value="' + countries[i].id + '">' + countries[i].name + '</option>' 
+                        }  
+                
+                        var htmlDropdown = $('<div class="form-group">'
+                            +'<div class="row">'
+                                +'<div class="col-4 pr-0">'
+                                    +'<select id="fieldvalue" name="fieldvalue" class="form-control select2" data-toggle="select2">'
+                                    + options +'</select>'
+                                    +'<span id="fieldvalue-error" class="error"></span>'
+                                +'</div>'
+                                +'<div class="col-4 pl-0 pr-0">'
+                                    +'<select id="fieldvalue2" name="fieldvalue2" class="form-control select2" data-toggle="select2">'
+                                    +'<option value=""></option>'
+                                    +'</select>'
+                                +'</div>'
+                                +'<div class="col-4 pl-0">'
+                                    +'<select id="fieldvalue3" name="fieldvalue3" class="form-control select2" data-toggle="select2">'
+                                    +'<option value=""></option>'
+                                    +'</select>'
+                                +'</div>'
+                            +'</div>'
+                        +'</div>');  
+
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlDropdown); 
+
+
+                        // Country Change
+                        $('#fieldvalue').on("change", function(){
+                            var id = $('#fieldvalue').val();
+                            var $select = $('#fieldvalue2');
+                            $('#fieldvalue3').find('option').remove();
+                            $('#fieldvalue3').append('<option value=""></option>'); 
+                            if(id!=''){
+                                if(id!='0'){
+                                    $.ajax({
+                                        type:"POST",
+                                        url:"#get_children",
+                                        data: {id: id, table: 'country_states', field: 'country'},
+                                        success:function(data){
+                                            data = JSON.parse(data);
+                                            $select.find('option').remove();
+                                            $select.append('<option value="">Select State</option>');
+                                            $.each(data, function(i, item) {
+                                                $select.append('<option value="' + item.id + '">' + item.name + '</option>');
+                                            })
+                                        }
+                                    });
+                                }else{
+                                    $('#fieldvalue2').find('option').remove();
+                                    $('#fieldvalue2').append('<option value=""></option>'); 
+                                }
+                            }else{
+                                $('#fieldvalue2').find('option').remove();
+                                $('#fieldvalue2').append('<option value=""></option>'); 
+                            }
+
+                            var fieldvalue_key   = $('#fieldvalue').val();  
+                            var fieldvalue_value = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue_key!=''){
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Country : '+ fieldvalue_value +' )';
+                                }else{
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ';
+                                }
+                            }else{
+                                if(fieldvalue_key!=''){
+                                    var query_front = fieldkey_value +' = ( Country : '+ fieldvalue_value +' )';
+                                }else{
+                                    var query_front = fieldkey_value +' = ';
+                                }
+                            }
+
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+                        // State Change
+                        $('#fieldvalue2').on("change", function(){
+                            var id = $('#fieldvalue2').val();
+                            var $select = $('#fieldvalue3');
+                            if(id!=''){
+                                $.ajax({
+                                    type:"POST",
+                                    url:"#get_children",			 
+                                    data: {id: id, table: 'country_cities', field: 'state'},
+                                    success:function(data){
+                                        data = JSON.parse(data);
+                                        $select.find('option').remove();
+                                        $select.append('<option value="">Select City</option>');
+                                        $.each(data, function(i, item) {
+                                            $select.append('<option value="' + item.id + '">' + item.name + '</option>');
+                                        })
+                                    }
+                                });
+                            }else{
+                                $('#fieldvalue3').find('option').remove();
+                                $('#fieldvalue3').append('<option value=""></option>'); 
+                            }
+
+                            var fieldvalue_key    = $('#fieldvalue').val();
+                            var fieldvalue_value  = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+                            var fieldvalue2_key   = $('#fieldvalue2').val();
+                            var fieldvalue2_value = $('#fieldvalue2 option:selected').text(); fieldvalue2_value.trim();
+
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue2_key!=''){
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ' )';
+                                }else{
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Country : '+ fieldvalue_value +' )';
+                                }
+                            
+                            }else{
+                                if(fieldvalue2_key!=''){
+                                    var query_front = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ' )';
+                                }else{
+                                    var query_front = fieldkey_value +' = ( Country : '+ fieldvalue_value +' )';
+                                }
+                            }
+
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+
+                        });
+                        // City Change
+                        $('#fieldvalue3').on('change', function(){
+                            
+                            var fieldvalue_key   = $('#fieldvalue').val();
+                            var fieldvalue_value = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+                            var fieldvalue2_key   = $('#fieldvalue2').val();
+                            var fieldvalue2_value = $('#fieldvalue2 option:selected').text(); fieldvalue2_value.trim();
+                            var fieldvalue3_key   = $('#fieldvalue3').val();
+                            var fieldvalue3_value = $('#fieldvalue3 option:selected').text(); fieldvalue3_value.trim();
+
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue3_key!=''){
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ', City : '+ fieldvalue3_value + ' )';
+                                }else{
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ' )';
+                                }
+                            
+                            }else{
+                                if(fieldvalue3_key!=''){
+                                    var query_front = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ', City : '+ fieldvalue3_value + ' )';
+                                }else{
+                                    var query_front = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ' )';
+                                }
+                            }
+
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+
+                        });
+
+
+                        $('#fieldvalue').select2({  theme: 'bootstrap-5'});
+                        $('#fieldvalue2').select2({ theme: 'bootstrap-5'});
+                        $('#fieldvalue3').select2({ theme: 'bootstrap-5'});
+                    }
+                    else if(fieldType=='fieldDropdownTable2'){  
+                        
+                        var applicant_group = [{"id":61,"name":"organization"},{"id":62,"name":"individual"}];
+                        var options = '<option value="">Select Group</option>';
+                        for (i=0; i<applicant_group.length; i++) {
+                            options += '<option value="' + applicant_group[i].id + '">' + applicant_group[i].name + '</option>' 
+                        }  
+                
+                        var htmlDropdown = $('<div class="form-group">'
+                            +'<div class="row">'
+                                +'<div class="col-4 pl-0 pr-0">'
+                                    +'<select id="fieldvalue" name="fieldvalue" class="form-control select2" data-toggle="select2">'
+                                    + options +'</select>'
+                                    +'<span id="fieldvalue-error" class="error"></span>'
+                                +'</div>'
+                                +'<div class="col-8 pl-0">'
+                                    +'<select id="fieldvalue2" name="fieldvalue2" class="form-control select2" data-toggle="select2" required="required">'
+                                    +'<option value=""></option>'
+                                    +'</select>'
+                                    +'<span id="fieldvalue2-error" class="error"></span>'
+                                    +'<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldDropdownTable2">'
+                                +'</div>'
+                            +'</div>'
+                        +'</div>');  
+
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlDropdown); 
+
+
+                        // Applicant Group Change
+                        $('#fieldvalue').on("change", function(){
+                            var id = $('#fieldvalue').val();
+                            var $select = $('#fieldvalue2');
+                            if(id!=''){
+                                $.ajax({
+                                    type:"POST",
+                                    url:"#get_children",
+                                    data: {id: id, table: 'global_info', field: 'category'},
+                                    success:function(data){
+                                        data = JSON.parse(data);
+                                        $select.find('option').remove();
+                                        $select.append('<option value="">Select Type</option>');
+                                        $.each(data, function(i, item) {
+                                            $select.append('<option value="' + item.id + '">' + item.name + '</option>');
+                                        })
+                                    }
+                                });
+                            }else{
+                                $('#fieldvalue2').find('option').remove();
+                                $('#fieldvalue2').append('<option value=""></option>'); 
+                            }
+
+                            var fieldvalue_key   = $('#fieldvalue').val();  
+                            var fieldvalue_value = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue_key!=''){
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Group : '+ fieldvalue_value +' )';
+                                }else{
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ';
+                                }
+                            }else{
+                                if(fieldvalue_key!=''){
+                                    var query_front = fieldkey_value +' = ( Group : '+ fieldvalue_value +' )';
+                                }else{
+                                    var query_front = fieldkey_value +' = ';
+                                }
+                            }
+
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+
+                        // Applicant Type  Change
+                        $('#fieldvalue2').on('change', function(){
+                            
+                            var fieldvalue_key   = $('#fieldvalue').val();
+                            var fieldvalue_value = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+                            var fieldvalue2_key   = $('#fieldvalue2').val();
+                            var fieldvalue2_value = $('#fieldvalue2 option:selected').text(); fieldvalue2_value.trim();
+
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue2_key!=''){
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Group : '+ fieldvalue_value +', Type : '+ fieldvalue2_value + ' )';
+                                }else{
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ( Group : '+ fieldvalue_value +' )';
+                                }
+                            
+                            }else{
+                                if(fieldvalue2_key!=''){
+                                    var query_front = fieldkey_value +' = ( Group : '+ fieldvalue_value +', Type : '+ fieldvalue2_value + ' )';
+                                }else{
+                                    var query_front = fieldkey_value +' = ( Group : '+ fieldvalue_value +' )';
+                                }
+                            }
+
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            $('#fieldvalue2-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+
+                        });
+
+
+                        $('#fieldvalue').select2({  theme: 'bootstrap-5'});
+                        $('#fieldvalue2').select2({ theme: 'bootstrap-5'});
+                    }
+                    else if(fieldType=='fieldDropdownTable'){      
+
+                        var fieldkey_key = this.value; //alert(fieldkey_key);+'<option value=''>Select..</option>'
+                        
+                        var htmlDropdown = $('<div class="form-group">'
+                            +'<select id="fieldvalue" name="fieldvalue" class="form-select '+ fieldkey_key+ '">'
+                            +'</select>'
+                            +'<span id="fieldvalue-error" class="error"></span>'
+                            +'<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldDropdownTable2">'
+                            +'<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldDropdownTable3">'
+                        +'</div>');  
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlDropdown); 
+                        
+
+                        //$('.'+ fieldkey_key).select2({
+                        $('#fieldvalue').select2({
+                            placeholder: 'Search '+ fieldkey_value+ '',
+                            theme: 'bootstrap-5',
+
+                            ajax: {
+                                type: "POST",
+                                url:"#search_dropdown_global",
+                                delay: 250,
+                                dataType: 'json',
+                                data: function (params) {
+
+                                    var table_name      = '';
+                                    var category_name   = '';
+                                    var category_value  = '';
+
+                                    if(fieldkey_key == 'sponsor'){
+                                        table_name = 'organizations';
+                                        category_name   = 'functioning_area';
+                                        category_value  = 12;
+                                    }
+                                    else if(fieldkey_key == 'funder_type'){
+                                        table_name = 'global_category';
+                                        category_name   = 'table_id';
+                                        category_value  = 3;//global_tables('organizations_funder_type');
+                                    }
+                                    else if(fieldkey_key == 'citizenships'){
+                                        table_name = 'countries';
+                                    }
+                                    else if(fieldkey_key == 'activity_code'){
+                                        table_name = 'global_info';
+                                        category_name   = 'table_id';
+                                        category_value  = 33;//global_tables('activity_code');
+                                    }
+                                    else if(fieldkey_key == 'grants_type'){
+                                        table_name = 'global_info';
+                                        category_name   = 'table_id';
+                                        category_value  = 27;//global_tables('grants_type');
+                                    }
+                                    else if(fieldkey_key == 'cfda'){
+                                        table_name = 'global_info';
+                                        category_name   = 'table_id';
+                                        category_value  = 32;//global_tables('cfda');
+                                    }
+                                    else{
+                                        table_name = fieldkey_key;
+                                    }
+                                    
+                                    return {
+                                        search: params.term, // search term
+                                        table: table_name,
+                                        field: 'name',
+                                        field_category: category_name,
+                                        field_category_value: category_value,
+                                        //page: params.page
+                                    };
+                                },
+                                processResults: function (data, params) {
+                                    //params.page = params.page || 1;
+                                    return {
+                                        //results: data.items,
+                                        results: $.map(data, function (item){
+                                            return {
+                                                id: item.id,
+                                                text: item.name,
+                                            }
+                                        })
+                                    };
+                                },
+                                cache: true
+                            }
+                        }).on("select2:select", function(e) {
+                            //alert('id -> ' + e.params.data.id)
+                            //alert('text -> ' + e.params.data.text)
+                            var fieldvalue_key   = $('#fieldvalue').val();
+                            var fieldvalue_value = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+                            
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue_key!=''){
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = '+ fieldvalue_value;
+                                }else{
+                                    var query_front = query_oprator +' '+ fieldkey_value +' = ';
+                                }
+                            }else{
+                                if(fieldvalue_key!=''){
+                                    var query_front = fieldkey_value +' = '+ fieldvalue_value;
+                                }else{
+                                    var query_front = fieldkey_value +' = ';
+                                }
+                            }
+                            
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+
+                        });
+
+                    }
+                    else if(fieldType=='fieldDropdown'){  
+                        
+                        var htmlDropdown = $('<div class="form-group">'
+                            +'<select id="fieldvalue" name="fieldvalue" class="form-control select2" data-toggle="select2">'
+                            +'</select>'
+                            +'<span id="fieldvalue-error" class="error"></span>'
+                            +'<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldDropdown2">'
+                            +'<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldDropdown3">'
+                        +'</div>');  
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlDropdown); 
+
+
+                        $("#fieldvalue").empty();
+                        $.ajax({
+                            type: "POST",
+                            url: "#grants/fetch_fieldDropdown",
+                            data: {field_name:fieldkey_key},
+                            dataType: "json",
+                            cache: false,
+                            success: function(result)
+                            {                
+                                var table_data = result[0];
+                                var label_name = result[1];
+            
+                                var options = '<option value=""> Select '+ label_name +' </option>';
+                                $.each( table_data, function( key, value ){
+                                    options += '<option value="' + value + '">' + value + '</option>' 
+                                });
+
+                                $("#fieldvalue").append(options);
+                            }
+                        });
+                        
+
+                        $('#fieldvalue').on('change', function(){
+                            var fieldvalue_key   = $('#fieldvalue').val();  
+                            var fieldvalue_value = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+
+                            var query_oprator = $('#query_oprator').val();
+                            if(query_oprator!=''){
+                                if(fieldvalue_key!=''){
+                                    var query_front = query_oprator +' '+fieldkey_value +' = '+ fieldvalue_value;
+                                }else{
+                                    var query_front = query_oprator +' '+fieldkey_value +' = ';
+                                }
+                            }else{
+                                if(fieldvalue_key!=''){
+                                    var query_front = fieldkey_value +' = '+ fieldvalue_value;
+                                }else{
+                                    var query_front = fieldkey_value +' = ';
+                                }
+                            }
+
+                            $('#fieldkey-error').text('');
+                            $('#fieldvalue-error').text('');
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front);
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+
+                        $('#fieldvalue').select2({ theme: 'bootstrap-5' });
+
+                    }
+                    else if(fieldType=='fieldNumber2'){
+
+                        var htmlText = $('<div class="form-group">'
+                            +'<div class="row">'
+                                +'<div class="col-6 pr-0">'
+                                    +'<div class="input-group">' 
+                                        +'<input type="hidden" id="fieldvalue" name="fieldvalue" value="">'
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">From</span>'
+                                        +'</div>'
+                                        +'<input type="number" max="999999" id="fieldvalue2" name="fieldvalue2" class="form-control">'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="col-6 pl-0">'
+                                    +'<div class="input-group">' 
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">To</span>'
+                                        +'</div>'
+                                        +'<input type="number" max="999999" id="fieldvalue3" name="fieldvalue3" class="form-control">'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="col-12" style="text-align:center;">'
+                                    +'<span id="fieldvalue-error" class="error"></span>'
+                                +'</div>'
+                            +'</div>'
+                        +'</div>'); 
+
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlText);  
+                        
+
+                        $('#fieldvalue2').on('change', function(){
+                            $('#fieldvalue-error').text('');
+                            var fieldvalue2_value = $('#fieldvalue2').val();  
+                            var fieldvalue3_value = $('#fieldvalue3').val(); 
+
+                            if(fieldvalue3_value!=''){
+                                $('#fieldvalue').val('BETWEEN');
+                                var query_front = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value+' ';
+                            }else{
+                                $('#fieldvalue').val('From');
+                                var query_front = fieldkey_value +' From '+ fieldvalue2_value+' ';
+                            }
+                
+                            var query_oprator = $('#query_oprator').val(); 
+                            if(query_oprator!=''){
+                                var query_front = query_oprator +' '+ query_front;
+                            }
+                            
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front); 
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+
+                        $('#fieldvalue3').on('change', function(){
+                            $('#fieldvalue-error').text('');
+                            var fieldvalue2_value = $('#fieldvalue2').val(); 
+                            var fieldvalue3_value = $('#fieldvalue3').val();  
+
+                            if(fieldvalue2_value!=''){
+                                $('#fieldvalue').val('BETWEEN');
+                                var query_front = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value+' ';
+                            }else{
+                                $('#fieldvalue').val('To');
+                                var query_front = fieldkey_value +' To '+ fieldvalue3_value+' ';
+                            }
+                            var query_oprator = $('#query_oprator').val(); 
+                            if(query_oprator!=''){
+                                var query_front = query_oprator +' '+ query_front;
+                            }
+
+                            $('#query_front').text('');
+                            $("#query_front").append(query_front); 
+
+                            $('#fieldoprator').val('').trigger('change');
+                        });
+                    }
+                    else if(fieldType=='fieldNumber'){
+
+                        var htmlText = $('<div class="form-group">'
+                            +'<input type="number" max="999999" id="fieldvalue" name="fieldvalue" onkeyup="keyupFunction()" class="form-control" placeholder="Enter Number">'
+                            +'<span id="fieldvalue-error" class="error"></span>'
+                            +'<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldNumber2">'
+                            +'<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldNumber3">'
+                        +'</div>');         
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlText);             
+                    }
+                    else{
+
+                        var htmlText = $('<div class="form-group">'
+                            +'<input type="text" maxlength="50" id="fieldvalue" name="fieldvalue" onkeyup="keyupFunction()" class="form-control" placeholder="Enter a search term">'
+                            +'<span id="fieldvalue-error" class="error"></span>'
+                            +'<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldText2">'
+                            +'<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldText3">'
+                        +'</div>');         
+                        $("#page-content").text('');
+                        $('#page-content').append(htmlText); 
+                    }
+
+
+                    if(fieldType == 'fieldDate'){
+                        var query_front = fieldkey_value +' ';
+                    }else{
+                        var query_front = fieldkey_value +' = ';
+                    }
+                
+
+                    var query_oprator = $('#query_oprator').val(); 
+                    if(query_oprator != ""){
+                        var query_front = query_oprator +' '+ query_front; 
+                    }
+
+                    $('#query_front').text('');
+                    $("#query_front").append(query_front);
+
+                    $('#field_oprator').val('').trigger('change');
+
+                }else{
+
+                    //alert('This Filter not include your Current Plan');
+                    $('#filter-not-include-modal').modal('show');
+                }
+            }
+            else{
+
+                var item1 = $('<div class="form-group">'
+                        +'<input type="text" maxlength="50" id="fieldvalue" name="fieldvalue" onkeyup="keyupFunction()" class="form-control" placeholder="Enter a search term">'
+                        +'<span id="fieldvalue-error" class="error"></span>'
+                        +'<input type="hidden" id="fieldvalue2" name="fieldvalue2" value="fieldText2">'
+                        +'<input type="hidden" id="fieldvalue3" name="fieldvalue3" value="fieldText3">'
+                    +'</div>');         
+                $("#page-content").text('');
+                $('#page-content').append(item1); 
+
+                var query_oprator = $('#query_oprator').val(); 
+                if(query_oprator != ""){
+                    var query_front = query_oprator; 
+                }
+
+                $('#query_front').text('');
+                $("#query_front").append(query_front);
+
+                $('#field_oprator').val('').trigger('change');
+            }
+
+        });
+        $('#filter-not-include-modal-close').on('click', function(){
+            $('#filter-not-include-modal').modal('hide');
+            $('.fieldkey').val('').trigger('change');
+        });
+
+
+
+        function keyupFunction(){
+            var fieldkey_key   = $('#fieldkey').val(); 
+            
+            if(fieldkey_key!=''){
+                $('#fieldkey-error').text('');
+                $('#fieldvalue-error').text('');
+                
+                var fieldkey_value = $('#fieldkey option:selected').text(); fieldkey_value.trim();
+                var fieldvalue_value = $('#fieldvalue').val(); 
+
+                var query_oprator = $('#query_oprator').val(); 
+                if(query_oprator!=''){
+                    var query_front = query_oprator +' '+ fieldkey_value +' = '+ fieldvalue_value;
+                }else{
+                    var query_front = fieldkey_value +' = '+ fieldvalue_value;
+                }
+                
+                $('#query_front').text('');
+                $("#query_front").append(query_front);
+
+            }else{
+                $('#fieldvalue-error').text('');
+                $("#fieldvalue-error").append('Please Select Add terms first.'); 
+            }
+
+            $('#fieldoprator').val('').trigger('change');
+        } 
+        function titleKeyup(){
+            $('#title-error').text(''); 
+        }
+
+        $("#fieldoprator").on("change",function(){
+
+            var fieldoprator = this.value; 
+            if(fieldoprator!=''){ 
+
+                var fieldkey_key = $('#fieldkey').val(); 
+                if(fieldkey_key==''){
+                    $('#fieldkey-error').text('');
+                    $("#fieldkey-error").append('This field cannot be blank.'); 
+                    $('#fieldoprator').val('').trigger('change');
+                }else{
+                    var fieldvalue_key = $('#fieldvalue').val(); 
+                    if(fieldvalue_key =='' || fieldvalue_key === null){
+                        $('#fieldvalue-error').text('');
+                        $("#fieldvalue-error").append('This field cannot be blank.'); 
+                        $('#fieldoprator').val('').trigger('change');
+                    }else{ //if($('#addForm').valid()){
+
+                        var fieldkey_value    = $('#fieldkey option:selected').text(); fieldkey_value.trim();
+                        var fieldvalue_value  = $('#fieldvalue option:selected').text(); fieldvalue_value.trim();
+                        var fieldvalue2_key   = $('#fieldvalue2').val();
+                        var fieldvalue2_value = $('#fieldvalue2 option:selected').text(); fieldvalue2_value.trim();
+                        var fieldvalue3_key   = $('#fieldvalue3').val();
+                        var fieldvalue3_value = $('#fieldvalue3 option:selected').text(); fieldvalue3_value.trim();
+
+                        var fieldDate         = ["opening_date","closing_date"];
+                        var fieldNumber2      = ["pay_fixed","pay_starting_amount","pay_maximum_amount","required_travel_min","required_travel_max"];
+                        var fieldDropdownTable3 = ["job_locations","visibility_locations"];
+                        var fieldDropdownTable2 = [];
+
+                        var fieldDropdownTable = ["organization","departments","jobs_benifits","techniques","instruments","softwares","soft_skills","language","subjects","keywords"];
+                        var fieldDropdown     = ["user_role","job_type","job_schedule","aplication_via","supplement_pay","workplace_type","qualification_required","qualification_prefered","recruitment_period","rate","hiring_in"];
+                        if(fieldDropdownTable3.includes(fieldkey_key)){ 
+
+                        }else if(fieldDropdownTable2.includes(fieldkey_key)){ 
+
+                        }else if(fieldDropdownTable.includes(fieldkey_key)){ 
+
+                        }else{
+                            fieldvalue_value  = fieldvalue_key;
+                            fieldvalue2_value = fieldvalue2_key;
+                            fieldvalue3_value = fieldvalue3_key;
+                        }
+
+
+                        if(fieldDate.includes(fieldkey_key)){ 
+                            if(fieldvalue2_key!='' && fieldvalue3_key==''){
+                                var query_oprator = fieldkey_value +' From '+ fieldvalue2_value +' '+ fieldoprator +' ';
+                            }else if(fieldvalue2_key=='' && fieldvalue3_key!=''){
+                                var query_oprator = fieldkey_value +' To '+ fieldvalue3_value +' '+ fieldoprator +' ';
+                            }else{
+                                var query_oprator = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value +' '+ fieldoprator +' ';
+                            }
+                            //alert(query_oprator);
+                            var fieldvalue_row = '<div class="row">'
+                                +'<div class="col-6 pr-0">'
+                                    +'<div class="input-group">' 
+                                        +'<input type="hidden" name="filtervalue_key[]"    value="'+ fieldvalue_key +'">'
+                                        +'<input type="hidden" name="filtervalue_value[]"  value="'+ fieldvalue_value +'">'
+                                        +'<input type="hidden" name="filtervalue2_key[]"   value="'+ fieldvalue2_key +'">' 
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">From</span>'
+                                        +'</div>'
+                                        +'<input type="text"   name="filtervalue2_value[]" value="'+ fieldvalue2_value +'" class="form-control" readonly placeholder="">'
+                                        +'<div class="input-group-append">'
+                                            +'<span class="input-group-text"><i class="bi bi-calendar"></i></span>'
+                                        +'</div>'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="col-6 pl-0">'
+                                    +'<div class="input-group">' 
+                                        +'<input type="hidden" name="filtervalue3_key[]" value="'+ fieldvalue3_key +'">' 
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">To</span>'
+                                        +'</div>'
+                                        +'<input type="text" name="filtervalue3_value[]" value="'+ fieldvalue3_value +'" class="form-control" readonly placeholder="">'
+                                        +'<div class="input-group-append">'
+                                            +'<span class="input-group-text"><i class="bi bi-calendar"></i></span>'
+                                        +'</div>'
+                                    +'</div>'
+                                +'</div>'
+                            +'</div>';
+                        }
+                        else if(fieldDropdownTable3.includes(fieldkey_key)){ 
+                            if(fieldvalue_key!='' && fieldvalue2_key!='' && fieldvalue3_key!='' ){
+                                var query_oprator = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ', City : '+ fieldvalue3_value + ' ) '+ fieldoprator +' ';
+                            }
+                            else if(fieldvalue_key!='' && fieldvalue2_key!='' && fieldvalue3_key=='' ){
+                                var query_oprator = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ' ) '+ fieldoprator +' ';
+                            }
+                            else{
+                                var query_oprator = fieldkey_value +' = ( Country : '+ fieldvalue_value +' ) '+ fieldoprator +' ';
+                            }
+                            if(fieldvalue2_value=='Select State'){ fieldvalue2_value = fieldvalue2_key;}
+                            if(fieldvalue3_value=='Select City'){  fieldvalue3_value = fieldvalue3_key;}
+
+                            var fieldvalue_row = '<div class="row">'
+                                +'<div class="col-4 pr-0">'
+                                    +'<input type="hidden" name="filtervalue_key[]" value="'+ fieldvalue_key +'" class="form-control" placeholder="">'
+                                    +'<input type="text" name="filtervalue_value[]" value="'+ fieldvalue_value +'" class="form-control" readonly placeholder="">'
+                                +'</div>'
+                                +'<div class="col-4 pl-0 pr-0">'
+                                    +'<input type="hidden" name="filtervalue2_key[]" value="'+ fieldvalue2_key +'" class="form-control" placeholder="">'
+                                    +'<input type="text" name="filtervalue2_value[]" value="'+ fieldvalue2_value +'" class="form-control" readonly placeholder="">'
+                                +'</div>'
+                                +'<div class="col-4 pl-0">'
+                                    +'<input type="hidden" name="filtervalue3_key[]" value="'+ fieldvalue3_key +'" class="form-control" placeholder="">'
+                                    +'<input type="text" name="filtervalue3_value[]" value="'+ fieldvalue3_value +'" class="form-control" readonly placeholder="">'
+                                +'</div>'
+                            +'</div>';
+                        }
+                        else if(fieldDropdownTable2.includes(fieldkey_key)){ 
+                            if(fieldvalue_key!='' && fieldvalue2_key!='' ){
+                                var query_oprator = fieldkey_value +' = ( Group : '+ fieldvalue_value +', Type : '+ fieldvalue2_value + ' ) '+ fieldoprator +' ';
+                            }
+                            else{
+                                var query_oprator = fieldkey_value +' = ( Group : '+ fieldvalue_value +' ) '+ fieldoprator +' ';
+                            }
+
+                            var fieldvalue_row = '<div class="row">'
+                                +'<div class="col-4 pl-0 pr-0">'
+                                    +'<input type="hidden" name="filtervalue_key[]" value="'+ fieldvalue_key +'" class="form-control" placeholder="">'
+                                    +'<input type="text" name="filtervalue_value[]" value="'+ fieldvalue_value +'" class="form-control" readonly placeholder="">'
+                                +'</div>'
+                                +'<div class="col-8 pl-0">'
+                                +'<input type="hidden" name="filtervalue3_key[]" value="'+ fieldvalue3_key +'" class="form-control" placeholder="">'
+                                    +'<input type="hidden" name="filtervalue2_key[]" value="'+ fieldvalue2_key +'" class="form-control" placeholder="">'
+                                    +'<input type="text" name="filtervalue2_value[]" value="'+ fieldvalue2_value +'" class="form-control" readonly placeholder="">'
+                                +'</div>'
+                            +'</div>';
+                        }
+                        else if(fieldNumber2.includes(fieldkey_key)){ 
+                            if(fieldvalue2_key!='' && fieldvalue3_key==''){
+                                var query_oprator = fieldkey_value +' From '+ fieldvalue2_value +' '+ fieldoprator +' ';
+                            }else if(fieldvalue2_key=='' && fieldvalue3_key!=''){
+                                var query_oprator = fieldkey_value +' To '+ fieldvalue3_value +' '+ fieldoprator +' ';
+                            }else{
+                                var query_oprator = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value +' '+ fieldoprator +' ';
+                            }
+                            //alert(query_oprator);
+                            var fieldvalue_row = '<div class="row">'
+                                +'<div class="col-6 pr-0">'
+                                    +'<div class="input-group">' 
+                                        +'<input type="hidden" name="filtervalue_key[]"    value="'+ fieldvalue_key +'">'
+                                        +'<input type="hidden" name="filtervalue_value[]"  value="'+ fieldvalue_value +'">'
+                                        +'<input type="hidden" name="filtervalue2_key[]"   value="'+ fieldvalue2_key +'">' 
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">From</span>'
+                                        +'</div>'
+                                        +'<input type="text"   name="filtervalue2_value[]" value="'+ fieldvalue2_value +'" class="form-control" readonly placeholder="">'
+                                    +'</div>'
+                                +'</div>'
+                                +'<div class="col-6 pl-0">'
+                                    +'<div class="input-group">' 
+                                        +'<input type="hidden" name="filtervalue3_key[]" value="'+ fieldvalue3_key +'">' 
+                                        +'<div class="input-group-prepend">'
+                                            +'<span class="input-group-text">To</span>'
+                                        +'</div>'
+                                        +'<input type="text" name="filtervalue3_value[]" value="'+ fieldvalue3_value +'" class="form-control" readonly placeholder="">'
+                                    +'</div>'
+                                +'</div>'
+                            +'</div>';
+                        }
+                        else{
+                            var query_oprator = fieldkey_value +' = '+ fieldvalue_value +' '+ fieldoprator +' ';
+                            //alert(query_oprator);
+                            var fieldvalue_row = '<div class="row">'
+                                +'<div class="col-12">'
+                                    +'<input type="hidden" name="filtervalue_key[]"    value="'+ fieldvalue_key +'" class="form-control" placeholder="">'
+                                    +'<input type="text"   name="filtervalue_value[]"  value="'+ fieldvalue_value +'" class="form-control" readonly placeholder="">'
+                                    +'<input type="hidden" name="filtervalue2_key[]"   value="'+ fieldvalue2_key +'">'
+                                    +'<input type="hidden" name="filtervalue2_value[]" value="'+ fieldvalue2_value +'">' 
+                                    +'<input type="hidden" name="filtervalue3_key[]"   value="'+ fieldvalue3_key +'">'
+                                    +'<input type="hidden" name="filtervalue3_value[]" value="'+ fieldvalue3_value +'">'
+                                +'</div>'
+                            +'</div>';
+                        }
+
+                        var oldfilter = $('<div class="my_div">'
+                            +'<div class="row">'
+                                +'<div class="col-3">'
+                                    +'<input type="hidden" name="filterkey_key[]" value="'+ fieldkey_key +'">'
+                                    +'<input type="text" name="filterkey_value[]" value="'+ fieldkey_value +'" class="form-control" readonly placeholder="">'
+                                +'</div>'
+                                +'<div class="col-7 pr-0 pl-0">' 
+                                + fieldvalue_row +'</div>'
+                                +'<div class="col-2">'
+                                    +'<input type="text" name="filteroprator[]" value="'+ fieldoprator +'" class="form-control" readonly placeholder="">' 
+                                +'</div>'
+                            +'</div>'
+                            +'<button data-fieldoprator="'+ fieldoprator 
+                            +'" data-fieldkey_key="'+ fieldkey_key +'" data-fieldkey_value="'+ fieldkey_value 
+                            +'" data-fieldvalue_key="'+  fieldvalue_key  +'" data-fieldvalue_value="'+  fieldvalue_value 
+                            +'" data-fieldvalue2_key="'+ fieldvalue2_key +'" data-fieldvalue2_value="'+ fieldvalue2_value 
+                            +'" data-fieldvalue3_key="'+ fieldvalue3_key +'" data-fieldvalue3_value="'+ fieldvalue3_value 
+                            +'" class="fix-close-btn" type="button">X</button>'
+                        +'</div>');
+                        $("#old-filter").append(oldfilter);
+                        
+                        $("#query_oprator").append(query_oprator);
+                        var query_oprator_all = $('#query_oprator').val();
+                        $('#query_front').text('');
+                        $("#query_front").append(query_oprator_all); 
+
+                        $('#fieldkey').val('').trigger('change');
+                        $('#fieldoprator').val('').trigger('change');
+                    }
+                }
+            }
+
+        });
+    }); 
+
+    $(document).on('click', '.fix-close-btn', function(id){
+
+        var fieldkey_key      = $(this).attr('data-fieldkey_key'); 
+        var fieldkey_value    = $(this).attr('data-fieldkey_value'); fieldkey_value.trim(); 
+        
+        var fieldvalue_key    = $(this).attr('data-fieldvalue_key');
+        var fieldvalue_value  = $(this).attr('data-fieldvalue_value'); fieldvalue_value.trim(); 
+        var fieldvalue2_key   = $(this).attr('data-fieldvalue2_key');
+        var fieldvalue2_value = $(this).attr('data-fieldvalue2_value'); fieldvalue2_value.trim(); 
+        var fieldvalue3_key   = $(this).attr('data-fieldvalue3_key');
+        var fieldvalue3_value = $(this).attr('data-fieldvalue3_value'); fieldvalue3_value.trim(); 
+        var fieldoprator      = $(this).attr('data-fieldoprator'); 
+        
+        var fieldDate = ["opening_date","closing_date"];
+        var fieldDropdownTable3 = ["job_locations","visibility_locations"];
+        var fieldDropdownTable2 = [];
+
+        var fieldNumber2 = ["pay_fixed","pay_starting_amount","pay_maximum_amount","required_travel_min","required_travel_max"];
+
+
+        if(fieldDate.includes(fieldkey_key)){   
+            if(fieldvalue2_key!='' && fieldvalue3_key==''){
+                var query_oprator = fieldkey_value +' From '+ fieldvalue2_value +' '+ fieldoprator +' ';
+            }else if(fieldvalue2_key=='' && fieldvalue3_key!=''){
+                var query_oprator = fieldkey_value +' To '+ fieldvalue3_value +' '+ fieldoprator +' ';
+            }else{
+                var query_oprator = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value +' '+ fieldoprator +' '; 
+            }
+        }
+        else if(fieldDropdownTable3.includes(fieldkey_key)){ 
+            if(fieldvalue_key!='' && fieldvalue2_key!='' && fieldvalue3_key!='' ){
+                var query_oprator = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ', City : '+ fieldvalue3_value + ' ) '+ fieldoprator +' ';
+            }
+            else if(fieldvalue_key!='' && fieldvalue2_key!='' && fieldvalue3_key=='' ){
+                var query_oprator = fieldkey_value +' = ( Country : '+ fieldvalue_value +', State : '+ fieldvalue2_value + ' ) '+ fieldoprator +' ';
+            }
+            else{
+                var query_oprator = fieldkey_value +' = ( Country : '+ fieldvalue_value +' ) '+ fieldoprator +' ';
+            }
+        }
+        else if(fieldDropdownTable2.includes(fieldkey_key)){ 
+            if(fieldvalue_key!='' && fieldvalue2_key!='' ){
+                var query_oprator = fieldkey_value +' = ( Group : '+ fieldvalue_value +', Type : '+ fieldvalue2_value + ' ) '+ fieldoprator +' ';
+            }
+            else{
+                var query_oprator = fieldkey_value +' = ( Group : '+ fieldvalue_value +' ) '+ fieldoprator +' ';
+            }
+        }
+        else if(fieldNumber2.includes(fieldkey_key)){   
+            if(fieldvalue2_key!='' && fieldvalue3_key==''){
+                var query_oprator = fieldkey_value +' From '+ fieldvalue2_value +' '+ fieldoprator +' ';
+            }else if(fieldvalue2_key=='' && fieldvalue3_key!=''){
+                var query_oprator = fieldkey_value +' To '+ fieldvalue3_value +' '+ fieldoprator +' ';
+            }else{
+                var query_oprator = fieldkey_value +' '+ fieldvalue2_value +' BETWEEN '+ fieldvalue3_value +' '+ fieldoprator +' '; 
+            }
+        }
+        else{
+            var query_oprator = fieldkey_value +' = '+ fieldvalue_value +' '+ fieldoprator
+        }
+        //alert(query_oprator);
+
+        var query_front = $('#query_front').val(); 
+        var query_front_new = query_front.replace(query_oprator , "");
+        $('#query_front').text('');     
+        $("#query_front").append(query_front_new); 
+
+        var query_oprator_old = $('#query_oprator').val();
+        var query_oprator_old2 = query_oprator_old.replace(query_oprator , "");
+        $('#query_oprator').text('');     
+        $("#query_oprator").append(query_oprator_old2); 
+
+        $(this).parent().remove();
+    }); 
+
+</script>
+
+
+</body>
+</html>
